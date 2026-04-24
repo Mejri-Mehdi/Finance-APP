@@ -114,7 +114,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                               shape: BoxShape.rectangle,
                             ),
                             alignment: AlignmentDirectional(0.0, 0.0),
-                            child: widget!.icon!,
+                            child: widget.icon!,
                           ),
                           Column(
                             mainAxisSize: MainAxisSize.min,
@@ -123,7 +123,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                             children: [
                               Text(
                                 valueOrDefault<String>(
-                                  widget!.name,
+                                  widget.name,
                                   'Tesla Model S',
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -147,7 +147,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                               ),
                               Text(
                                 valueOrDefault<String>(
-                                  widget!.category,
+                                  widget.category,
                                   'Automobile',
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -179,7 +179,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                          color: widget!.is_up
+                          color: widget.is_up
                               ? FlutterFlowTheme.of(context).success15
                               : FlutterFlowTheme.of(context).error15,
                           borderRadius: BorderRadius.circular(9999.0),
@@ -200,20 +200,20 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                                   child: Stack(
                                     alignment: AlignmentDirectional(0.0, 0.0),
                                     children: [
-                                      if (widget!.is_up ? true : false)
+                                      if (widget.is_up ? true : false)
                                         Icon(
                                           Icons.trending_up_rounded,
-                                          color: widget!.is_up
+                                          color: widget.is_up
                                               ? FlutterFlowTheme.of(context)
                                                   .success
                                               : FlutterFlowTheme.of(context)
                                                   .error,
                                           size: 14.0,
                                         ),
-                                      if (widget!.is_up ? false : true)
+                                      if (widget.is_up ? false : true)
                                         Icon(
                                           Icons.trending_down_rounded,
-                                          color: widget!.is_up
+                                          color: widget.is_up
                                               ? FlutterFlowTheme.of(context)
                                                   .success
                                               : FlutterFlowTheme.of(context)
@@ -225,7 +225,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                                 ),
                                 Text(
                                   valueOrDefault<String>(
-                                    widget!.trend,
+                                    widget.trend,
                                     '+4.2%',
                                   ),
                                   style: FlutterFlowTheme.of(context)
@@ -238,7 +238,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                                                   .labelSmall
                                                   .fontStyle,
                                         ),
-                                        color: widget!.is_up
+                                        color: widget.is_up
                                             ? FlutterFlowTheme.of(context)
                                                 .success
                                             : FlutterFlowTheme.of(context)
@@ -269,7 +269,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text(
-                            '${widget!.current}',
+                            '${widget.current}',
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -290,7 +290,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                                 ),
                           ),
                           Text(
-                            'of ${widget!.target}',
+                            'of ${widget.target}',
                             style:
                                 FlutterFlowTheme.of(context).bodySmall.override(
                                       font: GoogleFonts.inter(
@@ -317,7 +317,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                       ),
                       LinearPercentIndicator(
                         percent: valueOrDefault<double>(
-                          widget!.progress_val,
+                          widget.progress_val,
                           0.5,
                         ),
                         lineHeight: 8.0,

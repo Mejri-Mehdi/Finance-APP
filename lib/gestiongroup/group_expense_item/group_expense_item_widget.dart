@@ -1,11 +1,8 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'group_expense_item_model.dart';
 export 'group_expense_item_model.dart';
 
@@ -84,7 +81,7 @@ class _GroupExpenseItemWidgetState extends State<GroupExpenseItemWidget> {
                       shape: BoxShape.rectangle,
                     ),
                     alignment: AlignmentDirectional(0.0, 0.0),
-                    child: widget!.icon!,
+                    child: widget.icon!,
                   ),
                   Expanded(
                     flex: 1,
@@ -95,7 +92,7 @@ class _GroupExpenseItemWidgetState extends State<GroupExpenseItemWidget> {
                       children: [
                         Text(
                           valueOrDefault<String>(
-                            widget!.title,
+                            widget.title,
                             'Beach Club Drinks',
                           ),
                           maxLines: 1,
@@ -124,7 +121,7 @@ class _GroupExpenseItemWidgetState extends State<GroupExpenseItemWidget> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Text(
-                              'Paid by ${widget!.payer}',
+                              'Paid by ${widget.payer}',
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
@@ -174,7 +171,7 @@ class _GroupExpenseItemWidgetState extends State<GroupExpenseItemWidget> {
                             ),
                             Text(
                               valueOrDefault<String>(
-                                widget!.date,
+                                widget.date,
                                 'Today',
                               ),
                               style: FlutterFlowTheme.of(context)
@@ -211,7 +208,7 @@ class _GroupExpenseItemWidgetState extends State<GroupExpenseItemWidget> {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
-                        '-\$${widget!.amount}',
+                        '-\$${widget.amount}',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               font: GoogleFonts.inter(
                                 fontWeight: FontWeight.w600,

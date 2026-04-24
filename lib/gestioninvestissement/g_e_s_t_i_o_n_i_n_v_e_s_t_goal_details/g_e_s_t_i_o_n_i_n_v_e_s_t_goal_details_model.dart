@@ -1,17 +1,9 @@
-import '/flutter_flow/flutter_flow_charts.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/gestioninvestissement/button5/button5_widget.dart';
 import '/gestioninvestissement/transaction_item3/transaction_item3_widget.dart';
-import 'dart:ui';
 import 'g_e_s_t_i_o_n_i_n_v_e_s_t_goal_details_widget.dart'
     show GESTIONINVESTGoalDetailsWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:material_palette/material_palette.dart';
-import 'package:provider/provider.dart';
 
 class GESTIONINVESTGoalDetailsModel
     extends FlutterFlowModel<GESTIONINVESTGoalDetailsWidget> {

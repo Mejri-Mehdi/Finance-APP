@@ -2,13 +2,10 @@ import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/gestioninvestissement/goal_card/goal_card_widget.dart';
 import '/gestioninvestissement/investment_stat/investment_stat_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'b_a_s_e_investments_savings_goals_model.dart';
 export 'b_a_s_e_investments_savings_goals_model.dart';
 
@@ -421,7 +418,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                                         4.0,
                                         5.0,
                                         6.0
-                                      ])!,
+                                      ]),
                                       yData: ([
                                         12000.0,
                                         15000.0,
@@ -430,7 +427,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                                         22000.0,
                                         21000.0,
                                         25000.0
-                                      ])!,
+                                      ]),
                                       settings: LineChartBarData(
                                         color: FlutterFlowTheme.of(context)
                                             .tertiary,
@@ -462,7 +459,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                                     'May',
                                     'Jun',
                                     'Jul'
-                                  ])!,
+                                  ]),
                                   xAxisLabelInfo: AxisLabelInfo(
                                     showLabels: true,
                                     labelTextStyle: FlutterFlowTheme.of(context)

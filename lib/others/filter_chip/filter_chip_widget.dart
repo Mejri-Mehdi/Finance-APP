@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'filter_chip_model.dart';
 export 'filter_chip_model.dart';
 
@@ -56,16 +53,16 @@ class _FilterChipWidgetState extends State<FilterChipWidget> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: widget!.selected
+        color: widget.selected
             ? FlutterFlowTheme.of(context).primary
             : FlutterFlowTheme.of(context).secondaryBackground,
         borderRadius: BorderRadius.circular(9999.0),
         shape: BoxShape.rectangle,
         border: Border.all(
-          color: widget!.selected
+          color: widget.selected
               ? FlutterFlowTheme.of(context).primary
               : FlutterFlowTheme.of(context).alternate,
-          width: widget!.selected ? 1.0 : 1.0,
+          width: widget.selected ? 1.0 : 1.0,
         ),
       ),
       child: Padding(
@@ -77,13 +74,13 @@ class _FilterChipWidgetState extends State<FilterChipWidget> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               if (valueOrDefault<bool>(
-                widget!.icon_present,
+                widget.icon_present,
                 true,
               ))
-                widget!.icon!,
+                widget.icon!,
               Text(
                 valueOrDefault<String>(
-                  widget!.label,
+                  widget.label,
                   'All',
                 ),
                 style: FlutterFlowTheme.of(context).labelMedium.override(
@@ -93,7 +90,7 @@ class _FilterChipWidgetState extends State<FilterChipWidget> {
                         fontStyle:
                             FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
-                      color: widget!.selected
+                      color: widget.selected
                           ? FlutterFlowTheme.of(context).onPrimary
                           : FlutterFlowTheme.of(context).primaryText,
                       letterSpacing: 0.0,

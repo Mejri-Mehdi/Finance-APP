@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'category_item_model.dart';
 export 'category_item_model.dart';
 
@@ -55,16 +52,16 @@ class _CategoryItemWidgetState extends State<CategoryItemWidget> {
       width: 80.0,
       height: 80.0,
       decoration: BoxDecoration(
-        color: widget!.selected
+        color: widget.selected
             ? FlutterFlowTheme.of(context).primary20
             : FlutterFlowTheme.of(context).secondaryBackground,
         borderRadius: BorderRadius.circular(20.0),
         shape: BoxShape.rectangle,
         border: Border.all(
-          color: widget!.selected
+          color: widget.selected
               ? FlutterFlowTheme.of(context).primary
               : FlutterFlowTheme.of(context).alternate,
-          width: widget!.selected ? 1.5 : 1.5,
+          width: widget.selected ? 1.5 : 1.5,
         ),
       ),
       alignment: AlignmentDirectional(0.0, 0.0),
@@ -73,10 +70,10 @@ class _CategoryItemWidgetState extends State<CategoryItemWidget> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          widget!.icon!,
+          widget.icon!,
           Text(
             valueOrDefault<String>(
-              widget!.label,
+              widget.label,
               'Food',
             ),
             style: FlutterFlowTheme.of(context).labelSmall.override(
@@ -86,7 +83,7 @@ class _CategoryItemWidgetState extends State<CategoryItemWidget> {
                     fontStyle:
                         FlutterFlowTheme.of(context).labelSmall.fontStyle,
                   ),
-                  color: widget!.selected
+                  color: widget.selected
                       ? FlutterFlowTheme.of(context).primary
                       : FlutterFlowTheme.of(context).secondaryText,
                   letterSpacing: 0.0,

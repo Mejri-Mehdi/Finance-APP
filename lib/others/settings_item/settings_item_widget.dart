@@ -80,14 +80,14 @@ class _SettingsItemWidgetState extends State<SettingsItemWidget> {
                     height: 40.0,
                     decoration: BoxDecoration(
                       color: valueOrDefault<Color>(
-                        widget!.icon_bg,
+                        widget.icon_bg,
                         FlutterFlowTheme.of(context).primary20,
                       ),
                       borderRadius: BorderRadius.circular(12.0),
                       shape: BoxShape.rectangle,
                     ),
                     alignment: AlignmentDirectional(0.0, 0.0),
-                    child: widget!.icon!,
+                    child: widget.icon!,
                   ),
                   Expanded(
                     flex: 1,
@@ -98,7 +98,7 @@ class _SettingsItemWidgetState extends State<SettingsItemWidget> {
                       children: [
                         Text(
                           valueOrDefault<String>(
-                            widget!.title,
+                            widget.title,
                             'Personal Information',
                           ),
                           style: FlutterFlowTheme.of(context)
@@ -121,7 +121,7 @@ class _SettingsItemWidgetState extends State<SettingsItemWidget> {
                         ),
                         Text(
                           valueOrDefault<String>(
-                            widget!.subtitle,
+                            widget.subtitle,
                             'Name, email, and phone number',
                           ),
                           maxLines: 1,

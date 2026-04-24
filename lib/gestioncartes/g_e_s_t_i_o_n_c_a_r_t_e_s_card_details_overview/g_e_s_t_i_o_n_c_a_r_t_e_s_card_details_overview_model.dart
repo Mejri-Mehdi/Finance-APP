@@ -1,17 +1,10 @@
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/gestioncartes/button4/button4_widget.dart';
 import '/gestioncartes/card_transaction/card_transaction_widget.dart';
 import '/gestioncartes/spending_limit_indicator/spending_limit_indicator_widget.dart';
-import 'dart:ui';
 import 'g_e_s_t_i_o_n_c_a_r_t_e_s_card_details_overview_widget.dart'
     show GESTIONCARTESCardDetailsOverviewWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:material_palette/material_palette.dart';
-import 'package:provider/provider.dart';
 
 class GESTIONCARTESCardDetailsOverviewModel
     extends FlutterFlowModel<GESTIONCARTESCardDetailsOverviewWidget> {

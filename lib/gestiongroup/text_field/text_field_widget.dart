@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'text_field_model.dart';
 export 'text_field_model.dart';
 
@@ -59,7 +56,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
     super.initState();
     _model = createModel(context, () => TextFieldModel());
 
-    _model.inputTextController ??= TextEditingController(text: widget!.value);
+    _model.inputTextController ??= TextEditingController(text: widget.value);
     _model.inputFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -80,9 +77,9 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (widget!.label ? true : false)
+          if (widget.label ? true : false)
             Text(
-              widget!.label.toString(),
+              widget.label.toString(),
               style: FlutterFlowTheme.of(context).labelMedium.override(
                     font: GoogleFonts.inter(
                       fontWeight:
@@ -90,7 +87,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                       fontStyle:
                           FlutterFlowTheme.of(context).labelMedium.fontStyle,
                     ),
-                    color: widget!.error
+                    color: widget.error
                         ? FlutterFlowTheme.of(context).error
                         : FlutterFlowTheme.of(context).primaryText,
                     letterSpacing: 0.0,
@@ -105,9 +102,9 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
             height: 40.0,
             decoration: BoxDecoration(
               color: () {
-                if (widget!.variant == 'filled') {
+                if (widget.variant == 'filled') {
                   return FlutterFlowTheme.of(context).secondaryBackground;
-                } else if (widget!.variant == 'ghost') {
+                } else if (widget.variant == 'ghost') {
                   return Colors.transparent;
                 } else {
                   return Colors.transparent;
@@ -116,9 +113,9 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(valueOrDefault<double>(
                   () {
-                    if (widget!.variant == 'filled') {
+                    if (widget.variant == 'filled') {
                       return 8.0;
-                    } else if (widget!.variant == 'ghost') {
+                    } else if (widget.variant == 'ghost') {
                       return 8.0;
                     } else {
                       return 8.0;
@@ -128,9 +125,9 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                 )),
                 topRight: Radius.circular(valueOrDefault<double>(
                   () {
-                    if (widget!.variant == 'filled') {
+                    if (widget.variant == 'filled') {
                       return 8.0;
-                    } else if (widget!.variant == 'ghost') {
+                    } else if (widget.variant == 'ghost') {
                       return 8.0;
                     } else {
                       return 8.0;
@@ -140,9 +137,9 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                 )),
                 bottomLeft: Radius.circular(valueOrDefault<double>(
                   () {
-                    if (widget!.variant == 'filled') {
+                    if (widget.variant == 'filled') {
                       return 8.0;
-                    } else if (widget!.variant == 'ghost') {
+                    } else if (widget.variant == 'ghost') {
                       return 8.0;
                     } else {
                       return 8.0;
@@ -152,9 +149,9 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                 )),
                 bottomRight: Radius.circular(valueOrDefault<double>(
                   () {
-                    if (widget!.variant == 'filled') {
+                    if (widget.variant == 'filled') {
                       return 8.0;
-                    } else if (widget!.variant == 'ghost') {
+                    } else if (widget.variant == 'ghost') {
                       return 8.0;
                     } else {
                       return 8.0;
@@ -166,22 +163,22 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
               shape: BoxShape.rectangle,
               border: Border.all(
                 color: () {
-                  if (widget!.error) {
+                  if (widget.error) {
                     return FlutterFlowTheme.of(context).error;
-                  } else if (widget!.variant == 'filled') {
+                  } else if (widget.variant == 'filled') {
                     return Colors.transparent;
-                  } else if (widget!.variant == 'ghost') {
+                  } else if (widget.variant == 'ghost') {
                     return Colors.transparent;
                   } else {
                     return FlutterFlowTheme.of(context).alternate;
                   }
                 }(),
                 width: () {
-                  if (widget!.error) {
+                  if (widget.error) {
                     return 1.0;
-                  } else if (widget!.variant == 'filled') {
+                  } else if (widget.variant == 'filled') {
                     return 1.0;
-                  } else if (widget!.variant == 'ghost') {
+                  } else if (widget.variant == 'ghost') {
                     return 0.0;
                   } else {
                     return 1.0;
@@ -193,21 +190,9 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(
                   valueOrDefault<double>(
                     () {
-                      if (widget!.variant == 'filled') {
+                      if (widget.variant == 'filled') {
                         return 8.0;
-                      } else if (widget!.variant == 'ghost') {
-                        return 8.0;
-                      } else {
-                        return 8.0;
-                      }
-                    }(),
-                    0.0,
-                  ),
-                  valueOrDefault<double>(
-                    () {
-                      if (widget!.variant == 'filled') {
-                        return 8.0;
-                      } else if (widget!.variant == 'ghost') {
+                      } else if (widget.variant == 'ghost') {
                         return 8.0;
                       } else {
                         return 8.0;
@@ -217,9 +202,9 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                   ),
                   valueOrDefault<double>(
                     () {
-                      if (widget!.variant == 'filled') {
+                      if (widget.variant == 'filled') {
                         return 8.0;
-                      } else if (widget!.variant == 'ghost') {
+                      } else if (widget.variant == 'ghost') {
                         return 8.0;
                       } else {
                         return 8.0;
@@ -229,9 +214,21 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                   ),
                   valueOrDefault<double>(
                     () {
-                      if (widget!.variant == 'filled') {
+                      if (widget.variant == 'filled') {
                         return 8.0;
-                      } else if (widget!.variant == 'ghost') {
+                      } else if (widget.variant == 'ghost') {
+                        return 8.0;
+                      } else {
+                        return 8.0;
+                      }
+                    }(),
+                    0.0,
+                  ),
+                  valueOrDefault<double>(
+                    () {
+                      if (widget.variant == 'filled') {
+                        return 8.0;
+                      } else if (widget.variant == 'ghost') {
                         return 8.0;
                       } else {
                         return 8.0;
@@ -245,10 +242,10 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   if (valueOrDefault<bool>(
-                    widget!.leading_icon_present,
+                    widget.leading_icon_present,
                     false,
                   ))
-                    widget!.leading_icon!,
+                    widget.leading_icon!,
                   Expanded(
                     flex: 1,
                     child: TextFormField(
@@ -258,7 +255,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                       decoration: InputDecoration(
                         isDense: true,
                         hintText: valueOrDefault<String>(
-                          widget!.hint,
+                          widget.hint,
                           'e.g. Trip to Bali',
                         ),
                         hintStyle: FlutterFlowTheme.of(context)
@@ -273,9 +270,9 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                                     .fontStyle,
                               ),
                               color: () {
-                                if (widget!.variant == 'filled') {
+                                if (widget.variant == 'filled') {
                                   return FlutterFlowTheme.of(context).accent3;
-                                } else if (widget!.variant == 'ghost') {
+                                } else if (widget.variant == 'ghost') {
                                   return FlutterFlowTheme.of(context).accent3;
                                 } else {
                                   return FlutterFlowTheme.of(context).accent3;
@@ -305,9 +302,9 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                                   .fontStyle,
                             ),
                             color: () {
-                              if (widget!.variant == 'filled') {
+                              if (widget.variant == 'filled') {
                                 return FlutterFlowTheme.of(context).primaryText;
-                              } else if (widget!.variant == 'ghost') {
+                              } else if (widget.variant == 'ghost') {
                                 return FlutterFlowTheme.of(context).primaryText;
                               } else {
                                 return FlutterFlowTheme.of(context).primaryText;
@@ -327,17 +324,17 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                     ),
                   ),
                   if (valueOrDefault<bool>(
-                    widget!.trailing_icon_present,
+                    widget.trailing_icon_present,
                     false,
                   ))
-                    widget!.trailing_icon!,
+                    widget.trailing_icon!,
                 ],
               ),
             ),
           ),
-          if (widget!.helper ? true : false)
+          if (widget.helper ? true : false)
             Text(
-              widget!.helper.toString(),
+              widget.helper.toString(),
               style: FlutterFlowTheme.of(context).bodySmall.override(
                     font: GoogleFonts.inter(
                       fontWeight:
@@ -345,7 +342,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                       fontStyle:
                           FlutterFlowTheme.of(context).bodySmall.fontStyle,
                     ),
-                    color: widget!.error
+                    color: widget.error
                         ? FlutterFlowTheme.of(context).error
                         : FlutterFlowTheme.of(context).secondaryText,
                     letterSpacing: 0.0,

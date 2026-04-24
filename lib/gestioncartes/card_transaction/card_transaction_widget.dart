@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'card_transaction_model.dart';
 export 'card_transaction_model.dart';
 
@@ -74,7 +71,7 @@ class _CardTransactionWidgetState extends State<CardTransactionWidget> {
               ),
             ),
             alignment: AlignmentDirectional(0.0, 0.0),
-            child: widget!.icon!,
+            child: widget.icon!,
           ),
           Expanded(
             flex: 1,
@@ -85,7 +82,7 @@ class _CardTransactionWidgetState extends State<CardTransactionWidget> {
               children: [
                 Text(
                   valueOrDefault<String>(
-                    widget!.title,
+                    widget.title,
                     'Amazon.com',
                   ),
                   maxLines: 1,
@@ -106,7 +103,7 @@ class _CardTransactionWidgetState extends State<CardTransactionWidget> {
                 ),
                 Text(
                   valueOrDefault<String>(
-                    widget!.time,
+                    widget.time,
                     'Today, 2:45 PM',
                   ),
                   style: FlutterFlowTheme.of(context).labelSmall.override(
@@ -136,7 +133,7 @@ class _CardTransactionWidgetState extends State<CardTransactionWidget> {
             children: [
               Text(
                 valueOrDefault<String>(
-                  widget!.amount,
+                  widget.amount,
                   '-\$124.50',
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(

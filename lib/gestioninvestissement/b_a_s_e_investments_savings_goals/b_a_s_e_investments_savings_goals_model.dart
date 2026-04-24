@@ -1,16 +1,9 @@
-import '/flutter_flow/flutter_flow_charts.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/gestioninvestissement/goal_card/goal_card_widget.dart';
 import '/gestioninvestissement/investment_stat/investment_stat_widget.dart';
-import 'dart:ui';
 import 'b_a_s_e_investments_savings_goals_widget.dart'
     show BASEInvestmentsSavingsGoalsWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class BASEInvestmentsSavingsGoalsModel
     extends FlutterFlowModel<BASEInvestmentsSavingsGoalsWidget> {

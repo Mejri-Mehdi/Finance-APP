@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'transaction_toggle_model.dart';
 export 'transaction_toggle_model.dart';
 
@@ -69,7 +66,7 @@ class _TransactionToggleWidgetState extends State<TransactionToggleWidget> {
                 flex: 1,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: widget!.type == 'income'
+                    color: widget.type == 'income'
                         ? FlutterFlowTheme.of(context).success
                         : Colors.transparent,
                     borderRadius: BorderRadius.circular(9999.0),
@@ -88,7 +85,7 @@ class _TransactionToggleWidgetState extends State<TransactionToggleWidget> {
                           children: [
                             Icon(
                               Icons.add_circle_rounded,
-                              color: widget!.type == 'income'
+                              color: widget.type == 'income'
                                   ? FlutterFlowTheme.of(context).onPrimary
                                   : FlutterFlowTheme.of(context).secondaryText,
                               size: 18.0,
@@ -106,7 +103,7 @@ class _TransactionToggleWidgetState extends State<TransactionToggleWidget> {
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: widget!.type == 'income'
+                                    color: widget.type == 'income'
                                         ? FlutterFlowTheme.of(context).onPrimary
                                         : FlutterFlowTheme.of(context)
                                             .secondaryText,
@@ -131,7 +128,7 @@ class _TransactionToggleWidgetState extends State<TransactionToggleWidget> {
                 flex: 1,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: widget!.type == 'income'
+                    color: widget.type == 'income'
                         ? Colors.transparent
                         : FlutterFlowTheme.of(context).error,
                     borderRadius: BorderRadius.circular(9999.0),
@@ -150,7 +147,7 @@ class _TransactionToggleWidgetState extends State<TransactionToggleWidget> {
                           children: [
                             Icon(
                               Icons.remove_circle_rounded,
-                              color: widget!.type == 'income'
+                              color: widget.type == 'income'
                                   ? FlutterFlowTheme.of(context).secondaryText
                                   : FlutterFlowTheme.of(context).onPrimary,
                               size: 18.0,
@@ -168,7 +165,7 @@ class _TransactionToggleWidgetState extends State<TransactionToggleWidget> {
                                           .labelLarge
                                           .fontStyle,
                                     ),
-                                    color: widget!.type == 'income'
+                                    color: widget.type == 'income'
                                         ? FlutterFlowTheme.of(context)
                                             .secondaryText
                                         : FlutterFlowTheme.of(context)

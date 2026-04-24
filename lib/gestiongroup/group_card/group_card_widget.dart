@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'group_card_model.dart';
 export 'group_card_model.dart';
 
@@ -93,7 +90,7 @@ class _GroupCardWidgetState extends State<GroupCardWidget> {
                       shape: BoxShape.rectangle,
                     ),
                     alignment: AlignmentDirectional(0.0, 0.0),
-                    child: widget!.icon!,
+                    child: widget.icon!,
                   ),
                   Expanded(
                     flex: 1,
@@ -104,7 +101,7 @@ class _GroupCardWidgetState extends State<GroupCardWidget> {
                       children: [
                         Text(
                           valueOrDefault<String>(
-                            widget!.name,
+                            widget.name,
                             'Trip to Bali',
                           ),
                           style: FlutterFlowTheme.of(context)
@@ -132,7 +129,7 @@ class _GroupCardWidgetState extends State<GroupCardWidget> {
                           children: [
                             Text(
                               valueOrDefault<String>(
-                                widget!.member_count,
+                                widget.member_count,
                                 '+4 members',
                               ),
                               style: FlutterFlowTheme.of(context)
@@ -170,7 +167,7 @@ class _GroupCardWidgetState extends State<GroupCardWidget> {
                     children: [
                       Text(
                         valueOrDefault<String>(
-                          widget!.status_text,
+                          widget.status_text,
                           'You owe',
                         ),
                         style: FlutterFlowTheme.of(context).labelSmall.override(
@@ -182,7 +179,7 @@ class _GroupCardWidgetState extends State<GroupCardWidget> {
                                     .labelSmall
                                     .fontStyle,
                               ),
-                              color: widget!.is_owed
+                              color: widget.is_owed
                                   ? FlutterFlowTheme.of(context).success
                                   : FlutterFlowTheme.of(context).error,
                               letterSpacing: 0.0,
@@ -197,7 +194,7 @@ class _GroupCardWidgetState extends State<GroupCardWidget> {
                       ),
                       Text(
                         valueOrDefault<String>(
-                          widget!.amount,
+                          widget.amount,
                           '\$150.00',
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
@@ -207,7 +204,7 @@ class _GroupCardWidgetState extends State<GroupCardWidget> {
                                     .bodyLarge
                                     .fontStyle,
                               ),
-                              color: widget!.is_owed
+                              color: widget.is_owed
                                   ? FlutterFlowTheme.of(context).success
                                   : FlutterFlowTheme.of(context).error,
                               letterSpacing: 0.0,

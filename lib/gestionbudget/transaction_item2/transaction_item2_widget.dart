@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'transaction_item2_model.dart';
 export 'transaction_item2_model.dart';
 
@@ -80,7 +77,7 @@ class _TransactionItem2WidgetState extends State<TransactionItem2Widget> {
               ),
             ),
             alignment: AlignmentDirectional(0.0, 0.0),
-            child: widget!.icon!,
+            child: widget.icon!,
           ),
           Expanded(
             flex: 1,
@@ -91,7 +88,7 @@ class _TransactionItem2WidgetState extends State<TransactionItem2Widget> {
               children: [
                 Text(
                   valueOrDefault<String>(
-                    widget!.title,
+                    widget.title,
                     'The Gourmet Bistro',
                   ),
                   maxLines: 1,
@@ -112,7 +109,7 @@ class _TransactionItem2WidgetState extends State<TransactionItem2Widget> {
                 ),
                 Text(
                   valueOrDefault<String>(
-                    widget!.subtitle,
+                    widget.subtitle,
                     'Today, 8:45 PM',
                   ),
                   style: FlutterFlowTheme.of(context).bodySmall.override(
@@ -141,7 +138,7 @@ class _TransactionItem2WidgetState extends State<TransactionItem2Widget> {
             children: [
               Text(
                 valueOrDefault<String>(
-                  widget!.amount,
+                  widget.amount,
                   '-\$84.20',
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -150,7 +147,7 @@ class _TransactionItem2WidgetState extends State<TransactionItem2Widget> {
                         fontStyle:
                             FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                       ),
-                      color: widget!.is_income
+                      color: widget.is_income
                           ? FlutterFlowTheme.of(context).success
                           : FlutterFlowTheme.of(context).primaryText,
                       letterSpacing: 0.0,
@@ -162,7 +159,7 @@ class _TransactionItem2WidgetState extends State<TransactionItem2Widget> {
               ),
               Text(
                 valueOrDefault<String>(
-                  widget!.date,
+                  widget.date,
                   'Dining',
                 ),
                 style: FlutterFlowTheme.of(context).labelSmall.override(

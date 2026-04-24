@@ -1,9 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'settings_group_header_model.dart';
 export 'settings_group_header_model.dart';
 
@@ -52,7 +50,7 @@ class _SettingsGroupHeaderWidgetState extends State<SettingsGroupHeaderWidget> {
         child: Container(
           child: Text(
             valueOrDefault<String>(
-              widget!.title,
+              widget.title,
               'Account Settings',
             ),
             style: FlutterFlowTheme.of(context).labelLarge.override(

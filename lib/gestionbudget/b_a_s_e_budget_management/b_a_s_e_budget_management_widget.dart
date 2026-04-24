@@ -2,12 +2,9 @@ import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/gestionbudget/budget_card/budget_card_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'b_a_s_e_budget_management_model.dart';
 export 'b_a_s_e_budget_management_model.dart';
 
@@ -288,7 +285,7 @@ class _BASEBudgetManagementWidgetState
                                 height: 140.0,
                                 child: FlutterFlowPieChart(
                                   data: FFPieChartData(
-                                    values: ([1200.0, 800.0, 600.0, 1600.0])!,
+                                    values: ([1200.0, 800.0, 600.0, 1600.0]),
                                     colors: pieChartPieChartColorsList,
                                     radius: [35.0],
                                   ),

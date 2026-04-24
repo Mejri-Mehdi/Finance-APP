@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'switch_component_model.dart';
 export 'switch_component_model.dart';
 
@@ -40,7 +37,7 @@ class _SwitchComponentWidgetState extends State<SwitchComponentWidget> {
     super.initState();
     _model = createModel(context, () => SwitchComponentModel());
 
-    _model.switchValue = widget!.active ? true : false;
+    _model.switchValue = widget.active ? true : false;
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -59,9 +56,9 @@ class _SwitchComponentWidgetState extends State<SwitchComponentWidget> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         if (() {
-          if (widget!.variant == 'iOS') {
+          if (widget.variant == 'iOS') {
             return true;
-          } else if (widget!.variant == 'iOS 26+') {
+          } else if (widget.variant == 'iOS 26+') {
             return false;
           } else {
             return true;
@@ -70,43 +67,43 @@ class _SwitchComponentWidgetState extends State<SwitchComponentWidget> {
           Switch.adaptive(
             value: _model.switchValue!,
             onChanged: (newValue) async {
-              safeSetState(() => _model.switchValue = newValue!);
+              safeSetState(() => _model.switchValue = newValue);
             },
             activeTrackColor: FlutterFlowTheme.of(context).primary,
             inactiveTrackColor: FlutterFlowTheme.of(context).alternate,
             inactiveThumbColor: FlutterFlowTheme.of(context).primaryBackground,
           ),
         if (() {
-          if (widget!.variant == 'iOS') {
+          if (widget.variant == 'iOS') {
             return false;
-          } else if (widget!.variant == 'iOS 26+') {
+          } else if (widget.variant == 'iOS 26+') {
             return true;
           } else {
             return false;
           }
         }())
           Container(
-            width: widget!.variant == 'iOS 26+' ? 64.0 : 56.0,
-            height: widget!.variant == 'iOS 26+' ? 28.0 : 32.0,
+            width: widget.variant == 'iOS 26+' ? 64.0 : 56.0,
+            height: widget.variant == 'iOS 26+' ? 28.0 : 32.0,
             decoration: BoxDecoration(
-              color: widget!.active
+              color: widget.active
                   ? FlutterFlowTheme.of(context).primary
                   : FlutterFlowTheme.of(context).alternate,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(valueOrDefault<double>(
-                  widget!.variant == 'iOS 26+' ? 9999.0 : 16.0,
+                  widget.variant == 'iOS 26+' ? 9999.0 : 16.0,
                   0.0,
                 )),
                 topRight: Radius.circular(valueOrDefault<double>(
-                  widget!.variant == 'iOS 26+' ? 9999.0 : 16.0,
+                  widget.variant == 'iOS 26+' ? 9999.0 : 16.0,
                   0.0,
                 )),
                 bottomLeft: Radius.circular(valueOrDefault<double>(
-                  widget!.variant == 'iOS 26+' ? 9999.0 : 16.0,
+                  widget.variant == 'iOS 26+' ? 9999.0 : 16.0,
                   0.0,
                 )),
                 bottomRight: Radius.circular(valueOrDefault<double>(
-                  widget!.variant == 'iOS 26+' ? 9999.0 : 16.0,
+                  widget.variant == 'iOS 26+' ? 9999.0 : 16.0,
                   0.0,
                 )),
               ),
@@ -115,30 +112,30 @@ class _SwitchComponentWidgetState extends State<SwitchComponentWidget> {
             child: Padding(
               padding: EdgeInsetsDirectional.fromSTEB(
                   valueOrDefault<double>(
-                    widget!.variant == 'iOS 26+' ? 2.0 : 3.0,
+                    widget.variant == 'iOS 26+' ? 2.0 : 3.0,
                     0.0,
                   ),
                   valueOrDefault<double>(
-                    widget!.variant == 'iOS 26+' ? 2.0 : 3.0,
+                    widget.variant == 'iOS 26+' ? 2.0 : 3.0,
                     0.0,
                   ),
                   valueOrDefault<double>(
-                    widget!.variant == 'iOS 26+' ? 2.0 : 3.0,
+                    widget.variant == 'iOS 26+' ? 2.0 : 3.0,
                     0.0,
                   ),
                   valueOrDefault<double>(
-                    widget!.variant == 'iOS 26+' ? 2.0 : 3.0,
+                    widget.variant == 'iOS 26+' ? 2.0 : 3.0,
                     0.0,
                   )),
               child: Container(
                 child: Container(
-                  width: widget!.variant == 'iOS 26+' ? 39.0 : 26.0,
-                  height: widget!.variant == 'iOS 26+' ? 24.0 : 26.0,
+                  width: widget.variant == 'iOS 26+' ? 39.0 : 26.0,
+                  height: widget.variant == 'iOS 26+' ? 24.0 : 26.0,
                   decoration: BoxDecoration(
                     color: () {
-                      if (widget!.active) {
+                      if (widget.active) {
                         return FlutterFlowTheme.of(context).onPrimary;
-                      } else if (widget!.variant == 'iOS 26+') {
+                      } else if (widget.variant == 'iOS 26+') {
                         return FlutterFlowTheme.of(context).secondaryBackground;
                       } else {
                         return FlutterFlowTheme.of(context).primaryBackground;
@@ -146,19 +143,19 @@ class _SwitchComponentWidgetState extends State<SwitchComponentWidget> {
                     }(),
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(valueOrDefault<double>(
-                        widget!.variant == 'iOS 26+' ? 9999.0 : 13.0,
+                        widget.variant == 'iOS 26+' ? 9999.0 : 13.0,
                         0.0,
                       )),
                       topRight: Radius.circular(valueOrDefault<double>(
-                        widget!.variant == 'iOS 26+' ? 9999.0 : 13.0,
+                        widget.variant == 'iOS 26+' ? 9999.0 : 13.0,
                         0.0,
                       )),
                       bottomLeft: Radius.circular(valueOrDefault<double>(
-                        widget!.variant == 'iOS 26+' ? 9999.0 : 13.0,
+                        widget.variant == 'iOS 26+' ? 9999.0 : 13.0,
                         0.0,
                       )),
                       bottomRight: Radius.circular(valueOrDefault<double>(
-                        widget!.variant == 'iOS 26+' ? 9999.0 : 13.0,
+                        widget.variant == 'iOS 26+' ? 9999.0 : 13.0,
                         0.0,
                       )),
                     ),
@@ -168,12 +165,12 @@ class _SwitchComponentWidgetState extends State<SwitchComponentWidget> {
               ),
             ),
           ),
-        if (widget!.label ? true : false)
+        if (widget.label ? true : false)
           Padding(
             padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
             child: Container(
               child: Text(
-                widget!.label.toString(),
+                widget.label.toString(),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                       font: GoogleFonts.inter(
                         fontWeight:

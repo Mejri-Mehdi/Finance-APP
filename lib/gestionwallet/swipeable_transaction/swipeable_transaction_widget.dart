@@ -1,11 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/gestionwallet/transaction_item/transaction_item_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'swipeable_transaction_model.dart';
 export 'swipeable_transaction_model.dart';
 
@@ -117,20 +113,20 @@ class _SwipeableTransactionWidgetState
                   updateCallback: () => safeSetState(() {}),
                   child: TransactionItemWidget(
                     amount: valueOrDefault<String>(
-                      widget!.amount.toString(),
+                      widget.amount.toString(),
                       '-\$199.00',
                     ),
                     date: valueOrDefault<String>(
-                      widget!.date,
+                      widget.date,
                       '10:24 AM',
                     ),
-                    icon: widget!.icon,
+                    icon: widget.icon,
                     subtitle: valueOrDefault<String>(
-                      widget!.subtitle,
+                      widget.subtitle,
                       'Entertainment',
                     ),
                     title: valueOrDefault<String>(
-                      widget!.title,
+                      widget.title,
                       'Apple Store',
                     ),
                   ),

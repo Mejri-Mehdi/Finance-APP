@@ -1,11 +1,8 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/others/switch_component3/switch_component3_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'security_toggle_model.dart';
 export 'security_toggle_model.dart';
 
@@ -89,7 +86,7 @@ class _SecurityToggleWidgetState extends State<SecurityToggleWidget> {
                       ),
                     ),
                     alignment: AlignmentDirectional(0.0, 0.0),
-                    child: widget!.icon!,
+                    child: widget.icon!,
                   ),
                   Expanded(
                     flex: 1,
@@ -100,7 +97,7 @@ class _SecurityToggleWidgetState extends State<SecurityToggleWidget> {
                       children: [
                         Text(
                           valueOrDefault<String>(
-                            widget!.title,
+                            widget.title,
                             'Biometric Login',
                           ),
                           style: FlutterFlowTheme.of(context)
@@ -123,7 +120,7 @@ class _SecurityToggleWidgetState extends State<SecurityToggleWidget> {
                         ),
                         Text(
                           valueOrDefault<String>(
-                            widget!.subtitle,
+                            widget.subtitle,
                             'Face ID or Touch ID',
                           ),
                           style: FlutterFlowTheme.of(context)
@@ -159,7 +156,7 @@ class _SecurityToggleWidgetState extends State<SecurityToggleWidget> {
                       label: false,
                       variant: 'iOS',
                       active: valueOrDefault<bool>(
-                        widget!.active,
+                        widget.active,
                         true,
                       ),
                     ),

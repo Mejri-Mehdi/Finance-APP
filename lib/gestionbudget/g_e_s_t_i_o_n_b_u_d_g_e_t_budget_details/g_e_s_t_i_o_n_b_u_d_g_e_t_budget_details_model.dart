@@ -1,15 +1,9 @@
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/gestionbudget/button3/button3_widget.dart';
 import '/gestionbudget/transaction_item2/transaction_item2_widget.dart';
-import 'dart:ui';
 import 'g_e_s_t_i_o_n_b_u_d_g_e_t_budget_details_widget.dart'
     show GESTIONBUDGETBudgetDetailsWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class GESTIONBUDGETBudgetDetailsModel
     extends FlutterFlowModel<GESTIONBUDGETBudgetDetailsWidget> {

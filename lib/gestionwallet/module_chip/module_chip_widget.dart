@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'module_chip_model.dart';
 export 'module_chip_model.dart';
 
@@ -78,11 +75,11 @@ class _ModuleChipWidgetState extends State<ModuleChipWidget> {
                     shape: BoxShape.rectangle,
                   ),
                   alignment: AlignmentDirectional(0.0, 0.0),
-                  child: widget!.icon!,
+                  child: widget.icon!,
                 ),
                 Text(
                   valueOrDefault<String>(
-                    widget!.label,
+                    widget.label,
                     'Groups',
                   ),
                   style: FlutterFlowTheme.of(context).labelMedium.override(

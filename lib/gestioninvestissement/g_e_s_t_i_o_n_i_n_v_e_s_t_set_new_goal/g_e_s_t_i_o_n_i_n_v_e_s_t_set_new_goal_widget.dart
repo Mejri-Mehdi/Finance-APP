@@ -3,16 +3,13 @@ import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/gestioninvestissement/button5/button5_widget.dart';
 import '/gestioninvestissement/switch_component2/switch_component2_widget.dart';
 import '/gestioninvestissement/text_field5/text_field5_widget.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:material_palette/material_palette.dart';
-import 'package:provider/provider.dart';
 import 'g_e_s_t_i_o_n_i_n_v_e_s_t_set_new_goal_model.dart';
 export 'g_e_s_t_i_o_n_i_n_v_e_s_t_set_new_goal_model.dart';
 
@@ -746,7 +743,7 @@ class _GESTIONINVESTSetNewGoalWidgetState
                                                   85.0,
                                                   110.0,
                                                   150.0
-                                                ])!,
+                                                ]),
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primary,
@@ -759,7 +756,7 @@ class _GESTIONINVESTSetNewGoalWidgetState
                                               'Y4',
                                               'Y5',
                                               'Y6'
-                                            ])!,
+                                            ]),
                                             barWidth: 24.0,
                                             barBorderRadius:
                                                 BorderRadius.circular(4.0),

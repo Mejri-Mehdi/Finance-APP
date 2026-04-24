@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'balance_summary_card_model.dart';
 export 'balance_summary_card_model.dart';
 
@@ -77,10 +74,10 @@ class _BalanceSummaryCardWidgetState extends State<BalanceSummaryCardWidget> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  widget!.icon!,
+                  widget.icon!,
                   Text(
                     valueOrDefault<String>(
-                      widget!.label,
+                      widget.label,
                       'You owe',
                     ),
                     style: FlutterFlowTheme.of(context).labelSmall.override(
@@ -106,7 +103,7 @@ class _BalanceSummaryCardWidgetState extends State<BalanceSummaryCardWidget> {
               ),
               Text(
                 valueOrDefault<String>(
-                  widget!.amount,
+                  widget.amount,
                   '\$420.50',
                 ),
                 style: FlutterFlowTheme.of(context).titleLarge.override(
@@ -116,7 +113,7 @@ class _BalanceSummaryCardWidgetState extends State<BalanceSummaryCardWidget> {
                             FlutterFlowTheme.of(context).titleLarge.fontStyle,
                       ),
                       color: valueOrDefault<Color>(
-                        widget!.color,
+                        widget.color,
                         FlutterFlowTheme.of(context).error,
                       ),
                       letterSpacing: 0.0,

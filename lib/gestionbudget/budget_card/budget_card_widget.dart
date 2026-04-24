@@ -101,7 +101,7 @@ class _BudgetCardWidgetState extends State<BudgetCardWidget> {
                           shape: BoxShape.rectangle,
                         ),
                         alignment: AlignmentDirectional(0.0, 0.0),
-                        child: widget!.icon!,
+                        child: widget.icon!,
                       ),
                       Column(
                         mainAxisSize: MainAxisSize.min,
@@ -110,7 +110,7 @@ class _BudgetCardWidgetState extends State<BudgetCardWidget> {
                         children: [
                           Text(
                             valueOrDefault<String>(
-                              widget!.category,
+                              widget.category,
                               'Food & Dining',
                             ),
                             style: FlutterFlowTheme.of(context)
@@ -137,7 +137,7 @@ class _BudgetCardWidgetState extends State<BudgetCardWidget> {
                                 ),
                           ),
                           Text(
-                            '{${widget!.is_warning.toString()} ? \'Near limit\' : \'On track\'}',
+                            '{${widget.is_warning.toString()} ? \'Near limit\' : \'On track\'}',
                             style: FlutterFlowTheme.of(context)
                                 .labelSmall
                                 .override(
@@ -149,7 +149,7 @@ class _BudgetCardWidgetState extends State<BudgetCardWidget> {
                                         .labelSmall
                                         .fontStyle,
                                   ),
-                                  color: widget!.is_warning
+                                  color: widget.is_warning
                                       ? FlutterFlowTheme.of(context).error
                                       : FlutterFlowTheme.of(context).success,
                                   letterSpacing: 0.0,
@@ -184,7 +184,7 @@ class _BudgetCardWidgetState extends State<BudgetCardWidget> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        '\$${widget!.spent}',
+                        '\$${widget.spent}',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               font: GoogleFonts.inter(
                                 fontWeight: FontWeight.w600,
@@ -202,7 +202,7 @@ class _BudgetCardWidgetState extends State<BudgetCardWidget> {
                             ),
                       ),
                       Text(
-                        'of \$${widget!.limit}',
+                        'of \$${widget.limit}',
                         style: FlutterFlowTheme.of(context).bodySmall.override(
                               font: GoogleFonts.inter(
                                 fontWeight: FlutterFlowTheme.of(context)
@@ -227,13 +227,13 @@ class _BudgetCardWidgetState extends State<BudgetCardWidget> {
                   ),
                   LinearPercentIndicator(
                     percent: valueOrDefault<double>(
-                      widget!.progress_val,
+                      widget.progress_val,
                       0.84,
                     ),
                     lineHeight: 8.0,
                     animation: true,
                     animateFromLastPercent: true,
-                    progressColor: widget!.is_warning
+                    progressColor: widget.is_warning
                         ? FlutterFlowTheme.of(context).error
                         : FlutterFlowTheme.of(context).primary,
                     backgroundColor: FlutterFlowTheme.of(context).alternate,

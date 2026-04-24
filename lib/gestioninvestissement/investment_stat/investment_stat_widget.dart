@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'investment_stat_model.dart';
 export 'investment_stat_model.dart';
 
@@ -56,7 +53,7 @@ class _InvestmentStatWidgetState extends State<InvestmentStatWidget> {
       children: [
         Text(
           valueOrDefault<String>(
-            widget!.label,
+            widget.label,
             'Monthly Gain',
           ),
           style: FlutterFlowTheme.of(context).labelSmall.override(
@@ -74,7 +71,7 @@ class _InvestmentStatWidgetState extends State<InvestmentStatWidget> {
         ),
         Text(
           valueOrDefault<String>(
-            widget!.value,
+            widget.value,
             '+\$1,240.00',
           ),
           style: FlutterFlowTheme.of(context).titleMedium.override(
