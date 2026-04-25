@@ -76,8 +76,8 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                             color: FlutterFlowTheme.of(context).primaryText,
                             size: 24.0,
                           ),
-                          onPressed: () {
-                            print('IconButton pressed ...');
+                          onPressed: () async {
+                            context.safePop();
                           },
                         ),
                         Text(

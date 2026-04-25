@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/gestion_invest/goal_card/goal_card_widget.dart';
 import '/gestion_invest/investment_stat/investment_stat_widget.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'b_a_s_e_investments_savings_goals_model.dart';
@@ -52,8 +53,8 @@ class _BASEInvestmentsSavingsGoalsWidgetState
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         floatingActionButton: FloatingActionButton.extended(
-          onPressed: () {
-            print('FAB pressed ...');
+          onPressed: () async {
+            context.pushNamed(GESTIONINVESTSetNewGoalWidget.routeName);
           },
           backgroundColor: FlutterFlowTheme.of(context).primary,
           icon: Icon(
@@ -88,85 +89,126 @@ class _BASEInvestmentsSavingsGoalsWidgetState
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
-                child: Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 16.0),
-                  child: Container(
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Investments',
-                              style: FlutterFlowTheme.of(context)
-                                  .headlineMedium
-                                  .override(
-                                    font: GoogleFonts.inter(
-                                      fontWeight: FontWeight.w800,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .headlineMedium
-                                          .fontStyle,
-                                    ),
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w800,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .headlineMedium
-                                        .fontStyle,
-                                    lineHeight: 1.25,
-                                  ),
-                            ),
-                            Text(
-                              'Growing your wealth',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodySmall
-                                  .override(
-                                    font: GoogleFonts.inter(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .fontWeight,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .fontStyle,
-                                    ),
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryText,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .bodySmall
-                                        .fontWeight,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .bodySmall
-                                        .fontStyle,
-                                    lineHeight: 1.38,
-                                  ),
-                            ),
-                          ],
-                        ),
-                        FlutterFlowIconButton(
-                          borderRadius: 9999.0,
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Align(
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                        child: FlutterFlowIconButton(
+                          borderRadius: 12.0,
                           buttonSize: 40.0,
                           fillColor:
                               FlutterFlowTheme.of(context).secondaryBackground,
                           icon: Icon(
-                            Icons.notifications_rounded,
+                            Icons.arrow_back_rounded,
                             color: FlutterFlowTheme.of(context).primaryText,
                             size: 24.0,
                           ),
-                          onPressed: () {
-                            print('IconButton pressed ...');
+                          onPressed: () async {
+                            context.safePop();
                           },
                         ),
-                      ],
+                      ),
                     ),
-                  ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(
+                          24.0, 24.0, 24.0, 16.0),
+                      child: Container(
+                        decoration: BoxDecoration(),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  38.0, 0.0, 0.0, 0.0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Investments',
+                                    style: FlutterFlowTheme.of(context)
+                                        .headlineMedium
+                                        .override(
+                                          font: GoogleFonts.inter(
+                                            fontWeight: FontWeight.w800,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .headlineMedium
+                                                    .fontStyle,
+                                          ),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
+                                          letterSpacing: 0.0,
+                                          fontWeight: FontWeight.w800,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .headlineMedium
+                                                  .fontStyle,
+                                          lineHeight: 1.25,
+                                        ),
+                                  ),
+                                  Text(
+                                    'Growing your wealth',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodySmall
+                                        .override(
+                                          font: GoogleFonts.inter(
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodySmall
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodySmall
+                                                    .fontStyle,
+                                          ),
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryText,
+                                          letterSpacing: 0.0,
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodySmall
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodySmall
+                                                  .fontStyle,
+                                          lineHeight: 1.38,
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                      child: FlutterFlowIconButton(
+                        borderRadius: 9999.0,
+                        buttonSize: 40.0,
+                        fillColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
+                        icon: Icon(
+                          Icons.notifications_rounded,
+                          color: FlutterFlowTheme.of(context).primaryText,
+                          size: 24.0,
+                        ),
+                        onPressed: () {
+                          print('IconButton pressed ...');
+                        },
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Padding(

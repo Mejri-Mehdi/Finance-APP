@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_charts.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/gestion_wallet/module_chip/module_chip_widget.dart';
@@ -92,6 +93,7 @@ class _BASEGlobalWalletDashboardWidgetState
                   padding:
                       EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 16.0),
                   child: Container(
+                    decoration: BoxDecoration(),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -149,37 +151,66 @@ class _BASEGlobalWalletDashboardWidgetState
                             ),
                           ],
                         ),
-                        Container(
-                          width: 44.0,
-                          height: 44.0,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context).primary,
-                            shape: BoxShape.circle,
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              130.0, 0.0, 0.0, 0.0),
+                          child: FlutterFlowIconButton(
+                            borderRadius: 8.0,
+                            buttonSize: 40.0,
+                            fillColor: Color(0xFF4D6DFF),
+                            icon: Icon(
+                              Icons.notifications_none,
+                              color: Colors.white,
+                              size: 24.0,
+                            ),
+                            onPressed: () async {
+                              context.pushNamed(
+                                  BASENotificationsCenterWidget.routeName);
+                            },
                           ),
-                          alignment: AlignmentDirectional(0.0, 0.0),
-                          child: Text(
-                            'AR',
-                            textAlign: TextAlign.center,
-                            maxLines: 1,
-                            style: FlutterFlowTheme.of(context)
-                                .labelMedium
-                                .override(
-                                  font: GoogleFonts.inter(
+                        ),
+                        InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            context
+                                .pushNamed(BASEGeneralSettingsWidget.routeName);
+                          },
+                          child: Container(
+                            width: 44.0,
+                            height: 44.0,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context).primary,
+                              shape: BoxShape.circle,
+                            ),
+                            alignment: AlignmentDirectional(0.0, 0.0),
+                            child: Text(
+                              'AR',
+                              textAlign: TextAlign.center,
+                              maxLines: 1,
+                              style: FlutterFlowTheme.of(context)
+                                  .labelMedium
+                                  .override(
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FontWeight.w600,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
+                                    color:
+                                        FlutterFlowTheme.of(context).onPrimary,
+                                    fontSize: 16.72,
+                                    letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .fontStyle,
+                                    lineHeight: 1.38,
                                   ),
-                                  color: FlutterFlowTheme.of(context).onPrimary,
-                                  fontSize: 16.72,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w600,
-                                  fontStyle: FlutterFlowTheme.of(context)
-                                      .labelMedium
-                                      .fontStyle,
-                                  lineHeight: 1.38,
-                                ),
-                            overflow: TextOverflow.clip,
+                              overflow: TextOverflow.clip,
+                            ),
                           ),
                         ),
                       ],

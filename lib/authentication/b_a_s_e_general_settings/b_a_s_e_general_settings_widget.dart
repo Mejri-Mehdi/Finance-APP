@@ -86,8 +86,8 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                                       FlutterFlowTheme.of(context).primaryText,
                                   size: 24.0,
                                 ),
-                                onPressed: () {
-                                  print('IconButton pressed ...');
+                                onPressed: () async {
+                                  context.safePop();
                                 },
                               ),
                               Text(
@@ -561,7 +561,7 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                                           .primaryText,
                                       size: 20.0,
                                     ),
-                                    icon_bg:
+                                    iconbg:
                                         FlutterFlowTheme.of(context).accent10,
                                     subtitle: 'English (US)',
                                     title: 'Language',
@@ -609,7 +609,7 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                                           .primaryText,
                                       size: 20.0,
                                     ),
-                                    icon_bg:
+                                    iconbg:
                                         FlutterFlowTheme.of(context).primary10,
                                     subtitle: '24/7 Customer service',
                                     title: 'Help & Support',
@@ -632,7 +632,7 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                                           .primaryText,
                                       size: 20.0,
                                     ),
-                                    icon_bg: FlutterFlowTheme.of(context)
+                                    iconbg: FlutterFlowTheme.of(context)
                                         .secondary10,
                                     subtitle: 'Legal & Privacy policy',
                                     title: 'Terms of Service',
@@ -655,7 +655,7 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                                           .primaryText,
                                       size: 20.0,
                                     ),
-                                    icon_bg:
+                                    iconbg:
                                         FlutterFlowTheme.of(context).accent10,
                                     subtitle: 'FaceID & Two-factor auth',
                                     title: 'Security Center',

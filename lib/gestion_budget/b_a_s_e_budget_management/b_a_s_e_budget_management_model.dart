@@ -1,5 +1,6 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/gestion_budget/budget_card/budget_card_widget.dart';
+import '/index.dart';
 import 'b_a_s_e_budget_management_widget.dart' show BASEBudgetManagementWidget;
 import 'package:flutter/material.dart';
 

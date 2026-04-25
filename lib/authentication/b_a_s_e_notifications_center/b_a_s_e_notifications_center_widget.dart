@@ -69,85 +69,113 @@ class _BASENotificationsCenterWidgetState
                     Padding(
                       padding: EdgeInsets.all(24.0),
                       child: Container(
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                        child: Stack(
                           children: [
-                            Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                            Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Activity',
-                                  style: FlutterFlowTheme.of(context)
-                                      .headlineMedium
-                                      .override(
-                                        font: GoogleFonts.inter(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .headlineMedium
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .headlineMedium
-                                                  .fontStyle,
-                                        ),
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryText,
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .headlineMedium
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .headlineMedium
-                                            .fontStyle,
-                                        lineHeight: 1.25,
-                                      ),
+                                Align(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  child: FlutterFlowIconButton(
+                                    borderRadius: 12.0,
+                                    buttonSize: 40.0,
+                                    fillColor: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                    icon: Icon(
+                                      Icons.arrow_back_rounded,
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
+                                      size: 24.0,
+                                    ),
+                                    onPressed: () async {
+                                      context.safePop();
+                                    },
+                                  ),
                                 ),
-                                Text(
-                                  'You have 3 new alerts',
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        font: GoogleFonts.inter(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontStyle,
-                                        ),
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryText,
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .fontStyle,
-                                        lineHeight: 1.47,
-                                      ),
+                                Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      'Activity',
+                                      style: FlutterFlowTheme.of(context)
+                                          .headlineMedium
+                                          .override(
+                                            font: GoogleFonts.inter(
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .headlineMedium
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .headlineMedium
+                                                      .fontStyle,
+                                            ),
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                            letterSpacing: 0.0,
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .headlineMedium
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .headlineMedium
+                                                    .fontStyle,
+                                            lineHeight: 1.25,
+                                          ),
+                                    ),
+                                    Text(
+                                      'You have 3 new alerts',
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            font: GoogleFonts.inter(
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
+                                            ),
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryText,
+                                            letterSpacing: 0.0,
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontStyle,
+                                            lineHeight: 1.47,
+                                          ),
+                                    ),
+                                  ].divide(SizedBox(height: 4.0)),
                                 ),
-                              ].divide(SizedBox(height: 4.0)),
-                            ),
-                            FlutterFlowIconButton(
-                              borderRadius: 12.0,
-                              buttonSize: 40.0,
-                              fillColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              icon: Icon(
-                                Icons.settings_rounded,
-                                color: FlutterFlowTheme.of(context).primaryText,
-                                size: 24.0,
-                              ),
-                              onPressed: () {
-                                print('IconButton pressed ...');
-                              },
+                                FlutterFlowIconButton(
+                                  borderRadius: 12.0,
+                                  buttonSize: 40.0,
+                                  fillColor: FlutterFlowTheme.of(context)
+                                      .secondaryBackground,
+                                  icon: Icon(
+                                    Icons.settings_rounded,
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryText,
+                                    size: 24.0,
+                                  ),
+                                  onPressed: () {
+                                    print('IconButton pressed ...');
+                                  },
+                                ),
+                              ],
                             ),
                           ],
                         ),

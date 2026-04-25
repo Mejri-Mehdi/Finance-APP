@@ -1,6 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/gestion_group/balance_summary_card/balance_summary_card_widget.dart';
 import '/gestion_group/group_card/group_card_widget.dart';
+import '/gestion_wallet/button/button_widget.dart';
+import '/index.dart';
 import 'b_a_s_e_split_expenses_groups_widget.dart'
     show BASESplitExpensesGroupsWidget;
 import 'package:flutter/material.dart';
@@ -23,6 +25,8 @@ class BASESplitExpensesGroupsModel
   late GroupCardModel groupCardModel4;
   // Model for GroupCard.
   late GroupCardModel groupCardModel5;
+  // Model for Button.
+  late ButtonModel buttonModel;
 
   @override
   void initState(BuildContext context) {
@@ -35,6 +39,7 @@ class BASESplitExpensesGroupsModel
     groupCardModel3 = createModel(context, () => GroupCardModel());
     groupCardModel4 = createModel(context, () => GroupCardModel());
     groupCardModel5 = createModel(context, () => GroupCardModel());
+    buttonModel = createModel(context, () => ButtonModel());
   }
 
   @override
@@ -46,5 +51,6 @@ class BASESplitExpensesGroupsModel
     groupCardModel3.dispose();
     groupCardModel4.dispose();
     groupCardModel5.dispose();
+    buttonModel.dispose();
   }
 }

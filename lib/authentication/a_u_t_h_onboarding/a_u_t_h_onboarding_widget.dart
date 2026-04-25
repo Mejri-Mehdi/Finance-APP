@@ -3,6 +3,7 @@ import '/authentication/onboarding_slide/onboarding_slide_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:ui';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -464,19 +465,28 @@ class _AUTHOnboardingWidgetState extends State<AUTHOnboardingWidget> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              wrapWithModel(
-                                model: _model.buttonModel1,
-                                updateCallback: () => safeSetState(() {}),
-                                child: Button8Widget(
-                                  content: 'Get Started',
-                                  icon_present: false,
-                                  icon_end_present: false,
-                                  variant: 'primary',
-                                  size: 'large',
-                                  full_width: false,
-                                  loading: false,
-                                  disabled: false,
-                                  expanded: true,
+                              InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  context.pushNamed(AUTHLoginWidget.routeName);
+                                },
+                                child: wrapWithModel(
+                                  model: _model.buttonModel1,
+                                  updateCallback: () => safeSetState(() {}),
+                                  child: Button8Widget(
+                                    content: 'Get Started',
+                                    icon_present: false,
+                                    icon_end_present: false,
+                                    variant: 'primary',
+                                    size: 'large',
+                                    full_width: false,
+                                    loading: false,
+                                    disabled: false,
+                                    expanded: true,
+                                  ),
                                 ),
                               ),
                               wrapWithModel(

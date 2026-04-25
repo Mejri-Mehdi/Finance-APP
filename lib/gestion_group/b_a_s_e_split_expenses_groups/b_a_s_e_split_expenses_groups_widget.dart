@@ -3,6 +3,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/gestion_group/balance_summary_card/balance_summary_card_widget.dart';
 import '/gestion_group/group_card/group_card_widget.dart';
+import '/gestion_wallet/button/button_widget.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'b_a_s_e_split_expenses_groups_model.dart';
@@ -87,87 +89,132 @@ class _BASESplitExpensesGroupsWidgetState
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
-                child: Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 16.0),
-                  child: Container(
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Split & Groups',
-                              style: FlutterFlowTheme.of(context)
-                                  .titleLarge
-                                  .override(
-                                    font: GoogleFonts.inter(
-                                      fontWeight: FontWeight.w800,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .titleLarge
-                                          .fontStyle,
-                                    ),
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w800,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .titleLarge
-                                        .fontStyle,
-                                    lineHeight: 1.27,
-                                  ),
-                            ),
-                            Text(
-                              'Manage shared expenses',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodySmall
-                                  .override(
-                                    font: GoogleFonts.inter(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .fontWeight,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .fontStyle,
-                                    ),
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryText,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .bodySmall
-                                        .fontWeight,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .bodySmall
-                                        .fontStyle,
-                                    lineHeight: 1.38,
-                                  ),
-                            ),
-                          ],
-                        ),
-                        FlutterFlowIconButton(
-                          borderColor: FlutterFlowTheme.of(context).alternate,
-                          borderRadius: 9999.0,
-                          borderWidth: 1.0,
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Align(
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                        child: FlutterFlowIconButton(
+                          borderRadius: 12.0,
                           buttonSize: 40.0,
                           fillColor:
                               FlutterFlowTheme.of(context).secondaryBackground,
                           icon: Icon(
-                            Icons.search_rounded,
+                            Icons.arrow_back_rounded,
                             color: FlutterFlowTheme.of(context).primaryText,
                             size: 24.0,
                           ),
-                          onPressed: () {
-                            print('IconButton pressed ...');
+                          onPressed: () async {
+                            context.safePop();
                           },
                         ),
-                      ],
+                      ),
                     ),
-                  ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(
+                          24.0, 24.0, 24.0, 16.0),
+                      child: Container(
+                        decoration: BoxDecoration(),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Column(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      36.0, 0.0, 0.0, 0.0),
+                                  child: Text(
+                                    'Split & Groups',
+                                    style: FlutterFlowTheme.of(context)
+                                        .titleLarge
+                                        .override(
+                                          font: GoogleFonts.inter(
+                                            fontWeight: FontWeight.w800,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleLarge
+                                                    .fontStyle,
+                                          ),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
+                                          letterSpacing: 0.0,
+                                          fontWeight: FontWeight.w800,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleLarge
+                                                  .fontStyle,
+                                          lineHeight: 1.27,
+                                        ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      36.0, 0.0, 0.0, 0.0),
+                                  child: Text(
+                                    'Manage shared expenses',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodySmall
+                                        .override(
+                                          font: GoogleFonts.inter(
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodySmall
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodySmall
+                                                    .fontStyle,
+                                          ),
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryText,
+                                          letterSpacing: 0.0,
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodySmall
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodySmall
+                                                  .fontStyle,
+                                          lineHeight: 1.38,
+                                        ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(30.0, 0.0, 0.0, 0.0),
+                      child: FlutterFlowIconButton(
+                        borderColor: FlutterFlowTheme.of(context).alternate,
+                        borderRadius: 9999.0,
+                        borderWidth: 1.0,
+                        buttonSize: 40.0,
+                        fillColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
+                        icon: Icon(
+                          Icons.search_rounded,
+                          color: FlutterFlowTheme.of(context).primaryText,
+                          size: 24.0,
+                        ),
+                        onPressed: () {
+                          print('IconButton pressed ...');
+                        },
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Padding(
@@ -549,6 +596,36 @@ class _BASESplitExpensesGroupsWidgetState
                         name: 'Road Trip',
                         status_text: 'You\'re owed',
                         is_owed: true,
+                      ),
+                    ),
+                    InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed(
+                            GESTIONGROUPESCreateGroupWidget.routeName);
+                      },
+                      child: wrapWithModel(
+                        model: _model.buttonModel,
+                        updateCallback: () => safeSetState(() {}),
+                        child: ButtonWidget(
+                          content: 'Save Transaction',
+                          icon: Icon(
+                            Icons.check_circle_rounded,
+                            color: FlutterFlowTheme.of(context).onPrimary,
+                            size: 16.0,
+                          ),
+                          icon_present: true,
+                          icon_end_present: false,
+                          variant: 'primary',
+                          size: 'large',
+                          full_width: true,
+                          loading: false,
+                          disabled: false,
+                          expanded: true,
+                        ),
                       ),
                     ),
                   ],

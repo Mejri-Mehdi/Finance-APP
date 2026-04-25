@@ -78,14 +78,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) => appStateNotifier.loggedIn
           ? BASEGlobalWalletDashboardWidget()
-          : AUTHLoginWidget(),
+          : AUTHOnboardingWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
               ? BASEGlobalWalletDashboardWidget()
-              : AUTHLoginWidget(),
+              : AUTHOnboardingWidget(),
         ),
         FFRoute(
           name: BASEGlobalWalletDashboardWidget.routeName,
@@ -390,7 +390,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/aUTHLogin';
+            return '/aUTHOnboarding';
           }
           return null;
         },

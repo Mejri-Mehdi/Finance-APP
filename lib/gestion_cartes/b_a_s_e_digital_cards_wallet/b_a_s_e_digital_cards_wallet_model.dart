@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/gestion_cartes/button5/button5_widget.dart';
 import '/gestion_cartes/card_transaction/card_transaction_widget.dart';
+import '/gestion_wallet/button/button_widget.dart';
 import '/index.dart';
 import 'b_a_s_e_digital_cards_wallet_widget.dart'
     show BASEDigitalCardsWalletWidget;
@@ -20,6 +21,8 @@ class BASEDigitalCardsWalletModel
   late CardTransactionModel cardTransactionModel3;
   // Model for CardTransaction.
   late CardTransactionModel cardTransactionModel4;
+  // Model for Button.
+  late ButtonModel buttonModel;
 
   @override
   void initState(BuildContext context) {
@@ -28,6 +31,7 @@ class BASEDigitalCardsWalletModel
     cardTransactionModel2 = createModel(context, () => CardTransactionModel());
     cardTransactionModel3 = createModel(context, () => CardTransactionModel());
     cardTransactionModel4 = createModel(context, () => CardTransactionModel());
+    buttonModel = createModel(context, () => ButtonModel());
   }
 
   @override
@@ -37,5 +41,6 @@ class BASEDigitalCardsWalletModel
     cardTransactionModel2.dispose();
     cardTransactionModel3.dispose();
     cardTransactionModel4.dispose();
+    buttonModel.dispose();
   }
 }

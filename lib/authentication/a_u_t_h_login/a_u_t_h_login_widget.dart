@@ -208,12 +208,37 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                                   Align(
                                     alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Container(
-                                      child: Text(
-                                        'Forgot Password?',
-                                        style: FlutterFlowTheme.of(context)
-                                            .labelLarge
-                                            .override(
-                                              font: GoogleFonts.inter(
+                                      child: InkWell(
+                                        splashColor: Colors.transparent,
+                                        focusColor: Colors.transparent,
+                                        hoverColor: Colors.transparent,
+                                        highlightColor: Colors.transparent,
+                                        onTap: () async {
+                                          context.pushNamed(
+                                              AUTHForgotPasswordWidget
+                                                  .routeName);
+                                        },
+                                        child: Text(
+                                          'Forgot Password?',
+                                          style: FlutterFlowTheme.of(context)
+                                              .labelLarge
+                                              .override(
+                                                font: GoogleFonts.inter(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelLarge
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelLarge
+                                                          .fontStyle,
+                                                ),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                letterSpacing: 0.0,
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .labelLarge
@@ -222,21 +247,9 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .labelLarge
                                                         .fontStyle,
+                                                lineHeight: 1.33,
                                               ),
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primary,
-                                              letterSpacing: 0.0,
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelLarge
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelLarge
-                                                      .fontStyle,
-                                              lineHeight: 1.33,
-                                            ),
+                                        ),
                                       ),
                                     ),
                                   ),

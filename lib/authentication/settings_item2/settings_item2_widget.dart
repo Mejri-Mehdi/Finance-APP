@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'settings_item2_model.dart';
 export 'settings_item2_model.dart';
 
@@ -12,15 +9,14 @@ class SettingsItem2Widget extends StatefulWidget {
   const SettingsItem2Widget({
     super.key,
     this.icon,
-    Color? icon_bg,
+    this.iconbg,
     String? subtitle,
     String? title,
-  })  : this.icon_bg = icon_bg ?? FlutterFlowTheme.of(context).accent10,
-        this.subtitle = subtitle ?? 'English (US)',
+  })  : this.subtitle = subtitle ?? 'English (US)',
         this.title = title ?? 'Language';
 
   final Widget? icon;
-  final Color icon_bg;
+  final Color? iconbg;
   final String subtitle;
   final String title;
 
@@ -80,7 +76,7 @@ class _SettingsItem2WidgetState extends State<SettingsItem2Widget> {
                     height: 40.0,
                     decoration: BoxDecoration(
                       color: valueOrDefault<Color>(
-                        widget.icon_bg,
+                        widget.iconbg,
                         FlutterFlowTheme.of(context).accent10,
                       ),
                       borderRadius: BorderRadius.circular(12.0),

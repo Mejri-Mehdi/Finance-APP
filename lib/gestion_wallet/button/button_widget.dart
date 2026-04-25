@@ -213,10 +213,7 @@ class _ButtonWidgetState extends State<ButtonWidget> {
                     ))
                       widget.icon!,
                     Text(
-                      valueOrDefault<String>(
-                        widget.content,
-                        'Save Transaction',
-                      ),
+                      'Create Group',
                       maxLines: 1,
                       style: FlutterFlowTheme.of(context).labelMedium.override(
                             font: GoogleFonts.inter(

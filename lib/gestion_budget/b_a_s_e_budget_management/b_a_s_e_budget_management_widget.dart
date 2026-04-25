@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/gestion_budget/budget_card/budget_card_widget.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'b_a_s_e_budget_management_model.dart';
@@ -57,8 +58,8 @@ class _BASEBudgetManagementWidgetState
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         floatingActionButton: FloatingActionButton.extended(
-          onPressed: () {
-            print('FAB pressed ...');
+          onPressed: () async {
+            context.pushNamed(GESTIONBUDGETSetNewBudgetWidget.routeName);
           },
           backgroundColor: FlutterFlowTheme.of(context).primary,
           icon: Icon(
@@ -112,8 +113,8 @@ class _BASEBudgetManagementWidgetState
                             color: FlutterFlowTheme.of(context).primaryText,
                             size: 24.0,
                           ),
-                          onPressed: () {
-                            print('IconButton pressed ...');
+                          onPressed: () async {
+                            context.safePop();
                           },
                         ),
                         Text(

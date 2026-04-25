@@ -1,6 +1,7 @@
 import '/authentication/button8/button8_widget.dart';
 import '/authentication/onboarding_slide/onboarding_slide_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/index.dart';
 import 'a_u_t_h_onboarding_widget.dart' show AUTHOnboardingWidget;
 import 'package:flutter/material.dart';
 
