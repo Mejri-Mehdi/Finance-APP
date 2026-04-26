@@ -1131,20 +1131,17 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                       ),
                                                       color: (containerCardsRecord
                                                                       ?.status ==
-                                                                  'Active'
+                                                                  'true'
                                                               ? (random_data
                                                                       .randomColor() ==
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
+                                                                  FlutterFlowTheme
+                                                                          .of(
+                                                                              context)
                                                                       .success)
-                                                              : (random_data
-                                                                      .randomColor() ==
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .error))
+                                                              : false)
                                                           ? FlutterFlowTheme.of(
                                                                   context)
-                                                              .error
+                                                              .success
                                                           : FlutterFlowTheme.of(
                                                                   context)
                                                               .error,
