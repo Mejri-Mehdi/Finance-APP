@@ -54,3 +54,5 @@ export '/authentication/a_u_t_h_onboarding2/a_u_t_h_onboarding2_widget.dart'
     show AUTHOnboarding2Widget;
 export '/gestion_cartes/recharger_carte/recharger_carte_widget.dart'
     show RechargerCarteWidget;
+export '/gestion_cartes/ajouterune_transaction/ajouterune_transaction_widget.dart'
+    show AjouteruneTransactionWidget;

@@ -179,8 +179,8 @@ class _BASEGlobalWalletDashboardWidgetState
                                 .pushNamed(BASEGeneralSettingsWidget.routeName);
                           },
                           child: Container(
-                            width: 44.0,
-                            height: 44.0,
+                            width: 50.0,
+                            height: 50.0,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context).primary,
                               shape: BoxShape.circle,

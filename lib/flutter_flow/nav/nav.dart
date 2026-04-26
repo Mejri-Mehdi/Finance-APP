@@ -236,7 +236,20 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: RechargerCarteWidget.routeName,
           path: RechargerCarteWidget.routePath,
-          builder: (context, params) => RechargerCarteWidget(),
+          asyncParams: {
+            'cardToTopUp': getDoc(['cards'], CardsRecord.fromSnapshot),
+          },
+          builder: (context, params) => RechargerCarteWidget(
+            cardToTopUp: params.getParam(
+              'cardToTopUp',
+              ParamType.Document,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: AjouteruneTransactionWidget.routeName,
+          path: AjouteruneTransactionWidget.routePath,
+          builder: (context, params) => AjouteruneTransactionWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
