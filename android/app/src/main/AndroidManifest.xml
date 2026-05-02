@@ -2,7 +2,7 @@
     package="com.mycompany.projetmobileaiva"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
 
     <application
         android:label="PROJET MOBILE AIVA"

@@ -7,6 +7,14 @@ import 'package:flutter/material.dart';
 
 class AjouteruneCarteFormCreateaNewCardModel
     extends FlutterFlowModel<AjouteruneCarteFormCreateaNewCardWidget> {
+  ///  Local state fields for this page.
+
+  String? tempnumber;
+
+  String? tempcvv;
+
+  String? tempdate;
+
   ///  State fields for stateful widgets in this page.
 
   final formKey = GlobalKey<FormState>();
@@ -43,10 +51,10 @@ class AjouteruneCarteFormCreateaNewCardModel
     if (val.length < 12) {
       return 'Please Enter a Valid Card Number';
     }
-    if (val.length > 12) {
+    if (val.length > 15) {
       return 'Please Enter a Valid Card Number';
     }
-    if (!RegExp('^\\d{12}\$').hasMatch(val)) {
+    if (!RegExp('^\\d{4}\\s?\\d{4}\\s?\\d{4}\$').hasMatch(val)) {
       return 'Invalid Number';
     }
     return null;

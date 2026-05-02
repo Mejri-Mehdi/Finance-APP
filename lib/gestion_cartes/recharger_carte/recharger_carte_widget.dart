@@ -1,3 +1,4 @@
+import '/backend/api_requests/api_calls.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -605,10 +606,39 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                   FlutterFlowTheme.of(context).secondary,
                             ),
                           );
+                          _model.apiResult = await InitPaymentCall.call(
+                            amount: double.tryParse(_model.textController.text),
+                          );
 
-                          context.pushNamed(
-                              TheMainMesCartesDashboardViewCardsTransactionsWidget
-                                  .routeName);
+                          if ((_model.apiResult?.succeeded ?? true)) {
+                            await launchURL(getJsonField(
+                              (_model.apiResult?.jsonBody ?? ''),
+                              r'''$.payUrl''',
+                            ).toString());
+
+                            context.pushNamed(
+                                TheMainMesCartesDashboardViewCardsTransactionsWidget
+                                    .routeName);
+                          } else {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  '\"Mode Test: Clé API invalide. Simulation de redirection...\"',
+                                  style: TextStyle(
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryText,
+                                  ),
+                                ),
+                                duration: Duration(milliseconds: 4000),
+                                backgroundColor:
+                                    FlutterFlowTheme.of(context).warning,
+                              ),
+                            );
+                            await launchURL('https://konnect.network');
+                            context.safePop();
+                          }
+
+                          safeSetState(() {});
                         },
                         text: 'Confirmer le rechargement',
                         icon: Icon(

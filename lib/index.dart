@@ -56,3 +56,5 @@ export '/gestion_cartes/recharger_carte/recharger_carte_widget.dart'
     show RechargerCarteWidget;
 export '/gestion_cartes/ajouterune_transaction/ajouterune_transaction_widget.dart'
     show AjouteruneTransactionWidget;
+export '/gestion_cartes/analytiques_transactions/analytiques_transactions_widget.dart'
+    show AnalytiquesTransactionsWidget;

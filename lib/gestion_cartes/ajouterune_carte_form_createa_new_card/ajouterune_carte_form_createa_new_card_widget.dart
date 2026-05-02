@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
+import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -56,13 +57,13 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode1 ??= FocusNode();
 
-    _model.textController2 ??= TextEditingController();
+    _model.textController2 ??= TextEditingController(text: _model.tempnumber);
     _model.textFieldFocusNode2 ??= FocusNode();
 
-    _model.textController3 ??= TextEditingController();
+    _model.textController3 ??= TextEditingController(text: _model.tempdate);
     _model.textFieldFocusNode3 ??= FocusNode();
 
-    _model.textController4 ??= TextEditingController();
+    _model.textController4 ??= TextEditingController(text: _model.tempcvv);
     _model.textFieldFocusNode4 ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
@@ -106,7 +107,8 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
             ),
           ),
           title: Text(
-            'Ajouter une Carte',
+            'Ajouter une Carte\n(Real Or Generated)',
+            textAlign: TextAlign.center,
             style: FlutterFlowTheme.of(context).titleLarge.override(
                   font: GoogleFonts.inter(
                     fontWeight: FontWeight.bold,
@@ -127,6 +129,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
         body: SafeArea(
           top: true,
           child: SingleChildScrollView(
+            primary: false,
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -1186,125 +1189,231 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            24.0, 20.0, 24.0, 0.0),
-                        child: Container(
-                          width: double.infinity,
-                          height: 58.0,
-                          decoration: BoxDecoration(
-                            boxShadow: [
-                              BoxShadow(
-                                blurRadius: 20.0,
-                                color: Color(0x66B06AB3),
-                                offset: Offset(
-                                  0.0,
-                                  8.0,
+                      Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                24.0, 20.0, 24.0, 0.0),
+                            child: Container(
+                              width: double.infinity,
+                              height: 58.0,
+                              decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    blurRadius: 20.0,
+                                    color: Color(0x66B06AB3),
+                                    offset: Offset(
+                                      0.0,
+                                      8.0,
+                                    ),
+                                  )
+                                ],
+                                gradient: LinearGradient(
+                                  colors: [
+                                    Color(0xFF6C3DE1),
+                                    Color(0xFFB06AB3)
+                                  ],
+                                  stops: [0.0, 1.0],
+                                  begin: AlignmentDirectional(1.0, -1.0),
+                                  end: AlignmentDirectional(-1.0, 1.0),
                                 ),
-                              )
-                            ],
-                            gradient: LinearGradient(
-                              colors: [Color(0xFF6C3DE1), Color(0xFFB06AB3)],
-                              stops: [0.0, 1.0],
-                              begin: AlignmentDirectional(1.0, -1.0),
-                              end: AlignmentDirectional(-1.0, 1.0),
-                            ),
-                            borderRadius: BorderRadius.circular(30.0),
-                          ),
-                          child: FFButtonWidget(
-                            onPressed: () async {
-                              if (_model.formKey.currentState == null ||
-                                  !_model.formKey.currentState!.validate()) {
-                                return;
-                              }
-                              if (_model.dropDownValue == null) {
-                                return;
-                              }
-
-                              await CardsRecord.collection
-                                  .doc()
-                                  .set(createCardsRecordData(
-                                    cardNumber: _model.textController2.text,
-                                    cardHolderName: _model.textController1.text,
-                                    expiryDate: _model.textController3.text,
-                                    cvv: _model.textController4.text,
-                                    cardNetwork: _model.dropDownValue,
-                                    userRef: currentUserReference,
-                                  ));
-                              if (true ? true : false) {
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  SnackBar(
-                                    content: Text(
-                                      'Carte ajoutée avec succès !',
-                                      style: TextStyle(
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryText,
+                                borderRadius: BorderRadius.circular(30.0),
+                              ),
+                              child: FFButtonWidget(
+                                onPressed: () async {
+                                  await Future.wait([
+                                    Future(() async {
+                                      safeSetState(() {
+                                        _model.textController2?.text =
+                                            functions.generateCardNumber()!;
+                                      });
+                                    }),
+                                    Future(() async {
+                                      safeSetState(() {
+                                        _model.textController3?.text =
+                                            functions.generateExpiryDate()!;
+                                      });
+                                    }),
+                                    Future(() async {
+                                      safeSetState(() {
+                                        _model.textController4?.text =
+                                            functions.generateCVV()!;
+                                      });
+                                    }),
+                                  ]);
+                                },
+                                text: 'Generate Card',
+                                icon: Icon(
+                                  Icons.flash_on_sharp,
+                                  size: 15.0,
+                                ),
+                                options: FFButtonOptions(
+                                  height: 40.0,
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 0.0, 16.0, 0.0),
+                                  iconAlignment: IconAlignment.start,
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  color: Color(0xFF6149E5),
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .override(
+                                        font: GoogleFonts.plusJakartaSans(
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontStyle,
+                                        ),
+                                        color: Colors.white,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
                                       ),
-                                    ),
-                                    duration: Duration(milliseconds: 4000),
-                                    backgroundColor:
-                                        FlutterFlowTheme.of(context).secondary,
-                                  ),
-                                );
-                              } else {
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  SnackBar(
-                                    content: Text(
-                                      'Erreur : Impossible d\'ajouter la carte.',
-                                      style: TextStyle(
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryText,
-                                      ),
-                                    ),
-                                    duration: Duration(milliseconds: 4000),
-                                    backgroundColor:
-                                        FlutterFlowTheme.of(context).error,
-                                  ),
-                                );
-                              }
-
-                              context.pushNamed(
-                                  TheMainMesCartesDashboardViewCardsTransactionsWidget
-                                      .routeName);
-                            },
-                            text: 'Ajouter la carte',
-                            icon: Icon(
-                              Icons.add_task_rounded,
-                              size: 15.0,
-                            ),
-                            options: FFButtonOptions(
-                              height: 40.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 16.0, 0.0),
-                              iconAlignment: IconAlignment.start,
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).transparent,
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    font: GoogleFonts.plusJakartaSans(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .fontWeight,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .fontStyle,
-                                    ),
-                                    color: Colors.white,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontWeight,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontStyle,
-                                  ),
-                              elevation: 0.0,
-                              borderRadius: BorderRadius.circular(8.0),
+                                  elevation: 0.0,
+                                  borderRadius: BorderRadius.circular(24.0),
+                                ),
+                              ),
                             ),
                           ),
-                        ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                24.0, 20.0, 24.0, 0.0),
+                            child: Container(
+                              width: double.infinity,
+                              height: 58.0,
+                              decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    blurRadius: 20.0,
+                                    color: Color(0x66B06AB3),
+                                    offset: Offset(
+                                      0.0,
+                                      8.0,
+                                    ),
+                                  )
+                                ],
+                                gradient: LinearGradient(
+                                  colors: [
+                                    Color(0xFF6C3DE1),
+                                    Color(0xFFB06AB3)
+                                  ],
+                                  stops: [0.0, 1.0],
+                                  begin: AlignmentDirectional(1.0, -1.0),
+                                  end: AlignmentDirectional(-1.0, 1.0),
+                                ),
+                                borderRadius: BorderRadius.circular(30.0),
+                              ),
+                              child: FFButtonWidget(
+                                onPressed: () async {
+                                  if (_model.formKey.currentState == null ||
+                                      !_model.formKey.currentState!
+                                          .validate()) {
+                                    return;
+                                  }
+                                  if (_model.dropDownValue == null) {
+                                    return;
+                                  }
+
+                                  await CardsRecord.collection
+                                      .doc()
+                                      .set(createCardsRecordData(
+                                        cardNumber: _model.textController2.text,
+                                        cardHolderName:
+                                            _model.textController1.text,
+                                        expiryDate: _model.textController3.text,
+                                        cvv: _model.textController4.text,
+                                        cardNetwork: _model.dropDownValue,
+                                        userRef: currentUserReference,
+                                      ));
+                                  if (true ? true : false) {
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text(
+                                          'Carte ajoutée avec succès !',
+                                          style: TextStyle(
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                          ),
+                                        ),
+                                        duration: Duration(milliseconds: 4000),
+                                        backgroundColor:
+                                            FlutterFlowTheme.of(context)
+                                                .secondary,
+                                      ),
+                                    );
+                                  } else {
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text(
+                                          'Erreur : Impossible d\'ajouter la carte.',
+                                          style: TextStyle(
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                          ),
+                                        ),
+                                        duration: Duration(milliseconds: 4000),
+                                        backgroundColor:
+                                            FlutterFlowTheme.of(context).error,
+                                      ),
+                                    );
+                                  }
+
+                                  context.pushNamed(
+                                      TheMainMesCartesDashboardViewCardsTransactionsWidget
+                                          .routeName);
+                                },
+                                text: 'Ajouter la carte',
+                                icon: Icon(
+                                  Icons.add_task_rounded,
+                                  size: 15.0,
+                                ),
+                                options: FFButtonOptions(
+                                  height: 40.0,
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 0.0, 16.0, 0.0),
+                                  iconAlignment: IconAlignment.start,
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  color:
+                                      FlutterFlowTheme.of(context).transparent,
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .override(
+                                        font: GoogleFonts.plusJakartaSans(
+                                          fontWeight:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontWeight,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleSmall
+                                                  .fontStyle,
+                                        ),
+                                        color: Colors.white,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
+                                      ),
+                                  elevation: 0.0,
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ]
                         .addToStart(SizedBox(height: 24.0))

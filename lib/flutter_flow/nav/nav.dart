@@ -258,6 +258,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ParamType.Document,
             ),
           ),
+        ),
+        FFRoute(
+          name: AnalytiquesTransactionsWidget.routeName,
+          path: AnalytiquesTransactionsWidget.routePath,
+          builder: (context, params) => AnalytiquesTransactionsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

@@ -1,3 +1,4 @@
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'recharger_carte_widget.dart' show RechargerCarteWidget;
@@ -11,6 +12,8 @@ class RechargerCarteModel extends FlutterFlowModel<RechargerCarteWidget> {
   FocusNode? textFieldFocusNode;
   TextEditingController? textController;
   String? Function(BuildContext, String?)? textControllerValidator;
+  // Stores action output result for [Backend Call - API (Init Payment)] action in Button widget.
+  ApiCallResponse? apiResult;
 
   @override
   void initState(BuildContext context) {}
