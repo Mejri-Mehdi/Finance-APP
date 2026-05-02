@@ -1,7 +1,9 @@
-import '/flutter_flow/flutter_flow_google_map.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_web_view.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dtailsdela_transaction_model.dart';
@@ -27,7 +29,12 @@ export 'dtailsdela_transaction_model.dart';
 /// The design should be very clean, spacious, and look like a premium
 /// Neo-bank interface like Revolut.
 class DtailsdelaTransactionWidget extends StatefulWidget {
-  const DtailsdelaTransactionWidget({super.key});
+  const DtailsdelaTransactionWidget({
+    super.key,
+    required this.txDetails,
+  });
+
+  final TransactionsRecord? txDetails;
 
   @override
   State<DtailsdelaTransactionWidget> createState() =>
@@ -110,7 +117,15 @@ class _DtailsdelaTransactionWidgetState
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  '- 45.00 TND',
+                  valueOrDefault<String>(
+                    formatNumber(
+                      widget.txDetails?.amount,
+                      formatType: FormatType.decimal,
+                      decimalType: DecimalType.automatic,
+                      currency: 'TND  ',
+                    ),
+                    '0.0',
+                  ),
                   style: FlutterFlowTheme.of(context).displaySmall.override(
                         font: GoogleFonts.outfit(
                           fontWeight: FontWeight.bold,
@@ -126,7 +141,10 @@ class _DtailsdelaTransactionWidgetState
                       ),
                 ),
                 Text(
-                  'Carrefour Market',
+                  valueOrDefault<String>(
+                    widget.txDetails?.merchantName,
+                    'Carrefour',
+                  ),
                   style: FlutterFlowTheme.of(context).bodyLarge.override(
                         font: GoogleFonts.inter(
                           fontWeight: FontWeight.normal,
@@ -160,18 +178,16 @@ class _DtailsdelaTransactionWidgetState
                 ],
                 borderRadius: BorderRadius.circular(20.0),
               ),
-              child: FlutterFlowGoogleMap(
-                controller: _model.googleMapsController,
-                onCameraIdle: (latLng) => _model.googleMapsCenter = latLng,
-                initialLocation: _model.googleMapsCenter ??=
-                    LatLng(37.4219999, -122.0840575),
-                markerColor: GoogleMarkerColor.red,
-                mapType: MapType.normal,
-                style: GoogleMapStyle.silver,
-                initialZoom: 15.0,
-                allowInteraction: false,
-                allowZoom: false,
-                showZoomControls: false,
+              child: FlutterFlowWebView(
+                content: valueOrDefault<String>(
+                  functions.getMapUrl(widget.txDetails?.merchantName),
+                  'Carr',
+                ),
+                bypass: false,
+                width: 400.0,
+                height: 250.0,
+                verticalScroll: false,
+                horizontalScroll: false,
               ),
             ),
             Container(
@@ -217,7 +233,10 @@ class _DtailsdelaTransactionWidgetState
                                   ),
                             ),
                             Text(
-                              '12 Juin 2025, 14:32',
+                              valueOrDefault<String>(
+                                widget.txDetails?.date,
+                                '01/05/2026',
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
@@ -337,7 +356,10 @@ class _DtailsdelaTransactionWidgetState
                                   ),
                             ),
                             Text(
-                              'Alimentation',
+                              valueOrDefault<String>(
+                                widget.txDetails?.category,
+                                'Alimentation',
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(

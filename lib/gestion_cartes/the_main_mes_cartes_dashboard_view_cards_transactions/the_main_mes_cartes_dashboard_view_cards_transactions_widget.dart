@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/gestion_cartes/dtailsdela_transaction/dtailsdela_transaction_widget.dart';
 import '/custom_code/actions/index.dart' as actions;
 import '/index.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +13,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'the_main_mes_cartes_dashboard_view_cards_transactions_model.dart';
 export 'the_main_mes_cartes_dashboard_view_cards_transactions_model.dart';
 
@@ -977,29 +979,31 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                     context: context,
                                                     builder:
                                                         (alertDialogContext) {
-                                                      return AlertDialog(
-                                                        title:
-                                                            Text('Delete Card'),
-                                                        content: Text(
-                                                            'Are you sure ?'),
-                                                        actions: [
-                                                          TextButton(
-                                                            onPressed: () =>
-                                                                Navigator.pop(
-                                                                    alertDialogContext,
-                                                                    false),
-                                                            child:
-                                                                Text('Cancel'),
-                                                          ),
-                                                          TextButton(
-                                                            onPressed: () =>
-                                                                Navigator.pop(
-                                                                    alertDialogContext,
-                                                                    true),
-                                                            child:
-                                                                Text('Confirm'),
-                                                          ),
-                                                        ],
+                                                      return WebViewAware(
+                                                        child: AlertDialog(
+                                                          title: Text(
+                                                              'Delete Card'),
+                                                          content: Text(
+                                                              'Are you sure ?'),
+                                                          actions: [
+                                                            TextButton(
+                                                              onPressed: () =>
+                                                                  Navigator.pop(
+                                                                      alertDialogContext,
+                                                                      false),
+                                                              child: Text(
+                                                                  'Cancel'),
+                                                            ),
+                                                            TextButton(
+                                                              onPressed: () =>
+                                                                  Navigator.pop(
+                                                                      alertDialogContext,
+                                                                      true),
+                                                              child: Text(
+                                                                  'Confirm'),
+                                                            ),
+                                                          ],
+                                                        ),
                                                       );
                                                     },
                                                   ) ??
@@ -1119,50 +1123,54 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                             await showDialog(
                                               context: context,
                                               builder: (alertDialogContext) {
-                                                return AlertDialog(
-                                                  title: Text(
-                                                      '\"Conversion en direct\"'),
-                                                  content: Text((double balance,
-                                                          double eurRate,
-                                                          double usdRate) {
-                                                    return "Solde: " +
-                                                        (balance ?? 0.0)
-                                                            .toStringAsFixed(
-                                                                2) +
-                                                        " TND. EUR: " +
-                                                        ((balance ?? 0.0) *
-                                                                (eurRate ??
-                                                                    0.0))
-                                                            .toStringAsFixed(
-                                                                2) +
-                                                        ". USD: " +
-                                                        ((balance ?? 0.0) *
-                                                                (usdRate ??
-                                                                    0.0))
-                                                            .toStringAsFixed(2);
-                                                  }(
-                                                      containerCardsRecord!
-                                                          .balance,
-                                                      getJsonField(
-                                                        (_model.apiResult
-                                                                ?.jsonBody ??
-                                                            ''),
-                                                        r'''$.rates.EUR''',
+                                                return WebViewAware(
+                                                  child: AlertDialog(
+                                                    title: Text(
+                                                        '\"Conversion en direct\"'),
+                                                    content: Text((double
+                                                                balance,
+                                                            double eurRate,
+                                                            double usdRate) {
+                                                      return "Solde: " +
+                                                          (balance ?? 0.0)
+                                                              .toStringAsFixed(
+                                                                  2) +
+                                                          " TND. EUR: " +
+                                                          ((balance ?? 0.0) *
+                                                                  (eurRate ??
+                                                                      0.0))
+                                                              .toStringAsFixed(
+                                                                  2) +
+                                                          ". USD: " +
+                                                          ((balance ?? 0.0) *
+                                                                  (usdRate ??
+                                                                      0.0))
+                                                              .toStringAsFixed(
+                                                                  2);
+                                                    }(
+                                                        containerCardsRecord!
+                                                            .balance,
+                                                        getJsonField(
+                                                          (_model.apiResult
+                                                                  ?.jsonBody ??
+                                                              ''),
+                                                          r'''$.rates.EUR''',
+                                                        ),
+                                                        getJsonField(
+                                                          (_model.apiResult
+                                                                  ?.jsonBody ??
+                                                              ''),
+                                                          r'''$.rates.USD''',
+                                                        ))),
+                                                    actions: [
+                                                      TextButton(
+                                                        onPressed: () =>
+                                                            Navigator.pop(
+                                                                alertDialogContext),
+                                                        child: Text('Ok'),
                                                       ),
-                                                      getJsonField(
-                                                        (_model.apiResult
-                                                                ?.jsonBody ??
-                                                            ''),
-                                                        r'''$.rates.USD''',
-                                                      ))),
-                                                  actions: [
-                                                    TextButton(
-                                                      onPressed: () =>
-                                                          Navigator.pop(
-                                                              alertDialogContext),
-                                                      child: Text('Ok'),
-                                                    ),
-                                                  ],
+                                                    ],
+                                                  ),
                                                 );
                                               },
                                             );
@@ -1876,35 +1884,71 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                 hoverColor: Colors.transparent,
                                                 highlightColor:
                                                     Colors.transparent,
+                                                onTap: () async {
+                                                  await showModalBottomSheet(
+                                                    isScrollControlled: true,
+                                                    backgroundColor:
+                                                        Colors.transparent,
+                                                    enableDrag: false,
+                                                    context: context,
+                                                    builder: (context) {
+                                                      return WebViewAware(
+                                                        child: GestureDetector(
+                                                          onTap: () {
+                                                            FocusScope.of(
+                                                                    context)
+                                                                .unfocus();
+                                                            FocusManager
+                                                                .instance
+                                                                .primaryFocus
+                                                                ?.unfocus();
+                                                          },
+                                                          child: Padding(
+                                                            padding: MediaQuery
+                                                                .viewInsetsOf(
+                                                                    context),
+                                                            child:
+                                                                DtailsdelaTransactionWidget(
+                                                              txDetails:
+                                                                  listViewTransactionsRecord,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      );
+                                                    },
+                                                  ).then((value) =>
+                                                      safeSetState(() {}));
+                                                },
                                                 onLongPress: () async {
                                                   var confirmDialogResponse =
                                                       await showDialog<bool>(
                                                             context: context,
                                                             builder:
                                                                 (alertDialogContext) {
-                                                              return AlertDialog(
-                                                                title: Text(
-                                                                    'Supprimer'),
-                                                                content: Text(
-                                                                    'Voulez-vous vraiment supprimer cette transaction ?'),
-                                                                actions: [
-                                                                  TextButton(
-                                                                    onPressed: () =>
-                                                                        Navigator.pop(
-                                                                            alertDialogContext,
-                                                                            false),
-                                                                    child: Text(
-                                                                        'Cancel'),
-                                                                  ),
-                                                                  TextButton(
-                                                                    onPressed: () =>
-                                                                        Navigator.pop(
-                                                                            alertDialogContext,
-                                                                            true),
-                                                                    child: Text(
-                                                                        'Confirm'),
-                                                                  ),
-                                                                ],
+                                                              return WebViewAware(
+                                                                child:
+                                                                    AlertDialog(
+                                                                  title: Text(
+                                                                      'Supprimer'),
+                                                                  content: Text(
+                                                                      'Voulez-vous vraiment supprimer cette transaction ?'),
+                                                                  actions: [
+                                                                    TextButton(
+                                                                      onPressed: () => Navigator.pop(
+                                                                          alertDialogContext,
+                                                                          false),
+                                                                      child: Text(
+                                                                          'Cancel'),
+                                                                    ),
+                                                                    TextButton(
+                                                                      onPressed: () => Navigator.pop(
+                                                                          alertDialogContext,
+                                                                          true),
+                                                                      child: Text(
+                                                                          'Confirm'),
+                                                                    ),
+                                                                  ],
+                                                                ),
                                                               );
                                                             },
                                                           ) ??

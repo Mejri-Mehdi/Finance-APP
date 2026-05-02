@@ -170,3 +170,17 @@ String getCategoryCount(
   // Automatically adds an 's' if there is more than 1!
   return "$count transaction${count > 1 ? 's' : ''}";
 }
+
+String getMapUrl(String? merchantName) {
+  // If no name is found, default to a map of Tunisia
+  if (merchantName == null || merchantName.isEmpty) {
+    return "https://maps.google.com/maps?q=Tunisia&output=embed";
+  }
+
+  // We add ", Tunisia" to the end so it doesn't accidentally find a "Zara" in France!
+  // Uri.encodeComponent replaces spaces with %20 so the URL doesn't break.
+  String encodedName = Uri.encodeComponent("$merchantName, Tunisia");
+
+  // This magic URL forces Google Maps to load the search result without an API key!
+  return "https://maps.google.com/maps?q=$encodedName&output=embed";
+}

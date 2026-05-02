@@ -437,9 +437,12 @@ class _AnalytiquesTransactionsWidgetState
                                                   Color(0x00000000)
                                                 ],
                                               ),
-                                              donutHoleRadius: 6.0,
+                                              donutHoleRadius: 7.0,
                                               donutHoleColor:
                                                   Colors.transparent,
+                                              sectionLabelType:
+                                                  PieChartSectionLabelType
+                                                      .value,
                                               sectionLabelStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .headlineSmall
@@ -522,7 +525,6 @@ class _AnalytiquesTransactionsWidgetState
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
-                                                borderColor: Colors.black,
                                                 indicatorSize: 10.0,
                                               ),
                                             ),
