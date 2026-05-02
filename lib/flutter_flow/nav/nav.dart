@@ -262,7 +262,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: AnalytiquesTransactionsWidget.routeName,
           path: AnalytiquesTransactionsWidget.routePath,
-          builder: (context, params) => AnalytiquesTransactionsWidget(),
+          asyncParams: {
+            'cardForAnalytics': getDoc(['cards'], CardsRecord.fromSnapshot),
+          },
+          builder: (context, params) => AnalytiquesTransactionsWidget(
+            cardForAnalytics: params.getParam(
+              'cardForAnalytics',
+              ParamType.Document,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

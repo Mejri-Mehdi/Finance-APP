@@ -68,3 +68,82 @@ String? generateExpiryDate() {
 
   return "$monthStr/$yearStr";
 }
+
+List<double>? getChartTotals(List<TransactionsRecord>? txList) {
+  // Sums up the amounts spent per category in exact matching order
+  if (txList == null || txList.isEmpty) return [];
+
+  final debits = txList.where((tx) => tx.type == 'debit').toList();
+  Map<String, double> totals = {};
+
+  for (var tx in debits) {
+    String cat = (tx.category != null && tx.category!.isNotEmpty)
+        ? tx.category!
+        : 'Autre';
+    double amount = tx.amount ?? 0.0;
+    totals[cat] = (totals[cat] ?? 0.0) + amount;
+  }
+
+  // Ensure order exactly matches the getChartCategories function
+  Set<String> categories = {};
+  for (var tx in debits) {
+    String cat = (tx.category != null && tx.category!.isNotEmpty)
+        ? tx.category!
+        : 'Autre';
+    categories.add(cat);
+  }
+
+  List<double> result = [];
+  for (String cat in categories) {
+    result.add(totals[cat]!);
+  }
+
+  return result;
+}
+
+List<String>? getChartCategories(List<TransactionsRecord>? txList) {
+  // Returns unique categories for all debit transactions
+  if (txList == null || txList.isEmpty) return [];
+
+  final debits = txList.where((tx) => tx.type == 'debit').toList();
+  Set<String> categories = {};
+
+  for (var tx in debits) {
+    String cat = (tx.category != null && tx.category!.isNotEmpty)
+        ? tx.category!
+        : 'Autre';
+    categories.add(cat);
+  }
+
+  return categories.toList();
+}
+
+double? getTotalSpent(List<TransactionsRecord>? txList) {
+  if (txList == null || txList.isEmpty) return 0.0;
+  double total = 0.0;
+  for (var tx in txList) {
+    if (tx.type == 'debit') {
+      total += tx.amount ?? 0.0;
+    }
+  }
+  return total;
+}
+
+double? getCategoryTotal(
+  List<TransactionsRecord>? txList,
+  String? categoryName,
+) {
+  if (txList == null || txList.isEmpty) return 0.0;
+  double total = 0.0;
+  for (var tx in txList) {
+    if (tx.type == 'debit') {
+      String cat = (tx.category != null && tx.category!.isNotEmpty)
+          ? tx.category!
+          : 'Autre';
+      if (cat == categoryName) {
+        total += tx.amount ?? 0.0;
+      }
+    }
+  }
+  return total;
+}

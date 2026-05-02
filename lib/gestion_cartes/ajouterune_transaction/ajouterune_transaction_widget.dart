@@ -529,6 +529,130 @@ class _AjouteruneTransactionWidgetState
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
+                                    Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          'Categories',
+                                          style: FlutterFlowTheme.of(context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts.inter(
+                                                  fontWeight: FontWeight.w600,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                color: Color(0xFF6B7280),
+                                                fontSize: 12.0,
+                                                letterSpacing: 0.5,
+                                                fontWeight: FontWeight.w600,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 15.0),
+                                          child: Container(
+                                            width: double.infinity,
+                                            decoration: BoxDecoration(
+                                              color: Color(0xFFF9F7FF),
+                                              borderRadius:
+                                                  BorderRadius.circular(14.0),
+                                              border: Border.all(
+                                                color: Color(0xFFE9D5FF),
+                                                width: 1.5,
+                                              ),
+                                            ),
+                                            child: FlutterFlowDropDown<String>(
+                                              controller: _model
+                                                      .dropDownCategorieValueController ??=
+                                                  FormFieldController<String>(
+                                                      null),
+                                              options: [
+                                                'Alimentation',
+                                                'Shopping',
+                                                'Transport',
+                                                'Factures',
+                                                'Entertainment',
+                                                'Santé'
+                                              ],
+                                              onChanged: (val) => safeSetState(
+                                                  () => _model
+                                                          .dropDownCategorieValue =
+                                                      val),
+                                              width: double.infinity,
+                                              height: 52.0,
+                                              textStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyLarge
+                                                      .override(
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyLarge
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyLarge
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            Color(0xFF1F1F2E),
+                                                        fontSize: 15.0,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge
+                                                                .fontStyle,
+                                                      ),
+                                              hintText:
+                                                  'Sélectionner une categorie',
+                                              icon: Icon(
+                                                Icons
+                                                    .keyboard_arrow_down_rounded,
+                                                color: Color(0xFF7C3AED),
+                                                size: 22.0,
+                                              ),
+                                              fillColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryBackground,
+                                              elevation: 0.0,
+                                              borderColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryBackground,
+                                              focusBorderColor:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryBackground,
+                                              borderWidth: 0.0,
+                                              borderRadius: 14.0,
+                                              margin: EdgeInsetsDirectional
+                                                  .fromSTEB(4.0, 0.0, 4.0, 0.0),
+                                              hidesUnderline: true,
+                                              isOverButton: false,
+                                              isSearchable: false,
+                                              isMultiSelect: false,
+                                            ),
+                                          ),
+                                        ),
+                                      ].divide(SizedBox(height: 8.0)),
+                                    ),
                                     Text(
                                       'Date de la transaction',
                                       style: FlutterFlowTheme.of(context)
@@ -804,6 +928,7 @@ class _AjouteruneTransactionWidgetState
                                       date: _model.textController3.text,
                                       cardRef:
                                           widget.cardForTransaction?.reference,
+                                      category: _model.dropDownCategorieValue,
                                     ));
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(

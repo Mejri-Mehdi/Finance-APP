@@ -40,12 +40,18 @@ class TransactionsRecord extends FirestoreRecord {
   String get date => _date ?? '';
   bool hasDate() => _date != null;
 
+  // "category" field.
+  String? _category;
+  String get category => _category ?? '';
+  bool hasCategory() => _category != null;
+
   void _initializeFields() {
     _cardRef = snapshotData['card_ref'] as DocumentReference?;
     _merchantName = snapshotData['merchant_name'] as String?;
     _amount = castToType<double>(snapshotData['amount']);
     _type = snapshotData['type'] as String?;
     _date = snapshotData['date'] as String?;
+    _category = snapshotData['category'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -88,6 +94,7 @@ Map<String, dynamic> createTransactionsRecordData({
   double? amount,
   String? type,
   String? date,
+  String? category,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -96,6 +103,7 @@ Map<String, dynamic> createTransactionsRecordData({
       'amount': amount,
       'type': type,
       'date': date,
+      'category': category,
     }.withoutNulls,
   );
 
@@ -112,12 +120,13 @@ class TransactionsRecordDocumentEquality
         e1?.merchantName == e2?.merchantName &&
         e1?.amount == e2?.amount &&
         e1?.type == e2?.type &&
-        e1?.date == e2?.date;
+        e1?.date == e2?.date &&
+        e1?.category == e2?.category;
   }
 
   @override
-  int hash(TransactionsRecord? e) => const ListEquality()
-      .hash([e?.cardRef, e?.merchantName, e?.amount, e?.type, e?.date]);
+  int hash(TransactionsRecord? e) => const ListEquality().hash(
+      [e?.cardRef, e?.merchantName, e?.amount, e?.type, e?.date, e?.category]);
 
   @override
   bool isValidKey(Object? o) => o is TransactionsRecord;
