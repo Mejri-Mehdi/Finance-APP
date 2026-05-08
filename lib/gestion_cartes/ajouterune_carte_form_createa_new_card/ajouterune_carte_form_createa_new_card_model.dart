@@ -15,6 +15,8 @@ class AjouteruneCarteFormCreateaNewCardModel
 
   String? tempdate;
 
+  String? scannedCardNumber;
+
   ///  State fields for stateful widgets in this page.
 
   final formKey = GlobalKey<FormState>();
@@ -39,11 +41,12 @@ class AjouteruneCarteFormCreateaNewCardModel
     return null;
   }
 
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode2;
-  TextEditingController? textController2;
-  String? Function(BuildContext, String?)? textController2Validator;
-  String? _textController2Validator(BuildContext context, String? val) {
+  // State field(s) for TextFieldnum widget.
+  FocusNode? textFieldnumFocusNode;
+  TextEditingController? textFieldnumTextController;
+  String? Function(BuildContext, String?)? textFieldnumTextControllerValidator;
+  String? _textFieldnumTextControllerValidator(
+      BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return '0000 0000 0000 0000 is required';
     }
@@ -60,8 +63,14 @@ class AjouteruneCarteFormCreateaNewCardModel
     return null;
   }
 
+  bool isDataUploading_cardPhoto = false;
+  FFUploadedFile uploadedLocalFile_cardPhoto =
+      FFUploadedFile(bytes: Uint8List.fromList([]), originalFilename: '');
+
+  // Stores action output result for [Custom Action - extract12DigitCard] action in IconButton widget.
+  String? ocrResult;
   // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode3;
+  FocusNode? textFieldFocusNode2;
   TextEditingController? textController3;
   String? Function(BuildContext, String?)? textController3Validator;
   String? _textController3Validator(BuildContext context, String? val) {
@@ -82,7 +91,7 @@ class AjouteruneCarteFormCreateaNewCardModel
   }
 
   // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode4;
+  FocusNode? textFieldFocusNode3;
   TextEditingController? textController4;
   late bool passwordVisibility;
   String? Function(BuildContext, String?)? textController4Validator;
@@ -110,7 +119,7 @@ class AjouteruneCarteFormCreateaNewCardModel
   @override
   void initState(BuildContext context) {
     textController1Validator = _textController1Validator;
-    textController2Validator = _textController2Validator;
+    textFieldnumTextControllerValidator = _textFieldnumTextControllerValidator;
     textController3Validator = _textController3Validator;
     passwordVisibility = false;
     textController4Validator = _textController4Validator;
@@ -121,13 +130,13 @@ class AjouteruneCarteFormCreateaNewCardModel
     textFieldFocusNode1?.dispose();
     textController1?.dispose();
 
-    textFieldFocusNode2?.dispose();
-    textController2?.dispose();
+    textFieldnumFocusNode?.dispose();
+    textFieldnumTextController?.dispose();
 
-    textFieldFocusNode3?.dispose();
+    textFieldFocusNode2?.dispose();
     textController3?.dispose();
 
-    textFieldFocusNode4?.dispose();
+    textFieldFocusNode3?.dispose();
     textController4?.dispose();
   }
 }

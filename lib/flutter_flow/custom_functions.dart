@@ -184,3 +184,44 @@ String getMapUrl(String? merchantName) {
   // This magic URL forces Google Maps to load the search result without an API key!
   return "https://maps.google.com/maps?q=$encodedName&output=embed";
 }
+
+bool isTransactionFraudulent(
+  double amount,
+  String merchantName,
+) {
+  int riskScore = 0;
+
+  if (amount >= 1000) {
+    riskScore += 60;
+  } else if (amount >= 500) {
+    riskScore += 30;
+  } else if (amount >= 200) {
+    riskScore += 10;
+  }
+  String merchantLower = merchantName.toLowerCase();
+  List<String> highRiskKeywords = [
+    'crypto',
+    'casino',
+    'bet',
+    'pari',
+    'transfert inconnu',
+    'western union'
+  ];
+
+  for (String keyword in highRiskKeywords) {
+    if (merchantLower.contains(keyword)) {
+      riskScore += 45;
+      break;
+    }
+  }
+  DateTime now = DateTime.now();
+  if (now.hour >= 2 && now.hour <= 5) {
+    riskScore += 25;
+  }
+  // Bypass the FlutterFlow UI bug: We do the math inside the code.
+  if (riskScore > 75) {
+    return true; // DANGER: Fraud detected
+  } else {
+    return false; // SAFE: Let it pass
+  }
+}

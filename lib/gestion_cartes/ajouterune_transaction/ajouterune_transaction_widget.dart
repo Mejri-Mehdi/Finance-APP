@@ -5,9 +5,11 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
+import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:webviewx_plus/webviewx_plus.dart';
 import 'ajouterune_transaction_model.dart';
 export 'ajouterune_transaction_model.dart';
 
@@ -918,36 +920,134 @@ class _AjouteruneTransactionWidgetState
                             ),
                             child: FFButtonWidget(
                               onPressed: () async {
-                                await TransactionsRecord.collection
-                                    .doc()
-                                    .set(createTransactionsRecordData(
-                                      merchantName: _model.textController2.text,
-                                      amount: double.tryParse(
-                                          _model.textController1.text),
-                                      type: _model.dropDownValue,
-                                      date: _model.textController3.text,
-                                      cardRef:
-                                          widget.cardForTransaction?.reference,
-                                      category: _model.dropDownCategorieValue,
-                                    ));
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                  SnackBar(
-                                    content: Text(
-                                      'Transaction Crée Avec Succée',
-                                      style: TextStyle(
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryText,
+                                if (functions.isTransactionFraudulent(
+                                    double.parse(_model.textController1.text),
+                                    _model.textController2.text)) {
+                                  var confirmDialogResponse =
+                                      await showDialog<bool>(
+                                            context: context,
+                                            builder: (alertDialogContext) {
+                                              return WebViewAware(
+                                                child: AlertDialog(
+                                                  title: Text(
+                                                      '\"🚨 ALERTE DE SÉCURITÉ\"'),
+                                                  content: Text(
+                                                      '\"Nous avons détecté une transaction suspecte. Est-ce bien vous ?\"'),
+                                                  actions: [
+                                                    TextButton(
+                                                      onPressed: () =>
+                                                          Navigator.pop(
+                                                              alertDialogContext,
+                                                              false),
+                                                      child: Text(
+                                                          '\"Non, bloquer ma carte\"'),
+                                                    ),
+                                                    TextButton(
+                                                      onPressed: () =>
+                                                          Navigator.pop(
+                                                              alertDialogContext,
+                                                              true),
+                                                      child: Text(
+                                                          '\"Oui, c\'est moi\"'),
+                                                    ),
+                                                  ],
+                                                ),
+                                              );
+                                            },
+                                          ) ??
+                                          false;
+                                  if (confirmDialogResponse) {
+                                    await TransactionsRecord.collection
+                                        .doc()
+                                        .set(createTransactionsRecordData(
+                                          merchantName:
+                                              _model.textController2.text,
+                                          amount: double.tryParse(
+                                              _model.textController1.text),
+                                          type: _model.dropDownValue,
+                                          date: _model.textController3.text,
+                                          cardRef: widget
+                                              .cardForTransaction?.reference,
+                                          category:
+                                              _model.dropDownCategorieValue,
+                                        ));
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text(
+                                          'Transaction Crée Avec Succée',
+                                          style: TextStyle(
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                          ),
+                                        ),
+                                        duration: Duration(milliseconds: 4000),
+                                        backgroundColor:
+                                            FlutterFlowTheme.of(context)
+                                                .secondary,
                                       ),
-                                    ),
-                                    duration: Duration(milliseconds: 4000),
-                                    backgroundColor:
-                                        FlutterFlowTheme.of(context).secondary,
-                                  ),
-                                );
+                                    );
 
-                                context.pushNamed(
-                                    TheMainMesCartesDashboardViewCardsTransactionsWidget
-                                        .routeName);
+                                    context.pushNamed(
+                                        TheMainMesCartesDashboardViewCardsTransactionsWidget
+                                            .routeName);
+                                  } else {
+                                    await widget.cardForTransaction!.reference
+                                        .update(createCardsRecordData(
+                                      status: '\"Bloquée\"',
+                                    ));
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text(
+                                          '\"Carte bloquée par sécurité !\"',
+                                          style: TextStyle(
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                          ),
+                                        ),
+                                        duration: Duration(milliseconds: 4000),
+                                        backgroundColor:
+                                            FlutterFlowTheme.of(context).error,
+                                      ),
+                                    );
+
+                                    context.pushNamed(
+                                        TheMainMesCartesDashboardViewCardsTransactionsWidget
+                                            .routeName);
+                                  }
+                                } else {
+                                  await TransactionsRecord.collection
+                                      .doc()
+                                      .set(createTransactionsRecordData(
+                                        merchantName:
+                                            _model.textController2.text,
+                                        amount: double.tryParse(
+                                            _model.textController1.text),
+                                        type: _model.dropDownValue,
+                                        date: _model.textController3.text,
+                                        cardRef: widget
+                                            .cardForTransaction?.reference,
+                                        category: _model.dropDownCategorieValue,
+                                      ));
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text(
+                                        'Transaction Crée Avec Succée',
+                                        style: TextStyle(
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
+                                        ),
+                                      ),
+                                      duration: Duration(milliseconds: 4000),
+                                      backgroundColor:
+                                          FlutterFlowTheme.of(context)
+                                              .secondary,
+                                    ),
+                                  );
+
+                                  context.pushNamed(
+                                      TheMainMesCartesDashboardViewCardsTransactionsWidget
+                                          .routeName);
+                                }
                               },
                               text: 'Ajouter la transaction',
                               icon: Icon(

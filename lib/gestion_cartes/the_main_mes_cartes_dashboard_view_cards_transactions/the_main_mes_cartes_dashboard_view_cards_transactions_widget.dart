@@ -1953,28 +1953,31 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                             },
                                                           ) ??
                                                           false;
-                                                  await listViewTransactionsRecord
-                                                      .reference
-                                                      .delete();
-                                                  ScaffoldMessenger.of(context)
-                                                      .showSnackBar(
-                                                    SnackBar(
-                                                      content: Text(
-                                                        'Transaction Deleted Successfully',
-                                                        style: TextStyle(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryText,
+                                                  if (confirmDialogResponse) {
+                                                    await listViewTransactionsRecord
+                                                        .reference
+                                                        .delete();
+                                                    ScaffoldMessenger.of(
+                                                            context)
+                                                        .showSnackBar(
+                                                      SnackBar(
+                                                        content: Text(
+                                                          'Transaction Deleted Successfully',
+                                                          style: TextStyle(
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryText,
+                                                          ),
                                                         ),
+                                                        duration: Duration(
+                                                            milliseconds: 4000),
+                                                        backgroundColor:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondary,
                                                       ),
-                                                      duration: Duration(
-                                                          milliseconds: 4000),
-                                                      backgroundColor:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .secondary,
-                                                    ),
-                                                  );
+                                                    );
+                                                  }
                                                 },
                                                 child: Container(
                                                   width: double.infinity,

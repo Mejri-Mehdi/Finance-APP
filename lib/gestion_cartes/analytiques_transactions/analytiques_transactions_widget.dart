@@ -417,119 +417,118 @@ class _AnalytiquesTransactionsWidgetState
                                     width: double.infinity,
                                     height: 527.71,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .transparent,
+                                      border: Border.all(
+                                        color: FlutterFlowTheme.of(context)
+                                            .transparent,
+                                      ),
                                     ),
                                     child: Align(
                                       alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: Container(
-                                        width: double.infinity,
-                                        height: double.infinity,
-                                        child: Stack(
-                                          children: [
-                                            FlutterFlowPieChart(
-                                              data: FFPieChartData(
-                                                values: functions.getChartTotals(
-                                                    analytiquesTransactionsTransactionsRecordList
-                                                        .toList()),
-                                                colors: chartPieChartColorsList,
-                                                radius: [140.0],
-                                                borderColor: [
-                                                  Color(0x00000000)
-                                                ],
-                                              ),
-                                              donutHoleRadius: 7.0,
-                                              donutHoleColor:
-                                                  Colors.transparent,
-                                              sectionLabelType:
-                                                  PieChartSectionLabelType
-                                                      .value,
-                                              sectionLabelStyle:
+                                      child: Stack(
+                                        children: [
+                                          FlutterFlowPieChart(
+                                            data: FFPieChartData(
+                                              values: functions.getChartTotals(
+                                                  analytiquesTransactionsTransactionsRecordList
+                                                      .toList()),
+                                              colors: chartPieChartColorsList,
+                                              radius: [120.0],
+                                              borderColor: [
+                                                FlutterFlowTheme.of(context)
+                                                    .transparent
+                                              ],
+                                            ),
+                                            donutHoleRadius: 7.0,
+                                            donutHoleColor: Colors.transparent,
+                                            sectionLabelType:
+                                                PieChartSectionLabelType.value,
+                                            sectionLabelStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: GoogleFonts.inter(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
+                                                      ),
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                    ),
+                                          ),
+                                          Align(
+                                            alignment:
+                                                AlignmentDirectional(0.0, 0.0),
+                                            child: FlutterFlowChartLegendWidget(
+                                              entries: functions
+                                                  .getChartCategories(
+                                                      analytiquesTransactionsTransactionsRecordList
+                                                          .toList())
+                                                  .asMap()
+                                                  .entries
+                                                  .map(
+                                                    (label) => LegendEntry(
+                                                      chartPieChartColorsList[label
+                                                              .key %
+                                                          chartPieChartColorsList
+                                                              .length],
+                                                      label.value,
+                                                    ),
+                                                  )
+                                                  .toList(),
+                                              textStyle:
                                                   FlutterFlowTheme.of(context)
-                                                      .headlineSmall
+                                                      .bodyMedium
                                                       .override(
-                                                        font:
-                                                            GoogleFonts.outfit(
+                                                        font: GoogleFonts.inter(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .headlineSmall
+                                                                  .bodyMedium
                                                                   .fontWeight,
                                                           fontStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
-                                                                  .headlineSmall
+                                                                  .bodyMedium
                                                                   .fontStyle,
                                                         ),
                                                         letterSpacing: 0.0,
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .headlineSmall
+                                                                .bodyMedium
                                                                 .fontWeight,
                                                         fontStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .headlineSmall
+                                                                .bodyMedium
                                                                 .fontStyle,
                                                       ),
+                                              borderRadius:
+                                                  BorderRadius.circular(0.0),
+                                              indicatorSize: 10.0,
+                                              indicatorBorderRadius:
+                                                  BorderRadius.circular(0.0),
                                             ),
-                                            Align(
-                                              alignment: AlignmentDirectional(
-                                                  0.0, 0.0),
-                                              child:
-                                                  FlutterFlowChartLegendWidget(
-                                                entries: functions
-                                                    .getChartCategories(
-                                                        analytiquesTransactionsTransactionsRecordList
-                                                            .toList())
-                                                    .asMap()
-                                                    .entries
-                                                    .map(
-                                                      (label) => LegendEntry(
-                                                        chartPieChartColorsList[
-                                                            label.key %
-                                                                chartPieChartColorsList
-                                                                    .length],
-                                                        label.value,
-                                                      ),
-                                                    )
-                                                    .toList(),
-                                                width: double.infinity,
-                                                height: double.infinity,
-                                                textStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          font:
-                                                              GoogleFonts.inter(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                          ),
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                        ),
-                                                indicatorSize: 10.0,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ),

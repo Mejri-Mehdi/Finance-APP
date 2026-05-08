@@ -13,6 +13,18 @@ class AjouteruneTransactionModel
   FocusNode? textFieldFocusNode1;
   TextEditingController? textController1;
   String? Function(BuildContext, String?)? textController1Validator;
+  String? _textController1Validator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return '0.00 is required';
+    }
+
+    if (val.length < 1) {
+      return 'Type a Specific amout';
+    }
+
+    return null;
+  }
+
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode2;
   TextEditingController? textController2;
@@ -61,6 +73,7 @@ class AjouteruneTransactionModel
 
   @override
   void initState(BuildContext context) {
+    textController1Validator = _textController1Validator;
     textController2Validator = _textController2Validator;
     textController3Validator = _textController3Validator;
   }
