@@ -64,7 +64,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
           label: Text(
             'Advanced Filters',
             style: FlutterFlowTheme.of(context).labelLarge.override(
-                  font: GoogleFonts.inter(
+                  font: GoogleFonts.outfit(
                     fontWeight:
                         FlutterFlowTheme.of(context).labelLarge.fontWeight,
                     fontStyle:
@@ -105,7 +105,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                           FlutterFlowIconButton(
                             borderRadius: 8.0,
                             buttonSize: 40.0,
-                            fillColor: Colors.transparent,
+                            fillColor: FlutterFlowTheme.of(context).common0,
                             icon: Icon(
                               Icons.arrow_back_rounded,
                               color: FlutterFlowTheme.of(context).primaryText,
@@ -120,7 +120,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleMedium
                                 .override(
-                                  font: GoogleFonts.inter(
+                                  font: GoogleFonts.plusJakartaSans(
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .titleMedium
@@ -137,7 +137,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                           FlutterFlowIconButton(
                             borderRadius: 8.0,
                             buttonSize: 40.0,
-                            fillColor: Colors.transparent,
+                            fillColor: FlutterFlowTheme.of(context).common0,
                             icon: Icon(
                               Icons.file_download_outlined,
                               color: FlutterFlowTheme.of(context).primaryText,
@@ -299,7 +299,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.outfit(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
@@ -369,7 +369,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.outfit(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
@@ -456,7 +456,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.outfit(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge

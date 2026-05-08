@@ -77,6 +77,33 @@ class InitPaymentCall {
       );
 }
 
+class ScanRecuOCRCall {
+  static Future<ApiCallResponse> call({
+    String? base64Image = '',
+  }) async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'scanRecuOCR',
+      apiUrl: 'https://api.ocr.space/parse/image',
+      callType: ApiCallType.POST,
+      headers: {},
+      params: {
+        'language': "fre",
+        'isOverlayRequired': "false",
+        'OCREngine': "2",
+        'base64Image': base64Image,
+        'apikey': "K83772750088957",
+      },
+      bodyType: BodyType.X_WWW_FORM_URL_ENCODED,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;

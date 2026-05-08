@@ -172,17 +172,34 @@ String getCategoryCount(
 }
 
 String getMapUrl(String? merchantName) {
-  // If no name is found, default to a map of Tunisia
+  String searchLocation;
   if (merchantName == null || merchantName.isEmpty) {
-    return "https://maps.google.com/maps?q=Tunisia&output=embed";
+    searchLocation = "Tunisia";
+  } else {
+    searchLocation = "$merchantName, Tunisia";
   }
+  // Encode the URL so spaces become %20
+  String encodedName = Uri.encodeComponent(searchLocation);
 
-  // We add ", Tunisia" to the end so it doesn't accidentally find a "Zara" in France!
-  // Uri.encodeComponent replaces spaces with %20 so the URL doesn't break.
-  String encodedName = Uri.encodeComponent("$merchantName, Tunisia");
-
-  // This magic URL forces Google Maps to load the search result without an API key!
-  return "https://maps.google.com/maps?q=$encodedName&output=embed";
+  // The magic URL
+  String mapUrl = "https://maps.google.com/maps?q=$encodedName&output=embed";
+  // Return full HTML instead of just the URL.
+  // This solves the mobile WebView blocking issue!
+  return """
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <style>
+          body { margin: 0; padding: 0; overflow: hidden; }
+          iframe { width: 100vw; height: 100vh; border: none; }
+        </style>
+      </head>
+      <body>
+        <iframe src="$mapUrl" allowfullscreen></iframe>
+      </body>
+    </html>
+  """;
 }
 
 bool isTransactionFraudulent(
@@ -224,4 +241,361 @@ bool isTransactionFraudulent(
   } else {
     return false; // SAFE: Let it pass
   }
+}
+
+List<double>? pieValues(
+  double depense,
+  double revenu,
+) {
+  return [depense, revenu];
+}
+
+List<double> newCustomFunction(List<TransactionRecord> transactions) {
+  return transactions.map((t) {
+    return (t.montant ?? 0).toDouble();
+  }).toList();
+}
+
+List<double> categorieCounts(List<TransactionRecord> transactions) {
+  final Map<String, double> counts = {
+    'Nourriture': 0,
+    'Transport': 0,
+    'Santé': 0,
+    'Achats': 0,
+    'Loisir': 0,
+    'Logement': 0,
+    'Revenu': 0,
+    'Autre': 0,
+  };
+
+  for (final item in transactions) {
+    final categorie = (item.categorie ?? '').toLowerCase().trim();
+
+    if (categorie == 'nourriture') {
+      counts['Nourriture'] = counts['Nourriture']! + 1;
+    } else if (categorie == 'transport') {
+      counts['Transport'] = counts['Transport']! + 1;
+    } else if (categorie == 'sante' || categorie == 'santé') {
+      counts['Santé'] = counts['Santé']! + 1;
+    } else if (categorie == 'achats') {
+      counts['Achats'] = counts['Achats']! + 1;
+    } else if (categorie == 'loisir') {
+      counts['Loisir'] = counts['Loisir']! + 1;
+    } else if (categorie == 'logement') {
+      counts['Logement'] = counts['Logement']! + 1;
+    } else if (categorie == 'revenu') {
+      counts['Revenu'] = counts['Revenu']! + 1;
+    } else if (categorie.isNotEmpty) {
+      counts['Autre'] = counts['Autre']! + 1;
+    }
+  }
+
+  final sorted = counts.entries
+      .where((e) => e.key != 'Autre' && e.value > 0)
+      .toList()
+    ..sort((a, b) => b.value.compareTo(a.value));
+
+  final values = sorted.take(4).map((e) => e.value).toList();
+
+  if (counts['Autre']! > 0) {
+    values.add(counts['Autre']!);
+  }
+
+  return values;
+}
+
+List<String> categorieLabels(List<TransactionRecord> transactions) {
+  final Map<String, double> counts = {
+    'Nourriture': 0,
+    'Transport': 0,
+    'Santé': 0,
+    'Achats': 0,
+    'Loisir': 0,
+    'Logement': 0,
+    'Revenu': 0,
+    'Autre': 0,
+  };
+
+  for (final item in transactions) {
+    final categorie = (item.categorie ?? '').toLowerCase().trim();
+
+    if (categorie == 'nourriture') {
+      counts['Nourriture'] = counts['Nourriture']! + 1;
+    } else if (categorie == 'transport') {
+      counts['Transport'] = counts['Transport']! + 1;
+    } else if (categorie == 'sante') {
+      counts['Santé'] = counts['Santé']! + 1;
+    } else if (categorie == 'achats') {
+      counts['Achats'] = counts['Achats']! + 1;
+    } else if (categorie == 'loisir') {
+      counts['Loisir'] = counts['Loisir']! + 1;
+    } else if (categorie == 'logement') {
+      counts['Logement'] = counts['Logement']! + 1;
+    } else if (categorie == 'revenu') {
+      counts['Revenu'] = counts['Revenu']! + 1;
+    } else {
+      counts['Autre'] = counts['Autre']! + 1;
+    }
+  }
+
+  final sorted = counts.entries
+      .where((e) => e.key != 'Autre' && e.value > 0)
+      .toList()
+    ..sort((a, b) => b.value.compareTo(a.value));
+  final labels = sorted.take(4).map((e) => e.key).toList();
+  if (counts['Autre']! > 0) {
+    labels.add('Autre');
+  }
+
+  return labels;
+}
+
+String fileToBase64Image(FFUploadedFile file) {
+  final bytes = file.bytes;
+
+  if (bytes == null || bytes.isEmpty) {
+    return '';
+  }
+
+  return 'data:image/jpeg;base64,${base64Encode(bytes)}';
+}
+
+String extractMontant(String text) {
+  final lines = text
+      .replaceAll('\r', '\n')
+      .split('\n')
+      .map((e) => e.trim())
+      .where((e) => e.isNotEmpty)
+      .toList();
+
+  final amountRegex = RegExp(r'(\d+[,.]\d{2,3})');
+
+  String cleanNumber(String value) {
+    return value.replaceAll(' ', '').replaceAll('.', ',');
+  }
+
+  bool isBadLine(String line) {
+    final l = line.toUpperCase();
+    return l.contains('MONTANT PAY') ||
+        l.contains('MONNAIE') ||
+        l.contains('RENDU') ||
+        l.contains('REDUCTION') ||
+        l.contains('RÉDUCTION') ||
+        l.contains('-0,000');
+  }
+
+  String firstAmountNear(int index, int maxLines) {
+    for (int j = index; j < lines.length && j <= index + maxLines; j++) {
+      if (isBadLine(lines[j])) continue;
+
+      final matches = amountRegex.allMatches(lines[j]).toList();
+      if (matches.isNotEmpty) {
+        return cleanNumber(matches.last.group(1)!);
+      }
+    }
+    return '';
+  }
+
+  // Carrefour : TOTAL À PAYER puis chercher le montant avec TND plus loin
+  for (int i = 0; i < lines.length; i++) {
+    final u = lines[i].toUpperCase();
+
+    if (u.contains('TOTAL À PAYER') || u.contains('TOTAL A PAYER')) {
+      for (int j = i + 1; j < lines.length && j <= i + 40; j++) {
+        final line = lines[j];
+        final upper = line.toUpperCase();
+
+        if (isBadLine(line)) continue;
+
+        if (upper.contains('TND')) {
+          final match = amountRegex.firstMatch(line);
+          if (match != null) {
+            return cleanNumber(match.group(1)!);
+          }
+        }
+      }
+    }
+  }
+
+  // Clinique : Total DT TTC
+  // Clinique : Total DT TTC / Total OT TTC -> prendre le DERNIER montant proche
+  for (int i = 0; i < lines.length; i++) {
+    final u = lines[i].toUpperCase();
+
+    if (u.contains('TOTAL DT TTC') ||
+        u.contains('TOTAL TTC') ||
+        u.contains('TOTAL OT TTC')) {
+      String lastAmount = '';
+
+      for (int j = i; j < lines.length && j <= i + 5; j++) {
+        final matches = amountRegex.allMatches(lines[j]).toList();
+
+        if (matches.isNotEmpty) {
+          lastAmount = matches.last.group(1)!;
+        }
+      }
+
+      if (lastAmount.isNotEmpty) {
+        return cleanNumber(lastAmount);
+      }
+    }
+  }
+
+  // Taxi : TOTAL
+  for (int i = 0; i < lines.length; i++) {
+    final u = lines[i].toUpperCase();
+
+    if (u == 'TOTAL' || u.startsWith('TOTAL ')) {
+      final result = firstAmountNear(i, 4);
+      if (result.isNotEmpty) return result;
+    }
+  }
+
+  // Fallback général : autres reçus possibles
+  // On cherche les mots-clés classiques, sans toucher Carrefour / Clinique / Taxi.
+  final fallbackKeywords = [
+    'NET A PAYER',
+    'NET À PAYER',
+    'A PAYER',
+    'À PAYER',
+    'TOTAL GENERAL',
+    'TOTAL GÉNÉRAL',
+    'TOTAL TTC',
+    'MONTANT TOTAL',
+    'AMOUNT DUE',
+    'TOTAL DUE',
+    'GRAND TOTAL',
+  ];
+
+  for (int i = 0; i < lines.length; i++) {
+    final u = lines[i].toUpperCase();
+
+    final hasKeyword = fallbackKeywords.any((k) => u.contains(k));
+
+    if (hasKeyword && !isBadLine(lines[i])) {
+      for (int j = i; j < lines.length && j <= i + 6; j++) {
+        if (isBadLine(lines[j])) continue;
+
+        final matches = amountRegex.allMatches(lines[j]).toList();
+
+        if (matches.isNotEmpty) {
+          return cleanNumber(matches.last.group(1)!);
+        }
+      }
+    }
+  }
+
+  // Dernier secours : montant suivi par devise
+  // Exemple : 30,000 TND / 54.25 AED / 956,200 DT
+  for (final line in lines) {
+    final u = line.toUpperCase();
+
+    if (isBadLine(line)) continue;
+
+    if (u.contains('TND') || u.contains('DT') || u.contains('AED')) {
+      final matches = amountRegex.allMatches(line).toList();
+
+      if (matches.isNotEmpty) {
+        return cleanNumber(matches.last.group(1)!);
+      }
+    }
+  }
+
+  return '';
+}
+
+String extractCategorie(String text) {
+  final t = text.toLowerCase();
+
+  if (t.contains('taxi') ||
+      t.contains('driver') ||
+      t.contains('pick up') ||
+      t.contains('drop off') ||
+      t.contains('distance') ||
+      t.contains('trip') ||
+      t.contains('course') ||
+      t.contains('chauffeur') ||
+      t.contains('uber') ||
+      t.contains('bolt')) {
+    return 'Transport';
+  }
+
+  if (t.contains('pharmacie') ||
+      t.contains('clinique') ||
+      t.contains('medical') ||
+      t.contains('médical') ||
+      t.contains('cardiovasculaire') ||
+      t.contains('doliprane') ||
+      t.contains('sirop') ||
+      t.contains('vitamine') ||
+      t.contains('medicament') ||
+      t.contains('médicament')) {
+    return 'Santé';
+  }
+
+  if (t.contains('carrefour') ||
+      t.contains('pain') ||
+      t.contains('lait') ||
+      t.contains('oeufs') ||
+      t.contains('œufs') ||
+      t.contains('poulet') ||
+      t.contains('tomates') ||
+      t.contains('banane') ||
+      t.contains('monoprix') ||
+      t.contains('aziza') ||
+      t.contains('mg')) {
+    return 'Nourriture';
+  }
+
+  if (t.contains('facture') ||
+      t.contains('steg') ||
+      t.contains('sonede') ||
+      t.contains('loyer')) {
+    return 'Logement';
+  }
+
+  return 'Autre';
+}
+
+String getEpargneNotifLevel(
+  double soldeCalcule,
+  double objectifEpargne,
+  bool notif50Shown,
+  bool notif70Shown,
+  bool notif90Shown,
+  bool notif100Shown,
+) {
+  if (objectifEpargne <= 0) {
+    return 'none';
+  }
+
+  final progress = (soldeCalcule / objectifEpargne) * 100;
+
+  if (progress >= 100 && !notif100Shown) {
+    return '100';
+  }
+
+  if (progress >= 90 && progress < 100 && !notif90Shown) {
+    return '90';
+  }
+
+  if (progress >= 70 && progress < 90 && !notif70Shown) {
+    return '70';
+  }
+
+  if (progress >= 50 && progress < 70 && !notif50Shown) {
+    return '50';
+  }
+
+  return 'none';
+}
+
+List<double> walletSoldes(List<WalletRecord>? wallets) {
+  if (wallets == null || wallets.isEmpty) {
+    return [];
+  }
+
+  return wallets.map((wallet) {
+    return wallet.soldeCalcule;
+  }).toList();
 }

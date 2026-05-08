@@ -99,9 +99,9 @@ class _AUTHOnboardingWidgetState extends State<AUTHOnboardingWidget> {
                     'color4': FlutterFlowTheme.of(context).primaryBackground,
                     'color5': FlutterFlowTheme.of(context).primaryBackground,
                     'color6': FlutterFlowTheme.of(context).primaryBackground,
-                    'color7': Color(0x00808080),
-                    'color8': Color(0x00808080),
-                    'color9': Color(0x00808080)
+                    'color7': FlutterFlowTheme.of(context).common9,
+                    'color8': FlutterFlowTheme.of(context).common9,
+                    'color9': FlutterFlowTheme.of(context).common9
                   }),
                   animationMode: ShaderAnimationMode.continuous,
                   cache: false,
@@ -157,7 +157,7 @@ class _AUTHOnboardingWidgetState extends State<AUTHOnboardingWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .titleLarge
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.outfit(
                                           fontWeight: FontWeight.w800,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -285,7 +285,7 @@ class _AUTHOnboardingWidgetState extends State<AUTHOnboardingWidget> {
                                                                       .titleMedium
                                                                       .override(
                                                                         font: GoogleFonts
-                                                                            .inter(
+                                                                            .plusJakartaSans(
                                                                           fontWeight: FlutterFlowTheme.of(context)
                                                                               .titleMedium
                                                                               .fontWeight,
@@ -324,7 +324,7 @@ class _AUTHOnboardingWidgetState extends State<AUTHOnboardingWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelSmall
                                                                             .override(
-                                                                              font: GoogleFonts.inter(
+                                                                              font: GoogleFonts.outfit(
                                                                                 fontWeight: FlutterFlowTheme.of(context).labelSmall.fontWeight,
                                                                                 fontStyle: FlutterFlowTheme.of(context).labelSmall.fontStyle,
                                                                               ),
@@ -340,7 +340,7 @@ class _AUTHOnboardingWidgetState extends State<AUTHOnboardingWidget> {
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .labelSmall
                                                                             .override(
-                                                                              font: GoogleFonts.inter(
+                                                                              font: GoogleFonts.outfit(
                                                                                 fontWeight: FlutterFlowTheme.of(context).labelSmall.fontWeight,
                                                                                 fontStyle: FlutterFlowTheme.of(context).labelSmall.fontStyle,
                                                                               ),
@@ -380,7 +380,9 @@ class _AUTHOnboardingWidgetState extends State<AUTHOnboardingWidget> {
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .primary30,
-                                                        Colors.transparent
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .common0
                                                       ],
                                                       stops: [0.0, 1.0],
                                                       center:
@@ -507,7 +509,7 @@ class _AUTHOnboardingWidgetState extends State<AUTHOnboardingWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.outfit(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .labelSmall
@@ -550,7 +552,7 @@ class _AUTHOnboardingWidgetState extends State<AUTHOnboardingWidget> {
                     gradient: RadialGradient(
                       colors: [
                         FlutterFlowTheme.of(context).accent10,
-                        Colors.transparent
+                        FlutterFlowTheme.of(context).common0
                       ],
                       stops: [0.0, 1.0],
                       center: Alignment(0.0, 0.0),

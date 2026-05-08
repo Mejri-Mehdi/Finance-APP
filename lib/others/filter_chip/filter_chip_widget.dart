@@ -84,7 +84,7 @@ class _FilterChipWidgetState extends State<FilterChipWidget> {
                   'All',
                 ),
                 style: FlutterFlowTheme.of(context).labelMedium.override(
-                      font: GoogleFonts.inter(
+                      font: GoogleFonts.outfit(
                         fontWeight:
                             FlutterFlowTheme.of(context).labelMedium.fontWeight,
                         fontStyle:

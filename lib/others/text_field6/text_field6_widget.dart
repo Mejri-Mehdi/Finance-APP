@@ -81,7 +81,7 @@ class _TextField6WidgetState extends State<TextField6Widget> {
             Text(
               widget.label.toString(),
               style: FlutterFlowTheme.of(context).labelMedium.override(
-                    font: GoogleFonts.inter(
+                    font: GoogleFonts.outfit(
                       fontWeight:
                           FlutterFlowTheme.of(context).labelMedium.fontWeight,
                       fontStyle:
@@ -105,9 +105,9 @@ class _TextField6WidgetState extends State<TextField6Widget> {
                 if (widget.variant == 'filled') {
                   return FlutterFlowTheme.of(context).secondaryBackground;
                 } else if (widget.variant == 'ghost') {
-                  return Colors.transparent;
+                  return FlutterFlowTheme.of(context).common0;
                 } else {
-                  return Colors.transparent;
+                  return FlutterFlowTheme.of(context).common0;
                 }
               }(),
               borderRadius: BorderRadius.only(
@@ -166,9 +166,9 @@ class _TextField6WidgetState extends State<TextField6Widget> {
                   if (widget.error) {
                     return FlutterFlowTheme.of(context).error;
                   } else if (widget.variant == 'filled') {
-                    return Colors.transparent;
+                    return FlutterFlowTheme.of(context).common0;
                   } else if (widget.variant == 'ghost') {
-                    return Colors.transparent;
+                    return FlutterFlowTheme.of(context).common0;
                   } else {
                     return FlutterFlowTheme.of(context).alternate;
                   }
@@ -261,7 +261,7 @@ class _TextField6WidgetState extends State<TextField6Widget> {
                         hintStyle: FlutterFlowTheme.of(context)
                             .bodyMedium
                             .override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.plusJakartaSans(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -293,7 +293,7 @@ class _TextField6WidgetState extends State<TextField6Widget> {
                         focusedErrorBorder: InputBorder.none,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            font: GoogleFonts.inter(
+                            font: GoogleFonts.plusJakartaSans(
                               fontWeight: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .fontWeight,
@@ -336,7 +336,7 @@ class _TextField6WidgetState extends State<TextField6Widget> {
             Text(
               widget.helper.toString(),
               style: FlutterFlowTheme.of(context).bodySmall.override(
-                    font: GoogleFonts.inter(
+                    font: GoogleFonts.plusJakartaSans(
                       fontWeight:
                           FlutterFlowTheme.of(context).bodySmall.fontWeight,
                       fontStyle:

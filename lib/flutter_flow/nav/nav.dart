@@ -271,6 +271,249 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ParamType.Document,
             ),
           ),
+        ),
+        FFRoute(
+          name: AddWalletWidget.routeName,
+          path: AddWalletWidget.routePath,
+          builder: (context, params) => AddWalletWidget(
+            nomWalletP: params.getParam(
+              'nomWalletP',
+              ParamType.String,
+            ),
+            soldeP: params.getParam(
+              'soldeP',
+              ParamType.double,
+            ),
+            limiteP: params.getParam(
+              'limiteP',
+              ParamType.double,
+            ),
+            depenseP: params.getParam(
+              'depenseP',
+              ParamType.double,
+            ),
+            revenuP: params.getParam(
+              'revenuP',
+              ParamType.double,
+            ),
+            objectifP: params.getParam(
+              'objectifP',
+              ParamType.double,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: WalletDashboardWidget.routeName,
+          path: WalletDashboardWidget.routePath,
+          builder: (context, params) => WalletDashboardWidget(
+            nomP: params.getParam(
+              'nomP',
+              ParamType.String,
+            ),
+            soldeP: params.getParam(
+              'soldeP',
+              ParamType.double,
+            ),
+            limit: params.getParam(
+              'limit',
+              ParamType.double,
+            ),
+            depTotP: params.getParam(
+              'depTotP',
+              ParamType.double,
+            ),
+            revTotP: params.getParam(
+              'revTotP',
+              ParamType.double,
+            ),
+            objectifP: params.getParam(
+              'objectifP',
+              ParamType.double,
+            ),
+            walletParam: params.getParam(
+              'walletParam',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['Wallet'],
+            ),
+            walletRef: params.getParam(
+              'walletRef',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['Wallet'],
+            ),
+            notif50P: params.getParam(
+              'notif50P',
+              ParamType.bool,
+            ),
+            notif70P: params.getParam(
+              'notif70P',
+              ParamType.bool,
+            ),
+            notif90P: params.getParam(
+              'notif90P',
+              ParamType.bool,
+            ),
+            notif100P: params.getParam(
+              'notif100P',
+              ParamType.bool,
+            ),
+            soldeC: params.getParam(
+              'soldeC',
+              ParamType.double,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: WalletListWidget.routeName,
+          path: WalletListWidget.routePath,
+          builder: (context, params) => WalletListWidget(),
+        ),
+        FFRoute(
+          name: ShowRevenuWidget.routeName,
+          path: ShowRevenuWidget.routePath,
+          builder: (context, params) => ShowRevenuWidget(
+            montantP: params.getParam(
+              'montantP',
+              ParamType.double,
+            ),
+            typeP: params.getParam(
+              'typeP',
+              ParamType.String,
+            ),
+            categorieP: params.getParam(
+              'categorieP',
+              ParamType.String,
+            ),
+            descriptionP: params.getParam(
+              'descriptionP',
+              ParamType.String,
+            ),
+            dateP: params.getParam(
+              'dateP',
+              ParamType.DateTime,
+            ),
+            methodeP: params.getParam(
+              'methodeP',
+              ParamType.String,
+            ),
+            localisationP: params.getParam(
+              'localisationP',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: AddRevenuWidget.routeName,
+          path: AddRevenuWidget.routePath,
+          builder: (context, params) => AddRevenuWidget(
+            categorieSelected: params.getParam(
+              'categorieSelected',
+              ParamType.String,
+            ),
+            walletParam: params.getParam(
+              'walletParam',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['Wallet'],
+            ),
+            detectedCategorie: params.getParam(
+              'detectedCategorie',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: EditRevenuWidget.routeName,
+          path: EditRevenuWidget.routePath,
+          builder: (context, params) => EditRevenuWidget(
+            montantP: params.getParam(
+              'montantP',
+              ParamType.double,
+            ),
+            categorieP: params.getParam(
+              'categorieP',
+              ParamType.String,
+            ),
+            methodeP: params.getParam(
+              'methodeP',
+              ParamType.String,
+            ),
+            typeP: params.getParam(
+              'typeP',
+              ParamType.String,
+            ),
+            descriptionP: params.getParam(
+              'descriptionP',
+              ParamType.String,
+            ),
+            locationP: params.getParam(
+              'locationP',
+              ParamType.String,
+            ),
+            dateP: params.getParam(
+              'dateP',
+              ParamType.DateTime,
+            ),
+            renvenuRF: params.getParam(
+              'renvenuRF',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['Transaction'],
+            ),
+            transactionParam: params.getParam(
+              'transactionParam',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['Transaction'],
+            ),
+            walletParam: params.getParam(
+              'walletParam',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['Wallet'],
+            ),
+            oldType: params.getParam(
+              'oldType',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: EditWalletWidget.routeName,
+          path: EditWalletWidget.routePath,
+          builder: (context, params) => EditWalletWidget(
+            nomWalletP: params.getParam(
+              'nomWalletP',
+              ParamType.String,
+            ),
+            soldeP: params.getParam(
+              'soldeP',
+              ParamType.double,
+            ),
+            limiteP: params.getParam(
+              'limiteP',
+              ParamType.double,
+            ),
+            depenseP: params.getParam(
+              'depenseP',
+              ParamType.double,
+            ),
+            revenuP: params.getParam(
+              'revenuP',
+              ParamType.double,
+            ),
+            objectifP: params.getParam(
+              'objectifP',
+              ParamType.double,
+            ),
+            welletRp: params.getParam(
+              'welletRp',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['Wallet'],
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

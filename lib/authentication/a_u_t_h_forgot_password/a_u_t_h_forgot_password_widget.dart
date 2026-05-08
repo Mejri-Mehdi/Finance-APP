@@ -108,7 +108,7 @@ class _AUTHForgotPasswordWidgetState extends State<AUTHForgotPasswordWidget> {
                         style: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.outfit(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .headlineMedium
                                     .fontWeight,
@@ -131,7 +131,7 @@ class _AUTHForgotPasswordWidgetState extends State<AUTHForgotPasswordWidget> {
                         'Don\'t worry, it happens. Enter your email below to receive password reset instructions.',
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.plusJakartaSans(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -206,7 +206,7 @@ class _AUTHForgotPasswordWidgetState extends State<AUTHForgotPasswordWidget> {
                       Text(
                         'Remember your password?',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.plusJakartaSans(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -273,7 +273,7 @@ class _AUTHForgotPasswordWidgetState extends State<AUTHForgotPasswordWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.plusJakartaSans(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .fontWeight,
@@ -317,7 +317,7 @@ class _AUTHForgotPasswordWidgetState extends State<AUTHForgotPasswordWidget> {
                   Text(
                     'NeoVault Security',
                     style: FlutterFlowTheme.of(context).labelMedium.override(
-                          font: GoogleFonts.inter(
+                          font: GoogleFonts.outfit(
                             fontWeight: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .fontWeight,

@@ -75,7 +75,7 @@ class _AnalytiquesTransactionsWidgetState
       Color(0xFF00E676),
       Color(0xFF00B0FF),
       Color(0xFFFF9100),
-      Color(0xFFB388FF),
+      FlutterFlowTheme.of(context).common29,
       FlutterFlowTheme.of(context).warning,
       Color(0xFF343EBB)
     ];
@@ -116,14 +116,14 @@ class _AnalytiquesTransactionsWidgetState
             key: scaffoldKey,
             backgroundColor: Color(0xFFF7F7F7),
             appBar: AppBar(
-              backgroundColor: Colors.white,
+              backgroundColor: FlutterFlowTheme.of(context).common2,
               automaticallyImplyLeading: false,
               leading: FlutterFlowIconButton(
                 borderRadius: 22.0,
                 buttonSize: 44.0,
                 icon: Icon(
                   Icons.arrow_back_rounded,
-                  color: Color(0xFF1A1A2E),
+                  color: FlutterFlowTheme.of(context).common4,
                   size: 24.0,
                 ),
                 onPressed: () async {
@@ -135,13 +135,13 @@ class _AnalytiquesTransactionsWidgetState
               title: Text(
                 'Analytiques',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
-                      font: GoogleFonts.inter(
+                      font: GoogleFonts.outfit(
                         fontWeight: FontWeight.bold,
                         fontStyle: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .fontStyle,
                       ),
-                      color: Color(0xFF1A1A2E),
+                      color: FlutterFlowTheme.of(context).common4,
                       fontSize: 22.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.bold,
@@ -157,7 +157,7 @@ class _AnalytiquesTransactionsWidgetState
                     buttonSize: 44.0,
                     icon: Icon(
                       Icons.calendar_today_outlined,
-                      color: Color(0xFF7C3AED),
+                      color: FlutterFlowTheme.of(context).common7,
                       size: 22.0,
                     ),
                     onPressed: () {
@@ -182,7 +182,10 @@ class _AnalytiquesTransactionsWidgetState
                         width: double.infinity,
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
-                            colors: [Color(0xFFF7F7F7), Color(0xFFF3F0FF)],
+                            colors: [
+                              Color(0xFFF7F7F7),
+                              FlutterFlowTheme.of(context).common16
+                            ],
                             stops: [0.0, 1.0],
                             begin: AlignmentDirectional(0.0, -1.0),
                             end: AlignmentDirectional(0, 1.0),
@@ -198,13 +201,14 @@ class _AnalytiquesTransactionsWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.plusJakartaSans(
                                       fontWeight: FontWeight.w500,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF9CA3AF),
+                                    color:
+                                        FlutterFlowTheme.of(context).common17,
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -254,7 +258,8 @@ class _AnalytiquesTransactionsWidgetState
                                     width: 8.0,
                                     height: 8.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF10B981),
+                                      color:
+                                          FlutterFlowTheme.of(context).common31,
                                       shape: BoxShape.circle,
                                     ),
                                   ),
@@ -263,14 +268,15 @@ class _AnalytiquesTransactionsWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.plusJakartaSans(
                                             fontWeight: FontWeight.w600,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF10B981),
+                                          color: FlutterFlowTheme.of(context)
+                                              .common31,
                                           fontSize: 12.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w600,
@@ -285,14 +291,15 @@ class _AnalytiquesTransactionsWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.plusJakartaSans(
                                             fontWeight: FontWeight.normal,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF9CA3AF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .common17,
                                           fontSize: 12.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -317,7 +324,7 @@ class _AnalytiquesTransactionsWidgetState
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context).common2,
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 20.0,
@@ -348,14 +355,16 @@ class _AnalytiquesTransactionsWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .titleMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.plusJakartaSans(
                                                 fontWeight: FontWeight.bold,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleMedium
                                                         .fontStyle,
                                               ),
-                                              color: Color(0xFF1A1A2E),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .common4,
                                               fontSize: 16.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
@@ -369,7 +378,8 @@ class _AnalytiquesTransactionsWidgetState
                                         width: 80.0,
                                         height: 30.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0xFFF3F0FF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .common16,
                                           borderRadius:
                                               BorderRadius.circular(20.0),
                                         ),
@@ -385,7 +395,8 @@ class _AnalytiquesTransactionsWidgetState
                                                       context)
                                                   .bodySmall
                                                   .override(
-                                                    font: GoogleFonts.inter(
+                                                    font: GoogleFonts
+                                                        .plusJakartaSans(
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontStyle:
@@ -394,7 +405,9 @@ class _AnalytiquesTransactionsWidgetState
                                                               .bodySmall
                                                               .fontStyle,
                                                     ),
-                                                    color: Color(0xFF7C3AED),
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .common7,
                                                     fontSize: 12.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w600,
@@ -441,14 +454,17 @@ class _AnalytiquesTransactionsWidgetState
                                               ],
                                             ),
                                             donutHoleRadius: 7.0,
-                                            donutHoleColor: Colors.transparent,
+                                            donutHoleColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .common0,
                                             sectionLabelType:
                                                 PieChartSectionLabelType.value,
                                             sectionLabelStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts
+                                                          .plusJakartaSans(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -497,7 +513,8 @@ class _AnalytiquesTransactionsWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts
+                                                            .plusJakartaSans(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -545,7 +562,7 @@ class _AnalytiquesTransactionsWidgetState
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: FlutterFlowTheme.of(context).common2,
                           boxShadow: [
                             BoxShadow(
                               blurRadius: 16.0,
@@ -576,14 +593,15 @@ class _AnalytiquesTransactionsWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.plusJakartaSans(
                                               fontWeight: FontWeight.bold,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .titleMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF1A1A2E),
+                                            color: FlutterFlowTheme.of(context)
+                                                .common4,
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
@@ -598,14 +616,15 @@ class _AnalytiquesTransactionsWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.plusJakartaSans(
                                               fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodySmall
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF7C3AED),
+                                            color: FlutterFlowTheme.of(context)
+                                                .common7,
                                             fontSize: 13.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
@@ -678,7 +697,9 @@ class _AnalytiquesTransactionsWidgetState
                                               child: Container(
                                                 width: double.infinity,
                                                 decoration: BoxDecoration(
-                                                  color: Colors.white,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .common2,
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           16.0),
@@ -706,8 +727,9 @@ class _AnalytiquesTransactionsWidgetState
                                                             height: 44.0,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFF3F0FF),
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .common16,
                                                               borderRadius:
                                                                   BorderRadius
                                                                       .circular(
@@ -720,8 +742,9 @@ class _AnalytiquesTransactionsWidgetState
                                                               child: Icon(
                                                                 Icons
                                                                     .restaurant_outlined,
-                                                                color: Color(
-                                                                    0xFF7C3AED),
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .common7,
                                                                 size: 22.0,
                                                               ),
                                                             ),
@@ -741,15 +764,16 @@ class _AnalytiquesTransactionsWidgetState
                                                                     .bodyLarge
                                                                     .override(
                                                                       font: GoogleFonts
-                                                                          .inter(
+                                                                          .plusJakartaSans(
                                                                         fontWeight:
                                                                             FontWeight.w600,
                                                                         fontStyle: FlutterFlowTheme.of(context)
                                                                             .bodyLarge
                                                                             .fontStyle,
                                                                       ),
-                                                                      color: Color(
-                                                                          0xFF1A1A2E),
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .common4,
                                                                       fontSize:
                                                                           15.0,
                                                                       letterSpacing:
@@ -781,15 +805,15 @@ class _AnalytiquesTransactionsWidgetState
                                                                       .bodySmall
                                                                       .override(
                                                                         font: GoogleFonts
-                                                                            .inter(
+                                                                            .plusJakartaSans(
                                                                           fontWeight:
                                                                               FontWeight.normal,
                                                                           fontStyle: FlutterFlowTheme.of(context)
                                                                               .bodySmall
                                                                               .fontStyle,
                                                                         ),
-                                                                        color: Color(
-                                                                            0xFF9CA3AF),
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .common17,
                                                                         fontSize:
                                                                             12.0,
                                                                         letterSpacing:
@@ -827,9 +851,8 @@ class _AnalytiquesTransactionsWidgetState
                                                                     .of(context)
                                                                 .bodyLarge
                                                                 .override(
-                                                                  font:
-                                                                      GoogleFonts
-                                                                          .inter(
+                                                                  font: GoogleFonts
+                                                                      .plusJakartaSans(
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .bold,
@@ -838,8 +861,9 @@ class _AnalytiquesTransactionsWidgetState
                                                                         .bodyLarge
                                                                         .fontStyle,
                                                                   ),
-                                                                  color: Color(
-                                                                      0xFF1A1A2E),
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .common4,
                                                                   fontSize:
                                                                       15.0,
                                                                   letterSpacing:
@@ -866,8 +890,9 @@ class _AnalytiquesTransactionsWidgetState
                                                               height: 4.0,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: Color(
-                                                                    0xFFF3F0FF),
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .common16,
                                                                 borderRadius:
                                                                     BorderRadius
                                                                         .circular(
@@ -878,8 +903,9 @@ class _AnalytiquesTransactionsWidgetState
                                                                 height: 4.0,
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: Color(
-                                                                      0xFF7C3AED),
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .common7,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(

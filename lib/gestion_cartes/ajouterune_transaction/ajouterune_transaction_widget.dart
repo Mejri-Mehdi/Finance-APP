@@ -90,10 +90,10 @@ class _AjouteruneTransactionWidgetState
         key: scaffoldKey,
         backgroundColor: Color(0xFFF5F5F5),
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: FlutterFlowTheme.of(context).common2,
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
-            borderColor: Colors.transparent,
+            borderColor: FlutterFlowTheme.of(context).common0,
             borderRadius: 22.0,
             buttonSize: 44.0,
             icon: Icon(
@@ -108,7 +108,7 @@ class _AjouteruneTransactionWidgetState
           title: Text(
             'Nouvelle Transaction',
             style: FlutterFlowTheme.of(context).titleLarge.override(
-                  font: GoogleFonts.inter(
+                  font: GoogleFonts.outfit(
                     fontWeight: FontWeight.bold,
                     fontStyle:
                         FlutterFlowTheme.of(context).titleLarge.fontStyle,
@@ -150,13 +150,14 @@ class _AjouteruneTransactionWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.outfit(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF9E9E9E),
+                                    color:
+                                        FlutterFlowTheme.of(context).common18,
                                     fontSize: 13.0,
                                     letterSpacing: 1.5,
                                     fontWeight: FontWeight.w600,
@@ -215,7 +216,8 @@ class _AjouteruneTransactionWidgetState
                                                     .displayLarge
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFF7C3AED),
+                                          color: FlutterFlowTheme.of(context)
+                                              .common7,
                                           fontSize: 56.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
@@ -226,7 +228,8 @@ class _AjouteruneTransactionWidgetState
                                         ),
                                     textAlign: TextAlign.center,
                                     keyboardType: TextInputType.number,
-                                    cursorColor: Color(0xFF7C3AED),
+                                    cursorColor:
+                                        FlutterFlowTheme.of(context).common7,
                                     validator: _model.textController1Validator
                                         .asValidator(context),
                                   ),
@@ -236,14 +239,15 @@ class _AjouteruneTransactionWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .titleLarge
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.outfit(
                                           fontWeight: FontWeight.bold,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .titleLarge
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF7C3AED),
+                                        color: FlutterFlowTheme.of(context)
+                                            .common7,
                                         fontSize: 22.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.bold,
@@ -260,8 +264,8 @@ class _AjouteruneTransactionWidgetState
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color(0xFF7C3AED),
-                                    Color(0xFFEC4899)
+                                    FlutterFlowTheme.of(context).common7,
+                                    FlutterFlowTheme.of(context).common82
                                   ],
                                   stops: [0.0, 1.0],
                                   begin: AlignmentDirectional(1.0, 0.0),
@@ -279,7 +283,7 @@ class _AjouteruneTransactionWidgetState
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context).common2,
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 20.0,
@@ -306,14 +310,15 @@ class _AjouteruneTransactionWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.outfit(
                                               fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF6B7280),
+                                            color: FlutterFlowTheme.of(context)
+                                                .common34,
                                             fontSize: 12.0,
                                             letterSpacing: 0.5,
                                             fontWeight: FontWeight.w600,
@@ -326,11 +331,13 @@ class _AjouteruneTransactionWidgetState
                                     Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFF9F7FF),
+                                        color: FlutterFlowTheme.of(context)
+                                            .common33,
                                         borderRadius:
                                             BorderRadius.circular(14.0),
                                         border: Border.all(
-                                          color: Color(0xFFE9D5FF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .common32,
                                           width: 1.5,
                                         ),
                                       ),
@@ -350,7 +357,8 @@ class _AjouteruneTransactionWidgetState
                                                 FlutterFlowTheme.of(context)
                                                     .bodyLarge
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts
+                                                          .plusJakartaSans(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -362,7 +370,10 @@ class _AjouteruneTransactionWidgetState
                                                                 .bodyLarge
                                                                 .fontStyle,
                                                       ),
-                                                      color: Color(0xFFB0B8C8),
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .common28,
                                                       fontSize: 15.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
@@ -386,14 +397,17 @@ class _AjouteruneTransactionWidgetState
                                                     16.0, 14.0, 16.0, 14.0),
                                             prefixIcon: Icon(
                                               Icons.storefront_outlined,
-                                              color: Color(0xFF7C3AED),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .common7,
                                               size: 20.0,
                                             ),
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyLarge
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font:
+                                                    GoogleFonts.plusJakartaSans(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -405,7 +419,9 @@ class _AjouteruneTransactionWidgetState
                                                           .bodyLarge
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF1F1F2E),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common41,
                                                 fontSize: 15.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight:
@@ -417,7 +433,9 @@ class _AjouteruneTransactionWidgetState
                                                         .bodyLarge
                                                         .fontStyle,
                                               ),
-                                          cursorColor: Color(0xFF7C3AED),
+                                          cursorColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .common7,
                                           validator: _model
                                               .textController2Validator
                                               .asValidator(context),
@@ -435,14 +453,15 @@ class _AjouteruneTransactionWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.outfit(
                                               fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF6B7280),
+                                            color: FlutterFlowTheme.of(context)
+                                                .common34,
                                             fontSize: 12.0,
                                             letterSpacing: 0.5,
                                             fontWeight: FontWeight.w600,
@@ -455,11 +474,13 @@ class _AjouteruneTransactionWidgetState
                                     Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFF9F7FF),
+                                        color: FlutterFlowTheme.of(context)
+                                            .common33,
                                         borderRadius:
                                             BorderRadius.circular(14.0),
                                         border: Border.all(
-                                          color: Color(0xFFE9D5FF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .common32,
                                           width: 1.5,
                                         ),
                                       ),
@@ -478,7 +499,7 @@ class _AjouteruneTransactionWidgetState
                                         textStyle: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.plusJakartaSans(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyLarge
@@ -488,7 +509,9 @@ class _AjouteruneTransactionWidgetState
                                                         .bodyLarge
                                                         .fontStyle,
                                               ),
-                                              color: Color(0xFF1F1F2E),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .common41,
                                               fontSize: 15.0,
                                               letterSpacing: 0.0,
                                               fontWeight:
@@ -503,7 +526,8 @@ class _AjouteruneTransactionWidgetState
                                         hintText: 'Sélectionner un type',
                                         icon: Icon(
                                           Icons.keyboard_arrow_down_rounded,
-                                          color: Color(0xFF7C3AED),
+                                          color: FlutterFlowTheme.of(context)
+                                              .common7,
                                           size: 22.0,
                                         ),
                                         fillColor: FlutterFlowTheme.of(context)
@@ -541,7 +565,7 @@ class _AjouteruneTransactionWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.outfit(
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -549,7 +573,9 @@ class _AjouteruneTransactionWidgetState
                                                           .labelMedium
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF6B7280),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common34,
                                                 fontSize: 12.0,
                                                 letterSpacing: 0.5,
                                                 fontWeight: FontWeight.w600,
@@ -566,11 +592,15 @@ class _AjouteruneTransactionWidgetState
                                           child: Container(
                                             width: double.infinity,
                                             decoration: BoxDecoration(
-                                              color: Color(0xFFF9F7FF),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .common33,
                                               borderRadius:
                                                   BorderRadius.circular(14.0),
                                               border: Border.all(
-                                                color: Color(0xFFE9D5FF),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common32,
                                                 width: 1.5,
                                               ),
                                             ),
@@ -597,7 +627,8 @@ class _AjouteruneTransactionWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts
+                                                            .plusJakartaSans(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -610,7 +641,9 @@ class _AjouteruneTransactionWidgetState
                                                                   .fontStyle,
                                                         ),
                                                         color:
-                                                            Color(0xFF1F1F2E),
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .common41,
                                                         fontSize: 15.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -629,7 +662,9 @@ class _AjouteruneTransactionWidgetState
                                               icon: Icon(
                                                 Icons
                                                     .keyboard_arrow_down_rounded,
-                                                color: Color(0xFF7C3AED),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common7,
                                                 size: 22.0,
                                               ),
                                               fillColor:
@@ -660,14 +695,15 @@ class _AjouteruneTransactionWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.outfit(
                                               fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF6B7280),
+                                            color: FlutterFlowTheme.of(context)
+                                                .common34,
                                             fontSize: 12.0,
                                             letterSpacing: 0.5,
                                             fontWeight: FontWeight.w600,
@@ -680,11 +716,13 @@ class _AjouteruneTransactionWidgetState
                                     Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFF9F7FF),
+                                        color: FlutterFlowTheme.of(context)
+                                            .common33,
                                         borderRadius:
                                             BorderRadius.circular(14.0),
                                         border: Border.all(
-                                          color: Color(0xFFE9D5FF),
+                                          color: FlutterFlowTheme.of(context)
+                                              .common32,
                                           width: 1.5,
                                         ),
                                       ),
@@ -709,69 +747,70 @@ class _AjouteruneTransactionWidgetState
                                                   obscureText: false,
                                                   decoration: InputDecoration(
                                                     isDense: true,
-                                                    labelStyle: FlutterFlowTheme
-                                                            .of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          font:
-                                                              GoogleFonts.inter(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
+                                                    labelStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .override(
+                                                              font: GoogleFonts
+                                                                  .outfit(
+                                                                fontWeight: FlutterFlowTheme.of(
                                                                         context)
                                                                     .labelMedium
                                                                     .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
+                                                                fontStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .labelMedium
                                                                     .fontStyle,
-                                                          ),
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMedium
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelMedium
-                                                                  .fontStyle,
-                                                        ),
+                                                              ),
+                                                              letterSpacing:
+                                                                  0.0,
+                                                              fontWeight:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontWeight,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelMedium
+                                                                      .fontStyle,
+                                                            ),
                                                     alignLabelWithHint: false,
                                                     hintText: 'Ex: 27/4/2026',
-                                                    hintStyle: FlutterFlowTheme
-                                                            .of(context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          font:
-                                                              GoogleFonts.inter(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
+                                                    hintStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyLarge
+                                                            .override(
+                                                              font: GoogleFonts
+                                                                  .plusJakartaSans(
+                                                                fontWeight: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyLarge
                                                                     .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
+                                                                fontStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyLarge
                                                                     .fontStyle,
-                                                          ),
-                                                          color:
-                                                              Color(0xFFB0B8C8),
-                                                          fontSize: 15.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLarge
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLarge
-                                                                  .fontStyle,
-                                                        ),
+                                                              ),
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .common28,
+                                                              fontSize: 15.0,
+                                                              letterSpacing:
+                                                                  0.0,
+                                                              fontWeight:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyLarge
+                                                                      .fontWeight,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyLarge
+                                                                      .fontStyle,
+                                                            ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
                                                       borderSide: BorderSide(
@@ -838,7 +877,8 @@ class _AjouteruneTransactionWidgetState
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font: GoogleFonts
+                                                            .plusJakartaSans(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -877,7 +917,9 @@ class _AjouteruneTransactionWidgetState
                                             ),
                                             Icon(
                                               Icons.calendar_today_rounded,
-                                              color: Color(0xFF7C3AED),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .common7,
                                               size: 22.0,
                                             ),
                                           ],
@@ -903,7 +945,7 @@ class _AjouteruneTransactionWidgetState
                               boxShadow: [
                                 BoxShadow(
                                   blurRadius: 18.0,
-                                  color: Color(0x557C3AED),
+                                  color: FlutterFlowTheme.of(context).common83,
                                   offset: Offset(
                                     0.0,
                                     6.0,
@@ -911,7 +953,10 @@ class _AjouteruneTransactionWidgetState
                                 )
                               ],
                               gradient: LinearGradient(
-                                colors: [Color(0xFF7C3AED), Color(0xFFEC4899)],
+                                colors: [
+                                  FlutterFlowTheme.of(context).common7,
+                                  FlutterFlowTheme.of(context).common82
+                                ],
                                 stops: [0.0, 1.0],
                                 begin: AlignmentDirectional(1.0, 0.0),
                                 end: AlignmentDirectional(-1.0, 0),
@@ -1072,7 +1117,8 @@ class _AjouteruneTransactionWidgetState
                                             .titleSmall
                                             .fontStyle,
                                       ),
-                                      color: Colors.white,
+                                      color:
+                                          FlutterFlowTheme.of(context).common2,
                                       letterSpacing: 0.0,
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleSmall

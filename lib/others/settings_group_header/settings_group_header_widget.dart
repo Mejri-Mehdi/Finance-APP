@@ -54,7 +54,7 @@ class _SettingsGroupHeaderWidgetState extends State<SettingsGroupHeaderWidget> {
               'Account Settings',
             ),
             style: FlutterFlowTheme.of(context).labelLarge.override(
-                  font: GoogleFonts.inter(
+                  font: GoogleFonts.outfit(
                     fontWeight: FontWeight.bold,
                     fontStyle:
                         FlutterFlowTheme.of(context).labelLarge.fontStyle,

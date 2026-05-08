@@ -83,12 +83,12 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
           backgroundColor: Color(0xFFF5F5F5),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
-            borderColor: Colors.transparent,
+            borderColor: FlutterFlowTheme.of(context).common0,
             borderRadius: 22.0,
             buttonSize: 44.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: Color(0xFF1A1A2E),
+              color: FlutterFlowTheme.of(context).common4,
               size: 24.0,
             ),
             onPressed: () async {
@@ -100,12 +100,12 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
             child: Text(
               'Mes Cartes',
               style: FlutterFlowTheme.of(context).titleLarge.override(
-                    font: GoogleFonts.inter(
+                    font: GoogleFonts.outfit(
                       fontWeight: FontWeight.bold,
                       fontStyle:
                           FlutterFlowTheme.of(context).titleLarge.fontStyle,
                     ),
-                    color: Color(0xFF1A1A2E),
+                    color: FlutterFlowTheme.of(context).common4,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.bold,
                     fontStyle:
@@ -117,13 +117,13 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(12.0, 9.0, 12.0, 9.0),
               child: FlutterFlowIconButton(
-                borderColor: Colors.transparent,
+                borderColor: FlutterFlowTheme.of(context).common0,
                 borderRadius: 22.0,
                 buttonSize: 44.0,
-                fillColor: Color(0xFF7C3AED),
+                fillColor: FlutterFlowTheme.of(context).common7,
                 icon: Icon(
                   Icons.add_rounded,
-                  color: Colors.white,
+                  color: FlutterFlowTheme.of(context).common2,
                   size: 22.0,
                 ),
                 onPressed: () async {
@@ -198,7 +198,8 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                         boxShadow: [
                                           BoxShadow(
                                             blurRadius: 24.0,
-                                            color: Color(0x557C3AED),
+                                            color: FlutterFlowTheme.of(context)
+                                                .common83,
                                             offset: Offset(
                                               0.0,
                                               8.0,
@@ -207,7 +208,8 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                         ],
                                         gradient: LinearGradient(
                                           colors: [
-                                            Color(0xFF7C3AED),
+                                            FlutterFlowTheme.of(context)
+                                                .common7,
                                             Color(0xFFDB2777)
                                           ],
                                           stops: [0.0, 1.0],
@@ -229,7 +231,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                 width: 180.0,
                                                 height: 180.0,
                                                 decoration: BoxDecoration(
-                                                  color: Color(0x1AFFFFFF),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .common35,
                                                   shape: BoxShape.circle,
                                                 ),
                                               ),
@@ -245,7 +249,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                   width: 120.0,
                                                   height: 120.0,
                                                   decoration: BoxDecoration(
-                                                    color: Color(0x1AFFFFFF),
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .common35,
                                                     shape: BoxShape.circle,
                                                   ),
                                                 ),
@@ -271,39 +277,44 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                               .cardNetwork,
                                                           'CIB',
                                                         ),
-                                                        style: FlutterFlowTheme
-                                                                .of(context)
-                                                            .titleLarge
-                                                            .override(
-                                                              font: GoogleFonts
-                                                                  .inter(
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w800,
-                                                                fontStyle: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleLarge
-                                                                    .fontStyle,
-                                                              ),
-                                                              color:
-                                                                  Colors.white,
-                                                              fontSize: 22.0,
-                                                              letterSpacing:
-                                                                  0.0,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w800,
-                                                              fontStyle:
-                                                                  FlutterFlowTheme.of(
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleLarge
+                                                                .override(
+                                                                  font: GoogleFonts
+                                                                      .outfit(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w800,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleLarge
+                                                                        .fontStyle,
+                                                                  ),
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .common2,
+                                                                  fontSize:
+                                                                      22.0,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w800,
+                                                                  fontStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleLarge
                                                                       .fontStyle,
-                                                            ),
+                                                                ),
                                                       ),
                                                       Icon(
                                                         Icons
                                                             .credit_card_rounded,
-                                                        color: Colors.white,
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .common2,
                                                         size: 32.0,
                                                       ),
                                                     ],
@@ -333,32 +344,35 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                     child: Text(
                                                       listViewCardsRecord
                                                           .cardNumber,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            font: GoogleFonts
-                                                                .inter(
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w600,
-                                                              fontStyle:
-                                                                  FlutterFlowTheme.of(
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                font: GoogleFonts
+                                                                    .plusJakartaSans(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                  fontStyle: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
                                                                       .fontStyle,
-                                                            ),
-                                                            color: Colors.white,
-                                                            fontSize: 16.0,
-                                                            letterSpacing: 2.0,
-                                                            fontWeight:
-                                                                FontWeight.w600,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
+                                                                ),
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .common2,
+                                                                fontSize: 16.0,
+                                                                letterSpacing:
+                                                                    2.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w600,
+                                                                fontStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
                                                                     .fontStyle,
-                                                          ),
+                                                              ),
                                                     ),
                                                   ),
                                                   Padding(
@@ -387,7 +401,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                   .labelSmall
                                                                   .override(
                                                                     font: GoogleFonts
-                                                                        .inter(
+                                                                        .outfit(
                                                                       fontWeight: FlutterFlowTheme.of(
                                                                               context)
                                                                           .labelSmall
@@ -397,8 +411,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                           .labelSmall
                                                                           .fontStyle,
                                                                     ),
-                                                                    color: Color(
-                                                                        0xCCFFFFFF),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .common20,
                                                                     fontSize:
                                                                         9.0,
                                                                     letterSpacing:
@@ -421,7 +436,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                   .bodyMedium
                                                                   .override(
                                                                     font: GoogleFonts
-                                                                        .inter(
+                                                                        .plusJakartaSans(
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w600,
@@ -430,8 +445,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                           .bodyMedium
                                                                           .fontStyle,
                                                                     ),
-                                                                    color: Colors
-                                                                        .white,
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .common2,
                                                                     fontSize:
                                                                         13.0,
                                                                     letterSpacing:
@@ -461,7 +477,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                   .labelSmall
                                                                   .override(
                                                                     font: GoogleFonts
-                                                                        .inter(
+                                                                        .outfit(
                                                                       fontWeight: FlutterFlowTheme.of(
                                                                               context)
                                                                           .labelSmall
@@ -471,8 +487,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                           .labelSmall
                                                                           .fontStyle,
                                                                     ),
-                                                                    color: Color(
-                                                                        0xCCFFFFFF),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .common20,
                                                                     fontSize:
                                                                         9.0,
                                                                     letterSpacing:
@@ -495,7 +512,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                   .bodyMedium
                                                                   .override(
                                                                     font: GoogleFonts
-                                                                        .inter(
+                                                                        .plusJakartaSans(
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .w600,
@@ -504,8 +521,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                           .bodyMedium
                                                                           .fontStyle,
                                                                     ),
-                                                                    color: Colors
-                                                                        .white,
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .common2,
                                                                     fontSize:
                                                                         13.0,
                                                                     letterSpacing:
@@ -535,7 +553,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                   .labelSmall
                                                                   .override(
                                                                     font: GoogleFonts
-                                                                        .inter(
+                                                                        .outfit(
                                                                       fontWeight: FlutterFlowTheme.of(
                                                                               context)
                                                                           .labelSmall
@@ -545,8 +563,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                           .labelSmall
                                                                           .fontStyle,
                                                                     ),
-                                                                    color: Color(
-                                                                        0xCCFFFFFF),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .common20,
                                                                     fontSize:
                                                                         9.0,
                                                                     letterSpacing:
@@ -574,7 +593,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                   .bodyMedium
                                                                   .override(
                                                                     font: GoogleFonts
-                                                                        .inter(
+                                                                        .plusJakartaSans(
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .bold,
@@ -583,8 +602,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                           .bodyMedium
                                                                           .fontStyle,
                                                                     ),
-                                                                    color: Colors
-                                                                        .white,
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .common2,
                                                                     fontSize:
                                                                         13.0,
                                                                     letterSpacing:
@@ -696,11 +716,14 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                           width: 56.0,
                                           height: 56.0,
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFF3EEFF),
+                                            color: FlutterFlowTheme.of(context)
+                                                .common37,
                                             boxShadow: [
                                               BoxShadow(
                                                 blurRadius: 8.0,
-                                                color: Color(0x227C3AED),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common55,
                                                 offset: Offset(
                                                   0.0,
                                                   2.0,
@@ -714,7 +737,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                 AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.add_rounded,
-                                              color: Color(0xFF7C3AED),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .common7,
                                               size: 24.0,
                                             ),
                                           ),
@@ -728,7 +753,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelSmall
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.outfit(
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -736,7 +761,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                           .labelSmall
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF1A1A2E),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common4,
                                                 fontSize: 11.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
@@ -784,7 +811,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                             boxShadow: [
                                               BoxShadow(
                                                 blurRadius: 8.0,
-                                                color: Color(0x227C3AED),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common55,
                                                 offset: Offset(
                                                   0.0,
                                                   2.0,
@@ -814,7 +843,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelSmall
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.outfit(
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -822,7 +851,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                           .labelSmall
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF1A1A2E),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common4,
                                                 fontSize: 11.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
@@ -907,11 +938,14 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                           width: 56.0,
                                           height: 56.0,
                                           decoration: BoxDecoration(
-                                            color: Color(0xFFF3EEFF),
+                                            color: FlutterFlowTheme.of(context)
+                                                .common37,
                                             boxShadow: [
                                               BoxShadow(
                                                 blurRadius: 8.0,
-                                                color: Color(0x227C3AED),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common55,
                                                 offset: Offset(
                                                   0.0,
                                                   2.0,
@@ -925,7 +959,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                 AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.settings_rounded,
-                                              color: Color(0xFF7C3AED),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .common7,
                                               size: 24.0,
                                             ),
                                           ),
@@ -939,7 +975,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelSmall
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.outfit(
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -947,7 +983,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                           .labelSmall
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF1A1A2E),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common4,
                                                 fontSize: 11.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
@@ -1031,7 +1069,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                 AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.delete_outline_rounded,
-                                              color: Color(0xFFE53935),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .common72,
                                               size: 24.0,
                                             ),
                                           ),
@@ -1045,7 +1085,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelSmall
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.outfit(
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -1053,7 +1093,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                           .labelSmall
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFFE53935),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common72,
                                                 fontSize: 11.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
@@ -1229,7 +1271,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                           .titleSmall
                                                           .fontStyle,
                                                 ),
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common2,
                                                 letterSpacing: 0.0,
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
@@ -1299,7 +1343,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                           .titleSmall
                                                           .fontStyle,
                                                 ),
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .common2,
                                                 letterSpacing: 0.0,
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
@@ -1365,7 +1411,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                         return Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context).common2,
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 12.0,
@@ -1397,14 +1443,16 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .titleMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.plusJakartaSans(
                                                 fontWeight: FontWeight.bold,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleMedium
                                                         .fontStyle,
                                               ),
-                                              color: Color(0xFF1A1A2E),
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .common4,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
                                               fontStyle:
@@ -1416,7 +1464,8 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                       Container(
                                         height: 28.0,
                                         decoration: BoxDecoration(
-                                          color: Color(0xFFE8F5E9),
+                                          color: FlutterFlowTheme.of(context)
+                                              .common68,
                                           borderRadius:
                                               BorderRadius.circular(14.0),
                                         ),
@@ -1461,7 +1510,8 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                           context)
                                                       .labelMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font:
+                                                            GoogleFonts.outfit(
                                                           fontWeight:
                                                               FontWeight.bold,
                                                           fontStyle:
@@ -1492,7 +1542,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                 Divider(
                                   height: 1.0,
                                   thickness: 1.0,
-                                  color: Color(0xFFF0F0F0),
+                                  color: FlutterFlowTheme.of(context).common46,
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
@@ -1516,7 +1566,8 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    font: GoogleFonts.inter(
+                                                    font: GoogleFonts
+                                                        .plusJakartaSans(
                                                       fontWeight:
                                                           FontWeight.w500,
                                                       fontStyle:
@@ -1541,7 +1592,8 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    font: GoogleFonts.inter(
+                                                    font: GoogleFonts
+                                                        .plusJakartaSans(
                                                       fontWeight:
                                                           FontWeight.bold,
                                                       fontStyle:
@@ -1550,7 +1602,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                               .bodyMedium
                                                               .fontStyle,
                                                     ),
-                                                    color: Color(0xFF7C3AED),
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .common7,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.bold,
                                                     fontStyle:
@@ -1574,8 +1628,12 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                           lineHeight: 10.0,
                                           animation: true,
                                           animateFromLastPercent: true,
-                                          progressColor: Color(0xFF7C3AED),
-                                          backgroundColor: Color(0xFFF3EEFF),
+                                          progressColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .common7,
+                                          backgroundColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .common37,
                                           barRadius: Radius.circular(10.0),
                                           padding: EdgeInsets.zero,
                                         ),
@@ -1590,71 +1648,73 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                           children: [
                                             Text(
                                               '0 TND',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelSmall
-                                                      .override(
-                                                        font: GoogleFonts.inter(
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelSmall
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelSmall
-                                                                  .fontStyle,
-                                                        ),
-                                                        color:
-                                                            Color(0xFFAAAAAA),
-                                                        fontSize: 11.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelSmall
-                                                                .fontWeight,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelSmall
-                                                                .fontStyle,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .labelSmall
+                                                  .override(
+                                                    font: GoogleFonts.outfit(
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .labelSmall
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .labelSmall
+                                                              .fontStyle,
+                                                    ),
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .common43,
+                                                    fontSize: 11.0,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelSmall
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelSmall
+                                                            .fontStyle,
+                                                  ),
                                             ),
                                             Text(
                                               '2,000 TND',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelSmall
-                                                      .override(
-                                                        font: GoogleFonts.inter(
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelSmall
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .labelSmall
-                                                                  .fontStyle,
-                                                        ),
-                                                        color:
-                                                            Color(0xFFAAAAAA),
-                                                        fontSize: 11.0,
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelSmall
-                                                                .fontWeight,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelSmall
-                                                                .fontStyle,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .labelSmall
+                                                  .override(
+                                                    font: GoogleFonts.outfit(
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .labelSmall
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .labelSmall
+                                                              .fontStyle,
+                                                    ),
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .common43,
+                                                    fontSize: 11.0,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelSmall
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelSmall
+                                                            .fontStyle,
+                                                  ),
                                             ),
                                           ],
                                         ),
@@ -1719,14 +1779,15 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.plusJakartaSans(
                                               fontWeight: FontWeight.bold,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .titleMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF1A1A2E),
+                                            color: FlutterFlowTheme.of(context)
+                                                .common4,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
                                             fontStyle:
@@ -1771,7 +1832,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                         .titleSmall
                                                         .fontStyle,
                                               ),
-                                              color: Colors.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .common2,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -1888,7 +1951,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                   await showModalBottomSheet(
                                                     isScrollControlled: true,
                                                     backgroundColor:
-                                                        Colors.transparent,
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .common0,
                                                     enableDrag: false,
                                                     context: context,
                                                     builder: (context) {
@@ -1982,7 +2047,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                 child: Container(
                                                   width: double.infinity,
                                                   decoration: BoxDecoration(
-                                                    color: Colors.white,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .common2,
                                                     boxShadow: [
                                                       BoxShadow(
                                                         blurRadius: 8.0,
@@ -2017,8 +2084,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                               height: 44.0,
                                                               decoration:
                                                                   BoxDecoration(
-                                                                color: Color(
-                                                                    0xFFF3EEFF),
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .common37,
                                                                 shape: BoxShape
                                                                     .circle,
                                                               ),
@@ -2030,8 +2098,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                 child: Icon(
                                                                   Icons
                                                                       .shopping_bag_rounded,
-                                                                  color: Color(
-                                                                      0xFF7C3AED),
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .common7,
                                                                   size: 22.0,
                                                                 ),
                                                               ),
@@ -2056,15 +2125,15 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                       .bodyMedium
                                                                       .override(
                                                                         font: GoogleFonts
-                                                                            .inter(
+                                                                            .plusJakartaSans(
                                                                           fontWeight:
                                                                               FontWeight.w600,
                                                                           fontStyle: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .fontStyle,
                                                                         ),
-                                                                        color: Color(
-                                                                            0xFF1A1A2E),
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .common4,
                                                                         letterSpacing:
                                                                             0.0,
                                                                         fontWeight:
@@ -2093,14 +2162,14 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                         .labelSmall
                                                                         .override(
                                                                           font:
-                                                                              GoogleFonts.inter(
+                                                                              GoogleFonts.outfit(
                                                                             fontWeight:
                                                                                 FlutterFlowTheme.of(context).labelSmall.fontWeight,
                                                                             fontStyle:
                                                                                 FlutterFlowTheme.of(context).labelSmall.fontStyle,
                                                                           ),
                                                                           color:
-                                                                              Color(0xFFAAAAAA),
+                                                                              FlutterFlowTheme.of(context).common43,
                                                                           fontSize:
                                                                               11.0,
                                                                           letterSpacing:
@@ -2138,9 +2207,8 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                font:
-                                                                    GoogleFonts
-                                                                        .inter(
+                                                                font: GoogleFonts
+                                                                    .plusJakartaSans(
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .bold,
@@ -2149,8 +2217,9 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                       .bodyMedium
                                                                       .fontStyle,
                                                                 ),
-                                                                color: Color(
-                                                                    0xFF1A1A2E),
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .common4,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -2246,7 +2315,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               iconPadding: EdgeInsets.all(0.0),
-                              color: Color(0xFF7C3AED),
+                              color: FlutterFlowTheme.of(context).common7,
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
@@ -2258,7 +2327,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: Colors.white,
+                                    color: FlutterFlowTheme.of(context).common2,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall

@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_web_view.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dtailsdela_transaction_model.dart';
@@ -95,7 +94,7 @@ class _DtailsdelaTransactionWidgetState
                 width: 40.0,
                 height: 4.0,
                 decoration: BoxDecoration(
-                  color: Color(0xFFE0E3E7),
+                  color: FlutterFlowTheme.of(context).common84,
                   borderRadius: BorderRadius.circular(4.0),
                 ),
               ),
@@ -107,12 +106,12 @@ class _DtailsdelaTransactionWidgetState
                 Text(
                   'Détails de la transaction',
                   style: FlutterFlowTheme.of(context).titleLarge.override(
-                        font: GoogleFonts.inter(
+                        font: GoogleFonts.outfit(
                           fontWeight: FontWeight.bold,
                           fontStyle:
                               FlutterFlowTheme.of(context).titleLarge.fontStyle,
                         ),
-                        color: Color(0xFF14181B),
+                        color: FlutterFlowTheme.of(context).common38,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.bold,
                         fontStyle:
@@ -155,12 +154,12 @@ class _DtailsdelaTransactionWidgetState
                     'Carrefour',
                   ),
                   style: FlutterFlowTheme.of(context).bodyLarge.override(
-                        font: GoogleFonts.inter(
+                        font: GoogleFonts.plusJakartaSans(
                           fontWeight: FontWeight.normal,
                           fontStyle:
                               FlutterFlowTheme.of(context).bodyLarge.fontStyle,
                         ),
-                        color: Color(0xFF57636C),
+                        color: FlutterFlowTheme.of(context).common26,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
                         fontStyle:
@@ -188,15 +187,13 @@ class _DtailsdelaTransactionWidgetState
                 borderRadius: BorderRadius.circular(20.0),
               ),
               child: FlutterFlowWebView(
-                content: valueOrDefault<String>(
-                  functions.getMapUrl(widget.txDetails?.merchantName),
-                  'Carr',
-                ),
-                bypass: false,
+                content:
+                    '<!DOCTYPE html>\n<html>\n<head>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">\n  <style>body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }</style>\n</head>\n<body>\n  <iframe \n    width=\"100%\" \n    height=\"100%\" \n    frameborder=\"0\" \n    style=\"border:0;\" \n    src=\"YOUR_EMBED_URL_HERE\" \n    allowfullscreen>\n  </iframe>\n</body>\n</html>\n',
                 width: 400.0,
                 height: 250.0,
                 verticalScroll: false,
                 horizontalScroll: false,
+                html: true,
               ),
             ),
             Container(
@@ -223,7 +220,7 @@ class _DtailsdelaTransactionWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.outfit(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -231,7 +228,8 @@ class _DtailsdelaTransactionWidgetState
                                           .labelMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF57636C),
+                                    color:
+                                        FlutterFlowTheme.of(context).common26,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelMedium
@@ -249,13 +247,14 @@ class _DtailsdelaTransactionWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.plusJakartaSans(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF14181B),
+                                    color:
+                                        FlutterFlowTheme.of(context).common38,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
@@ -274,7 +273,7 @@ class _DtailsdelaTransactionWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.outfit(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -282,7 +281,8 @@ class _DtailsdelaTransactionWidgetState
                                           .labelMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF57636C),
+                                    color:
+                                        FlutterFlowTheme.of(context).common26,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelMedium
@@ -305,7 +305,7 @@ class _DtailsdelaTransactionWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.outfit(
                                           fontWeight: FontWeight.bold,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -330,7 +330,7 @@ class _DtailsdelaTransactionWidgetState
                       width: double.infinity,
                       height: 1.0,
                       decoration: BoxDecoration(
-                        color: Color(0xFFE0E3E7),
+                        color: FlutterFlowTheme.of(context).common84,
                       ),
                     ),
                     Row(
@@ -346,7 +346,7 @@ class _DtailsdelaTransactionWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.outfit(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -354,7 +354,8 @@ class _DtailsdelaTransactionWidgetState
                                           .labelMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF57636C),
+                                    color:
+                                        FlutterFlowTheme.of(context).common26,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelMedium
@@ -372,13 +373,14 @@ class _DtailsdelaTransactionWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.plusJakartaSans(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF14181B),
+                                    color:
+                                        FlutterFlowTheme.of(context).common38,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
@@ -397,7 +399,7 @@ class _DtailsdelaTransactionWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.outfit(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -405,7 +407,8 @@ class _DtailsdelaTransactionWidgetState
                                           .labelMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF57636C),
+                                    color:
+                                        FlutterFlowTheme.of(context).common26,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelMedium
@@ -420,13 +423,14 @@ class _DtailsdelaTransactionWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.plusJakartaSans(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontStyle,
                                     ),
-                                    color: Color(0xFF14181B),
+                                    color:
+                                        FlutterFlowTheme.of(context).common38,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)
@@ -459,7 +463,7 @@ class _DtailsdelaTransactionWidgetState
                         fontStyle:
                             FlutterFlowTheme.of(context).titleSmall.fontStyle,
                       ),
-                      color: Color(0xFF57636C),
+                      color: FlutterFlowTheme.of(context).common26,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w600,
                       fontStyle:
@@ -467,7 +471,7 @@ class _DtailsdelaTransactionWidgetState
                     ),
                 elevation: 0.0,
                 borderSide: BorderSide(
-                  color: Colors.transparent,
+                  color: FlutterFlowTheme.of(context).common0,
                   width: 0.0,
                 ),
                 borderRadius: BorderRadius.circular(14.0),

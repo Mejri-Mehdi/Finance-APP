@@ -1,29 +1,29 @@
 // Export pages
-export '/gestion_wallet/b_a_s_e_global_wallet_dashboard/b_a_s_e_global_wallet_dashboard_widget.dart'
+export '/others/b_a_s_e_global_wallet_dashboard/b_a_s_e_global_wallet_dashboard_widget.dart'
     show BASEGlobalWalletDashboardWidget;
-export '/gestion_wallet/g_e_s_t_i_o_n_w_a_l_l_e_t_add_transaction/g_e_s_t_i_o_n_w_a_l_l_e_t_add_transaction_widget.dart'
+export '/o_l_d_gestion_wallet/g_e_s_t_i_o_n_w_a_l_l_e_t_add_transaction/g_e_s_t_i_o_n_w_a_l_l_e_t_add_transaction_widget.dart'
     show GESTIONWALLETAddTransactionWidget;
-export '/gestion_wallet/g_e_s_t_i_o_n_w_a_l_l_e_t_transaction_history/g_e_s_t_i_o_n_w_a_l_l_e_t_transaction_history_widget.dart'
+export '/o_l_d_gestion_wallet/g_e_s_t_i_o_n_w_a_l_l_e_t_transaction_history/g_e_s_t_i_o_n_w_a_l_l_e_t_transaction_history_widget.dart'
     show GESTIONWALLETTransactionHistoryWidget;
-export '/gestion_budget/b_a_s_e_budget_management/b_a_s_e_budget_management_widget.dart'
+export '/o_l_d_gestion_budget/b_a_s_e_budget_management/b_a_s_e_budget_management_widget.dart'
     show BASEBudgetManagementWidget;
-export '/gestion_budget/g_e_s_t_i_o_n_b_u_d_g_e_t_budget_details/g_e_s_t_i_o_n_b_u_d_g_e_t_budget_details_widget.dart'
+export '/o_l_d_gestion_budget/g_e_s_t_i_o_n_b_u_d_g_e_t_budget_details/g_e_s_t_i_o_n_b_u_d_g_e_t_budget_details_widget.dart'
     show GESTIONBUDGETBudgetDetailsWidget;
-export '/gestion_budget/g_e_s_t_i_o_n_b_u_d_g_e_t_set_new_budget/g_e_s_t_i_o_n_b_u_d_g_e_t_set_new_budget_widget.dart'
+export '/o_l_d_gestion_budget/g_e_s_t_i_o_n_b_u_d_g_e_t_set_new_budget/g_e_s_t_i_o_n_b_u_d_g_e_t_set_new_budget_widget.dart'
     show GESTIONBUDGETSetNewBudgetWidget;
-export '/gestion_group/b_a_s_e_split_expenses_groups/b_a_s_e_split_expenses_groups_widget.dart'
+export '/o_l_d_gestion_group/b_a_s_e_split_expenses_groups/b_a_s_e_split_expenses_groups_widget.dart'
     show BASESplitExpensesGroupsWidget;
-export '/gestion_group/g_e_s_t_i_o_n_g_r_o_u_p_e_s_create_group/g_e_s_t_i_o_n_g_r_o_u_p_e_s_create_group_widget.dart'
+export '/o_l_d_gestion_group/g_e_s_t_i_o_n_g_r_o_u_p_e_s_create_group/g_e_s_t_i_o_n_g_r_o_u_p_e_s_create_group_widget.dart'
     show GESTIONGROUPESCreateGroupWidget;
-export '/gestion_group/g_e_s_t_i_o_n_g_r_o_u_p_e_s_add_expense/g_e_s_t_i_o_n_g_r_o_u_p_e_s_add_expense_widget.dart'
+export '/o_l_d_gestion_group/g_e_s_t_i_o_n_g_r_o_u_p_e_s_add_expense/g_e_s_t_i_o_n_g_r_o_u_p_e_s_add_expense_widget.dart'
     show GESTIONGROUPESAddExpenseWidget;
-export '/gestion_group/g_e_s_t_i_o_n_g_r_o_u_p_e_s_group_details/g_e_s_t_i_o_n_g_r_o_u_p_e_s_group_details_widget.dart'
+export '/o_l_d_gestion_group/g_e_s_t_i_o_n_g_r_o_u_p_e_s_group_details/g_e_s_t_i_o_n_g_r_o_u_p_e_s_group_details_widget.dart'
     show GESTIONGROUPESGroupDetailsWidget;
-export '/gestion_invest/b_a_s_e_investments_savings_goals/b_a_s_e_investments_savings_goals_widget.dart'
+export '/o_l_d_gestion_invest/b_a_s_e_investments_savings_goals/b_a_s_e_investments_savings_goals_widget.dart'
     show BASEInvestmentsSavingsGoalsWidget;
-export '/gestion_invest/g_e_s_t_i_o_n_i_n_v_e_s_t_goal_details/g_e_s_t_i_o_n_i_n_v_e_s_t_goal_details_widget.dart'
+export '/o_l_d_gestion_invest/g_e_s_t_i_o_n_i_n_v_e_s_t_goal_details/g_e_s_t_i_o_n_i_n_v_e_s_t_goal_details_widget.dart'
     show GESTIONINVESTGoalDetailsWidget;
-export '/gestion_invest/g_e_s_t_i_o_n_i_n_v_e_s_t_set_new_goal/g_e_s_t_i_o_n_i_n_v_e_s_t_set_new_goal_widget.dart'
+export '/o_l_d_gestion_invest/g_e_s_t_i_o_n_i_n_v_e_s_t_set_new_goal/g_e_s_t_i_o_n_i_n_v_e_s_t_set_new_goal_widget.dart'
     show GESTIONINVESTSetNewGoalWidget;
 export '/others/profile_security/profile_security_widget.dart'
     show ProfileSecurityWidget;
@@ -58,3 +58,15 @@ export '/gestion_cartes/ajouterune_transaction/ajouterune_transaction_widget.dar
     show AjouteruneTransactionWidget;
 export '/gestion_cartes/analytiques_transactions/analytiques_transactions_widget.dart'
     show AnalytiquesTransactionsWidget;
+export '/gestion_wallet/add_wallet/add_wallet_widget.dart' show AddWalletWidget;
+export '/gestion_wallet/wallet_dashboard/wallet_dashboard_widget.dart'
+    show WalletDashboardWidget;
+export '/gestion_wallet/wallet_list/wallet_list_widget.dart'
+    show WalletListWidget;
+export '/gestion_wallet/show_revenu/show_revenu_widget.dart'
+    show ShowRevenuWidget;
+export '/gestion_wallet/add_revenu/add_revenu_widget.dart' show AddRevenuWidget;
+export '/gestion_wallet/edit_revenu/edit_revenu_widget.dart'
+    show EditRevenuWidget;
+export '/gestion_wallet/edit_wallet/edit_wallet_widget.dart'
+    show EditWalletWidget;

@@ -80,9 +80,9 @@ class _Button5WidgetState extends State<Button5Widget> {
             if (widget.variant == 'secondary') {
               return FlutterFlowTheme.of(context).secondary;
             } else if (widget.variant == 'outline') {
-              return Colors.transparent;
+              return FlutterFlowTheme.of(context).common0;
             } else if (widget.variant == 'ghost') {
-              return Colors.transparent;
+              return FlutterFlowTheme.of(context).common0;
             } else if (widget.variant == 'destructive') {
               return FlutterFlowTheme.of(context).error;
             } else {
@@ -143,7 +143,7 @@ class _Button5WidgetState extends State<Button5Widget> {
           border: Border.all(
             color: widget.variant == 'outline'
                 ? FlutterFlowTheme.of(context).alternate
-                : Colors.transparent,
+                : FlutterFlowTheme.of(context).common0,
             width: widget.variant == 'outline' ? 1.0 : 0.0,
           ),
         ),
@@ -219,7 +219,7 @@ class _Button5WidgetState extends State<Button5Widget> {
                       ),
                       maxLines: 1,
                       style: FlutterFlowTheme.of(context).labelMedium.override(
-                            font: GoogleFonts.inter(
+                            font: GoogleFonts.outfit(
                               fontWeight: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .fontWeight,
