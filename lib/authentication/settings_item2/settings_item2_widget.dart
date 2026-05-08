@@ -100,7 +100,7 @@ class _SettingsItem2WidgetState extends State<SettingsItem2Widget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FontWeight.w600,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -124,7 +124,7 @@ class _SettingsItem2WidgetState extends State<SettingsItem2Widget> {
                           style: FlutterFlowTheme.of(context)
                               .bodySmall
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .fontWeight,

@@ -95,7 +95,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                             FlutterFlowIconButton(
                               borderRadius: 8.0,
                               buttonSize: 40.0,
-                              fillColor: FlutterFlowTheme.of(context).common0,
+                              fillColor: Colors.transparent,
                               icon: Icon(
                                 Icons.arrow_back_ios_new_rounded,
                                 color: FlutterFlowTheme.of(context).primaryText,
@@ -115,7 +115,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .titleLarge
                                       .override(
-                                        font: GoogleFonts.outfit(
+                                        font: GoogleFonts.inter(
                                           fontWeight: FontWeight.bold,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -181,7 +181,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                font: GoogleFonts.outfit(
+                                                font: GoogleFonts.inter(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -213,7 +213,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .headlineMedium
                                               .override(
-                                                font: GoogleFonts.outfit(
+                                                font: GoogleFonts.inter(
                                                   fontWeight: FontWeight.bold,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -237,8 +237,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .success10,
+                                        color: Color(0x1A34C759),
                                         borderRadius:
                                             BorderRadius.circular(9999.0),
                                         shape: BoxShape.rectangle,
@@ -267,7 +266,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                         context)
                                                     .labelSmall
                                                     .override(
-                                                      font: GoogleFonts.outfit(
+                                                      font: GoogleFonts.inter(
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -321,9 +320,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                       groupSpace: 12.0,
                                       alignment: BarChartAlignment.spaceEvenly,
                                       chartStylingInfo: ChartStylingInfo(
-                                        backgroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .common0,
+                                        backgroundColor: Colors.transparent,
                                         showBorder: false,
                                       ),
                                       axisBounds: AxisBounds(
@@ -337,7 +334,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                 context)
                                             .bodySmall
                                             .override(
-                                              font: GoogleFonts.plusJakartaSans(
+                                              font: GoogleFonts.inter(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodySmall
@@ -418,7 +415,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .labelSmall
                                               .override(
-                                                font: GoogleFonts.outfit(
+                                                font: GoogleFonts.inter(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -458,8 +455,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                       context)
                                                   .titleMedium
                                                   .override(
-                                                    font: GoogleFonts
-                                                        .plusJakartaSans(
+                                                    font: GoogleFonts.inter(
                                                       fontWeight:
                                                           FontWeight.bold,
                                                       fontStyle:
@@ -526,7 +522,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .labelSmall
                                               .override(
-                                                font: GoogleFonts.outfit(
+                                                font: GoogleFonts.inter(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -566,8 +562,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                       context)
                                                   .titleMedium
                                                   .override(
-                                                    font: GoogleFonts
-                                                        .plusJakartaSans(
+                                                    font: GoogleFonts.inter(
                                                       fontWeight:
                                                           FontWeight.bold,
                                                       fontStyle:
@@ -630,7 +625,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .titleLarge
@@ -711,8 +706,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                       .titleSmall
                                                       .fontStyle,
                                             ),
-                                            color: FlutterFlowTheme.of(context)
-                                                .common2,
+                                            color: Colors.white,
                                             letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
@@ -846,8 +840,9 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                     .of(context)
                                                                 .titleMedium
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .plusJakartaSans(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .titleMedium
@@ -901,10 +896,8 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                 FlutterFlowIconButton(
                                                               borderRadius: 8.0,
                                                               buttonSize: 40.0,
-                                                              fillColor:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .common0,
+                                                              fillColor: Colors
+                                                                  .transparent,
                                                               icon: Icon(
                                                                 Icons
                                                                     .visibility_rounded,
@@ -1002,10 +995,8 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                           FlutterFlowIconButton(
                                                             borderRadius: 8.0,
                                                             buttonSize: 40.0,
-                                                            fillColor:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .common0,
+                                                            fillColor: Colors
+                                                                .transparent,
                                                             icon: Icon(
                                                               Icons
                                                                   .edit_rounded,
@@ -1071,10 +1062,8 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                           FlutterFlowIconButton(
                                                             borderRadius: 8.0,
                                                             buttonSize: 40.0,
-                                                            fillColor:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .common0,
+                                                            fillColor: Colors
+                                                                .transparent,
                                                             icon: Icon(
                                                               Icons
                                                                   .delete_outline_rounded,
@@ -1111,8 +1100,9 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1148,8 +1138,9 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                     context)
                                                                 .headlineMedium
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .bold,
@@ -1203,8 +1194,9 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                     .of(context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1239,8 +1231,9 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                     .of(context)
                                                                 .bodySmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .plusJakartaSans(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
@@ -1284,8 +1277,9 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                     .of(context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1320,8 +1314,9 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                     .of(context)
                                                                 .bodySmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .plusJakartaSans(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
@@ -1365,8 +1360,9 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                     .of(context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1401,8 +1397,9 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                     .of(context)
                                                                 .bodySmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .plusJakartaSans(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
@@ -1443,9 +1440,7 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                 context)
                                                             .primary,
                                                     backgroundColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .divider20,
+                                                        Color(0x33E5E5EA),
                                                     barRadius:
                                                         Radius.circular(2.0),
                                                     padding: EdgeInsets.zero,

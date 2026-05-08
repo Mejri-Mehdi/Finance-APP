@@ -44,6 +44,19 @@ class _AaWidgetState extends State<AaWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        body: SafeArea(
+          top: true,
+          child: Container(
+            decoration: BoxDecoration(
+              color: Color(0x66FFFFFF),
+              borderRadius: BorderRadius.circular(28.0),
+              border: Border.all(
+                color: FlutterFlowTheme.of(context).secondary,
+                width: 1.0,
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }

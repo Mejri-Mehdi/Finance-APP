@@ -68,7 +68,7 @@ class _TransactionToggleWidgetState extends State<TransactionToggleWidget> {
                   decoration: BoxDecoration(
                     color: widget.type == 'income'
                         ? FlutterFlowTheme.of(context).success
-                        : FlutterFlowTheme.of(context).common0,
+                        : Colors.transparent,
                     borderRadius: BorderRadius.circular(9999.0),
                     shape: BoxShape.rectangle,
                   ),
@@ -95,7 +95,7 @@ class _TransactionToggleWidgetState extends State<TransactionToggleWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelLarge
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .fontWeight,
@@ -129,7 +129,7 @@ class _TransactionToggleWidgetState extends State<TransactionToggleWidget> {
                 child: Container(
                   decoration: BoxDecoration(
                     color: widget.type == 'income'
-                        ? FlutterFlowTheme.of(context).common0
+                        ? Colors.transparent
                         : FlutterFlowTheme.of(context).error,
                     borderRadius: BorderRadius.circular(9999.0),
                     shape: BoxShape.rectangle,
@@ -157,7 +157,7 @@ class _TransactionToggleWidgetState extends State<TransactionToggleWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelLarge
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .fontWeight,

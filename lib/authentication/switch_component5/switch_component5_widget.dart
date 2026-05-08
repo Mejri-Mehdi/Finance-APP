@@ -172,7 +172,7 @@ class _SwitchComponent5WidgetState extends State<SwitchComponent5Widget> {
               child: Text(
                 widget.label.toString(),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      font: GoogleFonts.plusJakartaSans(
+                      font: GoogleFonts.inter(
                         fontWeight:
                             FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                         fontStyle:

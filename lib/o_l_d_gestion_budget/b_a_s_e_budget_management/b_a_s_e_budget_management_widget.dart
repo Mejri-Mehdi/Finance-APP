@@ -71,7 +71,7 @@ class _BASEBudgetManagementWidgetState
           label: Text(
             'New Budget',
             style: FlutterFlowTheme.of(context).labelLarge.override(
-                  font: GoogleFonts.outfit(
+                  font: GoogleFonts.inter(
                     fontWeight:
                         FlutterFlowTheme.of(context).labelLarge.fontWeight,
                     fontStyle:
@@ -121,7 +121,7 @@ class _BASEBudgetManagementWidgetState
                           'Budget Planner',
                           style:
                               FlutterFlowTheme.of(context).titleLarge.override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleLarge
@@ -190,7 +190,7 @@ class _BASEBudgetManagementWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
@@ -219,7 +219,7 @@ class _BASEBudgetManagementWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .headlineMedium
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.w800,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
@@ -255,7 +255,7 @@ class _BASEBudgetManagementWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .labelSmall
                                             .override(
-                                              font: GoogleFonts.outfit(
+                                              font: GoogleFonts.inter(
                                                 fontWeight: FontWeight.w600,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
@@ -291,23 +291,21 @@ class _BASEBudgetManagementWidgetState
                                     radius: [35.0],
                                   ),
                                   donutHoleRadius: 50.0,
-                                  donutHoleColor:
-                                      FlutterFlowTheme.of(context).common0,
+                                  donutHoleColor: Colors.transparent,
                                   sectionLabelType:
                                       PieChartSectionLabelType.value,
                                   sectionLabelStyle:
                                       FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.bold,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .fontStyle,
                                             ),
-                                            color: FlutterFlowTheme.of(context)
-                                                .common2,
+                                            color: Colors.white,
                                             fontSize: 10.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
@@ -349,7 +347,7 @@ class _BASEBudgetManagementWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .fontWeight,
@@ -374,7 +372,7 @@ class _BASEBudgetManagementWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .labelLarge
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .fontWeight,
@@ -405,7 +403,7 @@ class _BASEBudgetManagementWidgetState
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 20.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             limit: '1,000',
                             progress_val: 0.84,
                             spent: '840',
@@ -422,7 +420,7 @@ class _BASEBudgetManagementWidgetState
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 20.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             limit: '500',
                             progress_val: 0.42,
                             spent: '210',
@@ -439,7 +437,7 @@ class _BASEBudgetManagementWidgetState
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 20.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             limit: '1,200',
                             progress_val: 0.95,
                             spent: '1,150',
@@ -456,7 +454,7 @@ class _BASEBudgetManagementWidgetState
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 20.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             limit: '1,500',
                             progress_val: 1.0,
                             spent: '1,500',
@@ -514,7 +512,7 @@ class _BASEBudgetManagementWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight: FontWeight.bold,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -538,7 +536,7 @@ class _BASEBudgetManagementWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmall

@@ -88,20 +88,20 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).common2,
+        backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).common2,
+          backgroundColor: Colors.white,
           automaticallyImplyLeading: false,
           leading: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(10.0, 9.0, 10.0, 9.0),
             child: FlutterFlowIconButton(
-              borderColor: FlutterFlowTheme.of(context).common0,
+              borderColor: Colors.transparent,
               borderRadius: 12.0,
               buttonSize: 44.0,
-              fillColor: FlutterFlowTheme.of(context).common16,
+              fillColor: Color(0xFFF3F0FF),
               icon: Icon(
                 Icons.arrow_back_rounded,
-                color: FlutterFlowTheme.of(context).common6,
+                color: Color(0xFF6C3DE1),
                 size: 20.0,
               ),
               onPressed: () async {
@@ -113,12 +113,12 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
             'Ajouter une Carte\n(Real Or Generated)',
             textAlign: TextAlign.center,
             style: FlutterFlowTheme.of(context).titleLarge.override(
-                  font: GoogleFonts.outfit(
+                  font: GoogleFonts.inter(
                     fontWeight: FontWeight.bold,
                     fontStyle:
                         FlutterFlowTheme.of(context).titleLarge.fontStyle,
                   ),
-                  color: FlutterFlowTheme.of(context).common4,
+                  color: Color(0xFF1A1A2E),
                   fontSize: 18.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.bold,
@@ -150,10 +150,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                             height: 200.0,
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
-                                colors: [
-                                  FlutterFlowTheme.of(context).common6,
-                                  FlutterFlowTheme.of(context).common76
-                                ],
+                                colors: [Color(0xFF6C3DE1), Color(0xFFB06AB3)],
                                 stops: [0.0, 1.0],
                                 begin: AlignmentDirectional(1.0, -1.0),
                                 end: AlignmentDirectional(-1.0, 1.0),
@@ -171,8 +168,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                       width: 140.0,
                                       height: 140.0,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .common35,
+                                        color: Color(0x1AFFFFFF),
                                         shape: BoxShape.circle,
                                       ),
                                     ),
@@ -183,8 +179,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                       width: 100.0,
                                       height: 100.0,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .common35,
+                                        color: Color(0x1AFFFFFF),
                                         shape: BoxShape.circle,
                                       ),
                                     ),
@@ -219,8 +214,8 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .outfit(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -229,9 +224,8 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                                     .labelSmall
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common22,
+                                                          color:
+                                                              Color(0x99FFFFFF),
                                                           fontSize: 10.0,
                                                           letterSpacing: 2.0,
                                                           fontWeight:
@@ -249,8 +243,8 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                             context)
                                                         .titleLarge
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .outfit(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                             fontStyle:
@@ -259,9 +253,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                                     .titleLarge
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common2,
+                                                          color: Colors.white,
                                                           fontSize: 18.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -284,9 +276,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                 width: 48.0,
                                                 height: 48.0,
                                                 decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common70,
+                                                  color: Color(0x33FFFFFF),
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Align(
@@ -295,9 +285,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                           0.0, 0.0),
                                                   child: Icon(
                                                     Icons.credit_card_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .common2,
+                                                    color: Colors.white,
                                                     size: 24.0,
                                                   ),
                                                 ),
@@ -325,8 +313,8 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .outfit(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -335,9 +323,8 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                                     .labelSmall
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common22,
+                                                          color:
+                                                              Color(0x99FFFFFF),
                                                           fontSize: 9.0,
                                                           letterSpacing: 1.5,
                                                           fontWeight:
@@ -355,8 +342,8 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -365,9 +352,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                                     .bodyMedium
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common2,
+                                                          color: Colors.white,
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -397,8 +382,8 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .outfit(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -407,9 +392,8 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                                     .labelSmall
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common22,
+                                                          color:
+                                                              Color(0x99FFFFFF),
                                                           fontSize: 9.0,
                                                           letterSpacing: 1.5,
                                                           fontWeight:
@@ -427,8 +411,8 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -437,9 +421,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                                     .bodyMedium
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common2,
+                                                          color: Colors.white,
                                                           fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -487,15 +469,14 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .fontStyle,
                                             ),
-                                            color: FlutterFlowTheme.of(context)
-                                                .common4,
+                                            color: Color(0xFF1A1A2E),
                                             fontSize: 13.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
@@ -521,16 +502,14 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              font: GoogleFonts.plusJakartaSans(
+                                              font: GoogleFonts.inter(
                                                 fontWeight: FontWeight.normal,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .fontStyle,
                                               ),
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .common19,
+                                              color: Color(0xFFB0B0C0),
                                               fontSize: 15.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.normal,
@@ -541,8 +520,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                             ),
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .common23,
+                                            color: Color(0xFFE8E4F8),
                                             width: 1.5,
                                           ),
                                           borderRadius:
@@ -550,8 +528,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .common6,
+                                            color: Color(0xFF6C3DE1),
                                             width: 1.5,
                                           ),
                                           borderRadius:
@@ -559,8 +536,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                         ),
                                         errorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .common36,
+                                            color: Color(0xFFFF4D6D),
                                             width: 1.5,
                                           ),
                                           borderRadius:
@@ -568,38 +544,34 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .common36,
+                                            color: Color(0xFFFF4D6D),
                                             width: 1.5,
                                           ),
                                           borderRadius:
                                               BorderRadius.circular(14.0),
                                         ),
                                         filled: true,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .common27,
+                                        fillColor: Color(0xFFF9F8FF),
                                         contentPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 18.0, 16.0, 18.0, 16.0),
                                         prefixIcon: Icon(
                                           Icons.person_outline_rounded,
-                                          color: FlutterFlowTheme.of(context)
-                                              .common19,
+                                          color: Color(0xFFB0B0C0),
                                           size: 20.0,
                                         ),
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.w500,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .fontStyle,
                                             ),
-                                            color: FlutterFlowTheme.of(context)
-                                                .common4,
+                                            color: Color(0xFF1A1A2E),
                                             fontSize: 15.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
@@ -609,8 +581,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                     .fontStyle,
                                           ),
                                       keyboardType: TextInputType.name,
-                                      cursorColor:
-                                          FlutterFlowTheme.of(context).common6,
+                                      cursorColor: Color(0xFF6C3DE1),
                                       validator: _model.textController1Validator
                                           .asValidator(context),
                                       inputFormatters: [
@@ -640,15 +611,14 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .fontStyle,
                                             ),
-                                            color: FlutterFlowTheme.of(context)
-                                                .common4,
+                                            color: Color(0xFF1A1A2E),
                                             fontSize: 13.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
@@ -684,8 +654,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                           .of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts
-                                                            .plusJakartaSans(
+                                                        font: GoogleFonts.inter(
                                                           fontWeight:
                                                               FontWeight.normal,
                                                           fontStyle:
@@ -695,9 +664,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                                   .fontStyle,
                                                         ),
                                                         color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .common19,
+                                                            Color(0xFFB0B0C0),
                                                         fontSize: 15.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -711,10 +678,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                   enabledBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .common23,
+                                                      color: Color(0xFFE8E4F8),
                                                       width: 1.5,
                                                     ),
                                                     borderRadius:
@@ -724,10 +688,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                   focusedBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .common6,
+                                                      color: Color(0xFF6C3DE1),
                                                       width: 1.5,
                                                     ),
                                                     borderRadius:
@@ -737,10 +698,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                   errorBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .common36,
+                                                      color: Color(0xFFFF4D6D),
                                                       width: 1.5,
                                                     ),
                                                     borderRadius:
@@ -750,10 +708,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                   focusedErrorBorder:
                                                       OutlineInputBorder(
                                                     borderSide: BorderSide(
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .common36,
+                                                      color: Color(0xFFFF4D6D),
                                                       width: 1.5,
                                                     ),
                                                     borderRadius:
@@ -761,49 +716,41 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                             14.0),
                                                   ),
                                                   filled: true,
-                                                  fillColor:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .common27,
+                                                  fillColor: Color(0xFFF9F8FF),
                                                   contentPadding:
                                                       EdgeInsetsDirectional
                                                           .fromSTEB(18.0, 16.0,
                                                               18.0, 16.0),
                                                   prefixIcon: Icon(
                                                     Icons.credit_card_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .common19,
+                                                    color: Color(0xFFB0B0C0),
                                                     size: 20.0,
                                                   ),
                                                 ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FontWeight.w500,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common4,
-                                                          fontSize: 15.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: GoogleFonts.inter(
+                                                        fontWeight:
+                                                            FontWeight.w500,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
+                                                      ),
+                                                      color: Color(0xFF1A1A2E),
+                                                      fontSize: 15.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w500,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                    ),
                                                 maxLength: 19,
                                                 buildCounter: (context,
                                                         {required currentLength,
@@ -812,9 +759,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                     null,
                                                 keyboardType:
                                                     TextInputType.number,
-                                                cursorColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common6,
+                                                cursorColor: Color(0xFF6C3DE1),
                                                 validator: _model
                                                     .textFieldnumTextControllerValidator
                                                     .asValidator(context),
@@ -938,7 +883,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                font: GoogleFonts.outfit(
+                                                font: GoogleFonts.inter(
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -946,9 +891,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                           .labelMedium
                                                           .fontStyle,
                                                 ),
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common4,
+                                                color: Color(0xFF1A1A2E),
                                                 fontSize: 13.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
@@ -974,8 +917,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts
-                                                            .plusJakartaSans(
+                                                        font: GoogleFonts.inter(
                                                           fontWeight:
                                                               FontWeight.normal,
                                                           fontStyle:
@@ -985,9 +927,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                                   .fontStyle,
                                                         ),
                                                         color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .common19,
+                                                            Color(0xFFB0B0C0),
                                                         fontSize: 15.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -1000,9 +940,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common23,
+                                                  color: Color(0xFFE8E4F8),
                                                   width: 1.5,
                                                 ),
                                                 borderRadius:
@@ -1010,9 +948,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                               ),
                                               focusedBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common6,
+                                                  color: Color(0xFF6C3DE1),
                                                   width: 1.5,
                                                 ),
                                                 borderRadius:
@@ -1020,9 +956,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                               ),
                                               errorBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common36,
+                                                  color: Color(0xFFFF4D6D),
                                                   width: 1.5,
                                                 ),
                                                 borderRadius:
@@ -1031,18 +965,14 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
                                                 borderSide: BorderSide(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common36,
+                                                  color: Color(0xFFFF4D6D),
                                                   width: 1.5,
                                                 ),
                                                 borderRadius:
                                                     BorderRadius.circular(14.0),
                                               ),
                                               filled: true,
-                                              fillColor:
-                                                  FlutterFlowTheme.of(context)
-                                                      .common27,
+                                              fillColor: Color(0xFFF9F8FF),
                                               contentPadding:
                                                   EdgeInsetsDirectional
                                                       .fromSTEB(18.0, 16.0,
@@ -1051,8 +981,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts
-                                                      .plusJakartaSans(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight: FontWeight.w500,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -1060,9 +989,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                             .bodyMedium
                                                             .fontStyle,
                                                   ),
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common4,
+                                                  color: Color(0xFF1A1A2E),
                                                   fontSize: 15.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
@@ -1078,9 +1005,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                     required isFocused,
                                                     maxLength}) =>
                                                 null,
-                                            cursorColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .common6,
+                                            cursorColor: Color(0xFF6C3DE1),
                                             validator: _model
                                                 .textController3Validator
                                                 .asValidator(context),
@@ -1100,7 +1025,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                font: GoogleFonts.outfit(
+                                                font: GoogleFonts.inter(
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -1108,9 +1033,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                           .labelMedium
                                                           .fontStyle,
                                                 ),
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common4,
+                                                color: Color(0xFF1A1A2E),
                                                 fontSize: 13.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
@@ -1137,8 +1060,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts
-                                                            .plusJakartaSans(
+                                                        font: GoogleFonts.inter(
                                                           fontWeight:
                                                               FontWeight.normal,
                                                           fontStyle:
@@ -1148,9 +1070,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                                   .fontStyle,
                                                         ),
                                                         color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .common19,
+                                                            Color(0xFFB0B0C0),
                                                         fontSize: 15.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -1163,9 +1083,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common23,
+                                                  color: Color(0xFFE8E4F8),
                                                   width: 1.5,
                                                 ),
                                                 borderRadius:
@@ -1173,9 +1091,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                               ),
                                               focusedBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common6,
+                                                  color: Color(0xFF6C3DE1),
                                                   width: 1.5,
                                                 ),
                                                 borderRadius:
@@ -1183,9 +1099,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                               ),
                                               errorBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common36,
+                                                  color: Color(0xFFFF4D6D),
                                                   width: 1.5,
                                                 ),
                                                 borderRadius:
@@ -1194,18 +1108,14 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
                                                 borderSide: BorderSide(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common36,
+                                                  color: Color(0xFFFF4D6D),
                                                   width: 1.5,
                                                 ),
                                                 borderRadius:
                                                     BorderRadius.circular(14.0),
                                               ),
                                               filled: true,
-                                              fillColor:
-                                                  FlutterFlowTheme.of(context)
-                                                      .common27,
+                                              fillColor: Color(0xFFF9F8FF),
                                               contentPadding:
                                                   EdgeInsetsDirectional
                                                       .fromSTEB(18.0, 16.0,
@@ -1232,8 +1142,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts
-                                                      .plusJakartaSans(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight: FontWeight.w500,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -1241,9 +1150,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                             .bodyMedium
                                                             .fontStyle,
                                                   ),
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common4,
+                                                  color: Color(0xFF1A1A2E),
                                                   fontSize: 15.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
@@ -1260,9 +1167,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                     maxLength}) =>
                                                 null,
                                             keyboardType: TextInputType.number,
-                                            cursorColor:
-                                                FlutterFlowTheme.of(context)
-                                                    .common6,
+                                            cursorColor: Color(0xFF6C3DE1),
                                             validator: _model
                                                 .textController4Validator
                                                 .asValidator(context),
@@ -1282,15 +1187,14 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight: FontWeight.w600,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
                                                     .fontStyle,
                                           ),
-                                          color: FlutterFlowTheme.of(context)
-                                              .common4,
+                                          color: Color(0xFF1A1A2E),
                                           fontSize: 13.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w600,
@@ -1304,12 +1208,10 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                     width: double.infinity,
                                     height: 56.0,
                                     decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).common27,
+                                      color: Color(0xFFF9F8FF),
                                       borderRadius: BorderRadius.circular(14.0),
                                       border: Border.all(
-                                        color: FlutterFlowTheme.of(context)
-                                            .common23,
+                                        color: Color(0xFFE8E4F8),
                                         width: 1.5,
                                       ),
                                     ),
@@ -1356,8 +1258,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                       hintText: '   Sélectionner un réseau',
                                       icon: Icon(
                                         Icons.keyboard_arrow_down_rounded,
-                                        color: FlutterFlowTheme.of(context)
-                                            .common6,
+                                        color: Color(0xFF6C3DE1),
                                         size: 22.0,
                                       ),
                                       fillColor: FlutterFlowTheme.of(context)
@@ -1381,11 +1282,10 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                 width: double.infinity,
                                 height: 56.0,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).common16,
+                                  color: Color(0xFFF3F0FF),
                                   borderRadius: BorderRadius.circular(14.0),
                                   border: Border.all(
-                                    color:
-                                        FlutterFlowTheme.of(context).common23,
+                                    color: Color(0xFFE8E4F8),
                                     width: 1.0,
                                   ),
                                 ),
@@ -1397,8 +1297,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                     children: [
                                       Icon(
                                         Icons.lock_outline_rounded,
-                                        color: FlutterFlowTheme.of(context)
-                                            .common6,
+                                        color: Color(0xFF6C3DE1),
                                         size: 20.0,
                                       ),
                                       Text(
@@ -1406,16 +1305,14 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .override(
-                                              font: GoogleFonts.plusJakartaSans(
+                                              font: GoogleFonts.inter(
                                                 fontWeight: FontWeight.w500,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .bodySmall
                                                         .fontStyle,
                                               ),
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .common6,
+                                              color: Color(0xFF6C3DE1),
                                               fontSize: 12.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w500,
@@ -1446,8 +1343,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 20.0,
-                                    color:
-                                        FlutterFlowTheme.of(context).common86,
+                                    color: Color(0x66B06AB3),
                                     offset: Offset(
                                       0.0,
                                       8.0,
@@ -1456,8 +1352,8 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                 ],
                                 gradient: LinearGradient(
                                   colors: [
-                                    FlutterFlowTheme.of(context).common6,
-                                    FlutterFlowTheme.of(context).common76
+                                    Color(0xFF6C3DE1),
+                                    Color(0xFFB06AB3)
                                   ],
                                   stops: [0.0, 1.0],
                                   begin: AlignmentDirectional(1.0, -1.0),
@@ -1515,8 +1411,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: FlutterFlowTheme.of(context)
-                                            .common2,
+                                        color: Colors.white,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
@@ -1541,8 +1436,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 20.0,
-                                    color:
-                                        FlutterFlowTheme.of(context).common86,
+                                    color: Color(0x66B06AB3),
                                     offset: Offset(
                                       0.0,
                                       8.0,
@@ -1551,8 +1445,8 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                 ],
                                 gradient: LinearGradient(
                                   colors: [
-                                    FlutterFlowTheme.of(context).common6,
-                                    FlutterFlowTheme.of(context).common76
+                                    Color(0xFF6C3DE1),
+                                    Color(0xFFB06AB3)
                                   ],
                                   stops: [0.0, 1.0],
                                   begin: AlignmentDirectional(1.0, -1.0),
@@ -1647,8 +1541,7 @@ class _AjouteruneCarteFormCreateaNewCardWidgetState
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: FlutterFlowTheme.of(context)
-                                            .common2,
+                                        color: Colors.white,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall

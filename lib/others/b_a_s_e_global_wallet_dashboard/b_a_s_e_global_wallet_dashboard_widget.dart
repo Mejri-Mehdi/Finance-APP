@@ -66,7 +66,7 @@ class _BASEGlobalWalletDashboardWidgetState
           label: Text(
             'Add Expense',
             style: FlutterFlowTheme.of(context).labelLarge.override(
-                  font: GoogleFonts.outfit(
+                  font: GoogleFonts.inter(
                     fontWeight:
                         FlutterFlowTheme.of(context).labelLarge.fontWeight,
                     fontStyle:
@@ -109,7 +109,7 @@ class _BASEGlobalWalletDashboardWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FontWeight.w800,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleLarge
@@ -129,7 +129,7 @@ class _BASEGlobalWalletDashboardWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .fontWeight,
@@ -160,7 +160,7 @@ class _BASEGlobalWalletDashboardWidgetState
                             fillColor: Color(0xFF4D6DFF),
                             icon: Icon(
                               Icons.notifications_none,
-                              color: FlutterFlowTheme.of(context).common2,
+                              color: Colors.white,
                               size: 24.0,
                             ),
                             onPressed: () async {
@@ -193,7 +193,7 @@ class _BASEGlobalWalletDashboardWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .labelMedium
@@ -253,7 +253,7 @@ class _BASEGlobalWalletDashboardWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .labelLarge
                                       .override(
-                                        font: GoogleFonts.outfit(
+                                        font: GoogleFonts.inter(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
@@ -287,7 +287,7 @@ class _BASEGlobalWalletDashboardWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .headlineLarge
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .headlineLarge
                                           .fontWeight,
@@ -341,7 +341,7 @@ class _BASEGlobalWalletDashboardWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .labelSmall
                                                 .override(
-                                                  font: GoogleFonts.outfit(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -380,7 +380,7 @@ class _BASEGlobalWalletDashboardWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
-                                        font: GoogleFonts.outfit(
+                                        font: GoogleFonts.inter(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .labelSmall
@@ -431,7 +431,7 @@ class _BASEGlobalWalletDashboardWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .fontWeight,
@@ -456,7 +456,7 @@ class _BASEGlobalWalletDashboardWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,
@@ -532,8 +532,7 @@ class _BASEGlobalWalletDashboardWidgetState
                                       )
                                     ],
                                     chartStylingInfo: ChartStylingInfo(
-                                      backgroundColor:
-                                          FlutterFlowTheme.of(context).common0,
+                                      backgroundColor: Colors.transparent,
                                       showBorder: false,
                                     ),
                                     axisBounds: AxisBounds(
@@ -557,7 +556,7 @@ class _BASEGlobalWalletDashboardWidgetState
                                               context)
                                           .bodySmall
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .bodySmall
@@ -614,7 +613,7 @@ class _BASEGlobalWalletDashboardWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .titleMedium
                                 .override(
-                                  font: GoogleFonts.plusJakartaSans(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .fontWeight,
@@ -811,7 +810,7 @@ class _BASEGlobalWalletDashboardWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .fontWeight,
@@ -836,7 +835,7 @@ class _BASEGlobalWalletDashboardWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .fontWeight,

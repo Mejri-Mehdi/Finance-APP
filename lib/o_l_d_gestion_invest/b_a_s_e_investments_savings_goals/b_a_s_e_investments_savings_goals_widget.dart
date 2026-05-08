@@ -66,7 +66,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
           label: Text(
             'Create Goal',
             style: FlutterFlowTheme.of(context).labelLarge.override(
-                  font: GoogleFonts.outfit(
+                  font: GoogleFonts.inter(
                     fontWeight:
                         FlutterFlowTheme.of(context).labelLarge.fontWeight,
                     fontStyle:
@@ -137,7 +137,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight: FontWeight.w800,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -161,7 +161,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmall
@@ -248,7 +248,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .labelLarge
                                       .override(
-                                        font: GoogleFonts.outfit(
+                                        font: GoogleFonts.inter(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
@@ -275,7 +275,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .headlineLarge
                                       .override(
-                                        font: GoogleFonts.outfit(
+                                        font: GoogleFonts.inter(
                                           fontWeight: FontWeight.w800,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -352,7 +352,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .fontWeight,
@@ -403,7 +403,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
@@ -486,8 +486,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                                     )
                                   ],
                                   chartStylingInfo: ChartStylingInfo(
-                                    backgroundColor:
-                                        FlutterFlowTheme.of(context).common0,
+                                    backgroundColor: Colors.transparent,
                                     showBorder: false,
                                   ),
                                   axisBounds: AxisBounds(
@@ -510,7 +509,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                                     labelTextStyle: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmall
@@ -571,7 +570,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .titleMedium
                                     .override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleMedium
                                             .fontWeight,
@@ -596,7 +595,7 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .fontWeight,
@@ -630,10 +629,9 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 22.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             name: 'Tesla Model S',
-                            progress_color:
-                                FlutterFlowTheme.of(context).common45,
+                            progress_color: Color(0xFF7C4DFF),
                             progress_val: 0.5,
                             target: '90,000',
                             trend: '+4.2%',
@@ -651,10 +649,9 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 22.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             name: 'Crypto Portfolio',
-                            progress_color:
-                                FlutterFlowTheme.of(context).common45,
+                            progress_color: Color(0xFF7C4DFF),
                             progress_val: 0.62,
                             target: '20,000',
                             trend: '-1.8%',
@@ -672,10 +669,9 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 22.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             name: 'Bali Retreat',
-                            progress_color:
-                                FlutterFlowTheme.of(context).common45,
+                            progress_color: Color(0xFF7C4DFF),
                             progress_val: 0.96,
                             target: '5,000',
                             trend: '+12.5%',
@@ -693,10 +689,9 @@ class _BASEInvestmentsSavingsGoalsWidgetState
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 22.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             name: 'Emergency Fund',
-                            progress_color:
-                                FlutterFlowTheme.of(context).common45,
+                            progress_color: Color(0xFF7C4DFF),
                             progress_val: 0.5,
                             target: '30,000',
                             trend: '+0.5%',

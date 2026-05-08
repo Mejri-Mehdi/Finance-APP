@@ -80,7 +80,7 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                               FlutterFlowIconButton(
                                 borderRadius: 8.0,
                                 buttonSize: 40.0,
-                                fillColor: FlutterFlowTheme.of(context).common0,
+                                fillColor: Colors.transparent,
                                 icon: Icon(
                                   Icons.arrow_back_rounded,
                                   color:
@@ -96,7 +96,7 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .headlineMedium
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .headlineMedium
                                             .fontWeight,
@@ -119,7 +119,7 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                               FlutterFlowIconButton(
                                 borderRadius: 8.0,
                                 buttonSize: 40.0,
-                                fillColor: FlutterFlowTheme.of(context).common0,
+                                fillColor: Colors.transparent,
                                 icon: Icon(
                                   Icons.search_rounded,
                                   color:
@@ -199,7 +199,7 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                                                       context)
                                                   .labelMedium
                                                   .override(
-                                                    font: GoogleFonts.outfit(
+                                                    font: GoogleFonts.inter(
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontStyle:
@@ -236,75 +236,75 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                                             children: [
                                               Text(
                                                 'John Doe',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleMedium
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleMedium
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleMedium
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .titleMedium
+                                                    .override(
+                                                      font: GoogleFonts.inter(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleMedium
+                                                                .fontStyle,
+                                                      ),
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
                                                               .primaryText,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleMedium
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleMedium
-                                                                  .fontStyle,
-                                                          lineHeight: 1.35,
-                                                        ),
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleMedium
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleMedium
+                                                              .fontStyle,
+                                                      lineHeight: 1.35,
+                                                    ),
                                               ),
                                               Text(
                                                 'john.doe@neobank.io',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodySmall
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmall
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmall
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodySmall
+                                                    .override(
+                                                      font: GoogleFonts.inter(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodySmall
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodySmall
+                                                                .fontStyle,
+                                                      ),
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
                                                               .secondaryText,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodySmall
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodySmall
-                                                                  .fontStyle,
-                                                          lineHeight: 1.38,
-                                                        ),
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodySmall
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodySmall
+                                                              .fontStyle,
+                                                      lineHeight: 1.38,
+                                                    ),
                                               ),
                                             ].divide(SizedBox(height: 4.0)),
                                           ),
@@ -393,39 +393,39 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                                               ),
                                               Text(
                                                 'Dark Mode',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLarge
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLarge
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyLarge
+                                                    .override(
+                                                      font: GoogleFonts.inter(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge
+                                                                .fontStyle,
+                                                      ),
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
                                                               .primaryText,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLarge
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLarge
-                                                                  .fontStyle,
-                                                          lineHeight: 1.5,
-                                                        ),
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyLarge
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyLarge
+                                                              .fontStyle,
+                                                      lineHeight: 1.5,
+                                                    ),
                                               ),
                                             ].divide(SizedBox(width: 16.0)),
                                           ),
@@ -494,39 +494,39 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                                               ),
                                               Text(
                                                 'Push Notifications',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLarge
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyLarge
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyLarge
+                                                    .override(
+                                                      font: GoogleFonts.inter(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge
+                                                                .fontStyle,
+                                                      ),
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
                                                               .primaryText,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLarge
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyLarge
-                                                                  .fontStyle,
-                                                          lineHeight: 1.5,
-                                                        ),
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyLarge
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyLarge
+                                                              .fontStyle,
+                                                      lineHeight: 1.5,
+                                                    ),
                                               ),
                                             ].divide(SizedBox(width: 16.0)),
                                           ),
@@ -716,7 +716,7 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .fontWeight,
@@ -741,7 +741,7 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .fontWeight,

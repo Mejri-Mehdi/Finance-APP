@@ -113,6 +113,12 @@ dependencies:
   printing: ^5.11.0
   provider: 6.1.5
   rxdart: 0.27.7
+  sensors_plus: 6.0.1
+  sensors_plus_platform_interface: 2.0.0
+  shake: 
+    git:
+      url: https://github.com/FlutterFlow/shake.git
+      ref: 5d7d94e7d166159be621df1892c41d7279814a38
   shared_preferences: 2.5.3
   shared_preferences_android: 2.4.10
   shared_preferences_foundation: 2.5.4

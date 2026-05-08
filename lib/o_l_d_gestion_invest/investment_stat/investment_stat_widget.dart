@@ -57,7 +57,7 @@ class _InvestmentStatWidgetState extends State<InvestmentStatWidget> {
             'Monthly Gain',
           ),
           style: FlutterFlowTheme.of(context).labelSmall.override(
-                font: GoogleFonts.outfit(
+                font: GoogleFonts.inter(
                   fontWeight:
                       FlutterFlowTheme.of(context).labelSmall.fontWeight,
                   fontStyle: FlutterFlowTheme.of(context).labelSmall.fontStyle,
@@ -75,7 +75,7 @@ class _InvestmentStatWidgetState extends State<InvestmentStatWidget> {
             '+\$1,240.00',
           ),
           style: FlutterFlowTheme.of(context).titleMedium.override(
-                font: GoogleFonts.plusJakartaSans(
+                font: GoogleFonts.inter(
                   fontWeight: FontWeight.bold,
                   fontStyle: FlutterFlowTheme.of(context).titleMedium.fontStyle,
                 ),

@@ -182,7 +182,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                               gradient: LinearGradient(
                                 colors: [
                                   FlutterFlowTheme.of(context).primary20,
-                                  FlutterFlowTheme.of(context).common0
+                                  Colors.transparent
                                 ],
                                 stops: [0.0, 1.0],
                                 begin: AlignmentDirectional(0.0, -1.0),
@@ -223,8 +223,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                       FlutterFlowIconButton(
                                         borderRadius: 8.0,
                                         buttonSize: 40.0,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .common0,
+                                        fillColor: Colors.transparent,
                                         icon: Icon(
                                           Icons.info_outlined,
                                           color: FlutterFlowTheme.of(context)
@@ -279,7 +278,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .headlineMedium
                                                 .override(
-                                                  font: GoogleFonts.outfit(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight: FontWeight.w800,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -305,8 +304,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts
-                                                      .plusJakartaSans(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -362,11 +360,9 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                       ),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .surface40,
+                                          color: Color(0x66FFFFFF),
                                           borderRadius:
                                               BorderRadius.circular(28.0),
-                                          shape: BoxShape.rectangle,
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -376,6 +372,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                         child: Padding(
                                           padding: EdgeInsets.all(16.0),
                                           child: Container(
+                                            decoration: BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -408,8 +405,9 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -452,9 +450,8 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                               Container(
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .common0,
+                                                                  color: Colors
+                                                                      .transparent,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
@@ -463,9 +460,8 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                       .rectangle,
                                                                   border: Border
                                                                       .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .common0,
+                                                                    color: Colors
+                                                                        .transparent,
                                                                     width: 0.0,
                                                                   ),
                                                                 ),
@@ -504,7 +500,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                             hintText:
                                                                                 'nomWallet',
                                                                             hintStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  font: GoogleFonts.plusJakartaSans(
+                                                                                  font: GoogleFonts.inter(
                                                                                     fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                     fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                   ),
@@ -526,7 +522,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                font: GoogleFonts.plusJakartaSans(
+                                                                                font: GoogleFonts.inter(
                                                                                   fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                 ),
@@ -572,11 +568,9 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                       ),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .surface40,
+                                          color: Color(0x66FFFFFF),
                                           borderRadius:
                                               BorderRadius.circular(28.0),
-                                          shape: BoxShape.rectangle,
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -586,6 +580,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                         child: Padding(
                                           padding: EdgeInsets.all(16.0),
                                           child: Container(
+                                            decoration: BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -619,8 +614,9 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -663,9 +659,8 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                               Container(
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .common0,
+                                                                  color: Colors
+                                                                      .transparent,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
@@ -674,9 +669,8 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                       .rectangle,
                                                                   border: Border
                                                                       .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .common0,
+                                                                    color: Colors
+                                                                        .transparent,
                                                                     width: 0.0,
                                                                   ),
                                                                 ),
@@ -715,7 +709,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                             hintText:
                                                                                 'soldeActuel',
                                                                             hintStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  font: GoogleFonts.plusJakartaSans(
+                                                                                  font: GoogleFonts.inter(
                                                                                     fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                     fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                   ),
@@ -737,7 +731,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                font: GoogleFonts.plusJakartaSans(
+                                                                                font: GoogleFonts.inter(
                                                                                   fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                 ),
@@ -783,11 +777,9 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                       ),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .surface40,
+                                          color: Color(0x66FFFFFF),
                                           borderRadius:
                                               BorderRadius.circular(28.0),
-                                          shape: BoxShape.rectangle,
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -797,6 +789,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                         child: Padding(
                                           padding: EdgeInsets.all(16.0),
                                           child: Container(
+                                            decoration: BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -829,8 +822,9 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -873,9 +867,8 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                               Container(
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .common0,
+                                                                  color: Colors
+                                                                      .transparent,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
@@ -884,9 +877,8 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                       .rectangle,
                                                                   border: Border
                                                                       .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .common0,
+                                                                    color: Colors
+                                                                        .transparent,
                                                                     width: 0.0,
                                                                   ),
                                                                 ),
@@ -925,7 +917,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                             hintText:
                                                                                 'budgetLimite',
                                                                             hintStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  font: GoogleFonts.plusJakartaSans(
+                                                                                  font: GoogleFonts.inter(
                                                                                     fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                     fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                   ),
@@ -947,7 +939,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                font: GoogleFonts.plusJakartaSans(
+                                                                                font: GoogleFonts.inter(
                                                                                   fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                 ),
@@ -993,20 +985,19 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                       ),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .surface40,
+                                          color: Color(0x66FFFFFF),
                                           borderRadius:
                                               BorderRadius.circular(28.0),
-                                          shape: BoxShape.rectangle,
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
-                                                .primary,
+                                                .secondary,
                                             width: 1.0,
                                           ),
                                         ),
                                         child: Padding(
                                           padding: EdgeInsets.all(16.0),
                                           child: Container(
+                                            decoration: BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -1018,7 +1009,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                   Icons.savings_rounded,
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .primary,
+                                                      .secondary,
                                                   size: 22.0,
                                                 ),
                                                 Expanded(
@@ -1039,8 +1030,9 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1083,9 +1075,8 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                               Container(
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .common0,
+                                                                  color: Colors
+                                                                      .transparent,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
@@ -1094,9 +1085,8 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                       .rectangle,
                                                                   border: Border
                                                                       .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .common0,
+                                                                    color: Colors
+                                                                        .transparent,
                                                                     width: 0.0,
                                                                   ),
                                                                 ),
@@ -1135,11 +1125,11 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                             hintText:
                                                                                 'objectifEpargne',
                                                                             hintStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  font: GoogleFonts.plusJakartaSans(
+                                                                                  font: GoogleFonts.inter(
                                                                                     fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                     fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                   ),
-                                                                                  color: FlutterFlowTheme.of(context).alternate,
+                                                                                  color: FlutterFlowTheme.of(context).accent3,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
@@ -1157,7 +1147,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                font: GoogleFonts.plusJakartaSans(
+                                                                                font: GoogleFonts.inter(
                                                                                   fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                 ),
@@ -1203,11 +1193,9 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                       ),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .surface40,
+                                          color: Color(0x66FFFFFF),
                                           borderRadius:
                                               BorderRadius.circular(28.0),
-                                          shape: BoxShape.rectangle,
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -1217,6 +1205,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                         child: Padding(
                                           padding: EdgeInsets.all(16.0),
                                           child: Container(
+                                            decoration: BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -1249,8 +1238,9 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1296,7 +1286,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       font: GoogleFonts
-                                                                          .plusJakartaSans(
+                                                                          .inter(
                                                                         fontWeight: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .fontWeight,
@@ -1328,7 +1318,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       font: GoogleFonts
-                                                                          .outfit(
+                                                                          .inter(
                                                                         fontWeight: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .fontWeight,
@@ -1364,8 +1354,9 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                font: GoogleFonts
-                                                                    .plusJakartaSans(
+                                                                font:
+                                                                    GoogleFonts
+                                                                        .inter(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
@@ -1419,11 +1410,9 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                       ),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .surface40,
+                                          color: Color(0x66FFFFFF),
                                           borderRadius:
                                               BorderRadius.circular(28.0),
-                                          shape: BoxShape.rectangle,
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -1433,6 +1422,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                         child: Padding(
                                           padding: EdgeInsets.all(16.0),
                                           child: Container(
+                                            decoration: BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -1465,8 +1455,9 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1509,9 +1500,8 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                               Container(
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .common0,
+                                                                  color: Colors
+                                                                      .transparent,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
@@ -1520,9 +1510,8 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                       .rectangle,
                                                                   border: Border
                                                                       .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .common0,
+                                                                    color: Colors
+                                                                        .transparent,
                                                                     width: 0.0,
                                                                   ),
                                                                 ),
@@ -1561,7 +1550,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                             hintText:
                                                                                 'revenuTotal',
                                                                             hintStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  font: GoogleFonts.plusJakartaSans(
+                                                                                  font: GoogleFonts.inter(
                                                                                     fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                     fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                   ),
@@ -1583,7 +1572,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                font: GoogleFonts.plusJakartaSans(
+                                                                                font: GoogleFonts.inter(
                                                                                   fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                 ),
@@ -1651,8 +1640,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                     alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .common0,
+                                        color: Colors.transparent,
                                         borderRadius:
                                             BorderRadius.circular(28.0),
                                         shape: BoxShape.rectangle,
@@ -1754,10 +1742,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                   0.0,
                                                                   0.0,
                                                                   0.0),
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .common11,
+                                                      color: Color(0x007B4DFF),
                                                       textStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -1765,7 +1750,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .outfit(
+                                                                        .inter(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
@@ -1775,9 +1760,8 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                                                       .labelMedium
                                                                       .fontStyle,
                                                                 ),
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .common48,
+                                                                color: Color(
+                                                                    0xFF3D0DBC),
                                                                 fontSize: 15.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -1811,7 +1795,7 @@ class _EditWalletWidgetState extends State<EditWalletWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .override(
-                                        font: GoogleFonts.plusJakartaSans(
+                                        font: GoogleFonts.inter(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodySmall

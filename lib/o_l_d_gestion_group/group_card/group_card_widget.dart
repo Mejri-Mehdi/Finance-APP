@@ -107,7 +107,7 @@ class _GroupCardWidgetState extends State<GroupCardWidget> {
                           style: FlutterFlowTheme.of(context)
                               .titleMedium
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FontWeight.w600,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .titleMedium
@@ -135,7 +135,7 @@ class _GroupCardWidgetState extends State<GroupCardWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .fontWeight,
@@ -171,7 +171,7 @@ class _GroupCardWidgetState extends State<GroupCardWidget> {
                           'You owe',
                         ),
                         style: FlutterFlowTheme.of(context).labelSmall.override(
-                              font: GoogleFonts.outfit(
+                              font: GoogleFonts.inter(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .fontWeight,
@@ -198,7 +198,7 @@ class _GroupCardWidgetState extends State<GroupCardWidget> {
                           '\$150.00',
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
-                              font: GoogleFonts.plusJakartaSans(
+                              font: GoogleFonts.inter(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FlutterFlowTheme.of(context)
                                     .bodyLarge

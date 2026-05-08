@@ -89,7 +89,7 @@ class _GESTIONGROUPESCreateGroupWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
                                 .override(
-                                  font: GoogleFonts.outfit(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .fontWeight,
@@ -148,7 +148,7 @@ class _GESTIONGROUPESCreateGroupWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelSmall
                                             .fontWeight,
@@ -190,7 +190,7 @@ class _GESTIONGROUPESCreateGroupWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelLarge
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelLarge
                                             .fontWeight,
@@ -236,7 +236,7 @@ class _GESTIONGROUPESCreateGroupWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelLarge
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelLarge
                                             .fontWeight,
@@ -288,7 +288,7 @@ class _GESTIONGROUPESCreateGroupWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
@@ -317,7 +317,7 @@ class _GESTIONGROUPESCreateGroupWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelSmall
@@ -390,7 +390,7 @@ class _GESTIONGROUPESCreateGroupWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
@@ -427,7 +427,7 @@ class _GESTIONGROUPESCreateGroupWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
@@ -464,7 +464,7 @@ class _GESTIONGROUPESCreateGroupWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)

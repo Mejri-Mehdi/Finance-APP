@@ -81,7 +81,7 @@ class _TextField2WidgetState extends State<TextField2Widget> {
             Text(
               widget.label.toString(),
               style: FlutterFlowTheme.of(context).labelMedium.override(
-                    font: GoogleFonts.outfit(
+                    font: GoogleFonts.inter(
                       fontWeight:
                           FlutterFlowTheme.of(context).labelMedium.fontWeight,
                       fontStyle:
@@ -105,9 +105,9 @@ class _TextField2WidgetState extends State<TextField2Widget> {
                 if (widget.variant == 'filled') {
                   return FlutterFlowTheme.of(context).secondaryBackground;
                 } else if (widget.variant == 'ghost') {
-                  return FlutterFlowTheme.of(context).common0;
+                  return Colors.transparent;
                 } else {
-                  return FlutterFlowTheme.of(context).common0;
+                  return Colors.transparent;
                 }
               }(),
               borderRadius: BorderRadius.only(
@@ -166,9 +166,9 @@ class _TextField2WidgetState extends State<TextField2Widget> {
                   if (widget.error) {
                     return FlutterFlowTheme.of(context).error;
                   } else if (widget.variant == 'filled') {
-                    return FlutterFlowTheme.of(context).common0;
+                    return Colors.transparent;
                   } else if (widget.variant == 'ghost') {
-                    return FlutterFlowTheme.of(context).common0;
+                    return Colors.transparent;
                   } else {
                     return FlutterFlowTheme.of(context).alternate;
                   }
@@ -261,7 +261,7 @@ class _TextField2WidgetState extends State<TextField2Widget> {
                         hintStyle: FlutterFlowTheme.of(context)
                             .bodyMedium
                             .override(
-                              font: GoogleFonts.plusJakartaSans(
+                              font: GoogleFonts.inter(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -293,7 +293,7 @@ class _TextField2WidgetState extends State<TextField2Widget> {
                         focusedErrorBorder: InputBorder.none,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            font: GoogleFonts.plusJakartaSans(
+                            font: GoogleFonts.inter(
                               fontWeight: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .fontWeight,
@@ -339,7 +339,7 @@ class _TextField2WidgetState extends State<TextField2Widget> {
                 'Set a realistic goal for your spending',
               ),
               style: FlutterFlowTheme.of(context).bodySmall.override(
-                    font: GoogleFonts.plusJakartaSans(
+                    font: GoogleFonts.inter(
                       fontWeight:
                           FlutterFlowTheme.of(context).bodySmall.fontWeight,
                       fontStyle:

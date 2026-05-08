@@ -94,7 +94,7 @@ class _GESTIONBUDGETSetNewBudgetWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .fontWeight,
@@ -130,7 +130,7 @@ class _GESTIONBUDGETSetNewBudgetWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
-                                  font: GoogleFonts.outfit(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .fontWeight,
@@ -296,7 +296,7 @@ class _GESTIONBUDGETSetNewBudgetWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelLarge
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelLarge
                                             .fontWeight,
@@ -355,7 +355,7 @@ class _GESTIONBUDGETSetNewBudgetWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
@@ -414,7 +414,7 @@ class _GESTIONBUDGETSetNewBudgetWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
@@ -509,8 +509,7 @@ class _GESTIONBUDGETSetNewBudgetWidgetState
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    font: GoogleFonts
-                                                        .plusJakartaSans(
+                                                    font: GoogleFonts.inter(
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       fontStyle:
@@ -538,8 +537,7 @@ class _GESTIONBUDGETSetNewBudgetWidgetState
                                                   FlutterFlowTheme.of(context)
                                                       .bodySmall
                                                       .override(
-                                                        font: GoogleFonts
-                                                            .plusJakartaSans(
+                                                        font: GoogleFonts.inter(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)

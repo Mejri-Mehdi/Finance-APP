@@ -99,7 +99,7 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .headlineLarge
                                       .override(
-                                        font: GoogleFonts.outfit(
+                                        font: GoogleFonts.inter(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .headlineLarge
@@ -126,7 +126,7 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.plusJakartaSans(
+                                        font: GoogleFonts.inter(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -223,7 +223,7 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .labelLarge
                                               .override(
-                                                font: GoogleFonts.outfit(
+                                                font: GoogleFonts.inter(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -345,8 +345,7 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .titleMedium
                                                 .override(
-                                                  font: GoogleFonts
-                                                      .plusJakartaSans(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -380,8 +379,7 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodySmall
                                                 .override(
-                                                  font: GoogleFonts
-                                                      .plusJakartaSans(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -454,7 +452,7 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .fontWeight,
@@ -524,7 +522,7 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .labelLarge
                                             .override(
-                                              font: GoogleFonts.outfit(
+                                              font: GoogleFonts.inter(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .labelLarge
@@ -583,7 +581,7 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .labelLarge
                                             .override(
-                                              font: GoogleFonts.outfit(
+                                              font: GoogleFonts.inter(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .labelLarge
@@ -626,7 +624,7 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontWeight,
@@ -659,7 +657,7 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelLarge
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelLarge
                                             .fontWeight,

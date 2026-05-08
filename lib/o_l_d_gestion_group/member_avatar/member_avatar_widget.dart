@@ -99,7 +99,7 @@ class _MemberAvatarWidgetState extends State<MemberAvatarWidget> {
             'You',
           ),
           style: FlutterFlowTheme.of(context).labelSmall.override(
-                font: GoogleFonts.outfit(
+                font: GoogleFonts.inter(
                   fontWeight:
                       FlutterFlowTheme.of(context).labelSmall.fontWeight,
                   fontStyle: FlutterFlowTheme.of(context).labelSmall.fontStyle,

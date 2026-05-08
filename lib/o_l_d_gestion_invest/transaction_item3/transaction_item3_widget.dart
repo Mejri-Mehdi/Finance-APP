@@ -93,7 +93,7 @@ class _TransactionItem3WidgetState extends State<TransactionItem3Widget> {
                   ),
                   maxLines: 1,
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        font: GoogleFonts.plusJakartaSans(
+                        font: GoogleFonts.inter(
                           fontWeight: FontWeight.w600,
                           fontStyle:
                               FlutterFlowTheme.of(context).bodyMedium.fontStyle,
@@ -113,7 +113,7 @@ class _TransactionItem3WidgetState extends State<TransactionItem3Widget> {
                     'Automated Transfer',
                   ),
                   style: FlutterFlowTheme.of(context).bodySmall.override(
-                        font: GoogleFonts.plusJakartaSans(
+                        font: GoogleFonts.inter(
                           fontWeight:
                               FlutterFlowTheme.of(context).bodySmall.fontWeight,
                           fontStyle:
@@ -142,7 +142,7 @@ class _TransactionItem3WidgetState extends State<TransactionItem3Widget> {
                   '+\$1,200.00',
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      font: GoogleFonts.plusJakartaSans(
+                      font: GoogleFonts.inter(
                         fontWeight: FontWeight.bold,
                         fontStyle:
                             FlutterFlowTheme.of(context).bodyMedium.fontStyle,
@@ -163,7 +163,7 @@ class _TransactionItem3WidgetState extends State<TransactionItem3Widget> {
                   'Oct 12, 2023',
                 ),
                 style: FlutterFlowTheme.of(context).labelSmall.override(
-                      font: GoogleFonts.outfit(
+                      font: GoogleFonts.inter(
                         fontWeight:
                             FlutterFlowTheme.of(context).labelSmall.fontWeight,
                         fontStyle:

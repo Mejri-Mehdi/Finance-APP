@@ -178,11 +178,14 @@ String getMapUrl(String? merchantName) {
   } else {
     searchLocation = "$merchantName, Tunisia";
   }
+
   // Encode the URL so spaces become %20
   String encodedName = Uri.encodeComponent(searchLocation);
 
-  // The magic URL
-  String mapUrl = "https://maps.google.com/maps?q=$encodedName&output=embed";
+  // The magic URL – added &z=16 to force a close-up view of the exact place
+  String mapUrl =
+      "https://maps.google.com/maps?q=$encodedName&output=embed&z=8";
+
   // Return full HTML instead of just the URL.
   // This solves the mobile WebView blocking issue!
   return """
@@ -598,4 +601,12 @@ List<double> walletSoldes(List<WalletRecord>? wallets) {
   return wallets.map((wallet) {
     return wallet.soldeCalcule;
   }).toList();
+}
+
+bool checkLimitWarning(
+  double spend,
+  double limit,
+  double newAmount,
+) {
+  return (spend + newAmount) >= (limit * 0.8);
 }

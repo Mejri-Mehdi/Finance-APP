@@ -103,7 +103,7 @@ class _SecurityToggleWidgetState extends State<SecurityToggleWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FontWeight.w600,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -126,7 +126,7 @@ class _SecurityToggleWidgetState extends State<SecurityToggleWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodySmall
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .fontWeight,

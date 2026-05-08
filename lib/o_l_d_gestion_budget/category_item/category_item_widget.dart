@@ -77,7 +77,7 @@ class _CategoryItemWidgetState extends State<CategoryItemWidget> {
               'Food',
             ),
             style: FlutterFlowTheme.of(context).labelSmall.override(
-                  font: GoogleFonts.outfit(
+                  font: GoogleFonts.inter(
                     fontWeight:
                         FlutterFlowTheme.of(context).labelSmall.fontWeight,
                     fontStyle:

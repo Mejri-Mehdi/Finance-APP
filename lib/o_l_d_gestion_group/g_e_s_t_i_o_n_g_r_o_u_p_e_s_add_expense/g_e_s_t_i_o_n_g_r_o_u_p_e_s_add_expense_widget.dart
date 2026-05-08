@@ -81,8 +81,7 @@ class _GESTIONGROUPESAddExpenseWidgetState
                                   FlutterFlowIconButton(
                                     borderRadius: 8.0,
                                     buttonSize: 40.0,
-                                    fillColor:
-                                        FlutterFlowTheme.of(context).common0,
+                                    fillColor: Colors.transparent,
                                     icon: Icon(
                                       Icons.close_rounded,
                                       color: FlutterFlowTheme.of(context)
@@ -98,7 +97,7 @@ class _GESTIONGROUPESAddExpenseWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .titleMedium
@@ -168,7 +167,7 @@ class _GESTIONGROUPESAddExpenseWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .labelMedium
                                       .override(
-                                        font: GoogleFonts.outfit(
+                                        font: GoogleFonts.inter(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .labelMedium
@@ -200,7 +199,7 @@ class _GESTIONGROUPESAddExpenseWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .headlineLarge
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .headlineLarge
@@ -230,7 +229,7 @@ class _GESTIONGROUPESAddExpenseWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .headlineLarge
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.w800,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)

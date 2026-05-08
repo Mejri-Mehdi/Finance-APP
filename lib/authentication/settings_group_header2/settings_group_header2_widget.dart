@@ -55,7 +55,7 @@ class _SettingsGroupHeader2WidgetState
               'Preferences',
             ),
             style: FlutterFlowTheme.of(context).labelLarge.override(
-                  font: GoogleFonts.outfit(
+                  font: GoogleFonts.inter(
                     fontWeight: FontWeight.bold,
                     fontStyle:
                         FlutterFlowTheme.of(context).labelLarge.fontStyle,

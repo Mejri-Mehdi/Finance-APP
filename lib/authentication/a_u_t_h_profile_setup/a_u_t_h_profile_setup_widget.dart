@@ -74,7 +74,7 @@ class _AUTHProfileSetupWidgetState extends State<AUTHProfileSetupWidget> {
                           FlutterFlowIconButton(
                             borderRadius: 8.0,
                             buttonSize: 40.0,
-                            fillColor: FlutterFlowTheme.of(context).common0,
+                            fillColor: Colors.transparent,
                             icon: Icon(
                               Icons.arrow_back_rounded,
                               color: FlutterFlowTheme.of(context).primaryText,
@@ -92,7 +92,7 @@ class _AUTHProfileSetupWidgetState extends State<AUTHProfileSetupWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .headlineMedium
                                 .override(
-                                  font: GoogleFonts.outfit(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .headlineMedium
                                         .fontWeight,
@@ -117,7 +117,7 @@ class _AUTHProfileSetupWidgetState extends State<AUTHProfileSetupWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  font: GoogleFonts.plusJakartaSans(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .fontWeight,
@@ -216,7 +216,7 @@ class _AUTHProfileSetupWidgetState extends State<AUTHProfileSetupWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  font: GoogleFonts.outfit(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .fontWeight,
@@ -248,7 +248,7 @@ class _AUTHProfileSetupWidgetState extends State<AUTHProfileSetupWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
-                                  font: GoogleFonts.outfit(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .fontWeight,
@@ -302,7 +302,7 @@ class _AUTHProfileSetupWidgetState extends State<AUTHProfileSetupWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .titleMedium
                                     .override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleMedium
                                             .fontWeight,
@@ -327,7 +327,7 @@ class _AUTHProfileSetupWidgetState extends State<AUTHProfileSetupWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .fontWeight,
@@ -364,8 +364,7 @@ class _AUTHProfileSetupWidgetState extends State<AUTHProfileSetupWidget> {
                                         .primaryText,
                                     size: 24.0,
                                   ),
-                                  icon_bg:
-                                      FlutterFlowTheme.of(context).common44,
+                                  icon_bg: Color(0x332E7D32),
                                   subtitle:
                                       'Track spending and save more every month',
                                   title: 'Budgeting',

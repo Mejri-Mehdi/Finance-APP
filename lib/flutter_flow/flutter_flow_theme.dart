@@ -96,23 +96,6 @@ abstract class FlutterFlowTheme {
   late Color secondary10;
   late Color customColor1;
   late Color customColor2;
-  late Color customColor3;
-  late Color customColor4;
-  late Color success10;
-  late Color divider20;
-  late Color primary40;
-  late Color customColor5;
-  late Color customColor6;
-  late Color customColor7;
-  late Color customColor8;
-  late Color customColor9;
-  late Color customColor10;
-  late Color customColor11;
-  late Color customColor12;
-  late Color customColor13;
-  late Color customColor14;
-  late Color customColor15;
-  late Color customColor16;
 
   FFDesignTokens get designToken => FFDesignTokens(this);
 
@@ -202,21 +185,21 @@ class LightModeTheme extends FlutterFlowTheme {
   @Deprecated('Use tertiary instead')
   Color get tertiaryColor => tertiary;
 
-  late Color primary = const Color(0xFF6F61EF);
-  late Color secondary = const Color(0xFF39D2C0);
-  late Color tertiary = const Color(0xFFEE8B60);
+  late Color primary = const Color(0xFF7C4DFF);
+  late Color secondary = const Color(0xFF00E676);
+  late Color tertiary = const Color(0xFFFF4081);
   late Color alternate = const Color(0xFFE5E7EB);
-  late Color primaryText = const Color(0xFF15161E);
-  late Color secondaryText = const Color(0xFF606A85);
-  late Color primaryBackground = const Color(0xFFF1F4F8);
+  late Color primaryText = const Color(0xFF1A1A1A);
+  late Color secondaryText = const Color(0xFF6B7280);
+  late Color primaryBackground = const Color(0xFFF8F9FE);
   late Color secondaryBackground = const Color(0xFFFFFFFF);
   late Color accent1 = const Color(0x4D9489F5);
   late Color accent2 = const Color(0x4C39D2C0);
-  late Color accent3 = const Color(0x4CEE8B60);
+  late Color accent3 = const Color(0xFF9CA3AF);
   late Color accent4 = const Color(0x9AFFFFFF);
-  late Color success = const Color(0xFF048178);
+  late Color success = const Color(0xFF00C853);
   late Color warning = const Color(0xFFFCDC0C);
-  late Color error = const Color(0xFFFF5963);
+  late Color error = const Color(0xFFFF5252);
   late Color info = const Color(0xFFFFFFFF);
 
   late Color onPrimary = const Color(0xFFFFFFFF);
@@ -258,24 +241,7 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color surface40 = const Color(0x66FFFFFF);
   late Color secondary10 = const Color(0x1A00E676);
   late Color customColor1 = const Color(0xFFA6BBEB);
-  late Color customColor2 = const Color(0xFFEEC585);
-  late Color customColor3 = const Color(0xFF744796);
-  late Color customColor4 = const Color(0xFFDF109C);
-  late Color success10 = const Color(0xFF1A00C8);
-  late Color divider20 = const Color(0xFF330000);
-  late Color primary40 = const Color(0xFF664B39);
-  late Color customColor5 = const Color(0xFF6AE87B);
-  late Color customColor6 = const Color(0xFF24E03B);
-  late Color customColor7 = const Color(0xFFF7BBA2);
-  late Color customColor8 = const Color(0xFF7F5E11);
-  late Color customColor9 = const Color(0xFFC58EFD);
-  late Color customColor10 = const Color(0xFF87A2B6);
-  late Color customColor11 = const Color(0xFFBE2D66);
-  late Color customColor12 = const Color(0xFF2C5095);
-  late Color customColor13 = const Color(0xFF61AC68);
-  late Color customColor14 = const Color(0xFF08BE06);
-  late Color customColor15 = const Color(0xFFE75615);
-  late Color customColor16 = const Color(0xFF0A2E64);
+  late Color customColor2 = const Color(0xFFA86A33);
 }
 
 abstract class Typography {
@@ -352,19 +318,21 @@ class ThemeTypography extends Typography {
         fontWeight: FontWeight.w600,
         fontSize: 36.0,
       );
-  String get headlineLargeFamily => 'Outfit';
+  String get headlineLargeFamily => 'Inter';
   bool get headlineLargeIsCustom => false;
-  TextStyle get headlineLarge => GoogleFonts.outfit(
+  TextStyle get headlineLarge => GoogleFonts.inter(
         color: theme.primaryText,
-        fontWeight: FontWeight.normal,
+        fontWeight: FontWeight.bold,
         fontSize: 32.0,
+        height: 1.2,
       );
-  String get headlineMediumFamily => 'Outfit';
+  String get headlineMediumFamily => 'Inter';
   bool get headlineMediumIsCustom => false;
-  TextStyle get headlineMedium => GoogleFonts.outfit(
+  TextStyle get headlineMedium => GoogleFonts.inter(
         color: theme.primaryText,
-        fontWeight: FontWeight.w500,
-        fontSize: 24.0,
+        fontWeight: FontWeight.w600,
+        fontSize: 26.0,
+        height: 1.25,
       );
   String get headlineSmallFamily => 'Outfit';
   bool get headlineSmallIsCustom => false;
@@ -373,19 +341,21 @@ class ThemeTypography extends Typography {
         fontWeight: FontWeight.bold,
         fontSize: 22.0,
       );
-  String get titleLargeFamily => 'Outfit';
+  String get titleLargeFamily => 'Inter';
   bool get titleLargeIsCustom => false;
-  TextStyle get titleLarge => GoogleFonts.outfit(
+  TextStyle get titleLarge => GoogleFonts.inter(
         color: theme.primaryText,
-        fontWeight: FontWeight.w500,
+        fontWeight: FontWeight.w600,
         fontSize: 22.0,
+        height: 1.27,
       );
-  String get titleMediumFamily => 'Plus Jakarta Sans';
+  String get titleMediumFamily => 'Inter';
   bool get titleMediumIsCustom => false;
-  TextStyle get titleMedium => GoogleFonts.plusJakartaSans(
+  TextStyle get titleMedium => GoogleFonts.inter(
         color: theme.info,
-        fontWeight: FontWeight.w500,
-        fontSize: 18.0,
+        fontWeight: FontWeight.w600,
+        fontSize: 17.0,
+        height: 1.35,
       );
   String get titleSmallFamily => 'Plus Jakarta Sans';
   bool get titleSmallIsCustom => false;
@@ -394,46 +364,53 @@ class ThemeTypography extends Typography {
         fontWeight: FontWeight.w500,
         fontSize: 16.0,
       );
-  String get labelLargeFamily => 'Outfit';
+  String get labelLargeFamily => 'Inter';
   bool get labelLargeIsCustom => false;
-  TextStyle get labelLarge => GoogleFonts.outfit(
+  TextStyle get labelLarge => GoogleFonts.inter(
         color: theme.secondaryText,
-        fontWeight: FontWeight.w500,
-        fontSize: 16.0,
+        fontWeight: FontWeight.w600,
+        fontSize: 14.0,
+        height: 1.33,
       );
-  String get labelMediumFamily => 'Outfit';
+  String get labelMediumFamily => 'Inter';
   bool get labelMediumIsCustom => false;
-  TextStyle get labelMedium => GoogleFonts.outfit(
+  TextStyle get labelMedium => GoogleFonts.inter(
         color: theme.secondaryText,
-        fontWeight: FontWeight.w500,
-        fontSize: 14.0,
+        fontWeight: FontWeight.w600,
+        fontSize: 12.0,
+        height: 1.38,
       );
-  String get labelSmallFamily => 'Outfit';
+  String get labelSmallFamily => 'Inter';
   bool get labelSmallIsCustom => false;
-  TextStyle get labelSmall => GoogleFonts.outfit(
+  TextStyle get labelSmall => GoogleFonts.inter(
         color: theme.secondaryText,
-        fontWeight: FontWeight.w500,
-        fontSize: 12.0,
+        fontWeight: FontWeight.w600,
+        fontSize: 10.0,
+        height: 1.27,
       );
-  String get bodyLargeFamily => 'Plus Jakarta Sans';
+  String get bodyLargeFamily => 'Inter';
   bool get bodyLargeIsCustom => false;
-  TextStyle get bodyLarge => GoogleFonts.plusJakartaSans(
+  TextStyle get bodyLarge => GoogleFonts.inter(
         color: theme.primaryText,
+        fontWeight: FontWeight.normal,
         fontSize: 16.0,
+        height: 1.5,
       );
-  String get bodyMediumFamily => 'Plus Jakarta Sans';
+  String get bodyMediumFamily => 'Inter';
   bool get bodyMediumIsCustom => false;
-  TextStyle get bodyMedium => GoogleFonts.plusJakartaSans(
+  TextStyle get bodyMedium => GoogleFonts.inter(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
+        height: 1.47,
       );
-  String get bodySmallFamily => 'Plus Jakarta Sans';
+  String get bodySmallFamily => 'Inter';
   bool get bodySmallIsCustom => false;
-  TextStyle get bodySmall => GoogleFonts.plusJakartaSans(
+  TextStyle get bodySmall => GoogleFonts.inter(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 12.0,
+        height: 1.38,
       );
 }
 
@@ -445,21 +422,21 @@ class DarkModeTheme extends FlutterFlowTheme {
   @Deprecated('Use tertiary instead')
   Color get tertiaryColor => tertiary;
 
-  late Color primary = const Color(0xFF6F61EF);
-  late Color secondary = const Color(0xFF39D2C0);
-  late Color tertiary = const Color(0xFFEE8B60);
-  late Color alternate = const Color(0xFF313442);
-  late Color primaryText = const Color(0xFFFFFFFF);
-  late Color secondaryText = const Color(0xFFA9ADC6);
-  late Color primaryBackground = const Color(0xFF15161E);
-  late Color secondaryBackground = const Color(0xFF1B1D27);
+  late Color primary = const Color(0xFFB388FF);
+  late Color secondary = const Color(0xFF69F0AE);
+  late Color tertiary = const Color(0xFFFF80AB);
+  late Color alternate = const Color(0xFF272732);
+  late Color primaryText = const Color(0xFFF3F4F6);
+  late Color secondaryText = const Color(0xFF9CA3AF);
+  late Color primaryBackground = const Color(0xFF0A0A0C);
+  late Color secondaryBackground = const Color(0xFF16161E);
   late Color accent1 = const Color(0x4D9489F5);
   late Color accent2 = const Color(0x4C39D2C0);
-  late Color accent3 = const Color(0x4CEE8B60);
+  late Color accent3 = const Color(0xFF4B5563);
   late Color accent4 = const Color(0x981D2428);
-  late Color success = const Color(0xFF048178);
+  late Color success = const Color(0xFF00E676);
   late Color warning = const Color(0xFFFCDC0C);
-  late Color error = const Color(0xFFFF5963);
+  late Color error = const Color(0xFFFF5252);
   late Color info = const Color(0xFFFFFFFF);
 
   late Color onPrimary = const Color(0xFF000000);
@@ -501,24 +478,7 @@ class DarkModeTheme extends FlutterFlowTheme {
   late Color surface40 = const Color(0x6616161E);
   late Color secondary10 = const Color(0x1A69F0AE);
   late Color customColor1 = const Color(0xFFA6BBEB);
-  late Color customColor2 = const Color(0xFFEEC585);
-  late Color customColor3 = const Color(0xFF744796);
-  late Color customColor4 = const Color(0xFFDF109C);
-  late Color success10 = const Color(0xFF1A00C8);
-  late Color divider20 = const Color(0xFF330000);
-  late Color primary40 = const Color(0xFF664B39);
-  late Color customColor5 = const Color(0xFF6AE87B);
-  late Color customColor6 = const Color(0xFF24E03B);
-  late Color customColor7 = const Color(0xFFF7BBA2);
-  late Color customColor8 = const Color(0xFF7F5E11);
-  late Color customColor9 = const Color(0xFFC58EFD);
-  late Color customColor10 = const Color(0xFF87A2B6);
-  late Color customColor11 = const Color(0xFFBE2D66);
-  late Color customColor12 = const Color(0xFF2C5095);
-  late Color customColor13 = const Color(0xFF61AC68);
-  late Color customColor14 = const Color(0xFF08BE06);
-  late Color customColor15 = const Color(0xFFE75615);
-  late Color customColor16 = const Color(0xFF0A2E64);
+  late Color customColor2 = const Color(0xFFA86A33);
 }
 
 class FFDesignTokens {

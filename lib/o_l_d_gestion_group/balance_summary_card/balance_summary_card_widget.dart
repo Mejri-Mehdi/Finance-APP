@@ -81,7 +81,7 @@ class _BalanceSummaryCardWidgetState extends State<BalanceSummaryCardWidget> {
                       'You owe',
                     ),
                     style: FlutterFlowTheme.of(context).labelSmall.override(
-                          font: GoogleFonts.outfit(
+                          font: GoogleFonts.inter(
                             fontWeight: FlutterFlowTheme.of(context)
                                 .labelSmall
                                 .fontWeight,
@@ -107,7 +107,7 @@ class _BalanceSummaryCardWidgetState extends State<BalanceSummaryCardWidget> {
                   '\$420.50',
                 ),
                 style: FlutterFlowTheme.of(context).titleLarge.override(
-                      font: GoogleFonts.outfit(
+                      font: GoogleFonts.inter(
                         fontWeight: FontWeight.bold,
                         fontStyle:
                             FlutterFlowTheme.of(context).titleLarge.fontStyle,

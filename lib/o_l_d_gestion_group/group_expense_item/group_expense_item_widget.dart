@@ -99,7 +99,7 @@ class _GroupExpenseItemWidgetState extends State<GroupExpenseItemWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FontWeight.w600,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -125,7 +125,7 @@ class _GroupExpenseItemWidgetState extends State<GroupExpenseItemWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .fontWeight,
@@ -150,7 +150,7 @@ class _GroupExpenseItemWidgetState extends State<GroupExpenseItemWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .fontWeight,
@@ -177,7 +177,7 @@ class _GroupExpenseItemWidgetState extends State<GroupExpenseItemWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .fontWeight,
@@ -210,7 +210,7 @@ class _GroupExpenseItemWidgetState extends State<GroupExpenseItemWidget> {
                       Text(
                         '-\$${widget.amount}',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.plusJakartaSans(
+                              font: GoogleFonts.inter(
                                 fontWeight: FontWeight.w600,
                                 fontStyle: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -228,7 +228,7 @@ class _GroupExpenseItemWidgetState extends State<GroupExpenseItemWidget> {
                       FlutterFlowIconButton(
                         borderRadius: 8.0,
                         buttonSize: 40.0,
-                        fillColor: FlutterFlowTheme.of(context).common0,
+                        fillColor: Colors.transparent,
                         icon: Icon(
                           Icons.more_horiz_rounded,
                           color: FlutterFlowTheme.of(context).accent3,

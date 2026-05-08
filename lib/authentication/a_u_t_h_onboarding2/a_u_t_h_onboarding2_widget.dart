@@ -93,14 +93,14 @@ class _AUTHOnboarding2WidgetState extends State<AUTHOnboarding2Widget> {
                   }, colors: {
                     'color0': FlutterFlowTheme.of(context).primaryBackground,
                     'color1': FlutterFlowTheme.of(context).secondaryBackground,
-                    'color2': FlutterFlowTheme.of(context).common85,
+                    'color2': Color(0x337C4DFF),
                     'color3': FlutterFlowTheme.of(context).primaryBackground,
-                    'color4': FlutterFlowTheme.of(context).common9,
-                    'color5': FlutterFlowTheme.of(context).common9,
-                    'color6': FlutterFlowTheme.of(context).common9,
-                    'color7': FlutterFlowTheme.of(context).common9,
-                    'color8': FlutterFlowTheme.of(context).common9,
-                    'color9': FlutterFlowTheme.of(context).common9
+                    'color4': Color(0x00808080),
+                    'color5': Color(0x00808080),
+                    'color6': Color(0x00808080),
+                    'color7': Color(0x00808080),
+                    'color8': Color(0x00808080),
+                    'color9': Color(0x00808080)
                   }),
                   animationMode: ShaderAnimationMode.continuous,
                   cache: false,
@@ -287,7 +287,7 @@ class _AUTHOnboarding2WidgetState extends State<AUTHOnboarding2Widget> {
                                                         context)
                                                     .labelSmall
                                                     .override(
-                                                      font: GoogleFonts.outfit(
+                                                      font: GoogleFonts.inter(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -339,7 +339,7 @@ class _AUTHOnboarding2WidgetState extends State<AUTHOnboarding2Widget> {
                                                         context)
                                                     .labelSmall
                                                     .override(
-                                                      font: GoogleFonts.outfit(
+                                                      font: GoogleFonts.inter(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -391,7 +391,7 @@ class _AUTHOnboarding2WidgetState extends State<AUTHOnboarding2Widget> {
                                                         context)
                                                     .labelSmall
                                                     .override(
-                                                      font: GoogleFonts.outfit(
+                                                      font: GoogleFonts.inter(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)

@@ -70,7 +70,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                         FlutterFlowIconButton(
                           borderRadius: 8.0,
                           buttonSize: 40.0,
-                          fillColor: FlutterFlowTheme.of(context).common0,
+                          fillColor: Colors.transparent,
                           icon: Icon(
                             Icons.arrow_back_rounded,
                             color: FlutterFlowTheme.of(context).primaryText,
@@ -84,7 +84,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                           'Profile & Security',
                           style:
                               FlutterFlowTheme.of(context).titleMedium.override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleMedium
@@ -101,7 +101,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                         FlutterFlowIconButton(
                           borderRadius: 8.0,
                           buttonSize: 40.0,
-                          fillColor: FlutterFlowTheme.of(context).common0,
+                          fillColor: Colors.transparent,
                           icon: Icon(
                             Icons.edit_note_rounded,
                             color: FlutterFlowTheme.of(context).primary,
@@ -155,7 +155,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight: FontWeight.w600,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -207,7 +207,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .titleLarge
                                       .override(
-                                        font: GoogleFonts.outfit(
+                                        font: GoogleFonts.inter(
                                           fontWeight: FontWeight.bold,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -229,7 +229,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .override(
-                                        font: GoogleFonts.plusJakartaSans(
+                                        font: GoogleFonts.inter(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodySmall
@@ -288,7 +288,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.outfit(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -350,7 +350,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.outfit(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -422,7 +422,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 20.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             subtitle: 'Name, email, and phone number',
                             title: 'Personal Information',
                           ),
@@ -436,7 +436,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 20.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             subtitle: 'Manage your external accounts',
                             title: 'Linked Banks',
                           ),
@@ -450,7 +450,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 20.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             subtitle: 'Email, push, and SMS alerts',
                             title: 'Notifications',
                           ),
@@ -506,7 +506,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 20.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             subtitle: 'Last updated 3 months ago',
                             title: 'Change Passcode',
                           ),
@@ -548,7 +548,7 @@ class _ProfileSecurityWidgetState extends State<ProfileSecurityWidget> {
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 20.0,
                             ),
-                            icon_bg: FlutterFlowTheme.of(context).common8,
+                            icon_bg: Color(0xFF337C4D),
                             subtitle: 'English (US)',
                             title: 'Language',
                           ),

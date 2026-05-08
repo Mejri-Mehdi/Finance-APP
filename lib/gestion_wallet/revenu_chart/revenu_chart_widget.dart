@@ -112,7 +112,7 @@ class _RevenuChartWidgetState extends State<RevenuChartWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleMedium
                                 .override(
-                                  font: GoogleFonts.plusJakartaSans(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .fontWeight,
@@ -193,8 +193,7 @@ class _RevenuChartWidgetState extends State<RevenuChartWidget> {
                                     groupSpace: 2.0,
                                     alignment: BarChartAlignment.spaceEvenly,
                                     chartStylingInfo: ChartStylingInfo(
-                                      backgroundColor:
-                                          FlutterFlowTheme.of(context).common0,
+                                      backgroundColor: Colors.transparent,
                                       showBorder: false,
                                     ),
                                     axisBounds: AxisBounds(
@@ -208,7 +207,7 @@ class _RevenuChartWidgetState extends State<RevenuChartWidget> {
                                               context)
                                           .bodySmall
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .bodySmall

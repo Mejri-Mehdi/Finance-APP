@@ -108,7 +108,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleMedium
@@ -148,7 +148,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                     Container(
                       height: 1.0,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).common0,
+                        color: Colors.transparent,
                         shape: BoxShape.rectangle,
                       ),
                     ),
@@ -214,8 +214,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                       boxShadow: [
                                         BoxShadow(
                                           blurRadius: 16.0,
-                                          color: FlutterFlowTheme.of(context)
-                                              .primary40,
+                                          color: Color(0x666E3AFF),
                                           offset: Offset(
                                             0.0,
                                             8.0,
@@ -254,7 +253,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.bold,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
@@ -290,7 +289,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                                       context)
                                                   .titleLarge
                                                   .override(
-                                                    font: GoogleFonts.outfit(
+                                                    font: GoogleFonts.inter(
                                                       fontWeight:
                                                           FontWeight.bold,
                                                       fontStyle:
@@ -322,7 +321,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .headlineLarge
                                               .override(
-                                                font: GoogleFonts.outfit(
+                                                font: GoogleFonts.inter(
                                                   fontWeight: FontWeight.w800,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -391,7 +390,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.outfit(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight: FontWeight.w600,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -436,7 +435,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                     Text(
                       'Transaction Details',
                       style: FlutterFlowTheme.of(context).titleMedium.override(
-                            font: GoogleFonts.plusJakartaSans(
+                            font: GoogleFonts.inter(
                               fontWeight: FontWeight.w600,
                               fontStyle: FlutterFlowTheme.of(context)
                                   .titleMedium
@@ -500,7 +499,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelSmall
@@ -532,7 +531,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.inter(
                                             fontWeight: FontWeight.w500,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -606,7 +605,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelSmall
@@ -638,7 +637,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.inter(
                                             fontWeight: FontWeight.w500,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -712,7 +711,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelSmall
@@ -744,7 +743,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.inter(
                                             fontWeight: FontWeight.w500,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -818,7 +817,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelSmall
@@ -851,7 +850,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.inter(
                                             fontWeight: FontWeight.w500,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -926,7 +925,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelSmall
@@ -958,7 +957,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.inter(
                                             fontWeight: FontWeight.w500,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -1037,7 +1036,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
@@ -1069,7 +1068,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.w500,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
@@ -1138,7 +1137,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
@@ -1203,7 +1202,7 @@ class _ShowRevenuWidgetState extends State<ShowRevenuWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge

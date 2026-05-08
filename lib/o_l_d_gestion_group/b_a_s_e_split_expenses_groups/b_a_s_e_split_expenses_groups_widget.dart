@@ -66,7 +66,7 @@ class _BASESplitExpensesGroupsWidgetState
           label: Text(
             'Add Expense',
             style: FlutterFlowTheme.of(context).labelLarge.override(
-                  font: GoogleFonts.outfit(
+                  font: GoogleFonts.inter(
                     fontWeight:
                         FlutterFlowTheme.of(context).labelLarge.fontWeight,
                     fontStyle:
@@ -141,7 +141,7 @@ class _BASESplitExpensesGroupsWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight: FontWeight.w800,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -168,7 +168,7 @@ class _BASESplitExpensesGroupsWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmall
@@ -308,7 +308,7 @@ class _BASESplitExpensesGroupsWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -362,7 +362,7 @@ class _BASESplitExpensesGroupsWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -416,7 +416,7 @@ class _BASESplitExpensesGroupsWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -471,7 +471,7 @@ class _BASESplitExpensesGroupsWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .titleMedium
                                 .override(
-                                  font: GoogleFonts.plusJakartaSans(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .fontWeight,
@@ -496,7 +496,7 @@ class _BASESplitExpensesGroupsWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  font: GoogleFonts.outfit(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .fontWeight,

@@ -83,7 +83,7 @@ class _GESTIONINVESTGoalDetailsWidgetState
                             FlutterFlowIconButton(
                               borderRadius: 8.0,
                               buttonSize: 40.0,
-                              fillColor: FlutterFlowTheme.of(context).common0,
+                              fillColor: Colors.transparent,
                               icon: Icon(
                                 Icons.arrow_back_rounded,
                                 color: FlutterFlowTheme.of(context).primaryText,
@@ -98,7 +98,7 @@ class _GESTIONINVESTGoalDetailsWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .fontWeight,
@@ -121,7 +121,7 @@ class _GESTIONINVESTGoalDetailsWidgetState
                             FlutterFlowIconButton(
                               borderRadius: 8.0,
                               buttonSize: 40.0,
-                              fillColor: FlutterFlowTheme.of(context).common0,
+                              fillColor: Colors.transparent,
                               icon: Icon(
                                 Icons.settings_rounded,
                                 color: FlutterFlowTheme.of(context).primaryText,
@@ -193,23 +193,16 @@ class _GESTIONINVESTGoalDetailsWidgetState
                                 }, colors: {
                                   'color0': FlutterFlowTheme.of(context)
                                       .primaryBackground,
-                                  'color1':
-                                      FlutterFlowTheme.of(context).common85,
+                                  'color1': Color(0x337C4DFF),
                                   'color2': FlutterFlowTheme.of(context)
                                       .primaryBackground,
-                                  'color3':
-                                      FlutterFlowTheme.of(context).common9,
-                                  'color4':
-                                      FlutterFlowTheme.of(context).common9,
-                                  'color5':
-                                      FlutterFlowTheme.of(context).common9,
-                                  'color6':
-                                      FlutterFlowTheme.of(context).common9,
-                                  'color7':
-                                      FlutterFlowTheme.of(context).common9,
-                                  'color8':
-                                      FlutterFlowTheme.of(context).common9,
-                                  'color9': FlutterFlowTheme.of(context).common9
+                                  'color3': Color(0x00808080),
+                                  'color4': Color(0x00808080),
+                                  'color5': Color(0x00808080),
+                                  'color6': Color(0x00808080),
+                                  'color7': Color(0x00808080),
+                                  'color8': Color(0x00808080),
+                                  'color9': Color(0x00808080)
                                 }),
                                 animationMode: ShaderAnimationMode.continuous,
                                 cache: false,
@@ -229,19 +222,17 @@ class _GESTIONINVESTGoalDetailsWidgetState
                                   radius: [50.0],
                                 ),
                                 donutHoleRadius: 85.0,
-                                donutHoleColor:
-                                    FlutterFlowTheme.of(context).common0,
+                                donutHoleColor: Colors.transparent,
                                 sectionLabelStyle: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FontWeight.bold,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .labelSmall
                                             .fontStyle,
                                       ),
-                                      color:
-                                          FlutterFlowTheme.of(context).common2,
+                                      color: Colors.white,
                                       fontSize: 10.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.bold,
@@ -266,7 +257,7 @@ class _GESTIONINVESTGoalDetailsWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .fontWeight,
@@ -291,7 +282,7 @@ class _GESTIONINVESTGoalDetailsWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .headlineLarge
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .headlineLarge
                                             .fontWeight,
@@ -327,7 +318,7 @@ class _GESTIONINVESTGoalDetailsWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          font: GoogleFonts.outfit(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelSmall
@@ -486,7 +477,7 @@ class _GESTIONINVESTGoalDetailsWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelSmall
                                               .override(
-                                                font: GoogleFonts.outfit(
+                                                font: GoogleFonts.inter(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -518,8 +509,7 @@ class _GESTIONINVESTGoalDetailsWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .titleMedium
                                               .override(
-                                                font:
-                                                    GoogleFonts.plusJakartaSans(
+                                                font: GoogleFonts.inter(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -581,7 +571,7 @@ class _GESTIONINVESTGoalDetailsWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .labelSmall
                                               .override(
-                                                font: GoogleFonts.outfit(
+                                                font: GoogleFonts.inter(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -613,8 +603,7 @@ class _GESTIONINVESTGoalDetailsWidgetState
                                           style: FlutterFlowTheme.of(context)
                                               .titleMedium
                                               .override(
-                                                font:
-                                                    GoogleFonts.plusJakartaSans(
+                                                font: GoogleFonts.inter(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -671,7 +660,7 @@ class _GESTIONINVESTGoalDetailsWidgetState
                           style: FlutterFlowTheme.of(context)
                               .titleMedium
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .fontWeight,
@@ -694,7 +683,7 @@ class _GESTIONINVESTGoalDetailsWidgetState
                           'See All',
                           style:
                               FlutterFlowTheme.of(context).labelLarge.override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .fontWeight,

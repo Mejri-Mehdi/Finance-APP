@@ -95,7 +95,7 @@ class _BudgetCardWidgetState extends State<BudgetCardWidget> {
                         decoration: BoxDecoration(
                           color: valueOrDefault<Color>(
                             widget.icon_bg,
-                            FlutterFlowTheme.of(context).common8,
+                            Color(0xFF337C4D),
                           ),
                           borderRadius: BorderRadius.circular(12.0),
                           shape: BoxShape.rectangle,
@@ -116,7 +116,7 @@ class _BudgetCardWidgetState extends State<BudgetCardWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleMedium
                                 .override(
-                                  font: GoogleFonts.plusJakartaSans(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .fontWeight,
@@ -141,7 +141,7 @@ class _BudgetCardWidgetState extends State<BudgetCardWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelSmall
                                 .override(
-                                  font: GoogleFonts.outfit(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .fontWeight,
@@ -186,7 +186,7 @@ class _BudgetCardWidgetState extends State<BudgetCardWidget> {
                       Text(
                         '\$${widget.spent}',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.plusJakartaSans(
+                              font: GoogleFonts.inter(
                                 fontWeight: FontWeight.w600,
                                 fontStyle: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -204,7 +204,7 @@ class _BudgetCardWidgetState extends State<BudgetCardWidget> {
                       Text(
                         'of \$${widget.limit}',
                         style: FlutterFlowTheme.of(context).bodySmall.override(
-                              font: GoogleFonts.plusJakartaSans(
+                              font: GoogleFonts.inter(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .fontWeight,

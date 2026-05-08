@@ -73,21 +73,21 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).common2,
+        backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).common2,
+          backgroundColor: Colors.white,
           automaticallyImplyLeading: false,
           leading: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 0.0, 0.0),
             child: FlutterFlowIconButton(
-              borderColor: FlutterFlowTheme.of(context).common0,
+              borderColor: Colors.transparent,
               borderRadius: 22.0,
               borderWidth: 1.0,
               buttonSize: 44.0,
-              fillColor: FlutterFlowTheme.of(context).common16,
+              fillColor: Color(0xFFF3F0FF),
               icon: Icon(
                 Icons.arrow_back_ios_rounded,
-                color: FlutterFlowTheme.of(context).common24,
+                color: Color(0xFF6C3DE0),
                 size: 20.0,
               ),
               onPressed: () async {
@@ -100,12 +100,12 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
             child: Text(
               'Recharger',
               style: FlutterFlowTheme.of(context).titleLarge.override(
-                    font: GoogleFonts.outfit(
+                    font: GoogleFonts.inter(
                       fontWeight: FontWeight.bold,
                       fontStyle:
                           FlutterFlowTheme.of(context).titleLarge.fontStyle,
                     ),
-                    color: FlutterFlowTheme.of(context).common4,
+                    color: Color(0xFF1A1A2E),
                     fontSize: 20.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.bold,
@@ -138,23 +138,22 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                         child: Text(
                           'Montant à ajouter',
                           textAlign: TextAlign.center,
-                          style: FlutterFlowTheme.of(context)
-                              .bodyMedium
-                              .override(
-                                font: GoogleFonts.plusJakartaSans(
-                                  fontWeight: FontWeight.w500,
-                                  fontStyle: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .fontStyle,
-                                ),
-                                color: FlutterFlowTheme.of(context).common66,
-                                fontSize: 15.0,
-                                letterSpacing: 0.0,
-                                fontWeight: FontWeight.w500,
-                                fontStyle: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .fontStyle,
-                              ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
+                                    color: Color(0xFF9E9EB8),
+                                    fontSize: 15.0,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w500,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
+                                  ),
                         ),
                       ),
                       Padding(
@@ -167,7 +166,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                             color: Color(0xFFF7F3FF),
                             borderRadius: BorderRadius.circular(24.0),
                             border: Border.all(
-                              color: FlutterFlowTheme.of(context).common49,
+                              color: Color(0xFFE8DEFF),
                               width: 1.5,
                             ),
                           ),
@@ -215,9 +214,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                                             .displayLarge
                                                             .fontStyle,
                                                   ),
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common64,
+                                                  color: Color(0xFFD4C5F9),
                                                   fontSize: 56.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.bold,
@@ -244,9 +241,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                                           .displayLarge
                                                           .fontStyle,
                                                 ),
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common24,
+                                                color: Color(0xFF6C3DE0),
                                                 fontSize: 56.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.bold,
@@ -257,9 +252,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                               ),
                                           textAlign: TextAlign.center,
                                           keyboardType: TextInputType.number,
-                                          cursorColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .common24,
+                                          cursorColor: Color(0xFF6C3DE0),
                                           validator: _model
                                               .textControllerValidator
                                               .asValidator(context),
@@ -271,7 +264,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
@@ -311,10 +304,10 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                             Container(
                               height: 44.0,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context).common87,
+                                color: Color(0xFFF0EAFF),
                                 borderRadius: BorderRadius.circular(22.0),
                                 border: Border.all(
-                                  color: FlutterFlowTheme.of(context).common64,
+                                  color: Color(0xFFD4C5F9),
                                   width: 1.0,
                                 ),
                               ),
@@ -330,15 +323,14 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.bold,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .fontStyle,
                                             ),
-                                            color: FlutterFlowTheme.of(context)
-                                                .common24,
+                                            color: Color(0xFF6C3DE0),
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
@@ -355,10 +347,10 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                             Container(
                               height: 44.0,
                               decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context).common87,
+                                color: Color(0xFFF0EAFF),
                                 borderRadius: BorderRadius.circular(22.0),
                                 border: Border.all(
-                                  color: FlutterFlowTheme.of(context).common64,
+                                  color: Color(0xFFD4C5F9),
                                   width: 1.0,
                                 ),
                               ),
@@ -374,15 +366,14 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.bold,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
                                                       .fontStyle,
                                             ),
-                                            color: FlutterFlowTheme.of(context)
-                                                .common24,
+                                            color: Color(0xFF6C3DE0),
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
@@ -409,7 +400,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                             color: Color(0xFFF7F3FF),
                             borderRadius: BorderRadius.circular(20.0),
                             border: Border.all(
-                              color: FlutterFlowTheme.of(context).common49,
+                              color: Color(0xFFE8DEFF),
                               width: 1.0,
                             ),
                           ),
@@ -431,8 +422,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                           width: 32.0,
                                           height: 32.0,
                                           decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .common49,
+                                            color: Color(0xFFE8DEFF),
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
                                           ),
@@ -441,9 +431,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                                 AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               Icons.credit_card_rounded,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .common24,
+                                              color: Color(0xFF6C3DE0),
                                               size: 16.0,
                                             ),
                                           ),
@@ -456,8 +444,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                font:
-                                                    GoogleFonts.plusJakartaSans(
+                                                font: GoogleFonts.inter(
                                                   fontWeight: FontWeight.w600,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -465,9 +452,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                                           .bodyMedium
                                                           .fontStyle,
                                                 ),
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common4,
+                                                color: Color(0xFF1A1A2E),
                                                 fontSize: 14.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
@@ -487,15 +472,14 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.normal,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodySmall
                                                       .fontStyle,
                                             ),
-                                            color: FlutterFlowTheme.of(context)
-                                                .common66,
+                                            color: Color(0xFF9E9EB8),
                                             fontSize: 13.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.normal,
@@ -509,7 +493,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                 ),
                                 Divider(
                                   thickness: 1.0,
-                                  color: FlutterFlowTheme.of(context).common49,
+                                  color: Color(0xFFE8DEFF),
                                 ),
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -521,15 +505,14 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.normal,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodySmall
                                                       .fontStyle,
                                             ),
-                                            color: FlutterFlowTheme.of(context)
-                                                .common66,
+                                            color: Color(0xFF9E9EB8),
                                             fontSize: 13.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.normal,
@@ -544,7 +527,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.inter(
                                               fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
@@ -590,7 +573,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                         gradient: LinearGradient(
                           colors: [
                             Color(0xFF8B5CF6),
-                            FlutterFlowTheme.of(context).common24,
+                            Color(0xFF6C3DE0),
                             Color(0xFF5B21B6)
                           ],
                           stops: [0.0, 0.5, 1.0],
@@ -679,7 +662,7 @@ class _RechargerCarteWidgetState extends State<RechargerCarteWidget> {
                                           .titleSmall
                                           .fontStyle,
                                     ),
-                                    color: FlutterFlowTheme.of(context).common2,
+                                    color: Colors.white,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall

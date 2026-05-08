@@ -81,7 +81,7 @@ class _GESTIONWALLETTransactionHistoryWidgetState
                               FlutterFlowIconButton(
                                 borderRadius: 8.0,
                                 buttonSize: 40.0,
-                                fillColor: FlutterFlowTheme.of(context).common0,
+                                fillColor: Colors.transparent,
                                 icon: Icon(
                                   Icons.arrow_back_ios_new_rounded,
                                   color:
@@ -97,7 +97,7 @@ class _GESTIONWALLETTransactionHistoryWidgetState
                                 style: FlutterFlowTheme.of(context)
                                     .titleLarge
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FontWeight.bold,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .titleLarge
@@ -114,7 +114,7 @@ class _GESTIONWALLETTransactionHistoryWidgetState
                               FlutterFlowIconButton(
                                 borderRadius: 8.0,
                                 buttonSize: 40.0,
-                                fillColor: FlutterFlowTheme.of(context).common0,
+                                fillColor: Colors.transparent,
                                 icon: Icon(
                                   Icons.tune_rounded,
                                   color:
@@ -357,7 +357,7 @@ class _GESTIONWALLETTransactionHistoryWidgetState
               label: Text(
                 'Add Transaction',
                 style: FlutterFlowTheme.of(context).labelLarge.override(
-                      font: GoogleFonts.outfit(
+                      font: GoogleFonts.inter(
                         fontWeight:
                             FlutterFlowTheme.of(context).labelLarge.fontWeight,
                         fontStyle:

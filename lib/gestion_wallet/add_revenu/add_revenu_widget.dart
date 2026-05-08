@@ -130,8 +130,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                 FlutterFlowIconButton(
                                   borderRadius: 8.0,
                                   buttonSize: 40.0,
-                                  fillColor:
-                                      FlutterFlowTheme.of(context).common0,
+                                  fillColor: Colors.transparent,
                                   icon: Icon(
                                     Icons.close_rounded,
                                     color: FlutterFlowTheme.of(context)
@@ -147,7 +146,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
-                                        font: GoogleFonts.plusJakartaSans(
+                                        font: GoogleFonts.inter(
                                           fontWeight: FontWeight.w600,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -167,8 +166,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                 FlutterFlowIconButton(
                                   borderRadius: 8.0,
                                   buttonSize: 40.0,
-                                  fillColor:
-                                      FlutterFlowTheme.of(context).common0,
+                                  fillColor: Colors.transparent,
                                   icon: Icon(
                                     Icons.history_rounded,
                                     color: FlutterFlowTheme.of(context)
@@ -212,7 +210,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                   gradient: LinearGradient(
                                     colors: [
                                       FlutterFlowTheme.of(context).secondary,
-                                      FlutterFlowTheme.of(context).common81
+                                      Color(0xFF2E04A4)
                                     ],
                                     stops: [0.0, 1.0],
                                     begin: AlignmentDirectional(1.0, 1.0),
@@ -253,7 +251,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .labelSmall
                                                 .override(
-                                                  font: GoogleFonts.outfit(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight: FontWeight.w800,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -294,39 +292,40 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                           children: [
                                             Text(
                                               '€',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .headlineLarge
-                                                  .override(
-                                                    font: GoogleFonts.outfit(
-                                                      fontWeight:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .headlineLarge
-                                                              .fontWeight,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .headlineLarge
-                                                              .fontStyle,
-                                                    ),
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondary,
-                                                    fontSize: 32.0,
-                                                    letterSpacing: 0.0,
-                                                    fontWeight:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .headlineLarge
-                                                            .fontWeight,
-                                                    fontStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .headlineLarge
-                                                            .fontStyle,
-                                                    lineHeight: 1.1,
-                                                  ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .headlineLarge
+                                                      .override(
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .headlineLarge
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .headlineLarge
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondary,
+                                                        fontSize: 32.0,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .headlineLarge
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .headlineLarge
+                                                                .fontStyle,
+                                                        lineHeight: 1.1,
+                                                      ),
                                             ),
                                             Text(
                                               addRevenuWalletRecord
@@ -336,7 +335,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                       context)
                                                   .headlineLarge
                                                   .override(
-                                                    font: GoogleFonts.outfit(
+                                                    font: GoogleFonts.inter(
                                                       fontWeight:
                                                           FontWeight.bold,
                                                       fontStyle:
@@ -386,8 +385,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts
-                                                            .plusJakartaSans(
+                                                        font: GoogleFonts.inter(
                                                           fontWeight:
                                                               FontWeight.bold,
                                                           fontStyle:
@@ -428,8 +426,8 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .outfit(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -633,8 +631,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                           iconColor:
                                               FlutterFlowTheme.of(context)
                                                   .primary,
-                                          color: FlutterFlowTheme.of(context)
-                                              .common69,
+                                          color: Color(0x000135DE),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .titleSmall
@@ -691,7 +688,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                         context)
                                                     .labelMedium
                                                     .override(
-                                                      font: GoogleFonts.outfit(
+                                                      font: GoogleFonts.inter(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -723,9 +720,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                               ),
                                               Container(
                                                 decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common0,
+                                                  color: Colors.transparent,
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           8.0),
@@ -778,7 +773,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                     .bodyMedium
                                                                     .override(
                                                                       font: GoogleFonts
-                                                                          .plusJakartaSans(
+                                                                          .inter(
                                                                         fontWeight: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .fontWeight,
@@ -819,8 +814,9 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                font: GoogleFonts
-                                                                    .plusJakartaSans(
+                                                                font:
+                                                                    GoogleFonts
+                                                                        .inter(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
@@ -885,8 +881,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                           context)
                                                       .labelMedium
                                                       .override(
-                                                        font:
-                                                            GoogleFonts.outfit(
+                                                        font: GoogleFonts.inter(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -970,9 +965,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                             ),
                                             Container(
                                               decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common0,
+                                                color: Colors.transparent,
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                                 shape: BoxShape.rectangle,
@@ -1028,7 +1021,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                       .bodyMedium
                                                                       .override(
                                                                         font: GoogleFonts
-                                                                            .plusJakartaSans(
+                                                                            .inter(
                                                                           fontWeight: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .fontWeight,
@@ -1066,8 +1059,9 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .plusJakartaSans(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
@@ -1142,8 +1136,8 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                             context)
                                                         .labelMedium
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .outfit(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1237,7 +1231,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       font: GoogleFonts
-                                                                          .outfit(
+                                                                          .inter(
                                                                         fontWeight:
                                                                             FontWeight.normal,
                                                                         fontStyle: FlutterFlowTheme.of(context)
@@ -1264,7 +1258,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       font: GoogleFonts
-                                                                          .outfit(
+                                                                          .inter(
                                                                         fontWeight:
                                                                             FontWeight.normal,
                                                                         fontStyle: FlutterFlowTheme.of(context)
@@ -1354,8 +1348,9 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                font: GoogleFonts
-                                                                    .plusJakartaSans(
+                                                                font:
+                                                                    GoogleFonts
+                                                                        .inter(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
@@ -1417,8 +1412,8 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1452,9 +1447,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                             child: Container(
                                               decoration: BoxDecoration(
                                                 border: Border.all(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common65,
+                                                  color: Color(0x002C2C2E),
                                                 ),
                                               ),
                                               child: Container(
@@ -1554,7 +1547,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     font: GoogleFonts
-                                                                        .plusJakartaSans(
+                                                                        .inter(
                                                                       fontWeight: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
@@ -1588,9 +1581,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                           Container(
                                             decoration: BoxDecoration(
                                               border: Border.all(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common65,
+                                                color: Color(0x002C2C2E),
                                               ),
                                             ),
                                             child: Container(
@@ -1687,8 +1678,9 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                     .of(context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .plusJakartaSans(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
@@ -1759,44 +1751,43 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                           children: [
                                             Text(
                                               'Description',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .labelMedium
-                                                  .override(
-                                                    font: GoogleFonts.outfit(
-                                                      fontWeight:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMedium
-                                                              .fontWeight,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMedium
-                                                              .fontStyle,
-                                                    ),
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    letterSpacing: 0.0,
-                                                    fontWeight:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMedium
-                                                            .fontWeight,
-                                                    fontStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMedium
-                                                            .fontStyle,
-                                                    lineHeight: 1.3,
-                                                  ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .labelMedium
+                                                      .override(
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontStyle,
+                                                        lineHeight: 1.3,
+                                                      ),
                                             ),
                                             Container(
                                               decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common0,
+                                                color: Colors.transparent,
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                                 shape: BoxShape.rectangle,
@@ -1846,7 +1837,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     font: GoogleFonts
-                                                                        .plusJakartaSans(
+                                                                        .inter(
                                                                       fontWeight: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
@@ -1886,8 +1877,9 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .plusJakartaSans(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
@@ -1945,44 +1937,43 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                           children: [
                                             Text(
                                               'Localisation',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .labelMedium
-                                                  .override(
-                                                    font: GoogleFonts.outfit(
-                                                      fontWeight:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMedium
-                                                              .fontWeight,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMedium
-                                                              .fontStyle,
-                                                    ),
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    letterSpacing: 0.0,
-                                                    fontWeight:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMedium
-                                                            .fontWeight,
-                                                    fontStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMedium
-                                                            .fontStyle,
-                                                    lineHeight: 1.3,
-                                                  ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .labelMedium
+                                                      .override(
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontStyle,
+                                                        lineHeight: 1.3,
+                                                      ),
                                             ),
                                             Container(
                                               decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common0,
+                                                color: Colors.transparent,
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                                 shape: BoxShape.rectangle,
@@ -2032,7 +2023,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                   .bodyMedium
                                                                   .override(
                                                                     font: GoogleFonts
-                                                                        .plusJakartaSans(
+                                                                        .inter(
                                                                       fontWeight: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
@@ -2072,8 +2063,9 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .plusJakartaSans(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodyMedium
@@ -2142,9 +2134,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                 borderRadius: 8.0,
                                                 borderWidth: 2.0,
                                                 buttonSize: 40.0,
-                                                fillColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common11,
+                                                fillColor: Color(0x007B4DFF),
                                                 icon: Icon(
                                                   Icons.calendar_month_outlined,
                                                   color: FlutterFlowTheme.of(
@@ -2178,8 +2168,9 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                     context)
                                                                 .headlineLarge
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
@@ -2247,39 +2238,39 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                               Text(
                                                 dateTimeFormat("MMMMEEEEd",
                                                     _model.datePicked),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: GoogleFonts.inter(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
+                                                      ),
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
                                                               .primaryText,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                          lineHeight: 1.5,
-                                                        ),
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                      lineHeight: 1.5,
+                                                    ),
                                               ),
                                             ].divide(SizedBox(width: 16.0)),
                                           ),
@@ -2344,8 +2335,8 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -2375,10 +2366,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                           0.0, 30.0, 0.0, 10.0),
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .common0,
+                                                      color: Colors.transparent,
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               8.0),
@@ -2415,8 +2403,9 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                     .of(context)
                                                                 .labelMedium
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelMedium
@@ -2511,8 +2500,9 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                     context)
                                                                 .labelMedium
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelMedium
@@ -2544,9 +2534,8 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                         Container(
                                                           decoration:
                                                               BoxDecoration(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .common0,
+                                                            color: Colors
+                                                                .transparent,
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .circular(
@@ -2612,7 +2601,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             font:
-                                                                                GoogleFonts.plusJakartaSans(
+                                                                                GoogleFonts.inter(
                                                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
@@ -2646,7 +2635,7 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                                           .bodyMedium
                                                                           .override(
                                                                             font:
-                                                                                GoogleFonts.plusJakartaSans(
+                                                                                GoogleFonts.inter(
                                                                               fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                               fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                             ),
@@ -2911,14 +2900,12 @@ class _AddRevenuWidgetState extends State<AddRevenuWidget> {
                                                     EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common11,
+                                                color: Color(0x007B4DFF),
                                                 textStyle: FlutterFlowTheme.of(
                                                         context)
                                                     .labelMedium
                                                     .override(
-                                                      font: GoogleFonts.outfit(
+                                                      font: GoogleFonts.inter(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)

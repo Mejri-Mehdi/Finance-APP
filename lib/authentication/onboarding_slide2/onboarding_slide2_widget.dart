@@ -114,9 +114,9 @@ class _OnboardingSlide2WidgetState extends State<OnboardingSlide2Widget> {
                             FlutterFlowTheme.of(context).primaryBackground,
                         'color6':
                             FlutterFlowTheme.of(context).primaryBackground,
-                        'color7': FlutterFlowTheme.of(context).common9,
-                        'color8': FlutterFlowTheme.of(context).common9,
-                        'color9': FlutterFlowTheme.of(context).common9
+                        'color7': Color(0x00808080),
+                        'color8': Color(0x00808080),
+                        'color9': Color(0x00808080)
                       }),
                       animationMode: ShaderAnimationMode.continuous,
                       cache: false,
@@ -172,7 +172,7 @@ class _OnboardingSlide2WidgetState extends State<OnboardingSlide2Widget> {
                 ),
                 textAlign: TextAlign.center,
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
-                      font: GoogleFonts.outfit(
+                      font: GoogleFonts.inter(
                         fontWeight: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .fontWeight,
@@ -198,7 +198,7 @@ class _OnboardingSlide2WidgetState extends State<OnboardingSlide2Widget> {
                 textAlign: TextAlign.center,
                 maxLines: 3,
                 style: FlutterFlowTheme.of(context).bodyLarge.override(
-                      font: GoogleFonts.plusJakartaSans(
+                      font: GoogleFonts.inter(
                         fontWeight:
                             FlutterFlowTheme.of(context).bodyLarge.fontWeight,
                         fontStyle:

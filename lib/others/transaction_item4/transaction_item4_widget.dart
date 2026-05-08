@@ -95,7 +95,7 @@ class _TransactionItem4WidgetState extends State<TransactionItem4Widget> {
                       ),
                       maxLines: 1,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            font: GoogleFonts.plusJakartaSans(
+                            font: GoogleFonts.inter(
                               fontWeight: FontWeight.w600,
                               fontStyle: FlutterFlowTheme.of(context)
                                   .bodyMedium
@@ -117,7 +117,7 @@ class _TransactionItem4WidgetState extends State<TransactionItem4Widget> {
                         'Hardware & Tech',
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
-                            font: GoogleFonts.plusJakartaSans(
+                            font: GoogleFonts.inter(
                               fontWeight: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .fontWeight,
@@ -150,7 +150,7 @@ class _TransactionItem4WidgetState extends State<TransactionItem4Widget> {
                       '-\$2,499.00',
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          font: GoogleFonts.plusJakartaSans(
+                          font: GoogleFonts.inter(
                             fontWeight: FontWeight.bold,
                             fontStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -172,7 +172,7 @@ class _TransactionItem4WidgetState extends State<TransactionItem4Widget> {
                       '14:20',
                     ),
                     style: FlutterFlowTheme.of(context).labelSmall.override(
-                          font: GoogleFonts.outfit(
+                          font: GoogleFonts.inter(
                             fontWeight: FlutterFlowTheme.of(context)
                                 .labelSmall
                                 .fontWeight,

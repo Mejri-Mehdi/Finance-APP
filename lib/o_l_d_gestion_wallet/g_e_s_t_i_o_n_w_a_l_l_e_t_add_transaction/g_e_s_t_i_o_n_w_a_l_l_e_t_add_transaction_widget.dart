@@ -66,7 +66,7 @@ class _GESTIONWALLETAddTransactionWidgetState
                   FlutterFlowIconButton(
                     borderRadius: 8.0,
                     buttonSize: 40.0,
-                    fillColor: FlutterFlowTheme.of(context).common0,
+                    fillColor: Colors.transparent,
                     icon: Icon(
                       Icons.close_rounded,
                       color: FlutterFlowTheme.of(context).primaryText,
@@ -79,7 +79,7 @@ class _GESTIONWALLETAddTransactionWidgetState
                   Text(
                     'Add Transaction',
                     style: FlutterFlowTheme.of(context).titleMedium.override(
-                          font: GoogleFonts.plusJakartaSans(
+                          font: GoogleFonts.inter(
                             fontWeight: FlutterFlowTheme.of(context)
                                 .titleMedium
                                 .fontWeight,
@@ -118,7 +118,7 @@ class _GESTIONWALLETAddTransactionWidgetState
                   Text(
                     'Amount',
                     style: FlutterFlowTheme.of(context).labelMedium.override(
-                          font: GoogleFonts.outfit(
+                          font: GoogleFonts.inter(
                             fontWeight: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .fontWeight,
@@ -147,7 +147,7 @@ class _GESTIONWALLETAddTransactionWidgetState
                         style: FlutterFlowTheme.of(context)
                             .headlineLarge
                             .override(
-                              font: GoogleFonts.outfit(
+                              font: GoogleFonts.inter(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .headlineLarge
                                     .fontWeight,
@@ -172,7 +172,7 @@ class _GESTIONWALLETAddTransactionWidgetState
                         style: FlutterFlowTheme.of(context)
                             .headlineLarge
                             .override(
-                              font: GoogleFonts.outfit(
+                              font: GoogleFonts.inter(
                                 fontWeight: FontWeight.w800,
                                 fontStyle: FlutterFlowTheme.of(context)
                                     .headlineLarge
@@ -207,7 +207,7 @@ class _GESTIONWALLETAddTransactionWidgetState
                         style: FlutterFlowTheme.of(context)
                             .labelMedium
                             .override(
-                              font: GoogleFonts.outfit(
+                              font: GoogleFonts.inter(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .fontWeight,
@@ -257,7 +257,7 @@ class _GESTIONWALLETAddTransactionWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -304,7 +304,7 @@ class _GESTIONWALLETAddTransactionWidgetState
                         style: FlutterFlowTheme.of(context)
                             .labelMedium
                             .override(
-                              font: GoogleFonts.outfit(
+                              font: GoogleFonts.inter(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .fontWeight,
@@ -354,7 +354,7 @@ class _GESTIONWALLETAddTransactionWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.inter(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -401,7 +401,7 @@ class _GESTIONWALLETAddTransactionWidgetState
                         style: FlutterFlowTheme.of(context)
                             .labelMedium
                             .override(
-                              font: GoogleFonts.outfit(
+                              font: GoogleFonts.inter(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .fontWeight,

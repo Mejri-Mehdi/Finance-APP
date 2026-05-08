@@ -104,7 +104,7 @@ class _BASENotificationsCenterWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .headlineMedium
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .headlineMedium
@@ -134,7 +134,7 @@ class _BASENotificationsCenterWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
@@ -211,11 +211,11 @@ class _BASENotificationsCenterWidgetState
                       child: NotificationTileWidget(
                         icon: Icon(
                           Icons.coffee_rounded,
-                          color: FlutterFlowTheme.of(context).common39,
+                          color: Color(0xFFD7CCC8),
                           size: 24.0,
                         ),
-                        icon_bg: FlutterFlowTheme.of(context).common53,
-                        icon_color: FlutterFlowTheme.of(context).common39,
+                        icon_bg: Color(0xFF3E2723),
+                        icon_color: Color(0xFFD7CCC8),
                         message:
                             'You spent \$50.00 at Starbucks. Your balance is now \$2,450.00.',
                         time: '2m ago',

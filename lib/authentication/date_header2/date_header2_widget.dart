@@ -57,7 +57,7 @@ class _DateHeader2WidgetState extends State<DateHeader2Widget> {
               'Today',
             ),
             style: FlutterFlowTheme.of(context).labelLarge.override(
-                  font: GoogleFonts.outfit(
+                  font: GoogleFonts.inter(
                     fontWeight:
                         FlutterFlowTheme.of(context).labelLarge.fontWeight,
                     fontStyle:

@@ -78,7 +78,7 @@ class _SettingsItemWidgetState extends State<SettingsItemWidget> {
                     decoration: BoxDecoration(
                       color: valueOrDefault<Color>(
                         widget.icon_bg,
-                        FlutterFlowTheme.of(context).common8,
+                        Color(0xFF337C4D),
                       ),
                       borderRadius: BorderRadius.circular(12.0),
                       shape: BoxShape.rectangle,
@@ -101,7 +101,7 @@ class _SettingsItemWidgetState extends State<SettingsItemWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FontWeight.w600,
                                   fontStyle: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -125,7 +125,7 @@ class _SettingsItemWidgetState extends State<SettingsItemWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodySmall
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .fontWeight,

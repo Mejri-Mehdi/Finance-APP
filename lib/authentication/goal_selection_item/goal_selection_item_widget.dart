@@ -84,7 +84,7 @@ class _GoalSelectionItemWidgetState extends State<GoalSelectionItemWidget> {
                     decoration: BoxDecoration(
                       color: valueOrDefault<Color>(
                         widget.icon_bg,
-                        FlutterFlowTheme.of(context).common44,
+                        Color(0x332E7D32),
                       ),
                       borderRadius: BorderRadius.circular(12.0),
                       shape: BoxShape.rectangle,
@@ -107,7 +107,7 @@ class _GoalSelectionItemWidgetState extends State<GoalSelectionItemWidget> {
                           style: FlutterFlowTheme.of(context)
                               .titleMedium
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .fontWeight,
@@ -134,7 +134,7 @@ class _GoalSelectionItemWidgetState extends State<GoalSelectionItemWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodySmall
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .fontWeight,

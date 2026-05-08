@@ -89,7 +89,7 @@ class _ModuleChipWidgetState extends State<ModuleChipWidget> {
                     'Groups',
                   ),
                   style: FlutterFlowTheme.of(context).labelMedium.override(
-                        font: GoogleFonts.outfit(
+                        font: GoogleFonts.inter(
                           fontWeight: FlutterFlowTheme.of(context)
                               .labelMedium
                               .fontWeight,

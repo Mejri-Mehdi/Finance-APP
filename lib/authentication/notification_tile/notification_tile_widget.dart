@@ -88,7 +88,7 @@ class _NotificationTileWidgetState extends State<NotificationTileWidget> {
                     decoration: BoxDecoration(
                       color: valueOrDefault<Color>(
                         widget.icon_bg,
-                        FlutterFlowTheme.of(context).common53,
+                        Color(0xFF3E2723),
                       ),
                       borderRadius: BorderRadius.circular(12.0),
                       shape: BoxShape.rectangle,
@@ -117,7 +117,7 @@ class _NotificationTileWidgetState extends State<NotificationTileWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelLarge
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .fontWeight,
@@ -146,7 +146,7 @@ class _NotificationTileWidgetState extends State<NotificationTileWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .fontWeight,
@@ -177,7 +177,7 @@ class _NotificationTileWidgetState extends State<NotificationTileWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .fontWeight,

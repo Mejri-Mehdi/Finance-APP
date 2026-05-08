@@ -14,6 +14,8 @@ class TheMainMesCartesDashboardViewCardsTransactionsModel
 
   String currencyMode = '\"TND\"';
 
+  bool isBalanceHidden = true;
+
   ///  State fields for stateful widgets in this page.
 
   bool authResult = false;

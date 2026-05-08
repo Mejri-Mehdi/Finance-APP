@@ -93,7 +93,7 @@ class _AUTHRegisterWidgetState extends State<AUTHRegisterWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .headlineLarge
                                 .override(
-                                  font: GoogleFonts.outfit(
+                                  font: GoogleFonts.inter(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .headlineLarge
                                         .fontWeight,
@@ -117,7 +117,7 @@ class _AUTHRegisterWidgetState extends State<AUTHRegisterWidget> {
                             'Secure your future with the next generation of digital banking.',
                             style:
                                 FlutterFlowTheme.of(context).bodyLarge.override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .fontWeight,
@@ -263,7 +263,7 @@ class _AUTHRegisterWidgetState extends State<AUTHRegisterWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .fontWeight,
@@ -350,7 +350,7 @@ class _AUTHRegisterWidgetState extends State<AUTHRegisterWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelSmall
                                             .fontWeight,
@@ -422,38 +422,39 @@ class _AUTHRegisterWidgetState extends State<AUTHRegisterWidget> {
                                             ),
                                             Text(
                                               'Google',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .labelLarge
-                                                  .override(
-                                                    font: GoogleFonts.outfit(
-                                                      fontWeight:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelLarge
-                                                              .fontWeight,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelLarge
-                                                              .fontStyle,
-                                                    ),
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    letterSpacing: 0.0,
-                                                    fontWeight:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelLarge
-                                                            .fontWeight,
-                                                    fontStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelLarge
-                                                            .fontStyle,
-                                                    lineHeight: 1.33,
-                                                  ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .labelLarge
+                                                      .override(
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelLarge
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelLarge
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelLarge
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelLarge
+                                                                .fontStyle,
+                                                        lineHeight: 1.33,
+                                                      ),
                                             ),
                                           ].divide(SizedBox(width: 8.0)),
                                         ),
@@ -497,38 +498,39 @@ class _AUTHRegisterWidgetState extends State<AUTHRegisterWidget> {
                                             ),
                                             Text(
                                               'Apple',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .labelLarge
-                                                  .override(
-                                                    font: GoogleFonts.outfit(
-                                                      fontWeight:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelLarge
-                                                              .fontWeight,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelLarge
-                                                              .fontStyle,
-                                                    ),
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    letterSpacing: 0.0,
-                                                    fontWeight:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelLarge
-                                                            .fontWeight,
-                                                    fontStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelLarge
-                                                            .fontStyle,
-                                                    lineHeight: 1.33,
-                                                  ),
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .labelLarge
+                                                      .override(
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelLarge
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelLarge
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelLarge
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelLarge
+                                                                .fontStyle,
+                                                        lineHeight: 1.33,
+                                                      ),
                                             ),
                                           ].divide(SizedBox(width: 8.0)),
                                         ),
@@ -554,7 +556,7 @@ class _AUTHRegisterWidgetState extends State<AUTHRegisterWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontWeight,

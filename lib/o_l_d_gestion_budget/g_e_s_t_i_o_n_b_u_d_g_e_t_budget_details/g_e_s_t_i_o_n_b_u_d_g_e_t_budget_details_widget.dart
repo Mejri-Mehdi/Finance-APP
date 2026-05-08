@@ -82,7 +82,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                             FlutterFlowIconButton(
                               borderRadius: 8.0,
                               buttonSize: 40.0,
-                              fillColor: FlutterFlowTheme.of(context).common0,
+                              fillColor: Colors.transparent,
                               icon: Icon(
                                 Icons.arrow_back_rounded,
                                 color: FlutterFlowTheme.of(context).primaryText,
@@ -95,7 +95,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                             FlutterFlowIconButton(
                               borderRadius: 8.0,
                               buttonSize: 40.0,
-                              fillColor: FlutterFlowTheme.of(context).common0,
+                              fillColor: Colors.transparent,
                               icon: Icon(
                                 Icons.info_outline_rounded,
                                 color: FlutterFlowTheme.of(context).primaryText,
@@ -132,7 +132,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .headlineMedium
                                   .override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .headlineMedium
                                           .fontWeight,
@@ -157,7 +157,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .fontWeight,
@@ -220,7 +220,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
@@ -249,7 +249,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .titleLarge
@@ -285,7 +285,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
@@ -314,7 +314,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .override(
-                                            font: GoogleFonts.outfit(
+                                            font: GoogleFonts.inter(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .titleLarge
@@ -374,7 +374,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                                         style: FlutterFlowTheme.of(context)
                                             .labelSmall
                                             .override(
-                                              font: GoogleFonts.outfit(
+                                              font: GoogleFonts.inter(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .labelSmall
@@ -414,7 +414,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .override(
-                                        font: GoogleFonts.plusJakartaSans(
+                                        font: GoogleFonts.inter(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodySmall
@@ -462,7 +462,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                           style: FlutterFlowTheme.of(context)
                               .titleMedium
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.inter(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .fontWeight,
@@ -485,7 +485,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                           'See All',
                           style:
                               FlutterFlowTheme.of(context).labelLarge.override(
-                                    font: GoogleFonts.outfit(
+                                    font: GoogleFonts.inter(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .fontWeight,
@@ -628,7 +628,7 @@ class _GESTIONBUDGETBudgetDetailsWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .labelLarge
                                       .override(
-                                        font: GoogleFonts.outfit(
+                                        font: GoogleFonts.inter(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge

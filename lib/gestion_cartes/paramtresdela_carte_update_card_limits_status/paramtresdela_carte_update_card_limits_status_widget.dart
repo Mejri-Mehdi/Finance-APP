@@ -81,12 +81,12 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
           backgroundColor: Color(0xFFF5F5F5),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
-            borderColor: FlutterFlowTheme.of(context).common0,
+            borderColor: Colors.transparent,
             borderRadius: 22.0,
             buttonSize: 44.0,
             icon: Icon(
               Icons.arrow_back_rounded,
-              color: FlutterFlowTheme.of(context).common4,
+              color: Color(0xFF1A1A2E),
               size: 22.0,
             ),
             onPressed: () async {
@@ -99,12 +99,12 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
               'Paramètres',
               textAlign: TextAlign.start,
               style: FlutterFlowTheme.of(context).titleLarge.override(
-                    font: GoogleFonts.outfit(
+                    font: GoogleFonts.inter(
                       fontWeight: FontWeight.bold,
                       fontStyle:
                           FlutterFlowTheme.of(context).titleLarge.fontStyle,
                     ),
-                    color: FlutterFlowTheme.of(context).common4,
+                    color: Color(0xFF1A1A2E),
                     fontSize: 20.0,
                     letterSpacing: 0.0,
                     fontWeight: FontWeight.bold,
@@ -148,9 +148,9 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                               ],
                               gradient: LinearGradient(
                                 colors: [
-                                  FlutterFlowTheme.of(context).common6,
-                                  FlutterFlowTheme.of(context).common77,
-                                  FlutterFlowTheme.of(context).common29
+                                  Color(0xFF6C3DE1),
+                                  Color(0xFF9B59B6),
+                                  Color(0xFFB388FF)
                                 ],
                                 stops: [0.0, 0.5, 1.0],
                                 begin: AlignmentDirectional(1.0, 1.0),
@@ -169,8 +169,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                       width: 140.0,
                                       height: 140.0,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .common35,
+                                        color: Color(0x1AFFFFFF),
                                         shape: BoxShape.circle,
                                       ),
                                     ),
@@ -216,8 +215,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .outfit(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -226,9 +225,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                     .labelSmall
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common20,
+                                                          color:
+                                                              Color(0xCCFFFFFF),
                                                           fontSize: 10.0,
                                                           letterSpacing: 2.0,
                                                           fontWeight:
@@ -250,8 +248,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                             context)
                                                         .titleMedium
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                             fontStyle:
@@ -260,9 +258,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                     .titleMedium
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common2,
+                                                          color: Colors.white,
                                                           fontSize: 16.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -285,9 +281,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                 width: 48.0,
                                                 height: 32.0,
                                                 decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common70,
+                                                  color: Color(0x33FFFFFF),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           6.0),
@@ -310,7 +304,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                           .labelSmall
                                                           .override(
                                                             font: GoogleFonts
-                                                                .outfit(
+                                                                .inter(
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w800,
@@ -320,9 +314,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                       .labelSmall
                                                                       .fontStyle,
                                                             ),
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .common2,
+                                                            color: Colors.white,
                                                             fontSize: 13.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
@@ -355,33 +347,31 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                       .cardToEdit?.cardNumber,
                                                   '•••• •••• •••• 4872',
                                                 ),
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .labelSmall
-                                                    .override(
-                                                      font: GoogleFonts.outfit(
-                                                        fontWeight:
-                                                            FontWeight.w500,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelSmall
-                                                                .fontStyle,
-                                                      ),
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .common2,
-                                                      fontSize: 15.0,
-                                                      letterSpacing: 2.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelSmall
-                                                              .fontStyle,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelSmall
+                                                        .override(
+                                                          font:
+                                                              GoogleFonts.inter(
+                                                            fontWeight:
+                                                                FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelSmall
+                                                                    .fontStyle,
+                                                          ),
+                                                          color: Colors.white,
+                                                          fontSize: 15.0,
+                                                          letterSpacing: 2.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelSmall
+                                                                  .fontStyle,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -413,7 +403,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .outfit(
+                                                                        .inter(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelSmall
@@ -423,9 +413,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                       .labelSmall
                                                                       .fontStyle,
                                                                 ),
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .common22,
+                                                                color: Color(
+                                                                    0x99FFFFFF),
                                                                 fontSize: 9.0,
                                                                 letterSpacing:
                                                                     1.0,
@@ -452,7 +441,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .outfit(
+                                                                        .inter(
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
@@ -461,9 +450,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                       .labelSmall
                                                                       .fontStyle,
                                                                 ),
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .common2,
+                                                                color: Colors
+                                                                    .white,
                                                                 fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -499,7 +487,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .outfit(
+                                                                        .inter(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelSmall
@@ -509,9 +497,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                       .labelSmall
                                                                       .fontStyle,
                                                                 ),
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .common22,
+                                                                color: Color(
+                                                                    0x99FFFFFF),
                                                                 fontSize: 9.0,
                                                                 letterSpacing:
                                                                     1.0,
@@ -538,7 +525,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .outfit(
+                                                                        .inter(
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w600,
@@ -547,9 +534,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                       .labelSmall
                                                                       .fontStyle,
                                                                 ),
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .common2,
+                                                                color: Colors
+                                                                    .white,
                                                                 fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -585,7 +571,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context).common2,
+                            color: Colors.white,
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 20.0,
@@ -619,9 +605,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                             width: 44.0,
                                             height: 44.0,
                                             decoration: BoxDecoration(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .common16,
+                                              color: Color(0xFFF3F0FF),
                                               borderRadius:
                                                   BorderRadius.circular(12.0),
                                             ),
@@ -630,9 +614,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.lock_outline,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common6,
+                                                color: Color(0xFF6C3DE1),
                                                 size: 22.0,
                                               ),
                                             ),
@@ -658,9 +640,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                     .titleSmall
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common4,
+                                                          color:
+                                                              Color(0xFF1A1A2E),
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -674,39 +655,36 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                               ),
                                               Text(
                                                 'Reprise de la carte',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodySmall
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmall
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmall
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common18,
-                                                          fontSize: 12.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodySmall
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodySmall
-                                                                  .fontStyle,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodySmall
+                                                    .override(
+                                                      font: GoogleFonts.inter(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodySmall
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodySmall
+                                                                .fontStyle,
+                                                      ),
+                                                      color: Color(0xFF9E9E9E),
+                                                      fontSize: 12.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodySmall
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodySmall
+                                                              .fontStyle,
+                                                    ),
                                               ),
                                             ],
                                           ),
@@ -718,18 +696,10 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                           safeSetState(() =>
                                               _model.switchValue1 = newValue);
                                         },
-                                        activeThumbColor:
-                                            FlutterFlowTheme.of(context)
-                                                .common6,
-                                        activeTrackColor:
-                                            FlutterFlowTheme.of(context)
-                                                .common29,
-                                        inactiveTrackColor:
-                                            FlutterFlowTheme.of(context)
-                                                .common54,
-                                        inactiveThumbColor:
-                                            FlutterFlowTheme.of(context)
-                                                .common56,
+                                        activeThumbColor: Color(0xFF6C3DE1),
+                                        activeTrackColor: Color(0xFFB388FF),
+                                        inactiveTrackColor: Color(0xFFE0E0E0),
+                                        inactiveThumbColor: Color(0xFFBDBDBD),
                                       ),
                                     ],
                                   ),
@@ -737,7 +707,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                 Divider(
                                   height: 1.0,
                                   thickness: 1.0,
-                                  color: FlutterFlowTheme.of(context).common46,
+                                  color: Color(0xFFF0F0F0),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
@@ -757,9 +727,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                               width: 44.0,
                                               height: 44.0,
                                               decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common16,
+                                                color: Color(0xFFF3F0FF),
                                                 borderRadius:
                                                     BorderRadius.circular(12.0),
                                               ),
@@ -768,9 +736,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                     0.0, 0.0),
                                                 child: Icon(
                                                   Icons.tune_rounded,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common6,
+                                                  color: Color(0xFF6C3DE1),
                                                   size: 22.0,
                                                 ),
                                               ),
@@ -797,9 +763,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                     .titleSmall
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common4,
+                                                          color:
+                                                              Color(0xFF1A1A2E),
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -817,8 +782,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                             context)
                                                         .bodySmall
                                                         .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
+                                                          font:
+                                                              GoogleFonts.inter(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -830,9 +795,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                     .bodySmall
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common18,
+                                                          color:
+                                                              Color(0xFF9E9E9E),
                                                           fontSize: 12.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -860,12 +824,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                 decoration: BoxDecoration(
                                                   gradient: LinearGradient(
                                                     colors: [
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .common6,
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .common77
+                                                      Color(0xFF6C3DE1),
+                                                      Color(0xFF9B59B6)
                                                     ],
                                                     stops: [0.0, 1.0],
                                                     begin: AlignmentDirectional(
@@ -902,9 +862,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                     .titleSmall
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common2,
+                                                          color: Colors.white,
                                                           fontSize: 13.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -940,7 +898,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                         context)
                                                     .labelSmall
                                                     .override(
-                                                      font: GoogleFonts.outfit(
+                                                      font: GoogleFonts.inter(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -952,10 +910,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                 .labelSmall
                                                                 .fontStyle,
                                                       ),
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .common18,
+                                                      color: Color(0xFF9E9E9E),
                                                       fontSize: 11.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
@@ -976,7 +931,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                         context)
                                                     .labelSmall
                                                     .override(
-                                                      font: GoogleFonts.outfit(
+                                                      font: GoogleFonts.inter(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -988,10 +943,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                 .labelSmall
                                                                 .fontStyle,
                                                       ),
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .common18,
+                                                      color: Color(0xFF9E9E9E),
                                                       fontSize: 11.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
@@ -1020,8 +972,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                     width: double.infinity,
                                     height: 6.0,
                                     decoration: BoxDecoration(
-                                      color:
-                                          FlutterFlowTheme.of(context).common46,
+                                      color: Color(0xFFF0F0F0),
                                       borderRadius: BorderRadius.circular(3.0),
                                     ),
                                     child: Container(
@@ -1031,10 +982,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                       decoration: BoxDecoration(
                                         gradient: LinearGradient(
                                           colors: [
-                                            FlutterFlowTheme.of(context)
-                                                .common6,
-                                            FlutterFlowTheme.of(context)
-                                                .common29
+                                            Color(0xFF6C3DE1),
+                                            Color(0xFFB388FF)
                                           ],
                                           stops: [0.0, 1.0],
                                           begin: AlignmentDirectional(1.0, 0.0),
@@ -1049,7 +998,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                 Divider(
                                   height: 1.0,
                                   thickness: 1.0,
-                                  color: FlutterFlowTheme.of(context).common46,
+                                  color: Color(0xFFF0F0F0),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
@@ -1066,9 +1015,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                             width: 44.0,
                                             height: 44.0,
                                             decoration: BoxDecoration(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .common16,
+                                              color: Color(0xFFF3F0FF),
                                               borderRadius:
                                                   BorderRadius.circular(12.0),
                                             ),
@@ -1077,9 +1024,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.pin_outlined,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .common6,
+                                                color: Color(0xFF6C3DE1),
                                                 size: 22.0,
                                               ),
                                             ),
@@ -1105,9 +1050,8 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                                     .titleSmall
                                                                     .fontStyle,
                                                           ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common4,
+                                                          color:
+                                                              Color(0xFF1A1A2E),
                                                           fontSize: 15.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -1121,39 +1065,36 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                               ),
                                               Text(
                                                 'Modifier votre code secret',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodySmall
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmall
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmall
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .common18,
-                                                          fontSize: 12.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodySmall
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodySmall
-                                                                  .fontStyle,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodySmall
+                                                    .override(
+                                                      font: GoogleFonts.inter(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodySmall
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodySmall
+                                                                .fontStyle,
+                                                      ),
+                                                      color: Color(0xFF9E9E9E),
+                                                      fontSize: 12.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodySmall
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodySmall
+                                                              .fontStyle,
+                                                    ),
                                               ),
                                             ],
                                           ),
@@ -1163,8 +1104,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                         width: 32.0,
                                         height: 32.0,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .common16,
+                                          color: Color(0xFFF3F0FF),
                                           borderRadius:
                                               BorderRadius.circular(8.0),
                                         ),
@@ -1173,8 +1113,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                               AlignmentDirectional(0.0, 0.0),
                                           child: Icon(
                                             Icons.chevron_right_rounded,
-                                            color: FlutterFlowTheme.of(context)
-                                                .common6,
+                                            color: Color(0xFF6C3DE1),
                                             size: 18.0,
                                           ),
                                         ),
@@ -1193,7 +1132,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context).common2,
+                            color: Colors.white,
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 16.0,
@@ -1218,15 +1157,14 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
-                                        font: GoogleFonts.outfit(
+                                        font: GoogleFonts.inter(
                                           fontWeight: FontWeight.w600,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelSmall
                                                   .fontStyle,
                                         ),
-                                        color: FlutterFlowTheme.of(context)
-                                            .common18,
+                                        color: Color(0xFF9E9E9E),
                                         fontSize: 10.0,
                                         letterSpacing: 2.0,
                                         fontWeight: FontWeight.w600,
@@ -1248,8 +1186,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                         children: [
                                           Icon(
                                             Icons.shield_outlined,
-                                            color: FlutterFlowTheme.of(context)
-                                                .common6,
+                                            color: Color(0xFF6C3DE1),
                                             size: 20.0,
                                           ),
                                           Text(
@@ -1257,8 +1194,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts
-                                                      .plusJakartaSans(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -1270,9 +1206,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                             .bodyMedium
                                                             .fontStyle,
                                                   ),
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common4,
+                                                  color: Color(0xFF1A1A2E),
                                                   fontSize: 14.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight:
@@ -1298,18 +1232,10 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                             safeSetState(() => _model
                                                 .switchValue2 = newValue);
                                           },
-                                          activeThumbColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .common6,
-                                          activeTrackColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .common29,
-                                          inactiveTrackColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .common54,
-                                          inactiveThumbColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .common56,
+                                          activeThumbColor: Color(0xFF6C3DE1),
+                                          activeTrackColor: Color(0xFFB388FF),
+                                          inactiveTrackColor: Color(0xFFE0E0E0),
+                                          inactiveThumbColor: Color(0xFFBDBDBD),
                                         ),
                                       ),
                                     ],
@@ -1328,8 +1254,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                         children: [
                                           Icon(
                                             Icons.public_rounded,
-                                            color: FlutterFlowTheme.of(context)
-                                                .common6,
+                                            color: Color(0xFF6C3DE1),
                                             size: 20.0,
                                           ),
                                           Text(
@@ -1337,8 +1262,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts
-                                                      .plusJakartaSans(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -1350,9 +1274,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                                             .bodyMedium
                                                             .fontStyle,
                                                   ),
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .common4,
+                                                  color: Color(0xFF1A1A2E),
                                                   fontSize: 14.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight:
@@ -1378,18 +1300,10 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                             safeSetState(() => _model
                                                 .switchValue3 = newValue);
                                           },
-                                          activeThumbColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .common6,
-                                          activeTrackColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .common29,
-                                          inactiveTrackColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .common54,
-                                          inactiveThumbColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .common56,
+                                          activeThumbColor: Color(0xFF6C3DE1),
+                                          activeTrackColor: Color(0xFFB388FF),
+                                          inactiveTrackColor: Color(0xFFE0E0E0),
+                                          inactiveThumbColor: Color(0xFFBDBDBD),
                                         ),
                                       ),
                                     ],
@@ -1440,7 +1354,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                       padding: EdgeInsets.all(8.0),
                       iconPadding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).common6,
+                      color: Color(0xFF6C3DE1),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
                                 font: GoogleFonts.plusJakartaSans(
@@ -1449,7 +1363,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                                       .titleSmall
                                       .fontStyle,
                                 ),
-                                color: FlutterFlowTheme.of(context).common2,
+                                color: Colors.white,
                                 fontSize: 16.0,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.bold,
@@ -1459,7 +1373,7 @@ class _ParamtresdelaCarteUpdateCardLimitsStatusWidgetState
                               ),
                       elevation: 0.0,
                       borderSide: BorderSide(
-                        color: FlutterFlowTheme.of(context).common0,
+                        color: Colors.transparent,
                       ),
                       borderRadius: BorderRadius.circular(16.0),
                     ),

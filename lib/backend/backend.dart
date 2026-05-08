@@ -10,6 +10,7 @@ import 'schema/users_record.dart';
 import 'schema/transactions_record.dart';
 import 'schema/transaction_record.dart';
 import 'schema/wallet_record.dart';
+import 'schema/notifications_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart' hide Order;
@@ -23,6 +24,7 @@ export 'schema/users_record.dart';
 export 'schema/transactions_record.dart';
 export 'schema/transaction_record.dart';
 export 'schema/wallet_record.dart';
+export 'schema/notifications_record.dart';
 
 /// Functions to query CardsRecords (as a Stream and as a Future).
 Future<int> queryCardsRecordCount({
@@ -204,6 +206,43 @@ Future<List<WalletRecord>> queryWalletRecordOnce({
     queryCollectionOnce(
       WalletRecord.collection,
       WalletRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query NotificationsRecords (as a Stream and as a Future).
+Future<int> queryNotificationsRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      NotificationsRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<NotificationsRecord>> queryNotificationsRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      NotificationsRecord.collection,
+      NotificationsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<NotificationsRecord>> queryNotificationsRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      NotificationsRecord.collection,
+      NotificationsRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

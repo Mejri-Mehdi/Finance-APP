@@ -106,7 +106,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                             decoration: BoxDecoration(
                               color: valueOrDefault<Color>(
                                 widget.icon_bg,
-                                FlutterFlowTheme.of(context).common8,
+                                Color(0xFF337C4D),
                               ),
                               borderRadius: BorderRadius.circular(12.0),
                               shape: BoxShape.rectangle,
@@ -127,7 +127,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .titleMedium
                                     .override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FontWeight.w600,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .titleMedium
@@ -151,7 +151,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .override(
-                                      font: GoogleFonts.outfit(
+                                      font: GoogleFonts.inter(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelSmall
                                             .fontWeight,
@@ -229,7 +229,7 @@ class _GoalCardWidgetState extends State<GoalCardWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .override(
-                                        font: GoogleFonts.outfit(
+                                        font: GoogleFonts.inter(
                                           fontWeight: FontWeight.w600,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)

@@ -127,7 +127,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                               gradient: LinearGradient(
                                 colors: [
                                   FlutterFlowTheme.of(context).primary20,
-                                  FlutterFlowTheme.of(context).common0
+                                  Colors.transparent
                                 ],
                                 stops: [0.0, 1.0],
                                 begin: AlignmentDirectional(0.0, -1.0),
@@ -210,7 +210,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .headlineMedium
                                                 .override(
-                                                  font: GoogleFonts.outfit(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight: FontWeight.w800,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -237,8 +237,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  font: GoogleFonts
-                                                      .plusJakartaSans(
+                                                  font: GoogleFonts.inter(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -294,11 +293,9 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                       ),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .surface40,
+                                          color: Color(0x66FFFFFF),
                                           borderRadius:
                                               BorderRadius.circular(28.0),
-                                          shape: BoxShape.rectangle,
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -308,6 +305,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                         child: Padding(
                                           padding: EdgeInsets.all(16.0),
                                           child: Container(
+                                            decoration: BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -340,8 +338,9 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -384,9 +383,8 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                               Container(
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .common0,
+                                                                  color: Colors
+                                                                      .transparent,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
@@ -395,9 +393,8 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                       .rectangle,
                                                                   border: Border
                                                                       .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .common0,
+                                                                    color: Colors
+                                                                        .transparent,
                                                                     width: 0.0,
                                                                   ),
                                                                 ),
@@ -436,7 +433,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                             hintText:
                                                                                 'nomWallet',
                                                                             hintStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  font: GoogleFonts.plusJakartaSans(
+                                                                                  font: GoogleFonts.inter(
                                                                                     fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                     fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                   ),
@@ -458,7 +455,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                font: GoogleFonts.plusJakartaSans(
+                                                                                font: GoogleFonts.inter(
                                                                                   fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                 ),
@@ -504,11 +501,9 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                       ),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .surface40,
+                                          color: Color(0x66FFFFFF),
                                           borderRadius:
                                               BorderRadius.circular(28.0),
-                                          shape: BoxShape.rectangle,
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -552,8 +547,9 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -596,9 +592,8 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                               Container(
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .common0,
+                                                                  color: Colors
+                                                                      .transparent,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
@@ -607,9 +602,8 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                       .rectangle,
                                                                   border: Border
                                                                       .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .common0,
+                                                                    color: Colors
+                                                                        .transparent,
                                                                     width: 0.0,
                                                                   ),
                                                                 ),
@@ -648,7 +642,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                             hintText:
                                                                                 'soldeActuel',
                                                                             hintStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  font: GoogleFonts.plusJakartaSans(
+                                                                                  font: GoogleFonts.inter(
                                                                                     fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                     fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                   ),
@@ -670,7 +664,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                font: GoogleFonts.plusJakartaSans(
+                                                                                font: GoogleFonts.inter(
                                                                                   fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                 ),
@@ -718,11 +712,9 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                       ),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .surface40,
+                                          color: Color(0x66FFFFFF),
                                           borderRadius:
                                               BorderRadius.circular(28.0),
-                                          shape: BoxShape.rectangle,
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -732,6 +724,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                         child: Padding(
                                           padding: EdgeInsets.all(16.0),
                                           child: Container(
+                                            decoration: BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -764,8 +757,9 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -808,9 +802,8 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                               Container(
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .common0,
+                                                                  color: Colors
+                                                                      .transparent,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
@@ -819,9 +812,8 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                       .rectangle,
                                                                   border: Border
                                                                       .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .common0,
+                                                                    color: Colors
+                                                                        .transparent,
                                                                     width: 0.0,
                                                                   ),
                                                                 ),
@@ -860,7 +852,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                             hintText:
                                                                                 'budgetLimite',
                                                                             hintStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  font: GoogleFonts.plusJakartaSans(
+                                                                                  font: GoogleFonts.inter(
                                                                                     fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                     fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                   ),
@@ -882,7 +874,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                font: GoogleFonts.plusJakartaSans(
+                                                                                font: GoogleFonts.inter(
                                                                                   fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                 ),
@@ -930,11 +922,9 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                       ),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .surface40,
+                                          color: Color(0x66FFFFFF),
                                           borderRadius:
                                               BorderRadius.circular(28.0),
-                                          shape: BoxShape.rectangle,
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -944,6 +934,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                         child: Padding(
                                           padding: EdgeInsets.all(16.0),
                                           child: Container(
+                                            decoration: BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -976,8 +967,9 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1020,9 +1012,8 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                               Container(
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .common0,
+                                                                  color: Colors
+                                                                      .transparent,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
@@ -1031,9 +1022,8 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                       .rectangle,
                                                                   border: Border
                                                                       .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .common0,
+                                                                    color: Colors
+                                                                        .transparent,
                                                                     width: 0.0,
                                                                   ),
                                                                 ),
@@ -1072,7 +1062,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                             hintText:
                                                                                 'objectifEpargne',
                                                                             hintStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  font: GoogleFonts.plusJakartaSans(
+                                                                                  font: GoogleFonts.inter(
                                                                                     fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                     fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                   ),
@@ -1094,7 +1084,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                font: GoogleFonts.plusJakartaSans(
+                                                                                font: GoogleFonts.inter(
                                                                                   fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                 ),
@@ -1142,11 +1132,9 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                       ),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .surface40,
+                                          color: Color(0x66FFFFFF),
                                           borderRadius:
                                               BorderRadius.circular(28.0),
-                                          shape: BoxShape.rectangle,
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -1156,6 +1144,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                         child: Padding(
                                           padding: EdgeInsets.all(16.0),
                                           child: Container(
+                                            decoration: BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -1188,8 +1177,9 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1235,7 +1225,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       font: GoogleFonts
-                                                                          .outfit(
+                                                                          .inter(
                                                                         fontWeight: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .fontWeight,
@@ -1262,7 +1252,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                     .labelMedium
                                                                     .override(
                                                                       font: GoogleFonts
-                                                                          .outfit(
+                                                                          .inter(
                                                                         fontWeight: FlutterFlowTheme.of(context)
                                                                             .labelMedium
                                                                             .fontWeight,
@@ -1339,17 +1329,16 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                           8.0),
                                                             ),
                                                             filled: true,
-                                                            fillColor:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .common42,
+                                                            fillColor: Color(
+                                                                0x0016161E),
                                                           ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                font: GoogleFonts
-                                                                    .plusJakartaSans(
+                                                                font:
+                                                                    GoogleFonts
+                                                                        .inter(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
@@ -1405,11 +1394,9 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                       ),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .surface40,
+                                          color: Color(0x66FFFFFF),
                                           borderRadius:
                                               BorderRadius.circular(28.0),
-                                          shape: BoxShape.rectangle,
                                           border: Border.all(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondary,
@@ -1419,6 +1406,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                         child: Padding(
                                           padding: EdgeInsets.all(16.0),
                                           child: Container(
+                                            decoration: BoxDecoration(),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -1451,8 +1439,9 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  font: GoogleFonts
-                                                                      .outfit(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1495,9 +1484,8 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                               Container(
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .common0,
+                                                                  color: Colors
+                                                                      .transparent,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
@@ -1506,9 +1494,8 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                       .rectangle,
                                                                   border: Border
                                                                       .all(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .common0,
+                                                                    color: Colors
+                                                                        .transparent,
                                                                     width: 0.0,
                                                                   ),
                                                                 ),
@@ -1547,7 +1534,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                             hintText:
                                                                                 'revenuTotal',
                                                                             hintStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  font: GoogleFonts.plusJakartaSans(
+                                                                                  font: GoogleFonts.inter(
                                                                                     fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                     fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                   ),
@@ -1569,7 +1556,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
-                                                                                font: GoogleFonts.plusJakartaSans(
+                                                                                font: GoogleFonts.inter(
                                                                                   fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                                 ),
@@ -1639,8 +1626,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                     alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .common0,
+                                        color: Colors.transparent,
                                         borderRadius:
                                             BorderRadius.circular(28.0),
                                         shape: BoxShape.rectangle,
@@ -1748,10 +1734,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                   0.0,
                                                                   0.0,
                                                                   0.0),
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .common11,
+                                                      color: Color(0x007B4DFF),
                                                       textStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -1759,7 +1742,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .outfit(
+                                                                        .inter(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
@@ -1769,9 +1752,8 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                                                       .labelMedium
                                                                       .fontStyle,
                                                                 ),
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .common48,
+                                                                color: Color(
+                                                                    0xFF3D0DBC),
                                                                 fontSize: 15.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -1805,7 +1787,7 @@ class _AddWalletWidgetState extends State<AddWalletWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .override(
-                                        font: GoogleFonts.plusJakartaSans(
+                                        font: GoogleFonts.inter(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodySmall
