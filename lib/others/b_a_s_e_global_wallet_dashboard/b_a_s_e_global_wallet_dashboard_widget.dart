@@ -710,8 +710,7 @@ class _BASEGlobalWalletDashboardWidgetState
                                     highlightColor: Colors.transparent,
                                     onTap: () async {
                                       context.pushNamed(
-                                          BASEInvestmentsSavingsGoalsWidget
-                                              .routeName);
+                                          DashboardinvestmentsWidget.routeName);
                                     },
                                     child: wrapWithModel(
                                       model: _model.moduleChipModel3,

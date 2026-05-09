@@ -138,184 +138,209 @@ class _BASEGeneralSettingsWidgetState extends State<BASEGeneralSettingsWidget> {
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 32.0),
                         child: Container(
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: BackdropFilter(
-                              filter: ImageFilter.blur(
-                                sigmaX: 20.0,
-                                sigmaY: 20.0,
-                              ),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).surface40,
-                                  borderRadius: BorderRadius.circular(20.0),
-                                  shape: BoxShape.rectangle,
-                                  border: Border.all(
-                                    color:
-                                        FlutterFlowTheme.of(context).alternate,
-                                    width: 1.0,
-                                  ),
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              context
+                                  .pushNamed(AUTHProfileSetupWidget.routeName);
+                            },
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20.0),
+                              child: BackdropFilter(
+                                filter: ImageFilter.blur(
+                                  sigmaX: 20.0,
+                                  sigmaY: 20.0,
                                 ),
-                                child: Padding(
-                                  padding: EdgeInsets.all(24.0),
+                                child: InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    context.pushNamed(
+                                        AUTHProfileSetupWidget.routeName);
+                                  },
                                   child: Container(
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: 64.0,
-                                          height: 64.0,
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(9999.0),
-                                            shape: BoxShape.rectangle,
-                                            border: Border.all(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .surface40,
+                                      borderRadius: BorderRadius.circular(20.0),
+                                      shape: BoxShape.rectangle,
+                                      border: Border.all(
+                                        color: FlutterFlowTheme.of(context)
+                                            .alternate,
+                                        width: 1.0,
+                                      ),
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsets.all(24.0),
+                                      child: Container(
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            Container(
+                                              width: 64.0,
+                                              height: 64.0,
+                                              decoration: BoxDecoration(
+                                                borderRadius:
+                                                    BorderRadius.circular(
+                                                        9999.0),
+                                                shape: BoxShape.rectangle,
+                                                border: Border.all(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
                                                       .primary,
-                                              width: 2.0,
-                                            ),
-                                          ),
-                                          child: Container(
-                                            width: 60.0,
-                                            height: 60.0,
-                                            decoration: BoxDecoration(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
+                                                  width: 2.0,
+                                                ),
+                                              ),
+                                              child: Container(
+                                                width: 60.0,
+                                                height: 60.0,
+                                                decoration: BoxDecoration(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
                                                       .primary,
-                                              shape: BoxShape.circle,
+                                                  shape: BoxShape.circle,
+                                                ),
+                                                alignment: AlignmentDirectional(
+                                                    0.0, 0.0),
+                                                child: Text(
+                                                  'JD',
+                                                  textAlign: TextAlign.center,
+                                                  maxLines: 1,
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .labelMedium
+                                                      .override(
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelMedium
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .onPrimary,
+                                                        fontSize: 22.8,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMedium
+                                                                .fontStyle,
+                                                        lineHeight: 1.38,
+                                                      ),
+                                                  overflow: TextOverflow.clip,
+                                                ),
+                                              ),
                                             ),
-                                            alignment:
-                                                AlignmentDirectional(0.0, 0.0),
-                                            child: Text(
-                                              'JD',
-                                              textAlign: TextAlign.center,
-                                              maxLines: 1,
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .labelMedium
-                                                  .override(
-                                                    font: GoogleFonts.inter(
-                                                      fontWeight:
-                                                          FontWeight.w600,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMedium
-                                                              .fontStyle,
-                                                    ),
-                                                    color: FlutterFlowTheme.of(
+                                            Expanded(
+                                              flex: 1,
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.min,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    'Mehdi Mejri',
+                                                    style: FlutterFlowTheme.of(
                                                             context)
-                                                        .onPrimary,
-                                                    fontSize: 22.8,
-                                                    letterSpacing: 0.0,
-                                                    fontWeight: FontWeight.w600,
-                                                    fontStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMedium
-                                                            .fontStyle,
-                                                    lineHeight: 1.38,
-                                                  ),
-                                              overflow: TextOverflow.clip,
-                                            ),
-                                          ),
-                                        ),
-                                        Expanded(
-                                          flex: 1,
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.start,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                'John Doe',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleMedium
-                                                    .override(
-                                                      font: GoogleFonts.inter(
-                                                        fontWeight:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleMedium
-                                                                .fontWeight,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleMedium
-                                                                .fontStyle,
-                                                      ),
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                        .titleMedium
+                                                        .override(
+                                                          font:
+                                                              GoogleFonts.inter(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleMedium
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleMedium
+                                                                    .fontStyle,
+                                                          ),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .primaryText,
-                                                      letterSpacing: 0.0,
-                                                      fontWeight:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleMedium
-                                                              .fontWeight,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleMedium
-                                                              .fontStyle,
-                                                      lineHeight: 1.35,
-                                                    ),
-                                              ),
-                                              Text(
-                                                'john.doe@neobank.io',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodySmall
-                                                    .override(
-                                                      font: GoogleFonts.inter(
-                                                        fontWeight:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodySmall
-                                                                .fontWeight,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodySmall
-                                                                .fontStyle,
-                                                      ),
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleMedium
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleMedium
+                                                                  .fontStyle,
+                                                          lineHeight: 1.35,
+                                                        ),
+                                                  ),
+                                                  Text(
+                                                    'mehdimejri15@gmail.com',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodySmall
+                                                        .override(
+                                                          font:
+                                                              GoogleFonts.inter(
+                                                            fontWeight:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontWeight,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontStyle,
+                                                          ),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .secondaryText,
-                                                      letterSpacing: 0.0,
-                                                      fontWeight:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodySmall
-                                                              .fontWeight,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodySmall
-                                                              .fontStyle,
-                                                      lineHeight: 1.38,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodySmall
+                                                                  .fontWeight,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodySmall
+                                                                  .fontStyle,
+                                                          lineHeight: 1.38,
+                                                        ),
+                                                  ),
+                                                ].divide(SizedBox(height: 4.0)),
                                               ),
-                                            ].divide(SizedBox(height: 4.0)),
-                                          ),
+                                            ),
+                                            Icon(
+                                              Icons.verified_rounded,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .onSurface,
+                                              size: 20.0,
+                                            ),
+                                          ].divide(SizedBox(width: 16.0)),
                                         ),
-                                        Icon(
-                                          Icons.verified_rounded,
-                                          color: FlutterFlowTheme.of(context)
-                                              .onSurface,
-                                          size: 20.0,
-                                        ),
-                                      ].divide(SizedBox(width: 16.0)),
+                                      ),
                                     ),
                                   ),
                                 ),

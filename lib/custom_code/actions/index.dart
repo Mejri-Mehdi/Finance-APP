@@ -7,3 +7,4 @@ export 'delete_transaction_and_update_wallet.dart'
     show deleteTransactionAndUpdateWallet;
 export 'edit_transaction_and_update_wallet.dart'
     show editTransactionAndUpdateWallet;
+export 'image_to_base64.dart' show imageToBase64;

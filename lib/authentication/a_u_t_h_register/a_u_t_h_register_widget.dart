@@ -1,6 +1,7 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/authentication/button7/button7_widget.dart';
 import '/authentication/text_field7/text_field7_widget.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
@@ -309,6 +310,17 @@ class _AUTHRegisterWidgetState extends State<AUTHRegisterWidget> {
                               if (user == null) {
                                 return;
                               }
+
+                              await UsersRecord.collection
+                                  .doc(user.uid)
+                                  .update(createUsersRecordData(
+                                    phoneNumber: _model.textFieldModel3
+                                        .inputTextController.text,
+                                    email: _model.textFieldModel2
+                                        .inputTextController.text,
+                                    displayName: _model.textFieldModel1
+                                        .inputTextController.text,
+                                  ));
 
                               context.goNamedAuth(
                                   BASEGlobalWalletDashboardWidget.routeName,

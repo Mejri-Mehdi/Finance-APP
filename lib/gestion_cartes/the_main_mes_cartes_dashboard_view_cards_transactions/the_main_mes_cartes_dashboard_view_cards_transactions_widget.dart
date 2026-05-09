@@ -573,24 +573,45 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                       .fontStyle,
                                                                 ),
                                                           ),
-                                                          Text(
-                                                            _model
-                                                                    .isBalanceHidden
-                                                                ? '****'
-                                                                : valueOrDefault<
-                                                                    String>(
-                                                                    listViewCardsRecord
-                                                                        .balance
-                                                                        .toString(),
-                                                                    '0.00',
-                                                                  ),
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  font:
-                                                                      GoogleFonts
-                                                                          .inter(
+                                                          Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0.0,
+                                                                        20.0,
+                                                                        0.0,
+                                                                        0.0),
+                                                            child: Text(
+                                                              _model
+                                                                      .isBalanceHidden
+                                                                  ? '****'
+                                                                  : valueOrDefault<
+                                                                      String>(
+                                                                      listViewCardsRecord
+                                                                          .balance
+                                                                          .toString(),
+                                                                      '0.00',
+                                                                    ),
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .inter(
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .bold,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    color: Colors
+                                                                        .white,
+                                                                    fontSize:
+                                                                        13.0,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .bold,
@@ -599,20 +620,7 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
                                                                         .bodyMedium
                                                                         .fontStyle,
                                                                   ),
-                                                                  color: Colors
-                                                                      .white,
-                                                                  fontSize:
-                                                                      13.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .bold,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .fontStyle,
-                                                                ),
+                                                            ),
                                                           ),
                                                         ],
                                                       ),
@@ -1122,216 +1130,227 @@ class _TheMainMesCartesDashboardViewCardsTransactionsWidgetState
 
                               return Container(
                                 decoration: BoxDecoration(),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          20.0, 11.0, 20.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () async {
-                                          _model.apiResult =
-                                              await GetExchangeRatesCall.call();
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 10.0, 0.0, 5.0),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            20.0, 11.0, 20.0, 0.0),
+                                        child: FFButtonWidget(
+                                          onPressed: () async {
+                                            _model.apiResult =
+                                                await GetExchangeRatesCall
+                                                    .call();
 
-                                          if ((_model.apiResult?.succeeded ??
-                                              true)) {
-                                            await showDialog(
-                                              context: context,
-                                              builder: (alertDialogContext) {
-                                                return WebViewAware(
-                                                  child: AlertDialog(
-                                                    title: Text(
-                                                        '\"Conversion en direct\"'),
-                                                    content: Text((double
-                                                                balance,
-                                                            double eurRate,
-                                                            double usdRate) {
-                                                      return "Solde: " +
-                                                          (balance ?? 0.0)
-                                                              .toStringAsFixed(
-                                                                  2) +
-                                                          " TND. EUR: " +
-                                                          ((balance ?? 0.0) *
-                                                                  (eurRate ??
-                                                                      0.0))
-                                                              .toStringAsFixed(
-                                                                  2) +
-                                                          ". USD: " +
-                                                          ((balance ?? 0.0) *
-                                                                  (usdRate ??
-                                                                      0.0))
-                                                              .toStringAsFixed(
-                                                                  2);
-                                                    }(
-                                                        containerCardsRecord!
-                                                            .balance,
-                                                        getJsonField(
-                                                          (_model.apiResult
-                                                                  ?.jsonBody ??
-                                                              ''),
-                                                          r'''$.rates.EUR''',
+                                            if ((_model.apiResult?.succeeded ??
+                                                true)) {
+                                              await showDialog(
+                                                context: context,
+                                                builder: (alertDialogContext) {
+                                                  return WebViewAware(
+                                                    child: AlertDialog(
+                                                      title: Text(
+                                                          '\"Conversion en direct\"'),
+                                                      content: Text((double
+                                                                  balance,
+                                                              double eurRate,
+                                                              double usdRate) {
+                                                        return "Solde: " +
+                                                            (balance ?? 0.0)
+                                                                .toStringAsFixed(
+                                                                    2) +
+                                                            " TND. EUR: " +
+                                                            ((balance ?? 0.0) *
+                                                                    (eurRate ??
+                                                                        0.0))
+                                                                .toStringAsFixed(
+                                                                    2) +
+                                                            ". USD: " +
+                                                            ((balance ?? 0.0) *
+                                                                    (usdRate ??
+                                                                        0.0))
+                                                                .toStringAsFixed(
+                                                                    2);
+                                                      }(
+                                                          containerCardsRecord!
+                                                              .balance,
+                                                          getJsonField(
+                                                            (_model.apiResult
+                                                                    ?.jsonBody ??
+                                                                ''),
+                                                            r'''$.rates.EUR''',
+                                                          ),
+                                                          getJsonField(
+                                                            (_model.apiResult
+                                                                    ?.jsonBody ??
+                                                                ''),
+                                                            r'''$.rates.USD''',
+                                                          ))),
+                                                      actions: [
+                                                        TextButton(
+                                                          onPressed: () =>
+                                                              Navigator.pop(
+                                                                  alertDialogContext),
+                                                          child: Text('Ok'),
                                                         ),
-                                                        getJsonField(
-                                                          (_model.apiResult
-                                                                  ?.jsonBody ??
-                                                              ''),
-                                                          r'''$.rates.USD''',
-                                                        ))),
-                                                    actions: [
-                                                      TextButton(
-                                                        onPressed: () =>
-                                                            Navigator.pop(
-                                                                alertDialogContext),
-                                                        child: Text('Ok'),
-                                                      ),
-                                                    ],
+                                                      ],
+                                                    ),
+                                                  );
+                                                },
+                                              );
+                                            } else {
+                                              ScaffoldMessenger.of(context)
+                                                  .showSnackBar(
+                                                SnackBar(
+                                                  content: Text(
+                                                    '\"Erreur de connexion API\"',
+                                                    style: TextStyle(
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primaryText,
+                                                    ),
                                                   ),
-                                                );
+                                                  duration: Duration(
+                                                      milliseconds: 4000),
+                                                  backgroundColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .error,
+                                                ),
+                                              );
+                                            }
+
+                                            safeSetState(() {});
+                                          },
+                                          text: 'Smart  API  Button',
+                                          icon: Icon(
+                                            Icons.euro,
+                                            size: 15.0,
+                                          ),
+                                          options: FFButtonOptions(
+                                            width: 2000.0,
+                                            height: 40.0,
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    16.0, 0.0, 16.0, 0.0),
+                                            iconPadding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 0.0, 0.0),
+                                            color: Color(0xFFDA2261),
+                                            textStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .override(
+                                                      font: GoogleFonts
+                                                          .plusJakartaSans(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall
+                                                                .fontStyle,
+                                                      ),
+                                                      color: Colors.white,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .fontStyle,
+                                                    ),
+                                            elevation: 0.0,
+                                            borderRadius:
+                                                BorderRadius.circular(24.0),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            20.0, 11.0, 20.0, 0.0),
+                                        child: FFButtonWidget(
+                                          onPressed: () async {
+                                            context.pushNamed(
+                                              AnalytiquesTransactionsWidget
+                                                  .routeName,
+                                              queryParameters: {
+                                                'cardForAnalytics':
+                                                    serializeParam(
+                                                  containerCardsRecord,
+                                                  ParamType.Document,
+                                                ),
+                                              }.withoutNulls,
+                                              extra: <String, dynamic>{
+                                                'cardForAnalytics':
+                                                    containerCardsRecord,
                                               },
                                             );
-                                          } else {
-                                            ScaffoldMessenger.of(context)
-                                                .showSnackBar(
-                                              SnackBar(
-                                                content: Text(
-                                                  '\"Erreur de connexion API\"',
-                                                  style: TextStyle(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                  ),
-                                                ),
-                                                duration: Duration(
-                                                    milliseconds: 4000),
-                                                backgroundColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .error,
-                                              ),
-                                            );
-                                          }
-
-                                          safeSetState(() {});
-                                        },
-                                        text: 'Smart  API  Button',
-                                        icon: Icon(
-                                          Icons.euro,
-                                          size: 15.0,
-                                        ),
-                                        options: FFButtonOptions(
-                                          width: 2000.0,
-                                          height: 40.0,
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0xFFDA2261),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .titleSmall
-                                              .override(
-                                                font:
-                                                    GoogleFonts.plusJakartaSans(
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmall
-                                                          .fontWeight,
-                                                  fontStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmall
-                                                          .fontStyle,
-                                                ),
-                                                color: Colors.white,
-                                                letterSpacing: 0.0,
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .fontWeight,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .fontStyle,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(24.0),
+                                          },
+                                          text: 'Chart  Analitics',
+                                          icon: Icon(
+                                            Icons.bar_chart,
+                                            size: 15.0,
+                                          ),
+                                          options: FFButtonOptions(
+                                            width: 2000.0,
+                                            height: 40.0,
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    16.0, 0.0, 16.0, 0.0),
+                                            iconPadding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 0.0, 0.0),
+                                            color: Color(0xFF0C77CE),
+                                            textStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .override(
+                                                      font: GoogleFonts
+                                                          .plusJakartaSans(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall
+                                                                .fontStyle,
+                                                      ),
+                                                      color: Colors.white,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .fontStyle,
+                                                    ),
+                                            elevation: 0.0,
+                                            borderRadius:
+                                                BorderRadius.circular(24.0),
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          20.0, 11.0, 20.0, 0.0),
-                                      child: FFButtonWidget(
-                                        onPressed: () async {
-                                          context.pushNamed(
-                                            AnalytiquesTransactionsWidget
-                                                .routeName,
-                                            queryParameters: {
-                                              'cardForAnalytics':
-                                                  serializeParam(
-                                                containerCardsRecord,
-                                                ParamType.Document,
-                                              ),
-                                            }.withoutNulls,
-                                            extra: <String, dynamic>{
-                                              'cardForAnalytics':
-                                                  containerCardsRecord,
-                                            },
-                                          );
-                                        },
-                                        text: 'Chart  Analitics',
-                                        icon: Icon(
-                                          Icons.bar_chart,
-                                          size: 15.0,
-                                        ),
-                                        options: FFButtonOptions(
-                                          width: 2000.0,
-                                          height: 40.0,
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 0.0),
-                                          iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0xFF0C77CE),
-                                          textStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .titleSmall
-                                              .override(
-                                                font:
-                                                    GoogleFonts.plusJakartaSans(
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmall
-                                                          .fontWeight,
-                                                  fontStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmall
-                                                          .fontStyle,
-                                                ),
-                                                color: Colors.white,
-                                                letterSpacing: 0.0,
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .fontWeight,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .fontStyle,
-                                              ),
-                                          elevation: 0.0,
-                                          borderRadius:
-                                              BorderRadius.circular(24.0),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
                               );
                             },

@@ -15,6 +15,20 @@
       ]
     },
     {
+      "collectionGroup": "historique_valeur",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "idInvestissement",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
       "collectionGroup": "Transaction",
       "queryScope": "COLLECTION",
       "fields": [

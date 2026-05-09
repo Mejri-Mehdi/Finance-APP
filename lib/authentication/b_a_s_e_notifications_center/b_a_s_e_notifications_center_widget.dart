@@ -193,122 +193,126 @@ class _BASENotificationsCenterWidgetState
               ),
               Padding(
                 padding: EdgeInsets.all(24.0),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    wrapWithModel(
-                      model: _model.dateHeaderModel1,
-                      updateCallback: () => safeSetState(() {}),
-                      child: DateHeader2Widget(
-                        label: 'Today',
-                      ),
-                    ),
-                    wrapWithModel(
-                      model: _model.notificationTileModel1,
-                      updateCallback: () => safeSetState(() {}),
-                      child: NotificationTileWidget(
-                        icon: Icon(
-                          Icons.coffee_rounded,
-                          color: Color(0xFFD7CCC8),
-                          size: 24.0,
+                child: SingleChildScrollView(
+                  primary: false,
+                  child: IntrinsicWidth(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        wrapWithModel(
+                          model: _model.dateHeaderModel1,
+                          updateCallback: () => safeSetState(() {}),
+                          child: DateHeader2Widget(
+                            label: 'Today',
+                          ),
                         ),
-                        icon_bg: Color(0xFF3E2723),
-                        icon_color: Color(0xFFD7CCC8),
-                        message:
-                            'You spent \$50.00 at Starbucks. Your balance is now \$2,450.00.',
-                        time: '2m ago',
-                        title: 'Spending Alert',
-                        unread: true,
-                      ),
-                    ),
-                    wrapWithModel(
-                      model: _model.notificationTileModel2,
-                      updateCallback: () => safeSetState(() {}),
-                      child: NotificationTileWidget(
-                        icon: Icon(
-                          Icons.payments_rounded,
-                          color: FlutterFlowTheme.of(context).primary,
-                          size: 24.0,
+                        wrapWithModel(
+                          model: _model.notificationTileModel1,
+                          updateCallback: () => safeSetState(() {}),
+                          child: NotificationTileWidget(
+                            icon: Icon(
+                              Icons.coffee_rounded,
+                              color: Color(0xFFD7CCC8),
+                              size: 24.0,
+                            ),
+                            icon_bg: Color(0xFF3E2723),
+                            icon_color: Color(0xFFD7CCC8),
+                            message:
+                                'You spent \$50.00 at Starbucks. Your balance is now \$2,450.00.',
+                            time: '2m ago',
+                            title: 'Spending Alert',
+                            unread: true,
+                          ),
                         ),
-                        icon_bg: FlutterFlowTheme.of(context).primary20,
-                        icon_color: FlutterFlowTheme.of(context).primary,
-                        message:
-                            'Alex requested \$20.00 for \'Dinner last night\'.',
-                        time: '15m ago',
-                        title: 'Payment Request',
-                        unread: true,
-                      ),
-                    ),
-                    wrapWithModel(
-                      model: _model.notificationTileModel3,
-                      updateCallback: () => safeSetState(() {}),
-                      child: NotificationTileWidget(
-                        icon: Icon(
-                          Icons.warning_amber_rounded,
-                          color: FlutterFlowTheme.of(context).error,
-                          size: 24.0,
+                        wrapWithModel(
+                          model: _model.notificationTileModel2,
+                          updateCallback: () => safeSetState(() {}),
+                          child: NotificationTileWidget(
+                            icon: Icon(
+                              Icons.payments_rounded,
+                              color: FlutterFlowTheme.of(context).primary,
+                              size: 24.0,
+                            ),
+                            icon_bg: FlutterFlowTheme.of(context).primary20,
+                            icon_color: FlutterFlowTheme.of(context).primary,
+                            message:
+                                'Alex requested \$20.00 for \'Dinner last night\'.',
+                            time: '15m ago',
+                            title: 'Payment Request',
+                            unread: true,
+                          ),
                         ),
-                        icon_bg: FlutterFlowTheme.of(context).error20,
-                        icon_color: FlutterFlowTheme.of(context).error,
-                        message:
-                            'You\'ve reached 90% of your \'Dining Out\' monthly budget.',
-                        time: '1h ago',
-                        title: 'Budget Warning',
-                        unread: true,
-                      ),
-                    ),
-                    Container(
-                      height: 16.0,
-                    ),
-                    wrapWithModel(
-                      model: _model.dateHeaderModel2,
-                      updateCallback: () => safeSetState(() {}),
-                      child: DateHeader2Widget(
-                        label: 'Yesterday',
-                      ),
-                    ),
-                    wrapWithModel(
-                      model: _model.notificationTileModel4,
-                      updateCallback: () => safeSetState(() {}),
-                      child: NotificationTileWidget(
-                        icon: Icon(
-                          Icons.security_rounded,
-                          color: FlutterFlowTheme.of(context).success,
-                          size: 24.0,
+                        wrapWithModel(
+                          model: _model.notificationTileModel3,
+                          updateCallback: () => safeSetState(() {}),
+                          child: NotificationTileWidget(
+                            icon: Icon(
+                              Icons.warning_amber_rounded,
+                              color: FlutterFlowTheme.of(context).error,
+                              size: 24.0,
+                            ),
+                            icon_bg: FlutterFlowTheme.of(context).error20,
+                            icon_color: FlutterFlowTheme.of(context).error,
+                            message:
+                                'You\'ve reached 90% of your \'Dining Out\' monthly budget.',
+                            time: '1h ago',
+                            title: 'Budget Warning',
+                            unread: true,
+                          ),
                         ),
-                        icon_bg: FlutterFlowTheme.of(context).success20,
-                        icon_color: FlutterFlowTheme.of(context).success,
-                        message:
-                            'New login detected from a Chrome browser on MacOS.',
-                        time: 'Yesterday',
-                        title: 'Security Login',
-                        unread: false,
-                      ),
-                    ),
-                    wrapWithModel(
-                      model: _model.notificationTileModel5,
-                      updateCallback: () => safeSetState(() {}),
-                      child: NotificationTileWidget(
-                        icon: Icon(
-                          Icons.trending_up_rounded,
-                          color: FlutterFlowTheme.of(context).secondary,
-                          size: 24.0,
+                        Container(
+                          height: 16.0,
                         ),
-                        icon_bg: FlutterFlowTheme.of(context).secondary20,
-                        icon_color: FlutterFlowTheme.of(context).secondary,
-                        message:
-                            'Your \'Crypto Portfolio\' is up 5.2% in the last 24 hours.',
-                        time: 'Yesterday',
-                        title: 'Investment Update',
-                        unread: false,
-                      ),
+                        wrapWithModel(
+                          model: _model.dateHeaderModel2,
+                          updateCallback: () => safeSetState(() {}),
+                          child: DateHeader2Widget(
+                            label: 'Yesterday',
+                          ),
+                        ),
+                        wrapWithModel(
+                          model: _model.notificationTileModel4,
+                          updateCallback: () => safeSetState(() {}),
+                          child: NotificationTileWidget(
+                            icon: Icon(
+                              Icons.security_rounded,
+                              color: FlutterFlowTheme.of(context).success,
+                              size: 24.0,
+                            ),
+                            icon_bg: FlutterFlowTheme.of(context).success20,
+                            icon_color: FlutterFlowTheme.of(context).success,
+                            message:
+                                'New login detected from a Chrome browser on MacOS.',
+                            time: 'Yesterday',
+                            title: 'Security Login',
+                            unread: false,
+                          ),
+                        ),
+                        wrapWithModel(
+                          model: _model.notificationTileModel5,
+                          updateCallback: () => safeSetState(() {}),
+                          child: NotificationTileWidget(
+                            icon: Icon(
+                              Icons.trending_up_rounded,
+                              color: FlutterFlowTheme.of(context).secondary,
+                              size: 24.0,
+                            ),
+                            icon_bg: FlutterFlowTheme.of(context).secondary20,
+                            icon_color: FlutterFlowTheme.of(context).secondary,
+                            message:
+                                'Your \'Crypto Portfolio\' is up 5.2% in the last 24 hours.',
+                            time: 'Yesterday',
+                            title: 'Investment Update',
+                            unread: false,
+                          ),
+                        ),
+                      ].divide(SizedBox(height: 8.0)),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ),
                 ),
               ),
-              Spacer(),
               Container(
                 child: Padding(
                   padding: EdgeInsets.all(24.0),

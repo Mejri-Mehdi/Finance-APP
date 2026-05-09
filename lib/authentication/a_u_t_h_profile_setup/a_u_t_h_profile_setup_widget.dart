@@ -6,6 +6,9 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/upload_data.dart';
+import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'a_u_t_h_profile_setup_model.dart';
@@ -80,8 +83,8 @@ class _AUTHProfileSetupWidgetState extends State<AUTHProfileSetupWidget> {
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 24.0,
                             ),
-                            onPressed: () {
-                              print('IconButton pressed ...');
+                            onPressed: () async {
+                              context.safePop();
                             },
                           ),
                           Container(
@@ -235,6 +238,114 @@ class _AUTHProfileSetupWidgetState extends State<AUTHProfileSetupWidget> {
                                       .fontStyle,
                                   lineHeight: 1.38,
                                 ),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 20.0, 0.0, 10.0),
+                            child: FFButtonWidget(
+                              onPressed: () async {
+                                final selectedMedia =
+                                    await selectMediaWithSourceBottomSheet(
+                                  context: context,
+                                  allowPhoto: true,
+                                );
+                                if (selectedMedia != null &&
+                                    selectedMedia.every((m) =>
+                                        validateFileFormat(
+                                            m.storagePath, context))) {
+                                  safeSetState(() => _model
+                                      .isDataUploading_uploadData1gp = true);
+                                  var selectedUploadedFiles =
+                                      <FFUploadedFile>[];
+
+                                  try {
+                                    selectedUploadedFiles = selectedMedia
+                                        .map((m) => FFUploadedFile(
+                                              name:
+                                                  m.storagePath.split('/').last,
+                                              bytes: m.bytes,
+                                              height: m.dimensions?.height,
+                                              width: m.dimensions?.width,
+                                              blurHash: m.blurHash,
+                                              originalFilename:
+                                                  m.originalFilename,
+                                            ))
+                                        .toList();
+                                  } finally {
+                                    _model.isDataUploading_uploadData1gp =
+                                        false;
+                                  }
+                                  if (selectedUploadedFiles.length ==
+                                      selectedMedia.length) {
+                                    safeSetState(() {
+                                      _model.uploadedLocalFile_uploadData1gp =
+                                          selectedUploadedFiles.first;
+                                    });
+                                  } else {
+                                    safeSetState(() {});
+                                    return;
+                                  }
+                                }
+
+                                _model.convertedImage =
+                                    await actions.imageToBase64(
+                                  _model.uploadedLocalFile_uploadData1gp,
+                                );
+
+                                await currentUserReference!
+                                    .update(createUsersRecordData(
+                                  cinImageUrl: _model.convertedImage,
+                                  kycStatus: 'pending',
+                                ));
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  SnackBar(
+                                    content: Text(
+                                      'Uploaded Succesfully , please wait until the Admin approve it !',
+                                      style: TextStyle(
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                      ),
+                                    ),
+                                    duration: Duration(milliseconds: 4000),
+                                    backgroundColor:
+                                        FlutterFlowTheme.of(context).secondary,
+                                  ),
+                                );
+
+                                safeSetState(() {});
+                              },
+                              text: 'Upload  CIN  Verification',
+                              options: FFButtonOptions(
+                                height: 40.0,
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    16.0, 0.0, 16.0, 0.0),
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
+                                color: Color(0xFF46C37B),
+                                textStyle: FlutterFlowTheme.of(context)
+                                    .titleSmall
+                                    .override(
+                                      font: GoogleFonts.plusJakartaSans(
+                                        fontWeight: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontWeight,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .fontStyle,
+                                      ),
+                                      color: Colors.white,
+                                      letterSpacing: 0.0,
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontStyle,
+                                    ),
+                                elevation: 0.0,
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
+                            ),
                           ),
                         ].divide(SizedBox(height: 16.0)),
                       ),

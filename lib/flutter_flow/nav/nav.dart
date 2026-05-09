@@ -514,6 +514,50 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               collectionNamePath: ['Wallet'],
             ),
           ),
+        ),
+        FFRoute(
+          name: DashboardinvestmentsWidget.routeName,
+          path: DashboardinvestmentsWidget.routePath,
+          builder: (context, params) => DashboardinvestmentsWidget(),
+        ),
+        FFRoute(
+          name: BitcoinPageWidget.routeName,
+          path: BitcoinPageWidget.routePath,
+          builder: (context, params) => BitcoinPageWidget(),
+        ),
+        FFRoute(
+          name: SmartRecommendationPageWidget.routeName,
+          path: SmartRecommendationPageWidget.routePath,
+          builder: (context, params) => SmartRecommendationPageWidget(
+            investissementRef: params.getParam(
+              'investissementRef',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['investissements'],
+            ),
+          ),
+        ),
+        FFRoute(
+          name: InvdetailsWidget.routeName,
+          path: InvdetailsWidget.routePath,
+          builder: (context, params) => InvdetailsWidget(
+            invedef: params.getParam(
+              'invedef',
+              ParamType.DocumentReference,
+              isList: false,
+              collectionNamePath: ['investissements'],
+            ),
+          ),
+        ),
+        FFRoute(
+          name: PremiumVRificationPageWidget.routeName,
+          path: PremiumVRificationPageWidget.routePath,
+          builder: (context, params) => PremiumVRificationPageWidget(
+            phoneNumber: params.getParam(
+              'phoneNumber',
+              ParamType.String,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

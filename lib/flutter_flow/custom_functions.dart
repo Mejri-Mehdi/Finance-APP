@@ -604,9 +604,119 @@ List<double> walletSoldes(List<WalletRecord>? wallets) {
 }
 
 bool checkLimitWarning(
-  double spend,
-  double limit,
-  double newAmount,
+  double? spend,
+  double? limit,
+  double? newAmount,
 ) {
-  return (spend + newAmount) >= (limit * 0.8);
+  // If the database is empty (null), treat it as 0.0
+  double currentSpend = spend ?? 0.0;
+  double dailyLimit = limit ?? 0.0;
+  double amount = newAmount ?? 0.0;
+
+  // If the user hasn't set a limit on this card, don't warn them
+  if (dailyLimit <= 0) {
+    return false;
+  }
+  // Check if they hit 80%
+  return (currentSpend + amount) >= (dailyLimit * 0.8);
+}
+
+double getSpareChange(double amount) {
+  // If you spend 14.20, this calculates the 0.80 difference!
+  double ceiled = amount.ceilToDouble();
+  double diff = ceiled - amount;
+  return double.parse(diff.toStringAsFixed(2));
+}
+
+double getCeiledTotal(double amount) {
+  // If you spend 14.20, this returns the full 15.00 to deduct from your card.
+  return amount.ceilToDouble();
+}
+
+String calculateBTC(
+  String? amount,
+  String? price,
+) {
+  final btc = double.tryParse(amount ?? '0') ?? 0;
+  final btcPrice = double.tryParse(price ?? '0') ?? 0;
+
+  final result = btc * btcPrice;
+
+  return '${btc.toString()} BTC = ${result.toStringAsFixed(2)} USD';
+}
+
+String? currencySymbol(String value) {
+  final v = value.toUpperCase();
+
+  if (v.contains('EUR')) return '€';
+  if (v.contains('USD')) return '\$';
+  if (v.contains('SAR')) return '﷼';
+  if (v.contains('CAD')) return 'C\$';
+
+  return '€';
+}
+
+int calculMois(int dureeAns) {
+  return dureeAns * 12;
+}
+
+double calculRecommendationMensuelle(
+  double montantCible,
+  double montantActuel,
+  int dureeAns,
+) {
+  if (dureeAns < 1) {
+    dureeAns = 1;
+  }
+
+  if (dureeAns > 30) {
+    dureeAns = 30;
+  }
+
+  final reste = montantCible - montantActuel;
+  final mois = dureeAns * 12;
+
+  if (reste <= 0 || mois <= 0) {
+    return 0;
+  }
+
+  return double.parse((reste / mois).toStringAsFixed(2));
+}
+
+double calculMontantRestant(
+  double montantCible,
+  double montantActuel,
+) {
+  return montantCible - montantActuel;
+}
+
+double getTauxDevise(
+  dynamic apiResponse,
+  String? devise,
+) {
+  if (apiResponse == null || devise == null || devise.isEmpty) {
+    return 0.0;
+  }
+
+  final rates = apiResponse['rates'];
+
+  if (rates == null || rates[devise] == null) {
+    return 0.0;
+  }
+
+  return (rates[devise] as num).toDouble();
+}
+
+String convertirRecommendation(
+  double? montantDT,
+  double? taux,
+  String? devise,
+) {
+  if (montantDT == null || taux == null || devise == null || devise.isEmpty) {
+    return 'Choisir devise';
+  }
+
+  final result = montantDT * taux;
+
+  return '${result.toStringAsFixed(2)} $devise/mois';
 }

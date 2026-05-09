@@ -960,7 +960,7 @@ class _EditRevenuWidgetState extends State<EditRevenuWidget> {
                                                   child: Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(175.0,
+                                                            .fromSTEB(160.0,
                                                                 0.0, 0.0, 2.0),
                                                     child:
                                                         FlutterFlowIconButton(

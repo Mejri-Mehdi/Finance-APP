@@ -11,6 +11,8 @@ import 'schema/transactions_record.dart';
 import 'schema/transaction_record.dart';
 import 'schema/wallet_record.dart';
 import 'schema/notifications_record.dart';
+import 'schema/investissements_record.dart';
+import 'schema/historique_valeur_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart' hide Order;
@@ -25,6 +27,8 @@ export 'schema/transactions_record.dart';
 export 'schema/transaction_record.dart';
 export 'schema/wallet_record.dart';
 export 'schema/notifications_record.dart';
+export 'schema/investissements_record.dart';
+export 'schema/historique_valeur_record.dart';
 
 /// Functions to query CardsRecords (as a Stream and as a Future).
 Future<int> queryCardsRecordCount({
@@ -243,6 +247,80 @@ Future<List<NotificationsRecord>> queryNotificationsRecordOnce({
     queryCollectionOnce(
       NotificationsRecord.collection,
       NotificationsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query InvestissementsRecords (as a Stream and as a Future).
+Future<int> queryInvestissementsRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      InvestissementsRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<InvestissementsRecord>> queryInvestissementsRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      InvestissementsRecord.collection,
+      InvestissementsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<InvestissementsRecord>> queryInvestissementsRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      InvestissementsRecord.collection,
+      InvestissementsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query HistoriqueValeurRecords (as a Stream and as a Future).
+Future<int> queryHistoriqueValeurRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      HistoriqueValeurRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<HistoriqueValeurRecord>> queryHistoriqueValeurRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      HistoriqueValeurRecord.collection,
+      HistoriqueValeurRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<HistoriqueValeurRecord>> queryHistoriqueValeurRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      HistoriqueValeurRecord.collection,
+      HistoriqueValeurRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

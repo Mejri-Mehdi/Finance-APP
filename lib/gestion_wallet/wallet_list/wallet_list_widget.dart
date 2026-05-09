@@ -75,113 +75,132 @@ class _WalletListWidgetState extends State<WalletListWidget> {
           child: Scaffold(
             key: scaffoldKey,
             backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-            body: SingleChildScrollView(
-              primary: false,
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Container(
-                    child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
-                          32.0, 24.0, 32.0, 16.0),
-                      child: Container(
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            FlutterFlowIconButton(
-                              borderRadius: 8.0,
-                              buttonSize: 40.0,
-                              fillColor: Colors.transparent,
-                              icon: Icon(
-                                Icons.arrow_back_ios_new_rounded,
-                                color: FlutterFlowTheme.of(context).primaryText,
-                                size: 20.0,
+            body: Container(
+              decoration: BoxDecoration(),
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Container(
+                      child: Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            32.0, 24.0, 15.0, 16.0),
+                        child: Container(
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              FlutterFlowIconButton(
+                                borderRadius: 8.0,
+                                buttonSize: 40.0,
+                                fillColor: Colors.transparent,
+                                icon: Icon(
+                                  Icons.arrow_back_ios_new_rounded,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                  size: 20.0,
+                                ),
+                                onPressed: () async {
+                                  context.safePop();
+                                },
                               ),
-                              onPressed: () async {
-                                context.safePop();
-                              },
-                            ),
-                            Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
-                              child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 30.0, 0.0),
-                                child: Text(
-                                  'Solde par portefeuille',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        font: GoogleFonts.inter(
+                              Align(
+                                alignment: AlignmentDirectional(0.0, 0.0),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 40.0, 0.0),
+                                  child: Text(
+                                    'Solde par portefeuille',
+                                    style: FlutterFlowTheme.of(context)
+                                        .titleLarge
+                                        .override(
+                                          font: GoogleFonts.inter(
+                                            fontWeight: FontWeight.bold,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleLarge
+                                                    .fontStyle,
+                                          ),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
+                                          letterSpacing: 0.0,
                                           fontWeight: FontWeight.bold,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
                                                   .titleLarge
                                                   .fontStyle,
+                                          lineHeight: 1.3,
                                         ),
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryText,
-                                        letterSpacing: 0.0,
-                                        fontWeight: FontWeight.bold,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .titleLarge
-                                            .fontStyle,
-                                        lineHeight: 1.3,
-                                      ),
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 24.0),
-                    child: Container(
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 24.0),
                       child: Container(
-                        decoration: BoxDecoration(
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                          borderRadius: BorderRadius.circular(24.0),
-                          shape: BoxShape.rectangle,
-                          border: Border.all(
-                            color: FlutterFlowTheme.of(context).alternate,
-                            width: 1.0,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                            borderRadius: BorderRadius.circular(24.0),
+                            shape: BoxShape.rectangle,
+                            border: Border.all(
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 1.0,
+                            ),
                           ),
-                        ),
-                        child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              24.0, 32.0, 24.0, 32.0),
-                          child: Container(
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Total des soldes',
-                                          style: FlutterFlowTheme.of(context)
-                                              .labelMedium
-                                              .override(
-                                                font: GoogleFonts.inter(
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                24.0, 32.0, 24.0, 32.0),
+                            child: Container(
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'Total des soldes',
+                                            style: FlutterFlowTheme.of(context)
+                                                .labelMedium
+                                                .override(
+                                                  font: GoogleFonts.inter(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryText,
+                                                  letterSpacing: 0.0,
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -192,81 +211,83 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                               context)
                                                           .labelMedium
                                                           .fontStyle,
+                                                  lineHeight: 1.3,
                                                 ),
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryText,
-                                                letterSpacing: 0.0,
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .fontWeight,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .fontStyle,
-                                                lineHeight: 1.3,
-                                              ),
-                                        ),
-                                        Text(
-                                          '\$4,820.50',
-                                          style: FlutterFlowTheme.of(context)
-                                              .headlineMedium
-                                              .override(
-                                                font: GoogleFonts.inter(
+                                          ),
+                                          Text(
+                                            '\$4,820.50',
+                                            style: FlutterFlowTheme.of(context)
+                                                .headlineMedium
+                                                .override(
+                                                  font: GoogleFonts.inter(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .headlineMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryText,
+                                                  letterSpacing: 0.0,
                                                   fontWeight: FontWeight.bold,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
                                                           .headlineMedium
                                                           .fontStyle,
+                                                  lineHeight: 1.2,
                                                 ),
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryText,
-                                                letterSpacing: 0.0,
-                                                fontWeight: FontWeight.bold,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineMedium
-                                                        .fontStyle,
-                                                lineHeight: 1.2,
-                                              ),
-                                        ),
-                                      ].divide(SizedBox(height: 16.0)),
-                                    ),
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        color: Color(0x1A34C759),
-                                        borderRadius:
-                                            BorderRadius.circular(9999.0),
-                                        shape: BoxShape.rectangle,
+                                          ),
+                                        ].divide(SizedBox(height: 16.0)),
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            16.0, 8.0, 16.0, 8.0),
-                                        child: Container(
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.start,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.center,
-                                            children: [
-                                              Icon(
-                                                Icons.trending_down_rounded,
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .onSecondary,
-                                                size: 16.0,
-                                              ),
-                                              Text(
-                                                '12%',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .labelSmall
-                                                    .override(
-                                                      font: GoogleFonts.inter(
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Color(0x1A34C759),
+                                          borderRadius:
+                                              BorderRadius.circular(9999.0),
+                                          shape: BoxShape.rectangle,
+                                        ),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 8.0, 16.0, 8.0),
+                                          child: Container(
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              children: [
+                                                Icon(
+                                                  Icons.trending_down_rounded,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .onSecondary,
+                                                  size: 16.0,
+                                                ),
+                                                Text(
+                                                  '12%',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .labelSmall
+                                                      .override(
+                                                        font: GoogleFonts.inter(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          fontStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelSmall
+                                                                  .fontStyle,
+                                                        ),
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .onSecondary,
+                                                        letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
                                                         fontStyle:
@@ -274,575 +295,594 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .fontStyle,
+                                                        lineHeight: 1.2,
+                                                      ),
+                                                ),
+                                              ].divide(SizedBox(width: 4.0)),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Container(
+                                    height: 200.0,
+                                    child: Container(
+                                      height: 200.0,
+                                      child: FlutterFlowBarChart(
+                                        barData: [
+                                          FFBarChartData(
+                                            yData: functions.walletSoldes(
+                                                walletListWalletRecordList
+                                                    .toList()),
+                                            color: FlutterFlowTheme.of(context)
+                                                .primary,
+                                          )
+                                        ],
+                                        xLabels: walletListWalletRecordList
+                                            .map((e) => e.nomWallet)
+                                            .toList(),
+                                        barWidth: 30.0,
+                                        barBorderRadius:
+                                            BorderRadius.circular(6.0),
+                                        groupSpace: 12.0,
+                                        alignment:
+                                            BarChartAlignment.spaceEvenly,
+                                        chartStylingInfo: ChartStylingInfo(
+                                          backgroundColor: Colors.transparent,
+                                          showBorder: false,
+                                        ),
+                                        axisBounds: AxisBounds(
+                                          minY: 0.0,
+                                          maxX: 5.0,
+                                          maxY: 5784.0,
+                                        ),
+                                        xAxisLabelInfo: AxisLabelInfo(
+                                          showLabels: true,
+                                          labelTextStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .bodySmall
+                                              .override(
+                                                font: GoogleFonts.inter(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodySmall
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodySmall
+                                                          .fontStyle,
+                                                ),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryText,
+                                                fontSize: 10.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodySmall
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodySmall
+                                                        .fontStyle,
+                                                lineHeight: 1.0,
+                                              ),
+                                          reservedSize: 20.0,
+                                        ),
+                                        yAxisLabelInfo: AxisLabelInfo(
+                                          reservedSize: 0.0,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ].divide(SizedBox(height: 32.0)),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              32.0, 0.0, 32.0, 24.0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Expanded(
+                                flex: 1,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                    borderRadius: BorderRadius.circular(16.0),
+                                    shape: BoxShape.rectangle,
+                                    border: Border.all(
+                                      color: FlutterFlowTheme.of(context)
+                                          .alternate,
+                                      width: 1.0,
+                                    ),
+                                  ),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        16.0, 24.0, 16.0, 24.0),
+                                    child: Container(
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'Revenu',
+                                            style: FlutterFlowTheme.of(context)
+                                                .labelSmall
+                                                .override(
+                                                  font: GoogleFonts.inter(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelSmall
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelSmall
+                                                            .fontStyle,
+                                                  ),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryText,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelSmall
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelSmall
+                                                          .fontStyle,
+                                                  lineHeight: 1.2,
+                                                ),
+                                          ),
+                                          Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
+                                            children: [
+                                              Text(
+                                                '\$12, 400',
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .titleMedium
+                                                    .override(
+                                                      font: GoogleFonts.inter(
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleMedium
+                                                                .fontStyle,
                                                       ),
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .onSecondary,
+                                                              .primaryText,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
-                                                          FontWeight.w600,
+                                                          FontWeight.bold,
                                                       fontStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .labelSmall
+                                                              .titleMedium
                                                               .fontStyle,
-                                                      lineHeight: 1.2,
+                                                      lineHeight: 1.4,
                                                     ),
+                                              ),
+                                              Icon(
+                                                Icons.north_east_rounded,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .success,
+                                                size: 16.0,
                                               ),
                                             ].divide(SizedBox(width: 4.0)),
                                           ),
-                                        ),
+                                        ].divide(SizedBox(height: 16.0)),
                                       ),
                                     ),
-                                  ],
+                                  ),
                                 ),
-                                Container(
-                                  height: 200.0,
-                                  child: Container(
-                                    height: 200.0,
-                                    child: FlutterFlowBarChart(
-                                      barData: [
-                                        FFBarChartData(
-                                          yData: functions.walletSoldes(
-                                              walletListWalletRecordList
-                                                  .toList()),
-                                          color: FlutterFlowTheme.of(context)
-                                              .primary,
-                                        )
-                                      ],
-                                      xLabels: walletListWalletRecordList
-                                          .map((e) => e.nomWallet)
-                                          .toList(),
-                                      barWidth: 30.0,
-                                      barBorderRadius:
-                                          BorderRadius.circular(6.0),
-                                      groupSpace: 12.0,
-                                      alignment: BarChartAlignment.spaceEvenly,
-                                      chartStylingInfo: ChartStylingInfo(
-                                        backgroundColor: Colors.transparent,
-                                        showBorder: false,
+                              ),
+                              Expanded(
+                                flex: 1,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                    borderRadius: BorderRadius.circular(16.0),
+                                    shape: BoxShape.rectangle,
+                                    border: Border.all(
+                                      color: FlutterFlowTheme.of(context)
+                                          .alternate,
+                                      width: 1.0,
+                                    ),
+                                  ),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        16.0, 24.0, 16.0, 24.0),
+                                    child: Container(
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'Depense',
+                                            style: FlutterFlowTheme.of(context)
+                                                .labelSmall
+                                                .override(
+                                                  font: GoogleFonts.inter(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelSmall
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelSmall
+                                                            .fontStyle,
+                                                  ),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryText,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelSmall
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelSmall
+                                                          .fontStyle,
+                                                  lineHeight: 1.2,
+                                                ),
+                                          ),
+                                          Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
+                                            children: [
+                                              Text(
+                                                '\$3, 250',
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .titleMedium
+                                                    .override(
+                                                      font: GoogleFonts.inter(
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleMedium
+                                                                .fontStyle,
+                                                      ),
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primaryText,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleMedium
+                                                              .fontStyle,
+                                                      lineHeight: 1.4,
+                                                    ),
+                                              ),
+                                              Icon(
+                                                Icons.trending_up_rounded,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                size: 16.0,
+                                              ),
+                                            ].divide(SizedBox(width: 4.0)),
+                                          ),
+                                        ].divide(SizedBox(height: 16.0)),
                                       ),
-                                      axisBounds: AxisBounds(
-                                        minY: 0.0,
-                                        maxX: 5.0,
-                                        maxY: 5784.0,
-                                      ),
-                                      xAxisLabelInfo: AxisLabelInfo(
-                                        showLabels: true,
-                                        labelTextStyle: FlutterFlowTheme.of(
-                                                context)
-                                            .bodySmall
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ].divide(SizedBox(width: 16.0)),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 16.0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 20.0, 0.0, 20.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          25.0, 0.0, 20.0, 0.0),
+                                      child: Text(
+                                        'Mes portefeuilles',
+                                        style: FlutterFlowTheme.of(context)
+                                            .titleLarge
                                             .override(
                                               font: GoogleFonts.inter(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodySmall
+                                                        .titleLarge
                                                         .fontWeight,
                                                 fontStyle:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodySmall
+                                                        .titleLarge
                                                         .fontStyle,
                                               ),
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryText,
-                                              fontSize: 10.0,
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodySmall
+                                                      .titleLarge
                                                       .fontWeight,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodySmall
+                                                      .titleLarge
                                                       .fontStyle,
-                                              lineHeight: 1.0,
                                             ),
-                                        reservedSize: 20.0,
-                                      ),
-                                      yAxisLabelInfo: AxisLabelInfo(
-                                        reservedSize: 0.0,
                                       ),
                                     ),
-                                  ),
+                                    FFButtonWidget(
+                                      onPressed: () async {
+                                        context.pushNamed(
+                                          AddWalletWidget.routeName,
+                                          queryParameters: {
+                                            'nomWalletP': serializeParam(
+                                              '',
+                                              ParamType.String,
+                                            ),
+                                            'soldeP': serializeParam(
+                                              0.0,
+                                              ParamType.double,
+                                            ),
+                                            'limiteP': serializeParam(
+                                              0.0,
+                                              ParamType.double,
+                                            ),
+                                            'depenseP': serializeParam(
+                                              0.0,
+                                              ParamType.double,
+                                            ),
+                                            'revenuP': serializeParam(
+                                              0.0,
+                                              ParamType.double,
+                                            ),
+                                            'objectifP': serializeParam(
+                                              0.0,
+                                              ParamType.double,
+                                            ),
+                                          }.withoutNulls,
+                                        );
+                                      },
+                                      text: '',
+                                      icon: Icon(
+                                        Icons.add_sharp,
+                                        size: 32.0,
+                                      ),
+                                      options: FFButtonOptions(
+                                        height: 40.0,
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            22.0, 0.0, 16.0, 0.0),
+                                        iconPadding:
+                                            EdgeInsetsDirectional.fromSTEB(
+                                                0.0, 0.0, 0.0, 0.0),
+                                        color: FlutterFlowTheme.of(context)
+                                            .primary,
+                                        textStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .override(
+                                              font: GoogleFonts.plusJakartaSans(
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .fontStyle,
+                                              ),
+                                              color: Colors.white,
+                                              letterSpacing: 0.0,
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .fontStyle,
+                                            ),
+                                        elevation: 0.0,
+                                        borderRadius:
+                                            BorderRadius.circular(24.0),
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                              ].divide(SizedBox(height: 32.0)),
-                            ),
+                              ),
+                            ],
                           ),
                         ),
-                      ),
+                      ],
                     ),
-                  ),
-                  Column(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            32.0, 0.0, 32.0, 24.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Expanded(
-                              flex: 1,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
-                                  borderRadius: BorderRadius.circular(16.0),
-                                  shape: BoxShape.rectangle,
-                                  border: Border.all(
-                                    color:
-                                        FlutterFlowTheme.of(context).alternate,
-                                    width: 1.0,
-                                  ),
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      16.0, 24.0, 16.0, 24.0),
-                                  child: Container(
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Revenu',
-                                          style: FlutterFlowTheme.of(context)
-                                              .labelSmall
-                                              .override(
-                                                font: GoogleFonts.inter(
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelSmall
-                                                          .fontWeight,
-                                                  fontStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelSmall
-                                                          .fontStyle,
-                                                ),
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryText,
-                                                letterSpacing: 0.0,
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelSmall
-                                                        .fontWeight,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelSmall
-                                                        .fontStyle,
-                                                lineHeight: 1.2,
-                                              ),
-                                        ),
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.center,
-                                          children: [
-                                            Text(
-                                              '\$12, 400',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .titleMedium
-                                                  .override(
-                                                    font: GoogleFonts.inter(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleMedium
-                                                              .fontStyle,
-                                                    ),
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    letterSpacing: 0.0,
-                                                    fontWeight: FontWeight.bold,
-                                                    fontStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .titleMedium
-                                                            .fontStyle,
-                                                    lineHeight: 1.4,
-                                                  ),
-                                            ),
-                                            Icon(
-                                              Icons.north_east_rounded,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .success,
-                                              size: 16.0,
-                                            ),
-                                          ].divide(SizedBox(width: 4.0)),
-                                        ),
-                                      ].divide(SizedBox(height: 16.0)),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              flex: 1,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
-                                  borderRadius: BorderRadius.circular(16.0),
-                                  shape: BoxShape.rectangle,
-                                  border: Border.all(
-                                    color:
-                                        FlutterFlowTheme.of(context).alternate,
-                                    width: 1.0,
-                                  ),
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      16.0, 24.0, 16.0, 24.0),
-                                  child: Container(
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Depense',
-                                          style: FlutterFlowTheme.of(context)
-                                              .labelSmall
-                                              .override(
-                                                font: GoogleFonts.inter(
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelSmall
-                                                          .fontWeight,
-                                                  fontStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelSmall
-                                                          .fontStyle,
-                                                ),
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryText,
-                                                letterSpacing: 0.0,
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelSmall
-                                                        .fontWeight,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelSmall
-                                                        .fontStyle,
-                                                lineHeight: 1.2,
-                                              ),
-                                        ),
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.center,
-                                          children: [
-                                            Text(
-                                              '\$3, 250',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .titleMedium
-                                                  .override(
-                                                    font: GoogleFonts.inter(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      fontStyle:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleMedium
-                                                              .fontStyle,
-                                                    ),
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    letterSpacing: 0.0,
-                                                    fontWeight: FontWeight.bold,
-                                                    fontStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .titleMedium
-                                                            .fontStyle,
-                                                    lineHeight: 1.4,
-                                                  ),
-                                            ),
-                                            Icon(
-                                              Icons.trending_up_rounded,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primary,
-                                              size: 16.0,
-                                            ),
-                                          ].divide(SizedBox(width: 4.0)),
-                                        ),
-                                      ].divide(SizedBox(height: 16.0)),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ].divide(SizedBox(width: 16.0)),
-                        ),
+                    StreamBuilder<List<WalletRecord>>(
+                      stream: queryWalletRecord(
+                        queryBuilder: (walletRecord) =>
+                            walletRecord.orderBy('soldeActuel'),
                       ),
-                      Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Padding(
+                      builder: (context, snapshot) {
+                        // Customize what your widget looks like when it's loading.
+                        if (!snapshot.hasData) {
+                          return Center(
+                            child: SizedBox(
+                              width: 50.0,
+                              height: 50.0,
+                              child: CircularProgressIndicator(
+                                valueColor: AlwaysStoppedAnimation<Color>(
+                                  FlutterFlowTheme.of(context).primary,
+                                ),
+                              ),
+                            ),
+                          );
+                        }
+                        List<WalletRecord> listViewWalletRecordList =
+                            snapshot.data!;
+
+                        return ListView.builder(
+                          padding: EdgeInsets.zero,
+                          primary: false,
+                          shrinkWrap: true,
+                          scrollDirection: Axis.vertical,
+                          itemCount: listViewWalletRecordList.length,
+                          itemBuilder: (context, listViewIndex) {
+                            final listViewWalletRecord =
+                                listViewWalletRecordList[listViewIndex];
+                            return Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 20.0, 0.0, 20.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
+                                  32.0, 0.0, 32.0, 32.0),
+                              child: ListView(
+                                padding: EdgeInsets.zero,
+                                primary: false,
+                                shrinkWrap: true,
+                                scrollDirection: Axis.vertical,
                                 children: [
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        25.0, 0.0, 20.0, 0.0),
-                                    child: Text(
-                                      'Mes portefeuilles',
-                                      style: FlutterFlowTheme.of(context)
-                                          .titleLarge
-                                          .override(
-                                            font: GoogleFonts.inter(
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleLarge
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleLarge
-                                                      .fontStyle,
-                                            ),
-                                            letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleLarge
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleLarge
-                                                    .fontStyle,
+                                        0.0, 0.0, 0.0, 16.0),
+                                    child: Container(
+                                      decoration: BoxDecoration(),
+                                      child: ClipRRect(
+                                        borderRadius:
+                                            BorderRadius.circular(20.0),
+                                        child: BackdropFilter(
+                                          filter: ImageFilter.blur(
+                                            sigmaX: 10.0,
+                                            sigmaY: 10.0,
                                           ),
-                                    ),
-                                  ),
-                                  FFButtonWidget(
-                                    onPressed: () async {
-                                      context.pushNamed(
-                                        AddWalletWidget.routeName,
-                                        queryParameters: {
-                                          'nomWalletP': serializeParam(
-                                            '',
-                                            ParamType.String,
-                                          ),
-                                          'soldeP': serializeParam(
-                                            0.0,
-                                            ParamType.double,
-                                          ),
-                                          'limiteP': serializeParam(
-                                            0.0,
-                                            ParamType.double,
-                                          ),
-                                          'depenseP': serializeParam(
-                                            0.0,
-                                            ParamType.double,
-                                          ),
-                                          'revenuP': serializeParam(
-                                            0.0,
-                                            ParamType.double,
-                                          ),
-                                          'objectifP': serializeParam(
-                                            0.0,
-                                            ParamType.double,
-                                          ),
-                                        }.withoutNulls,
-                                      );
-                                    },
-                                    text: '',
-                                    icon: Icon(
-                                      Icons.add_sharp,
-                                      size: 32.0,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          22.0, 0.0, 16.0, 0.0),
-                                      iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            font: GoogleFonts.plusJakartaSans(
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .fontStyle,
-                                            ),
-                                            color: Colors.white,
-                                            letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .fontStyle,
-                                          ),
-                                      elevation: 0.0,
-                                      borderRadius: BorderRadius.circular(24.0),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  StreamBuilder<List<WalletRecord>>(
-                    stream: queryWalletRecord(
-                      queryBuilder: (walletRecord) =>
-                          walletRecord.orderBy('soldeActuel'),
-                    ),
-                    builder: (context, snapshot) {
-                      // Customize what your widget looks like when it's loading.
-                      if (!snapshot.hasData) {
-                        return Center(
-                          child: SizedBox(
-                            width: 50.0,
-                            height: 50.0,
-                            child: CircularProgressIndicator(
-                              valueColor: AlwaysStoppedAnimation<Color>(
-                                FlutterFlowTheme.of(context).primary,
-                              ),
-                            ),
-                          ),
-                        );
-                      }
-                      List<WalletRecord> listViewWalletRecordList =
-                          snapshot.data!;
-
-                      return ListView.builder(
-                        padding: EdgeInsets.zero,
-                        shrinkWrap: true,
-                        scrollDirection: Axis.vertical,
-                        itemCount: listViewWalletRecordList.length,
-                        itemBuilder: (context, listViewIndex) {
-                          final listViewWalletRecord =
-                              listViewWalletRecordList[listViewIndex];
-                          return Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                32.0, 0.0, 32.0, 32.0),
-                            child: ListView(
-                              padding: EdgeInsets.zero,
-                              primary: false,
-                              shrinkWrap: true,
-                              scrollDirection: Axis.vertical,
-                              children: [
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 0.0, 16.0),
-                                  child: Container(
-                                    decoration: BoxDecoration(),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(20.0),
-                                      child: BackdropFilter(
-                                        filter: ImageFilter.blur(
-                                          sigmaX: 10.0,
-                                          sigmaY: 10.0,
-                                        ),
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                            borderRadius:
-                                                BorderRadius.circular(20.0),
-                                            shape: BoxShape.rectangle,
-                                            border: Border.all(
+                                          child: Container(
+                                            decoration: BoxDecoration(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primary,
-                                              width: 2.0,
+                                                      .secondaryBackground,
+                                              borderRadius:
+                                                  BorderRadius.circular(20.0),
+                                              shape: BoxShape.rectangle,
+                                              border: Border.all(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                width: 2.0,
+                                              ),
                                             ),
-                                          ),
-                                          child: Padding(
-                                            padding: EdgeInsets.all(24.0),
-                                            child: Container(
-                                              child: Column(
-                                                mainAxisSize: MainAxisSize.min,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.start,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.stretch,
-                                                children: [
-                                                  Row(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceBetween,
-                                                    crossAxisAlignment:
-                                                        CrossAxisAlignment
-                                                            .center,
-                                                    children: [
-                                                      Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .start,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .center,
-                                                        children: [
-                                                          Icon(
-                                                            Icons
-                                                                .account_balance_wallet_rounded,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .primary,
-                                                            size: 23.0,
-                                                          ),
-                                                          Text(
-                                                            listViewWalletRecord
-                                                                .nomWallet,
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .titleMedium
-                                                                .override(
-                                                                  font:
-                                                                      GoogleFonts
-                                                                          .inter(
+                                            child: Padding(
+                                              padding: EdgeInsets.all(24.0),
+                                              child: Container(
+                                                child: Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.min,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.start,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment
+                                                          .stretch,
+                                                  children: [
+                                                    Row(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .spaceBetween,
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .center,
+                                                      children: [
+                                                        Row(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .start,
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            Icon(
+                                                              Icons
+                                                                  .account_balance_wallet_rounded,
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .primary,
+                                                              size: 23.0,
+                                                            ),
+                                                            Text(
+                                                              listViewWalletRecord
+                                                                  .nomWallet,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .titleMedium
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .inter(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .titleMedium
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryText,
+                                                                    fontSize:
+                                                                        15.0,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .titleMedium
@@ -851,56 +891,159 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                             context)
                                                                         .titleMedium
                                                                         .fontStyle,
+                                                                    lineHeight:
+                                                                        1.4,
                                                                   ),
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              width: 16.0)),
+                                                        ),
+                                                        Row(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .start,
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          5.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0),
+                                                              child:
+                                                                  FlutterFlowIconButton(
+                                                                borderRadius:
+                                                                    8.0,
+                                                                buttonSize:
+                                                                    40.0,
+                                                                fillColor: Colors
+                                                                    .transparent,
+                                                                icon: Icon(
+                                                                  Icons
+                                                                      .visibility_rounded,
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .primaryText,
-                                                                  fontSize:
-                                                                      15.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleMedium
-                                                                      .fontWeight,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleMedium
-                                                                      .fontStyle,
-                                                                  lineHeight:
-                                                                      1.4,
+                                                                      .primary,
+                                                                  size: 23.0,
                                                                 ),
-                                                          ),
-                                                        ].divide(SizedBox(
-                                                            width: 16.0)),
-                                                      ),
-                                                      Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .start,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .center,
-                                                        children: [
-                                                          Padding(
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        5.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
-                                                            child:
-                                                                FlutterFlowIconButton(
+                                                                onPressed:
+                                                                    () async {
+                                                                  context
+                                                                      .pushNamed(
+                                                                    WalletDashboardWidget
+                                                                        .routeName,
+                                                                    queryParameters:
+                                                                        {
+                                                                      'nomP':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .nomWallet,
+                                                                        ParamType
+                                                                            .String,
+                                                                      ),
+                                                                      'soldeP':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .soldeActuel,
+                                                                        ParamType
+                                                                            .double,
+                                                                      ),
+                                                                      'limit':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .budgetLimite,
+                                                                        ParamType
+                                                                            .double,
+                                                                      ),
+                                                                      'depTotP':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .depenseTotale,
+                                                                        ParamType
+                                                                            .double,
+                                                                      ),
+                                                                      'revTotP':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .revenuTotal,
+                                                                        ParamType
+                                                                            .double,
+                                                                      ),
+                                                                      'objectifP':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .objectifEpargne,
+                                                                        ParamType
+                                                                            .double,
+                                                                      ),
+                                                                      'walletRef':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .reference,
+                                                                        ParamType
+                                                                            .DocumentReference,
+                                                                      ),
+                                                                      'notif50P':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .notif50Shown,
+                                                                        ParamType
+                                                                            .bool,
+                                                                      ),
+                                                                      'notif70P':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .notif70Shown,
+                                                                        ParamType
+                                                                            .bool,
+                                                                      ),
+                                                                      'notif90P':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .notif90Shown,
+                                                                        ParamType
+                                                                            .bool,
+                                                                      ),
+                                                                      'notif100P':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .notif100Shown,
+                                                                        ParamType
+                                                                            .bool,
+                                                                      ),
+                                                                      'soldeC':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .soldeCalcule,
+                                                                        ParamType
+                                                                            .double,
+                                                                      ),
+                                                                      'walletParam':
+                                                                          serializeParam(
+                                                                        listViewWalletRecord
+                                                                            .reference,
+                                                                        ParamType
+                                                                            .DocumentReference,
+                                                                      ),
+                                                                    }.withoutNulls,
+                                                                  );
+                                                                },
+                                                              ),
+                                                            ),
+                                                            FlutterFlowIconButton(
                                                               borderRadius: 8.0,
                                                               buttonSize: 40.0,
                                                               fillColor: Colors
                                                                   .transparent,
                                                               icon: Icon(
                                                                 Icons
-                                                                    .visibility_rounded,
+                                                                    .edit_rounded,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primary,
@@ -910,11 +1053,11 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                   () async {
                                                                 context
                                                                     .pushNamed(
-                                                                  WalletDashboardWidget
+                                                                  EditWalletWidget
                                                                       .routeName,
                                                                   queryParameters:
                                                                       {
-                                                                    'nomP':
+                                                                    'nomWalletP':
                                                                         serializeParam(
                                                                       '',
                                                                       ParamType
@@ -926,19 +1069,19 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                       ParamType
                                                                           .double,
                                                                     ),
-                                                                    'limit':
+                                                                    'limiteP':
                                                                         serializeParam(
                                                                       0.0,
                                                                       ParamType
                                                                           .double,
                                                                     ),
-                                                                    'depTotP':
+                                                                    'depenseP':
                                                                         serializeParam(
                                                                       0.0,
                                                                       ParamType
                                                                           .double,
                                                                     ),
-                                                                    'revTotP':
+                                                                    'revenuP':
                                                                         serializeParam(
                                                                       0.0,
                                                                       ParamType
@@ -950,173 +1093,61 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                       ParamType
                                                                           .double,
                                                                     ),
-                                                                    'walletRef':
+                                                                    'welletRp':
                                                                         serializeParam(
                                                                       listViewWalletRecord
                                                                           .reference,
                                                                       ParamType
                                                                           .DocumentReference,
                                                                     ),
-                                                                    'notif50P':
-                                                                        serializeParam(
-                                                                      false,
-                                                                      ParamType
-                                                                          .bool,
-                                                                    ),
-                                                                    'notif70P':
-                                                                        serializeParam(
-                                                                      false,
-                                                                      ParamType
-                                                                          .bool,
-                                                                    ),
-                                                                    'notif90P':
-                                                                        serializeParam(
-                                                                      false,
-                                                                      ParamType
-                                                                          .bool,
-                                                                    ),
-                                                                    'notif100P':
-                                                                        serializeParam(
-                                                                      false,
-                                                                      ParamType
-                                                                          .bool,
-                                                                    ),
-                                                                    'soldeC':
-                                                                        serializeParam(
-                                                                      0.0,
-                                                                      ParamType
-                                                                          .double,
-                                                                    ),
                                                                   }.withoutNulls,
                                                                 );
                                                               },
                                                             ),
-                                                          ),
-                                                          FlutterFlowIconButton(
-                                                            borderRadius: 8.0,
-                                                            buttonSize: 40.0,
-                                                            fillColor: Colors
-                                                                .transparent,
-                                                            icon: Icon(
-                                                              Icons
-                                                                  .edit_rounded,
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              size: 23.0,
+                                                            FlutterFlowIconButton(
+                                                              borderRadius: 8.0,
+                                                              buttonSize: 40.0,
+                                                              fillColor: Colors
+                                                                  .transparent,
+                                                              icon: Icon(
+                                                                Icons
+                                                                    .delete_outline_rounded,
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .error,
+                                                                size: 23.0,
+                                                              ),
+                                                              onPressed:
+                                                                  () async {
+                                                                await listViewWalletRecord
+                                                                    .reference
+                                                                    .delete();
+                                                              },
                                                             ),
-                                                            onPressed:
-                                                                () async {
-                                                              context.pushNamed(
-                                                                EditWalletWidget
-                                                                    .routeName,
-                                                                queryParameters:
-                                                                    {
-                                                                  'nomWalletP':
-                                                                      serializeParam(
-                                                                    '',
-                                                                    ParamType
-                                                                        .String,
-                                                                  ),
-                                                                  'soldeP':
-                                                                      serializeParam(
-                                                                    0.0,
-                                                                    ParamType
-                                                                        .double,
-                                                                  ),
-                                                                  'limiteP':
-                                                                      serializeParam(
-                                                                    0.0,
-                                                                    ParamType
-                                                                        .double,
-                                                                  ),
-                                                                  'depenseP':
-                                                                      serializeParam(
-                                                                    0.0,
-                                                                    ParamType
-                                                                        .double,
-                                                                  ),
-                                                                  'revenuP':
-                                                                      serializeParam(
-                                                                    0.0,
-                                                                    ParamType
-                                                                        .double,
-                                                                  ),
-                                                                  'objectifP':
-                                                                      serializeParam(
-                                                                    0.0,
-                                                                    ParamType
-                                                                        .double,
-                                                                  ),
-                                                                  'welletRp':
-                                                                      serializeParam(
-                                                                    listViewWalletRecord
-                                                                        .reference,
-                                                                    ParamType
-                                                                        .DocumentReference,
-                                                                  ),
-                                                                }.withoutNulls,
-                                                              );
-                                                            },
-                                                          ),
-                                                          FlutterFlowIconButton(
-                                                            borderRadius: 8.0,
-                                                            buttonSize: 40.0,
-                                                            fillColor: Colors
-                                                                .transparent,
-                                                            icon: Icon(
-                                                              Icons
-                                                                  .delete_outline_rounded,
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .error,
-                                                              size: 23.0,
-                                                            ),
-                                                            onPressed:
-                                                                () async {
-                                                              await listViewWalletRecord
-                                                                  .reference
-                                                                  .delete();
-                                                            },
-                                                          ),
-                                                        ].divide(SizedBox(
-                                                            width: 8.0)),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                  Column(
-                                                    mainAxisSize:
-                                                        MainAxisSize.min,
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment.start,
-                                                    crossAxisAlignment:
-                                                        CrossAxisAlignment
-                                                            .start,
-                                                    children: [
-                                                      Text(
-                                                        'Solde Actuel',
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelSmall
-                                                                .override(
-                                                                  font:
-                                                                      GoogleFonts
-                                                                          .inter(
-                                                                    fontWeight: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .labelSmall
-                                                                        .fontWeight,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .labelSmall
-                                                                        .fontStyle,
-                                                                  ),
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .secondaryText,
-                                                                  letterSpacing:
-                                                                      0.0,
+                                                          ].divide(SizedBox(
+                                                              width: 8.0)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    Column(
+                                                      mainAxisSize:
+                                                          MainAxisSize.min,
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .start,
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text(
+                                                          'Solde Actuel',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelSmall
+                                                              .override(
+                                                                font:
+                                                                    GoogleFonts
+                                                                        .inter(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelSmall
@@ -1125,35 +1156,34 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                           context)
                                                                       .labelSmall
                                                                       .fontStyle,
-                                                                  lineHeight:
-                                                                      1.2,
                                                                 ),
-                                                      ),
-                                                      Text(
-                                                        listViewWalletRecord
-                                                            .soldeCalcule
-                                                            .toString(),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .headlineMedium
-                                                                .override(
-                                                                  font:
-                                                                      GoogleFonts
-                                                                          .inter(
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .bold,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .headlineMedium
-                                                                        .fontStyle,
-                                                                  ),
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryText,
-                                                                  letterSpacing:
-                                                                      0.0,
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryText,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelSmall
+                                                                    .fontWeight,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelSmall
+                                                                    .fontStyle,
+                                                                lineHeight: 1.2,
+                                                              ),
+                                                        ),
+                                                        Text(
+                                                          listViewWalletRecord
+                                                              .soldeCalcule
+                                                              .toString(),
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .headlineMedium
+                                                              .override(
+                                                                font:
+                                                                    GoogleFonts
+                                                                        .inter(
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .bold,
@@ -1161,42 +1191,67 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                           context)
                                                                       .headlineMedium
                                                                       .fontStyle,
-                                                                  lineHeight:
-                                                                      1.2,
                                                                 ),
-                                                      ),
-                                                    ].divide(
-                                                        SizedBox(height: 4.0)),
-                                                  ),
-                                                  Row(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceBetween,
-                                                    crossAxisAlignment:
-                                                        CrossAxisAlignment
-                                                            .center,
-                                                    children: [
-                                                      Column(
-                                                        mainAxisSize:
-                                                            MainAxisSize.min,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .start,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .start,
-                                                        children: [
-                                                          Text(
-                                                            'Limite',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .labelSmall
-                                                                .override(
-                                                                  font:
-                                                                      GoogleFonts
-                                                                          .inter(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primaryText,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .headlineMedium
+                                                                    .fontStyle,
+                                                                lineHeight: 1.2,
+                                                              ),
+                                                        ),
+                                                      ].divide(SizedBox(
+                                                          height: 4.0)),
+                                                    ),
+                                                    Row(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .spaceBetween,
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .center,
+                                                      children: [
+                                                        Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.min,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .start,
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .start,
+                                                          children: [
+                                                            Text(
+                                                              'Limite',
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .labelSmall
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .inter(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelSmall
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelSmall
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryText,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1205,35 +1260,33 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                             context)
                                                                         .labelSmall
                                                                         .fontStyle,
+                                                                    lineHeight:
+                                                                        1.2,
                                                                   ),
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .secondaryText,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelSmall
-                                                                      .fontWeight,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelSmall
-                                                                      .fontStyle,
-                                                                  lineHeight:
-                                                                      1.2,
-                                                                ),
-                                                          ),
-                                                          Text(
-                                                            listViewWalletRecord
-                                                                .budgetLimite
-                                                                .toString(),
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodySmall
-                                                                .override(
-                                                                  font:
-                                                                      GoogleFonts
-                                                                          .inter(
+                                                            ),
+                                                            Text(
+                                                              listViewWalletRecord
+                                                                  .budgetLimite
+                                                                  .toString(),
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodySmall
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .inter(
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w600,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodySmall
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryText,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
@@ -1241,45 +1294,45 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                             context)
                                                                         .bodySmall
                                                                         .fontStyle,
+                                                                    lineHeight:
+                                                                        1.4,
                                                                   ),
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryText,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w600,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodySmall
-                                                                      .fontStyle,
-                                                                  lineHeight:
-                                                                      1.4,
-                                                                ),
-                                                          ),
-                                                        ].divide(SizedBox(
-                                                            height: 4.0)),
-                                                      ),
-                                                      Column(
-                                                        mainAxisSize:
-                                                            MainAxisSize.min,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .start,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .start,
-                                                        children: [
-                                                          Text(
-                                                            'Depense Totale',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .labelSmall
-                                                                .override(
-                                                                  font:
-                                                                      GoogleFonts
-                                                                          .inter(
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              height: 4.0)),
+                                                        ),
+                                                        Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.min,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .start,
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .start,
+                                                          children: [
+                                                            Text(
+                                                              'Depense Totale',
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .labelSmall
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .inter(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelSmall
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelSmall
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryText,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1288,35 +1341,33 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                             context)
                                                                         .labelSmall
                                                                         .fontStyle,
+                                                                    lineHeight:
+                                                                        1.2,
                                                                   ),
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .secondaryText,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelSmall
-                                                                      .fontWeight,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelSmall
-                                                                      .fontStyle,
-                                                                  lineHeight:
-                                                                      1.2,
-                                                                ),
-                                                          ),
-                                                          Text(
-                                                            listViewWalletRecord
-                                                                .depenseTotale
-                                                                .toString(),
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodySmall
-                                                                .override(
-                                                                  font:
-                                                                      GoogleFonts
-                                                                          .inter(
+                                                            ),
+                                                            Text(
+                                                              listViewWalletRecord
+                                                                  .depenseTotale
+                                                                  .toString(),
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodySmall
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .inter(
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w600,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodySmall
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryText,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
@@ -1324,45 +1375,45 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                             context)
                                                                         .bodySmall
                                                                         .fontStyle,
+                                                                    lineHeight:
+                                                                        1.4,
                                                                   ),
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryText,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w600,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodySmall
-                                                                      .fontStyle,
-                                                                  lineHeight:
-                                                                      1.4,
-                                                                ),
-                                                          ),
-                                                        ].divide(SizedBox(
-                                                            height: 4.0)),
-                                                      ),
-                                                      Column(
-                                                        mainAxisSize:
-                                                            MainAxisSize.min,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .start,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .start,
-                                                        children: [
-                                                          Text(
-                                                            'Revenu Totale',
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .labelSmall
-                                                                .override(
-                                                                  font:
-                                                                      GoogleFonts
-                                                                          .inter(
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              height: 4.0)),
+                                                        ),
+                                                        Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.min,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .start,
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .start,
+                                                          children: [
+                                                            Text(
+                                                              'Revenu Totale',
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .labelSmall
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .inter(
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelSmall
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelSmall
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryText,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                     fontWeight: FlutterFlowTheme.of(
                                                                             context)
                                                                         .labelSmall
@@ -1371,35 +1422,33 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                             context)
                                                                         .labelSmall
                                                                         .fontStyle,
+                                                                    lineHeight:
+                                                                        1.2,
                                                                   ),
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .secondaryText,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelSmall
-                                                                      .fontWeight,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelSmall
-                                                                      .fontStyle,
-                                                                  lineHeight:
-                                                                      1.2,
-                                                                ),
-                                                          ),
-                                                          Text(
-                                                            listViewWalletRecord
-                                                                .revenuTotal
-                                                                .toString(),
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodySmall
-                                                                .override(
-                                                                  font:
-                                                                      GoogleFonts
-                                                                          .inter(
+                                                            ),
+                                                            Text(
+                                                              listViewWalletRecord
+                                                                  .revenuTotal
+                                                                  .toString(),
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodySmall
+                                                                  .override(
+                                                                    font: GoogleFonts
+                                                                        .inter(
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w600,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodySmall
+                                                                          .fontStyle,
+                                                                    ),
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryText,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w600,
@@ -1407,46 +1456,34 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                                                             context)
                                                                         .bodySmall
                                                                         .fontStyle,
+                                                                    lineHeight:
+                                                                        1.4,
                                                                   ),
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryText,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w600,
-                                                                  fontStyle: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodySmall
-                                                                      .fontStyle,
-                                                                  lineHeight:
-                                                                      1.4,
-                                                                ),
-                                                          ),
-                                                        ].divide(SizedBox(
-                                                            height: 4.0)),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                  LinearPercentIndicator(
-                                                    percent: 0.17,
-                                                    lineHeight: 4.0,
-                                                    animation: true,
-                                                    animateFromLastPercent:
-                                                        true,
-                                                    progressColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .primary,
-                                                    backgroundColor:
-                                                        Color(0x33E5E5EA),
-                                                    barRadius:
-                                                        Radius.circular(2.0),
-                                                    padding: EdgeInsets.zero,
-                                                  ),
-                                                ].divide(
-                                                    SizedBox(height: 16.0)),
+                                                            ),
+                                                          ].divide(SizedBox(
+                                                              height: 4.0)),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                    LinearPercentIndicator(
+                                                      percent: 0.17,
+                                                      lineHeight: 4.0,
+                                                      animation: true,
+                                                      animateFromLastPercent:
+                                                          true,
+                                                      progressColor:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primary,
+                                                      backgroundColor:
+                                                          Color(0x33E5E5EA),
+                                                      barRadius:
+                                                          Radius.circular(2.0),
+                                                      padding: EdgeInsets.zero,
+                                                    ),
+                                                  ].divide(
+                                                      SizedBox(height: 16.0)),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -1454,22 +1491,22 @@ class _WalletListWidgetState extends State<WalletListWidget> {
                                       ),
                                     ),
                                   ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 0.0, 16.0),
-                                  child: Container(
-                                    decoration: BoxDecoration(),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 16.0),
+                                    child: Container(
+                                      decoration: BoxDecoration(),
+                                    ),
                                   ),
-                                ),
-                              ],
-                            ),
-                          );
-                        },
-                      );
-                    },
-                  ),
-                ],
+                                ],
+                              ),
+                            );
+                          },
+                        );
+                      },
+                    ),
+                  ],
+                ),
               ),
             ),
           ),

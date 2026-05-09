@@ -75,6 +75,11 @@ class CardsRecord extends FirestoreRecord {
   double get currentSpend => _currentSpend ?? 0.0;
   bool hasCurrentSpend() => _currentSpend != null;
 
+  // "savings_balance" field.
+  double? _savingsBalance;
+  double get savingsBalance => _savingsBalance ?? 0.0;
+  bool hasSavingsBalance() => _savingsBalance != null;
+
   void _initializeFields() {
     _userRef = snapshotData['user_ref'] as DocumentReference?;
     _cardNumber = snapshotData['card_number'] as String?;
@@ -88,6 +93,7 @@ class CardsRecord extends FirestoreRecord {
     _dailyLimit = castToType<double>(snapshotData['daily_limit']);
     _createdAt = snapshotData['created_at'] as DateTime?;
     _currentSpend = castToType<double>(snapshotData['current_spend']);
+    _savingsBalance = castToType<double>(snapshotData['savings_balance']);
   }
 
   static CollectionReference get collection =>
@@ -136,6 +142,7 @@ Map<String, dynamic> createCardsRecordData({
   double? dailyLimit,
   DateTime? createdAt,
   double? currentSpend,
+  double? savingsBalance,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -151,6 +158,7 @@ Map<String, dynamic> createCardsRecordData({
       'daily_limit': dailyLimit,
       'created_at': createdAt,
       'current_spend': currentSpend,
+      'savings_balance': savingsBalance,
     }.withoutNulls,
   );
 
@@ -173,7 +181,8 @@ class CardsRecordDocumentEquality implements Equality<CardsRecord> {
         e1?.status == e2?.status &&
         e1?.dailyLimit == e2?.dailyLimit &&
         e1?.createdAt == e2?.createdAt &&
-        e1?.currentSpend == e2?.currentSpend;
+        e1?.currentSpend == e2?.currentSpend &&
+        e1?.savingsBalance == e2?.savingsBalance;
   }
 
   @override
@@ -189,7 +198,8 @@ class CardsRecordDocumentEquality implements Equality<CardsRecord> {
         e?.status,
         e?.dailyLimit,
         e?.createdAt,
-        e?.currentSpend
+        e?.currentSpend,
+        e?.savingsBalance
       ]);
 
   @override

@@ -180,7 +180,7 @@ class _RevenuChartWidgetState extends State<RevenuChartWidget> {
                                   child: FlutterFlowBarChart(
                                     barData: [
                                       FFBarChartData(
-                                        yData: functions.categorieLabels(
+                                        yData: functions.categorieCounts(
                                             barChartTransactionRecordList
                                                 .toList()),
                                         color: Color(0x9B00E5FF),

@@ -10,6 +10,7 @@ import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:just_audio/just_audio.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'ajouterune_transaction_model.dart';
 export 'ajouterune_transaction_model.dart';
@@ -985,36 +986,70 @@ class _AjouteruneTransactionWidgetState
                                     });
                                     if (functions.checkLimitWarning(
                                         widget
-                                            .cardForTransaction!.currentSpend,
-                                        widget.cardForTransaction!.dailyLimit,
-                                        double.parse(
+                                            .cardForTransaction?.currentSpend,
+                                        widget.cardForTransaction?.dailyLimit,
+                                        double.tryParse(
                                             _model.textController1.text))) {
                                       await NotificationsRecord.collection
                                           .doc()
                                           .set(createNotificationsRecordData(
                                             userRef: currentUserReference,
                                             message: '\"Alerte 80% plafond!\"',
+                                            isRead: false,
                                           ));
-                                    }
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                        content: Text(
-                                          'Transaction Crée Avec Succée',
-                                          style: TextStyle(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primaryText,
-                                          ),
-                                        ),
-                                        duration: Duration(milliseconds: 4000),
-                                        backgroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .secondary,
-                                      ),
-                                    );
+                                      _model.soundPlayer1 ??= AudioPlayer();
+                                      if (_model.soundPlayer1!.playing) {
+                                        await _model.soundPlayer1!.stop();
+                                      }
+                                      _model.soundPlayer1!.setVolume(1.0);
+                                      _model.soundPlayer1!
+                                          .setAsset(
+                                              'assets/audios/mixkit-bell-notification-933.wav')
+                                          .then((_) =>
+                                              _model.soundPlayer1!.play());
 
-                                    context.pushNamed(
-                                        TheMainMesCartesDashboardViewCardsTransactionsWidget
-                                            .routeName);
+                                      ScaffoldMessenger.of(context)
+                                          .showSnackBar(
+                                        SnackBar(
+                                          content: Text(
+                                            '\"🚨 ALERTE : Vous avez dépassé 80% de votre plafond !\"',
+                                            style: TextStyle(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
+                                            ),
+                                          ),
+                                          duration:
+                                              Duration(milliseconds: 4000),
+                                          backgroundColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .error,
+                                        ),
+                                      );
+                                    } else {
+                                      ScaffoldMessenger.of(context)
+                                          .showSnackBar(
+                                        SnackBar(
+                                          content: Text(
+                                            'Transaction Crée Avec Succée',
+                                            style: TextStyle(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
+                                            ),
+                                          ),
+                                          duration:
+                                              Duration(milliseconds: 4000),
+                                          backgroundColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .secondary,
+                                        ),
+                                      );
+
+                                      context.pushNamed(
+                                          TheMainMesCartesDashboardViewCardsTransactionsWidget
+                                              .routeName);
+                                    }
                                   } else {
                                     await widget.cardForTransaction!.reference
                                         .update(createCardsRecordData(
@@ -1065,9 +1100,9 @@ class _AjouteruneTransactionWidgetState
                                     ),
                                   });
                                   if (functions.checkLimitWarning(
-                                      widget.cardForTransaction!.currentSpend,
-                                      widget.cardForTransaction!.dailyLimit,
-                                      double.parse(
+                                      widget.cardForTransaction?.currentSpend,
+                                      widget.cardForTransaction?.dailyLimit,
+                                      double.tryParse(
                                           _model.textController1.text))) {
                                     await NotificationsRecord.collection
                                         .doc()
@@ -1076,26 +1111,52 @@ class _AjouteruneTransactionWidgetState
                                           message: '\"Alerte 80% plafond!\"',
                                           isRead: false,
                                         ));
-                                  }
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                    SnackBar(
-                                      content: Text(
-                                        'Transaction Crée Avec Succée',
-                                        style: TextStyle(
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryText,
-                                        ),
-                                      ),
-                                      duration: Duration(milliseconds: 4000),
-                                      backgroundColor:
-                                          FlutterFlowTheme.of(context)
-                                              .secondary,
-                                    ),
-                                  );
+                                    _model.soundPlayer2 ??= AudioPlayer();
+                                    if (_model.soundPlayer2!.playing) {
+                                      await _model.soundPlayer2!.stop();
+                                    }
+                                    _model.soundPlayer2!.setVolume(1.0);
+                                    _model.soundPlayer2!
+                                        .setAsset(
+                                            'assets/audios/mixkit-bell-notification-933.wav')
+                                        .then(
+                                            (_) => _model.soundPlayer2!.play());
 
-                                  context.pushNamed(
-                                      TheMainMesCartesDashboardViewCardsTransactionsWidget
-                                          .routeName);
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text(
+                                          '\"🚨 ALERTE : Vous avez dépassé 80% de votre plafond !\"',
+                                          style: TextStyle(
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                          ),
+                                        ),
+                                        duration: Duration(milliseconds: 4000),
+                                        backgroundColor:
+                                            FlutterFlowTheme.of(context).error,
+                                      ),
+                                    );
+                                  } else {
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text(
+                                          'Transaction Crée Avec Succée',
+                                          style: TextStyle(
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                          ),
+                                        ),
+                                        duration: Duration(milliseconds: 4000),
+                                        backgroundColor:
+                                            FlutterFlowTheme.of(context)
+                                                .secondary,
+                                      ),
+                                    );
+
+                                    context.pushNamed(
+                                        TheMainMesCartesDashboardViewCardsTransactionsWidget
+                                            .routeName);
+                                  }
                                 }
                               },
                               text: 'Ajouter la transaction',

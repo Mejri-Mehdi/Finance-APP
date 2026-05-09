@@ -396,7 +396,7 @@ class _WalletDashboardWidgetState extends State<WalletDashboardWidget> {
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 24.0, 0.0, 16.0),
                                             child: Container(
-                                              width: 336.69,
+                                              width: 290.78,
                                               child: Align(
                                                 alignment: AlignmentDirectional(
                                                     0.0, 0.0),
@@ -498,7 +498,7 @@ class _WalletDashboardWidgetState extends State<WalletDashboardWidget> {
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
-                                                                  25.0,
+                                                                  20.0,
                                                                   0.0),
                                                       child: Container(
                                                         width: 50.0,
@@ -704,7 +704,7 @@ class _WalletDashboardWidgetState extends State<WalletDashboardWidget> {
                                   children: [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          32.0, 0.0, 32.0, 0.0),
+                                          20.0, 0.0, 0.0, 0.0),
                                       child: Container(
                                         child: Row(
                                           mainAxisSize: MainAxisSize.min,
@@ -713,167 +713,234 @@ class _WalletDashboardWidgetState extends State<WalletDashboardWidget> {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.center,
                                           children: [
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 0.0, 16.0, 0.0),
+                                            Container(
                                               child: Container(
-                                                child: Container(
-                                                  width: 320.0,
-                                                  height: 180.0,
-                                                  decoration: BoxDecoration(
-                                                    gradient: LinearGradient(
-                                                      colors: [
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .primary,
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .tertiary
-                                                      ],
-                                                      stops: [0.0, 1.0],
-                                                      begin:
-                                                          AlignmentDirectional(
-                                                              1.0, 1.0),
-                                                      end: AlignmentDirectional(
-                                                          -1.0, -1.0),
-                                                    ),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            28.0),
-                                                    shape: BoxShape.rectangle,
+                                                width: 320.0,
+                                                height: 180.0,
+                                                decoration: BoxDecoration(
+                                                  gradient: LinearGradient(
+                                                    colors: [
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primary,
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .tertiary
+                                                    ],
+                                                    stops: [0.0, 1.0],
+                                                    begin: AlignmentDirectional(
+                                                        1.0, 1.0),
+                                                    end: AlignmentDirectional(
+                                                        -1.0, -1.0),
                                                   ),
-                                                  child: Padding(
-                                                    padding:
-                                                        EdgeInsets.all(24.0),
-                                                    child: Container(
-                                                      child: Stack(
-                                                        alignment:
-                                                            AlignmentDirectional(
-                                                                -1.0, -1.0),
-                                                        children: [
-                                                          Align(
-                                                            alignment:
-                                                                AlignmentDirectional(
-                                                                    -1.0, -1.0),
-                                                            child: Column(
-                                                              mainAxisSize:
-                                                                  MainAxisSize
-                                                                      .min,
-                                                              mainAxisAlignment:
-                                                                  MainAxisAlignment
-                                                                      .start,
-                                                              crossAxisAlignment:
-                                                                  CrossAxisAlignment
-                                                                      .start,
-                                                              children: [
-                                                                Text(
-                                                                  valueOrDefault<
-                                                                      String>(
-                                                                    widget
-                                                                        .nomP,
-                                                                    '-',
-                                                                  ),
-                                                                  style: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelSmall
-                                                                      .override(
-                                                                        font: GoogleFonts
-                                                                            .inter(
-                                                                          fontWeight: FlutterFlowTheme.of(context)
-                                                                              .labelSmall
-                                                                              .fontWeight,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
-                                                                              .labelSmall
-                                                                              .fontStyle,
-                                                                        ),
-                                                                        color: FlutterFlowTheme.of(context)
-                                                                            .onPrimary80,
-                                                                        letterSpacing:
-                                                                            0.0,
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          28.0),
+                                                  shape: BoxShape.rectangle,
+                                                ),
+                                                child: Padding(
+                                                  padding: EdgeInsets.all(24.0),
+                                                  child: Container(
+                                                    child: Stack(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              -1.0, -1.0),
+                                                      children: [
+                                                        Align(
+                                                          alignment:
+                                                              AlignmentDirectional(
+                                                                  -1.0, -1.0),
+                                                          child: Column(
+                                                            mainAxisSize:
+                                                                MainAxisSize
+                                                                    .min,
+                                                            mainAxisAlignment:
+                                                                MainAxisAlignment
+                                                                    .start,
+                                                            crossAxisAlignment:
+                                                                CrossAxisAlignment
+                                                                    .start,
+                                                            children: [
+                                                              Text(
+                                                                valueOrDefault<
+                                                                    String>(
+                                                                  widget.nomP,
+                                                                  '-',
+                                                                ),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelSmall
+                                                                    .override(
+                                                                      font: GoogleFonts
+                                                                          .inter(
                                                                         fontWeight: FlutterFlowTheme.of(context)
                                                                             .labelSmall
                                                                             .fontWeight,
                                                                         fontStyle: FlutterFlowTheme.of(context)
                                                                             .labelSmall
                                                                             .fontStyle,
-                                                                        lineHeight:
-                                                                            1.2,
                                                                       ),
-                                                                ),
-                                                                Container(
-                                                                  height: 16.0,
-                                                                ),
-                                                                Text(
-                                                                  walletDashboardWalletRecord
-                                                                      .soldeCalcule
-                                                                      .toString(),
-                                                                  style: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .headlineMedium
-                                                                      .override(
-                                                                        font: GoogleFonts
-                                                                            .inter(
-                                                                          fontWeight: FlutterFlowTheme.of(context)
-                                                                              .headlineMedium
-                                                                              .fontWeight,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
-                                                                              .headlineMedium
-                                                                              .fontStyle,
-                                                                        ),
-                                                                        color: FlutterFlowTheme.of(context)
-                                                                            .onPrimary,
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                        fontWeight: FlutterFlowTheme.of(context)
-                                                                            .headlineMedium
-                                                                            .fontWeight,
-                                                                        fontStyle: FlutterFlowTheme.of(context)
-                                                                            .headlineMedium
-                                                                            .fontStyle,
-                                                                        lineHeight:
-                                                                            1.2,
-                                                                      ),
-                                                                ),
-                                                              ],
-                                                            ),
-                                                          ),
-                                                          Align(
-                                                            alignment:
-                                                                AlignmentDirectional(
-                                                                    -1.0, 1.0),
-                                                            child: Row(
-                                                              mainAxisSize:
-                                                                  MainAxisSize
-                                                                      .max,
-                                                              children: [
-                                                                Align(
-                                                                  alignment:
-                                                                      AlignmentDirectional(
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .onPrimary80,
+                                                                      letterSpacing:
                                                                           0.0,
-                                                                          1.0),
-                                                                  child:
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelSmall
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .labelSmall
+                                                                          .fontStyle,
+                                                                      lineHeight:
+                                                                          1.2,
+                                                                    ),
+                                                              ),
+                                                              Container(
+                                                                height: 16.0,
+                                                              ),
+                                                              Text(
+                                                                walletDashboardWalletRecord
+                                                                    .soldeCalcule
+                                                                    .toString(),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .headlineMedium
+                                                                    .override(
+                                                                      font: GoogleFonts
+                                                                          .inter(
+                                                                        fontWeight: FlutterFlowTheme.of(context)
+                                                                            .headlineMedium
+                                                                            .fontWeight,
+                                                                        fontStyle: FlutterFlowTheme.of(context)
+                                                                            .headlineMedium
+                                                                            .fontStyle,
+                                                                      ),
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .onPrimary,
+                                                                      letterSpacing:
+                                                                          0.0,
+                                                                      fontWeight: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium
+                                                                          .fontWeight,
+                                                                      fontStyle: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .headlineMedium
+                                                                          .fontStyle,
+                                                                      lineHeight:
+                                                                          1.2,
+                                                                    ),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ),
+                                                        Align(
+                                                          alignment:
+                                                              AlignmentDirectional(
+                                                                  -1.0, 1.0),
+                                                          child: Row(
+                                                            mainAxisSize:
+                                                                MainAxisSize
+                                                                    .max,
+                                                            children: [
+                                                              Align(
+                                                                alignment:
+                                                                    AlignmentDirectional(
+                                                                        0.0,
+                                                                        1.0),
+                                                                child: Padding(
+                                                                  padding: EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          0.0,
+                                                                          60.0,
+                                                                          4.0,
+                                                                          0.0),
+                                                                  child: Column(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .max,
+                                                                    mainAxisAlignment:
+                                                                        MainAxisAlignment
+                                                                            .end,
+                                                                    crossAxisAlignment:
+                                                                        CrossAxisAlignment
+                                                                            .start,
+                                                                    children: [
+                                                                      Text(
+                                                                        'Budget limite',
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              font: GoogleFonts.inter(
+                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
+                                                                              fontSize: 12.0,
+                                                                              letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
+                                                                      ),
+                                                                      Text(
+                                                                        valueOrDefault<
+                                                                            String>(
+                                                                          widget
+                                                                              .limit
+                                                                              ?.toString(),
+                                                                          '0',
+                                                                        ),
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              font: GoogleFonts.inter(
+                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
+                                                                              fontSize: 13.0,
+                                                                              letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                              Align(
+                                                                alignment:
+                                                                    AlignmentDirectional(
+                                                                        0.0,
+                                                                        1.0),
+                                                                child: Padding(
+                                                                  padding: EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          5.0,
+                                                                          60.0,
+                                                                          0.0,
+                                                                          0.0),
+                                                                  child: Column(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .max,
+                                                                    mainAxisAlignment:
+                                                                        MainAxisAlignment
+                                                                            .end,
+                                                                    crossAxisAlignment:
+                                                                        CrossAxisAlignment
+                                                                            .start,
+                                                                    children: [
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
-                                                                        .fromSTEB(
+                                                                        padding: EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
-                                                                            60.0,
-                                                                            4.0,
+                                                                            0.0,
+                                                                            8.0,
                                                                             0.0),
-                                                                    child:
-                                                                        Column(
-                                                                      mainAxisSize:
-                                                                          MainAxisSize
-                                                                              .max,
-                                                                      mainAxisAlignment:
-                                                                          MainAxisAlignment
-                                                                              .end,
-                                                                      crossAxisAlignment:
-                                                                          CrossAxisAlignment
-                                                                              .start,
-                                                                      children: [
-                                                                        Text(
-                                                                          'Budget limite',
+                                                                        child:
+                                                                            Text(
+                                                                          'Depense Totale',
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
                                                                               .override(
@@ -887,179 +954,112 @@ class _WalletDashboardWidgetState extends State<WalletDashboardWidget> {
                                                                                 fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                               ),
                                                                         ),
-                                                                        Text(
-                                                                          valueOrDefault<
-                                                                              String>(
-                                                                            widget.limit?.toString(),
-                                                                            '0',
-                                                                          ),
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                font: GoogleFonts.inter(
-                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                ),
-                                                                                fontSize: 13.0,
-                                                                                letterSpacing: 0.0,
+                                                                      ),
+                                                                      Text(
+                                                                        valueOrDefault<
+                                                                            String>(
+                                                                          widget
+                                                                              .depTotP
+                                                                              ?.toString(),
+                                                                          '0',
+                                                                        ),
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              font: GoogleFonts.inter(
                                                                                 fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                 fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                               ),
-                                                                        ),
-                                                                      ],
-                                                                    ),
+                                                                              fontSize: 13.0,
+                                                                              letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
+                                                                      ),
+                                                                    ],
                                                                   ),
                                                                 ),
-                                                                Align(
-                                                                  alignment:
-                                                                      AlignmentDirectional(
+                                                              ),
+                                                              Align(
+                                                                alignment:
+                                                                    AlignmentDirectional(
+                                                                        0.0,
+                                                                        1.0),
+                                                                child: Padding(
+                                                                  padding: EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          5.0,
+                                                                          60.0,
                                                                           0.0,
-                                                                          1.0),
-                                                                  child:
-                                                                      Padding(
-                                                                    padding: EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            5.0,
-                                                                            60.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    child:
-                                                                        Column(
-                                                                      mainAxisSize:
-                                                                          MainAxisSize
-                                                                              .max,
-                                                                      mainAxisAlignment:
-                                                                          MainAxisAlignment
-                                                                              .end,
-                                                                      crossAxisAlignment:
-                                                                          CrossAxisAlignment
-                                                                              .start,
-                                                                      children: [
-                                                                        Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              0.0,
-                                                                              8.0,
-                                                                              0.0),
-                                                                          child:
-                                                                              Text(
-                                                                            'Depense Totale',
-                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                  font: GoogleFonts.inter(
-                                                                                    fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                                    fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                  ),
-                                                                                  fontSize: 12.0,
-                                                                                  letterSpacing: 0.0,
-                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                ),
-                                                                          ),
-                                                                        ),
-                                                                        Text(
-                                                                          valueOrDefault<
-                                                                              String>(
-                                                                            widget.depTotP?.toString(),
-                                                                            '0',
-                                                                          ),
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                font: GoogleFonts.inter(
-                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                ),
-                                                                                fontSize: 13.0,
-                                                                                letterSpacing: 0.0,
+                                                                          0.0),
+                                                                  child: Column(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .max,
+                                                                    mainAxisAlignment:
+                                                                        MainAxisAlignment
+                                                                            .end,
+                                                                    crossAxisAlignment:
+                                                                        CrossAxisAlignment
+                                                                            .start,
+                                                                    children: [
+                                                                      Text(
+                                                                        'Revenu Totale',
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              font: GoogleFonts.inter(
                                                                                 fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                                                                                 fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                                                                               ),
+                                                                              fontSize: 12.0,
+                                                                              letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
+                                                                      ),
+                                                                      Text(
+                                                                        valueOrDefault<
+                                                                            String>(
+                                                                          widget
+                                                                              .revTotP
+                                                                              ?.toString(),
+                                                                          '0',
                                                                         ),
-                                                                      ],
-                                                                    ),
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                              font: GoogleFonts.inter(
+                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                              ),
+                                                                              fontSize: 13.0,
+                                                                              letterSpacing: 0.0,
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
+                                                                      ),
+                                                                    ],
                                                                   ),
                                                                 ),
-                                                                Align(
-                                                                  alignment:
-                                                                      AlignmentDirectional(
-                                                                          0.0,
-                                                                          1.0),
-                                                                  child:
-                                                                      Padding(
-                                                                    padding: EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            5.0,
-                                                                            60.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    child:
-                                                                        Column(
-                                                                      mainAxisSize:
-                                                                          MainAxisSize
-                                                                              .max,
-                                                                      mainAxisAlignment:
-                                                                          MainAxisAlignment
-                                                                              .end,
-                                                                      crossAxisAlignment:
-                                                                          CrossAxisAlignment
-                                                                              .start,
-                                                                      children: [
-                                                                        Text(
-                                                                          'Revenu Totale',
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                font: GoogleFonts.inter(
-                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                ),
-                                                                                fontSize: 12.0,
-                                                                                letterSpacing: 0.0,
-                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                              ),
-                                                                        ),
-                                                                        Text(
-                                                                          valueOrDefault<
-                                                                              String>(
-                                                                            widget.revTotP?.toString(),
-                                                                            '0',
-                                                                          ),
-                                                                          style: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .override(
-                                                                                font: GoogleFonts.inter(
-                                                                                  fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                                  fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                                ),
-                                                                                fontSize: 13.0,
-                                                                                letterSpacing: 0.0,
-                                                                                fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
-                                                                                fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                              ),
-                                                                        ),
-                                                                      ],
-                                                                    ),
-                                                                  ),
-                                                                ),
-                                                              ],
-                                                            ),
+                                                              ),
+                                                            ],
                                                           ),
-                                                          Align(
-                                                            alignment:
-                                                                AlignmentDirectional(
-                                                                    1.0, -1.0),
-                                                            child: Icon(
-                                                              Icons
-                                                                  .contactless_rounded,
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .onPrimary,
-                                                              size: 24.0,
-                                                            ),
+                                                        ),
+                                                        Align(
+                                                          alignment:
+                                                              AlignmentDirectional(
+                                                                  1.0, -1.0),
+                                                          child: Icon(
+                                                            Icons
+                                                                .contactless_rounded,
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .onPrimary,
+                                                            size: 24.0,
                                                           ),
-                                                        ],
-                                                      ),
+                                                        ),
+                                                      ],
                                                     ),
                                                   ),
                                                 ),
@@ -1804,81 +1804,134 @@ class _WalletDashboardWidgetState extends State<WalletDashboardWidget> {
                                                                         context)
                                                                     .primary,
                                                               ),
-                                                              Row(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .end,
-                                                                crossAxisAlignment:
-                                                                    CrossAxisAlignment
-                                                                        .center,
-                                                                children: [
-                                                                  Align(
-                                                                    alignment:
-                                                                        AlignmentDirectional(
-                                                                            0.0,
-                                                                            0.0),
-                                                                    child:
-                                                                        FFButtonWidget(
+                                                              SingleChildScrollView(
+                                                                scrollDirection:
+                                                                    Axis.horizontal,
+                                                                child: Row(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  mainAxisAlignment:
+                                                                      MainAxisAlignment
+                                                                          .end,
+                                                                  crossAxisAlignment:
+                                                                      CrossAxisAlignment
+                                                                          .center,
+                                                                  children: [
+                                                                    Align(
+                                                                      alignment:
+                                                                          AlignmentDirectional(
+                                                                              0.0,
+                                                                              0.0),
+                                                                      child:
+                                                                          FFButtonWidget(
+                                                                        onPressed:
+                                                                            () async {
+                                                                          context
+                                                                              .pushNamed(
+                                                                            ShowRevenuWidget.routeName,
+                                                                            queryParameters:
+                                                                                {
+                                                                              'montantP': serializeParam(
+                                                                                listViewTransactionRecord.montant,
+                                                                                ParamType.double,
+                                                                              ),
+                                                                              'typeP': serializeParam(
+                                                                                listViewTransactionRecord.type,
+                                                                                ParamType.String,
+                                                                              ),
+                                                                              'categorieP': serializeParam(
+                                                                                listViewTransactionRecord.categorie,
+                                                                                ParamType.String,
+                                                                              ),
+                                                                              'descriptionP': serializeParam(
+                                                                                listViewTransactionRecord.description,
+                                                                                ParamType.String,
+                                                                              ),
+                                                                              'dateP': serializeParam(
+                                                                                listViewTransactionRecord.dateTransaction,
+                                                                                ParamType.DateTime,
+                                                                              ),
+                                                                              'methodeP': serializeParam(
+                                                                                listViewTransactionRecord.methodePaiement,
+                                                                                ParamType.String,
+                                                                              ),
+                                                                              'localisationP': serializeParam(
+                                                                                listViewTransactionRecord.localisation,
+                                                                                ParamType.String,
+                                                                              ),
+                                                                            }.withoutNulls,
+                                                                          );
+                                                                        },
+                                                                        text:
+                                                                            'Consulter',
+                                                                        icon:
+                                                                            Icon(
+                                                                          Icons
+                                                                              .remove_red_eye,
+                                                                          size:
+                                                                              18.0,
+                                                                        ),
+                                                                        options:
+                                                                            FFButtonOptions(
+                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0),
+                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0,
+                                                                              0.0),
+                                                                          iconColor:
+                                                                              FlutterFlowTheme.of(context).primary,
+                                                                          color:
+                                                                              Color(0x007B4DFF),
+                                                                          textStyle: FlutterFlowTheme.of(context)
+                                                                              .titleSmall
+                                                                              .override(
+                                                                                font: GoogleFonts.plusJakartaSans(
+                                                                                  fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                                ),
+                                                                                color: FlutterFlowTheme.of(context).primary,
+                                                                                fontSize: 14.0,
+                                                                                letterSpacing: 0.0,
+                                                                                fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                              ),
+                                                                          elevation:
+                                                                              0.0,
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    FFButtonWidget(
                                                                       onPressed:
                                                                           () async {
-                                                                        context
-                                                                            .pushNamed(
-                                                                          ShowRevenuWidget
-                                                                              .routeName,
-                                                                          queryParameters:
-                                                                              {
-                                                                            'montantP':
-                                                                                serializeParam(
-                                                                              0.0,
-                                                                              ParamType.double,
-                                                                            ),
-                                                                            'typeP':
-                                                                                serializeParam(
-                                                                              '',
-                                                                              ParamType.String,
-                                                                            ),
-                                                                            'categorieP':
-                                                                                serializeParam(
-                                                                              '',
-                                                                              ParamType.String,
-                                                                            ),
-                                                                            'descriptionP':
-                                                                                serializeParam(
-                                                                              '',
-                                                                              ParamType.String,
-                                                                            ),
-                                                                            'dateP':
-                                                                                serializeParam(
-                                                                              listViewTransactionRecord.dateTransaction,
-                                                                              ParamType.DateTime,
-                                                                            ),
-                                                                            'methodeP':
-                                                                                serializeParam(
-                                                                              '',
-                                                                              ParamType.String,
-                                                                            ),
-                                                                            'localisationP':
-                                                                                serializeParam(
-                                                                              '',
-                                                                              ParamType.String,
-                                                                            ),
-                                                                          }.withoutNulls,
+                                                                        await actions
+                                                                            .deleteTransactionAndUpdateWallet(
+                                                                          listViewTransactionRecord
+                                                                              .reference,
+                                                                          listViewTransactionRecord
+                                                                              .walletReff!,
                                                                         );
                                                                       },
                                                                       text:
-                                                                          'Consulter',
+                                                                          'Supprimer',
                                                                       icon:
                                                                           Icon(
                                                                         Icons
-                                                                            .remove_red_eye,
+                                                                            .restore_from_trash_rounded,
                                                                         size:
-                                                                            18.0,
+                                                                            20.0,
                                                                       ),
                                                                       options:
                                                                           FFButtonOptions(
+                                                                        height:
+                                                                            40.0,
                                                                         padding: EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -1889,8 +1942,6 @@ class _WalletDashboardWidgetState extends State<WalletDashboardWidget> {
                                                                             0.0,
                                                                             0.0,
                                                                             0.0),
-                                                                        iconColor:
-                                                                            FlutterFlowTheme.of(context).primary,
                                                                         color: Color(
                                                                             0x007B4DFF),
                                                                         textStyle: FlutterFlowTheme.of(context)
@@ -1912,190 +1963,121 @@ class _WalletDashboardWidgetState extends State<WalletDashboardWidget> {
                                                                             BorderRadius.circular(8.0),
                                                                       ),
                                                                     ),
-                                                                  ),
-                                                                  FFButtonWidget(
-                                                                    onPressed:
-                                                                        () async {
-                                                                      await actions
-                                                                          .deleteTransactionAndUpdateWallet(
-                                                                        listViewTransactionRecord
-                                                                            .reference,
-                                                                        walletDashboardWalletRecord
-                                                                            .reference,
-                                                                      );
-                                                                    },
-                                                                    text:
-                                                                        'Supprimer',
-                                                                    icon: Icon(
-                                                                      Icons
-                                                                          .restore_from_trash_rounded,
-                                                                      size:
-                                                                          20.0,
-                                                                    ),
-                                                                    options:
-                                                                        FFButtonOptions(
-                                                                      height:
-                                                                          40.0,
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                      color: Color(
-                                                                          0x007B4DFF),
-                                                                      textStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .titleSmall
-                                                                          .override(
-                                                                            font:
-                                                                                GoogleFonts.plusJakartaSans(
-                                                                              fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                    FFButtonWidget(
+                                                                      onPressed:
+                                                                          () async {
+                                                                        context
+                                                                            .pushNamed(
+                                                                          EditRevenuWidget
+                                                                              .routeName,
+                                                                          queryParameters:
+                                                                              {
+                                                                            'montantP':
+                                                                                serializeParam(
+                                                                              listViewTransactionRecord.montant,
+                                                                              ParamType.double,
                                                                             ),
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primary,
-                                                                            fontSize:
-                                                                                14.0,
-                                                                            letterSpacing:
-                                                                                0.0,
-                                                                            fontWeight:
-                                                                                FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                            fontStyle:
-                                                                                FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                          ),
-                                                                      elevation:
-                                                                          0.0,
-                                                                      borderRadius:
-                                                                          BorderRadius.circular(
-                                                                              8.0),
-                                                                    ),
-                                                                  ),
-                                                                  FFButtonWidget(
-                                                                    onPressed:
-                                                                        () async {
-                                                                      context
-                                                                          .pushNamed(
-                                                                        EditRevenuWidget
-                                                                            .routeName,
-                                                                        queryParameters:
-                                                                            {
-                                                                          'montantP':
-                                                                              serializeParam(
+                                                                            'categorieP':
+                                                                                serializeParam(
+                                                                              listViewTransactionRecord.categorie,
+                                                                              ParamType.String,
+                                                                            ),
+                                                                            'methodeP':
+                                                                                serializeParam(
+                                                                              listViewTransactionRecord.methodePaiement,
+                                                                              ParamType.String,
+                                                                            ),
+                                                                            'typeP':
+                                                                                serializeParam(
+                                                                              listViewTransactionRecord.type,
+                                                                              ParamType.String,
+                                                                            ),
+                                                                            'descriptionP':
+                                                                                serializeParam(
+                                                                              listViewTransactionRecord.description,
+                                                                              ParamType.String,
+                                                                            ),
+                                                                            'locationP':
+                                                                                serializeParam(
+                                                                              listViewTransactionRecord.localisation,
+                                                                              ParamType.String,
+                                                                            ),
+                                                                            'dateP':
+                                                                                serializeParam(
+                                                                              listViewTransactionRecord.dateTransaction,
+                                                                              ParamType.DateTime,
+                                                                            ),
+                                                                            'renvenuRF':
+                                                                                serializeParam(
+                                                                              listViewTransactionRecord.reference,
+                                                                              ParamType.DocumentReference,
+                                                                            ),
+                                                                            'transactionParam':
+                                                                                serializeParam(
+                                                                              listViewTransactionRecord.reference,
+                                                                              ParamType.DocumentReference,
+                                                                            ),
+                                                                            'walletParam':
+                                                                                serializeParam(
+                                                                              listViewTransactionRecord.walletReff,
+                                                                              ParamType.DocumentReference,
+                                                                            ),
+                                                                            'oldType':
+                                                                                serializeParam(
+                                                                              listViewTransactionRecord.type,
+                                                                              ParamType.String,
+                                                                            ),
+                                                                          }.withoutNulls,
+                                                                        );
+                                                                      },
+                                                                      text:
+                                                                          'Modifier',
+                                                                      icon:
+                                                                          Icon(
+                                                                        Icons
+                                                                            .edit_square,
+                                                                        size:
+                                                                            19.0,
+                                                                      ),
+                                                                      options:
+                                                                          FFButtonOptions(
+                                                                        height:
+                                                                            40.0,
+                                                                        padding: EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
-                                                                            ParamType.double,
-                                                                          ),
-                                                                          'categorieP':
-                                                                              serializeParam(
-                                                                            '',
-                                                                            ParamType.String,
-                                                                          ),
-                                                                          'methodeP':
-                                                                              serializeParam(
-                                                                            '',
-                                                                            ParamType.String,
-                                                                          ),
-                                                                          'typeP':
-                                                                              serializeParam(
-                                                                            '',
-                                                                            ParamType.String,
-                                                                          ),
-                                                                          'descriptionP':
-                                                                              serializeParam(
-                                                                            '',
-                                                                            ParamType.String,
-                                                                          ),
-                                                                          'locationP':
-                                                                              serializeParam(
-                                                                            '',
-                                                                            ParamType.String,
-                                                                          ),
-                                                                          'dateP':
-                                                                              serializeParam(
-                                                                            listViewTransactionRecord.dateTransaction,
-                                                                            ParamType.DateTime,
-                                                                          ),
-                                                                          'renvenuRF':
-                                                                              serializeParam(
-                                                                            listViewTransactionRecord.reference,
-                                                                            ParamType.DocumentReference,
-                                                                          ),
-                                                                          'transactionParam':
-                                                                              serializeParam(
-                                                                            listViewTransactionRecord.reference,
-                                                                            ParamType.DocumentReference,
-                                                                          ),
-                                                                          'walletParam':
-                                                                              serializeParam(
-                                                                            listViewTransactionRecord.walletReff,
-                                                                            ParamType.DocumentReference,
-                                                                          ),
-                                                                          'oldType':
-                                                                              serializeParam(
-                                                                            '',
-                                                                            ParamType.String,
-                                                                          ),
-                                                                        }.withoutNulls,
-                                                                      );
-                                                                    },
-                                                                    text:
-                                                                        'Modifier',
-                                                                    icon: Icon(
-                                                                      Icons
-                                                                          .edit_square,
-                                                                      size:
-                                                                          19.0,
-                                                                    ),
-                                                                    options:
-                                                                        FFButtonOptions(
-                                                                      height:
-                                                                          40.0,
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                      color: Color(
-                                                                          0x007B4DFF),
-                                                                      textStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .titleSmall
-                                                                          .override(
-                                                                            font:
-                                                                                GoogleFonts.plusJakartaSans(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                        color: Color(
+                                                                            0x007B4DFF),
+                                                                        textStyle: FlutterFlowTheme.of(context)
+                                                                            .titleSmall
+                                                                            .override(
+                                                                              font: GoogleFonts.plusJakartaSans(
+                                                                                fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                                                                                fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                                                                              ),
+                                                                              color: FlutterFlowTheme.of(context).primary,
+                                                                              fontSize: 14.0,
+                                                                              letterSpacing: 0.0,
                                                                               fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
                                                                               fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                                                                             ),
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primary,
-                                                                            fontSize:
-                                                                                14.0,
-                                                                            letterSpacing:
-                                                                                0.0,
-                                                                            fontWeight:
-                                                                                FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                            fontStyle:
-                                                                                FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                          ),
-                                                                      elevation:
-                                                                          0.0,
-                                                                      borderRadius:
-                                                                          BorderRadius.circular(
-                                                                              8.0),
+                                                                        elevation:
+                                                                            0.0,
+                                                                        borderRadius:
+                                                                            BorderRadius.circular(8.0),
+                                                                      ),
                                                                     ),
-                                                                  ),
-                                                                ].divide(SizedBox(
-                                                                    width:
-                                                                        16.0)),
+                                                                  ].divide(SizedBox(
+                                                                      width:
+                                                                          16.0)),
+                                                                ),
                                                               ),
                                                             ].divide(SizedBox(
                                                                 height: 16.0)),
@@ -2126,7 +2108,7 @@ class _WalletDashboardWidgetState extends State<WalletDashboardWidget> {
                       ),
                       Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(
-                            25.0, 0.0, 25.0, 0.0),
+                            10.0, 0.0, 10.0, 0.0),
                         child: Container(
                           width: double.infinity,
                           height: 300.0,

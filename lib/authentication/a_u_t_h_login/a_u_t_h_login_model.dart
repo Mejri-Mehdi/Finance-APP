@@ -1,6 +1,7 @@
 import '/authentication/button7/button7_widget.dart';
 import '/authentication/switch_component4/switch_component4_widget.dart';
 import '/authentication/text_field7/text_field7_widget.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'a_u_t_h_login_widget.dart' show AUTHLoginWidget;
@@ -15,6 +16,8 @@ class AUTHLoginModel extends FlutterFlowModel<AUTHLoginWidget> {
   late TextField7Model textFieldModel2;
   // Model for Button.
   late Button7Model buttonModel;
+  // Stores action output result for [Firestore Query - Query a collection] action in Button widget.
+  UsersRecord? loggedInUser;
   // Model for SwitchComponent.
   late SwitchComponent4Model switchComponentModel;
 

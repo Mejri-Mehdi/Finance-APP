@@ -2,9 +2,11 @@ import '/auth/firebase_auth/auth_util.dart';
 import '/authentication/button7/button7_widget.dart';
 import '/authentication/switch_component4/switch_component4_widget.dart';
 import '/authentication/text_field7/text_field7_widget.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -263,20 +265,42 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
-                              GoRouter.of(context).prepareAuthEvent();
+                              _model.loggedInUser = await queryUsersRecordOnce(
+                                queryBuilder: (usersRecord) =>
+                                    usersRecord.where(
+                                  'email',
+                                  isEqualTo: _model
+                                      .textFieldModel1.inputTextController.text,
+                                ),
+                                singleRecord: true,
+                              ).then((s) => s.firstOrNull);
+                              if (_model.loggedInUser!.twoFaEnabled) {
+                                context.pushNamedAuth(
+                                  PremiumVRificationPageWidget.routeName,
+                                  context.mounted,
+                                  queryParameters: {
+                                    'phoneNumber': serializeParam(
+                                      _model.loggedInUser?.phoneNumber,
+                                      ParamType.String,
+                                    ),
+                                  }.withoutNulls,
+                                );
+                              } else {
+                                GoRouter.of(context).prepareAuthEvent();
 
-                              final user = await authManager.signInWithEmail(
-                                context,
-                                _model.textFieldModel1.inputTextController.text,
-                                _model.textFieldModel2.inputTextController.text,
-                              );
-                              if (user == null) {
-                                return;
+                                final user = await authManager.signInWithEmail(
+                                  context,
+                                  _model
+                                      .textFieldModel1.inputTextController.text,
+                                  _model
+                                      .textFieldModel2.inputTextController.text,
+                                );
+                                if (user == null) {
+                                  return;
+                                }
                               }
 
-                              context.goNamedAuth(
-                                  BASEGlobalWalletDashboardWidget.routeName,
-                                  context.mounted);
+                              safeSetState(() {});
                             },
                             child: wrapWithModel(
                               model: _model.buttonModel,

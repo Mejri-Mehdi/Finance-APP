@@ -70,3 +70,13 @@ export '/gestion_wallet/edit_revenu/edit_revenu_widget.dart'
     show EditRevenuWidget;
 export '/gestion_wallet/edit_wallet/edit_wallet_widget.dart'
     show EditWalletWidget;
+export '/gestion_invest/dashboardinvestments/dashboardinvestments_widget.dart'
+    show DashboardinvestmentsWidget;
+export '/gestion_invest/bitcoin_page/bitcoin_page_widget.dart'
+    show BitcoinPageWidget;
+export '/gestion_invest/smart_recommendation_page/smart_recommendation_page_widget.dart'
+    show SmartRecommendationPageWidget;
+export '/gestion_invest/invdetails/invdetails_widget.dart'
+    show InvdetailsWidget;
+export '/premium_v_rification_page/premium_v_rification_page_widget.dart'
+    show PremiumVRificationPageWidget;

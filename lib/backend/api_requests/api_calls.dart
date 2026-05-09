@@ -104,6 +104,55 @@ class ScanRecuOCRCall {
   }
 }
 
+class GetBitcoinPriceCall {
+  static Future<ApiCallResponse> call() async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'getBitcoinPrice',
+      apiUrl: 'https://api.coingecko.com/api/v3/simple/price',
+      callType: ApiCallType.GET,
+      headers: {},
+      params: {
+        'ids': "bitcoin",
+        'vs_currencies': "usd",
+        'include_24hr_change': "true",
+      },
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+
+  static int? price(dynamic response) => castToType<int>(getJsonField(
+        response,
+        r'''$.bitcoin.usd''',
+      ));
+  static double? change(dynamic response) => castToType<double>(getJsonField(
+        response,
+        r'''$.bitcoin.usd_24h_change''',
+      ));
+}
+
+class ConvertTNDToDeviceCall {
+  static Future<ApiCallResponse> call() async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'ConvertTNDToDevice',
+      apiUrl: 'https://open.er-api.com/v6/latest/TND',
+      callType: ApiCallType.GET,
+      headers: {},
+      params: {},
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;

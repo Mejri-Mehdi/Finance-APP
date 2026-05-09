@@ -8,6 +8,12 @@ import 'package:flutter/material.dart';
 class AUTHProfileSetupModel extends FlutterFlowModel<AUTHProfileSetupWidget> {
   ///  State fields for stateful widgets in this page.
 
+  bool isDataUploading_uploadData1gp = false;
+  FFUploadedFile uploadedLocalFile_uploadData1gp =
+      FFUploadedFile(bytes: Uint8List.fromList([]), originalFilename: '');
+
+  // Stores action output result for [Custom Action - imageToBase64] action in Button widget.
+  String? convertedImage;
   // Model for TextField.
   late TextField7Model textFieldModel;
   // Model for GoalSelectionItem.
