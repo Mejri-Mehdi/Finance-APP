@@ -283,6 +283,16 @@ class _AUTHLoginWidgetState extends State<AUTHLoginWidget> {
                                       _model.loggedInUser?.phoneNumber,
                                       ParamType.String,
                                     ),
+                                    'userEmail': serializeParam(
+                                      _model.textFieldModel1.inputTextController
+                                          .text,
+                                      ParamType.String,
+                                    ),
+                                    'userPassword': serializeParam(
+                                      _model.textFieldModel2.inputTextController
+                                          .text,
+                                      ParamType.String,
+                                    ),
                                   }.withoutNulls,
                                 );
                               } else {

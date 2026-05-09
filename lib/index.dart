@@ -80,3 +80,5 @@ export '/gestion_invest/invdetails/invdetails_widget.dart'
     show InvdetailsWidget;
 export '/premium_v_rification_page/premium_v_rification_page_widget.dart'
     show PremiumVRificationPageWidget;
+export '/loading_s_m_s_page/loading_s_m_s_page_widget.dart'
+    show LoadingSMSPageWidget;

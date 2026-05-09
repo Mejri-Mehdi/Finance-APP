@@ -557,7 +557,20 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               'phoneNumber',
               ParamType.String,
             ),
+            userEmail: params.getParam(
+              'userEmail',
+              ParamType.String,
+            ),
+            userPassword: params.getParam(
+              'userPassword',
+              ParamType.String,
+            ),
           ),
+        ),
+        FFRoute(
+          name: LoadingSMSPageWidget.routeName,
+          path: LoadingSMSPageWidget.routePath,
+          builder: (context, params) => LoadingSMSPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
